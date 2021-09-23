@@ -171,9 +171,9 @@ RTPSParticipant* RTPSDomain::createParticipant(
                 PParam.builtin.metatrafficUnicastLocatorList))
     {
         // we do not log an error because the library may use participant creation as a trial for server existence
-        logInfo(RTPS_PARTICIPANT, "Server wasn't able to allocate the specified listening port");
-        delete pimpl;
-        return nullptr;
+        logError(RTPS_PARTICIPANT, "Server wasn't able to allocate a listening port");
+        // delete pimpl;
+        // return nullptr;
     }
 
     // Check there is at least one transport registered.
