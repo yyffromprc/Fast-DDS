@@ -1182,10 +1182,10 @@ private:
         // Problematic states:
         // - Being added: change both pointers from nullptr to a pointer values.
         // - Being removed: change both pointer from pointer values to nullptr.
+        std::unique_lock<std::mutex> lock(async_mode.changes_interested_mutex);
         if (nullptr == change->writer_info.previous &&
                 nullptr == change->writer_info.next)
         {
-            std::unique_lock<std::mutex> lock(async_mode.changes_interested_mutex);
             sched.add_old_sample(writer, change);
             async_mode.cv.notify_one();
 
@@ -1223,12 +1223,13 @@ private:
         // Problematic states:
         // - Being added: change both pointers from nullptr to a pointer values.
         // - Being removed: change both pointer from pointer values to nullptr.
+        std::unique_lock<std::mutex> lock(mutex_);
+        std::unique_lock<std::mutex> interested_lock(async_mode.changes_interested_mutex);
+
         if (nullptr != change->writer_info.previous ||
                 nullptr != change->writer_info.next)
         {
             ++async_mode.writers_interested_in_remove;
-            std::unique_lock<std::mutex> lock(mutex_);
-            std::unique_lock<std::mutex> interested_lock(async_mode.changes_interested_mutex);
 
             // When blocked, both pointer are different than nullptr or equal.
             assert((nullptr != change->writer_info.previous &&
@@ -1328,14 +1329,19 @@ private:
                 async_mode.group.sender(current_writer, &locator_selector);
                 locator_selector.lock();
 
-                // Remove previously from queue, because deliver_sample_nts could call FlowController::remove_sample()
-                // provoking a deadlock.
-                fastrtps::rtps::CacheChange_t* previous = change_to_process->writer_info.previous;
-                fastrtps::rtps::CacheChange_t* next = change_to_process->writer_info.next;
-                previous->writer_info.next = next;
-                next->writer_info.previous = previous;
-                change_to_process->writer_info.previous = nullptr;
-                change_to_process->writer_info.next = nullptr;
+                fastrtps::rtps::CacheChange_t * previous = nullptr, * next = nullptr;
+                {
+                    std::unique_lock<std::mutex> in_lock(async_mode.changes_interested_mutex);
+
+                    // Remove previously from queue, because deliver_sample_nts could call FlowController::remove_sample()
+                    // provoking a deadlock.
+                    previous = change_to_process->writer_info.previous;
+                    next = change_to_process->writer_info.next;
+                    previous->writer_info.next = next;
+                    next->writer_info.previous = previous;
+                    change_to_process->writer_info.previous = nullptr;
+                    change_to_process->writer_info.next = nullptr;
+                }
 
                 fastrtps::rtps::DeliveryRetCode ret_delivery = current_writer->deliver_sample_nts(
                     change_to_process, async_mode.group, locator_selector,
@@ -1343,11 +1349,15 @@ private:
 
                 if (fastrtps::rtps::DeliveryRetCode::DELIVERED != ret_delivery)
                 {
-                    // If delivery fails, put the change again in the queue.
-                    previous->writer_info.next = change_to_process;
-                    next->writer_info.previous = change_to_process;
-                    change_to_process->writer_info.previous = previous;
-                    change_to_process->writer_info.next = next;
+                    {
+                        std::unique_lock<std::mutex> in_lock(async_mode.changes_interested_mutex);
+
+                        // If delivery fails, put the change again in the queue.
+                        previous->writer_info.next = change_to_process;
+                        next->writer_info.previous = change_to_process;
+                        change_to_process->writer_info.previous = previous;
+                        change_to_process->writer_info.next = next;
+                    }
 
                     async_mode.process_deliver_retcode(ret_delivery);
 
