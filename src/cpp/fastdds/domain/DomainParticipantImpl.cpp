@@ -200,17 +200,17 @@ DomainParticipantImpl::DomainParticipantImpl(
 
 void DomainParticipantImpl::disable()
 {
-    if (participant_)
+    if (get_participant())
     {
-        participant_->set_listener(nullptr);
+        get_participant()->set_listener(nullptr);
     }
     rtps_listener_.participant_ = nullptr;
 
     // The function to disable the DomainParticipantImpl is called from
     // DomainParticipantFactory::delete_participant() and DomainParticipantFactory destructor.
-    if (rtps_participant_ != nullptr)
+    if (get_rtps_participant() != nullptr)
     {
-        rtps_participant_->set_listener(nullptr);
+        get_rtps_participant()->set_listener(nullptr);
 
         {
             std::lock_guard<std::mutex> lock(mtx_pubs_);
@@ -266,7 +266,7 @@ DomainParticipantImpl::~DomainParticipantImpl()
         topics_by_handle_.clear();
     }
 
-    if (rtps_participant_ != nullptr)
+    if (get_rtps_participant() != nullptr)
     {
         RTPSDomain::removeRTPSParticipant(rtps_participant_);
     }
@@ -275,6 +275,8 @@ DomainParticipantImpl::~DomainParticipantImpl()
         std::lock_guard<std::mutex> lock(mtx_types_);
         types_.clear();
     }
+
+    std::lock_guard<std::mutex> _(mtx_gs_);
 
     if (participant_)
     {
@@ -287,7 +289,7 @@ DomainParticipantImpl::~DomainParticipantImpl()
 ReturnCode_t DomainParticipantImpl::enable()
 {
     // Should not have been previously enabled
-    assert(rtps_participant_ == nullptr);
+    assert(get_rtps_participant() == nullptr);
 
     fastrtps::rtps::RTPSParticipantAttributes rtps_attr;
     set_attributes_from_qos(rtps_attr, qos_);
@@ -313,13 +315,18 @@ ReturnCode_t DomainParticipantImpl::enable()
     }
 
     guid_ = part->getGuid();
-    rtps_participant_ = part;
 
-    rtps_participant_->set_check_type_function(
-        [this](const std::string& type_name) -> bool
-        {
-            return find_type(type_name).get() != nullptr;
-        });
+    {
+        std::lock_guard<std::mutex> _(mtx_gs_);
+
+        rtps_participant_ = part;
+
+        rtps_participant_->set_check_type_function(
+            [this](const std::string& type_name) -> bool
+            {
+                return find_type(type_name).get() != nullptr;
+            });
+    }
 
     if (qos_.entity_factory().autoenable_created_entities)
     {
@@ -338,7 +345,7 @@ ReturnCode_t DomainParticipantImpl::enable()
             std::lock_guard<std::mutex> lock(mtx_pubs_);
             for (auto pub : publishers_)
             {
-                pub.second->rtps_participant_ = rtps_participant_;
+                pub.second->rtps_participant_ = get_rtps_participant();
                 pub.second->user_publisher_->enable();
             }
         }
@@ -349,13 +356,13 @@ ReturnCode_t DomainParticipantImpl::enable()
 
             for (auto sub : subscribers_)
             {
-                sub.second->rtps_participant_ = rtps_participant_;
+                sub.second->rtps_participant_ = get_rtps_participant();
                 sub.second->user_subscriber_->enable();
             }
         }
     }
 
-    rtps_participant_->enable();
+    get_rtps_participant()->enable();
 
     return ReturnCode_t::RETCODE_OK;
 }
@@ -363,7 +370,7 @@ ReturnCode_t DomainParticipantImpl::enable()
 ReturnCode_t DomainParticipantImpl::set_qos(
         const DomainParticipantQos& qos)
 {
-    bool enabled = (rtps_participant_ != nullptr);
+    bool enabled = (get_rtps_participant() != nullptr);
     const DomainParticipantQos& qos_to_set = (&qos == &PARTICIPANT_QOS_DEFAULT) ?
             DomainParticipantFactory::get_instance()->get_default_participant_qos() : qos;
 
@@ -389,12 +396,12 @@ ReturnCode_t DomainParticipantImpl::set_qos(
             // Notify the participant that there is a QoS update
             fastrtps::rtps::RTPSParticipantAttributes patt;
             set_attributes_from_qos(patt, qos_);
-            rtps_participant_->update_attributes(patt);
+            get_rtps_participant()->update_attributes(patt);
         }
         else
         {
             // Trigger update of network interfaces by calling update_attributes
-            rtps_participant_->update_attributes(rtps_participant_->getRTPSParticipantAttributes());
+            get_rtps_participant()->update_attributes(get_rtps_participant()->getRTPSParticipantAttributes());
         }
     }
 
@@ -404,19 +411,21 @@ ReturnCode_t DomainParticipantImpl::set_qos(
 ReturnCode_t DomainParticipantImpl::get_qos(
         DomainParticipantQos& qos) const
 {
+    std::lock_guard<std::mutex> _(mtx_gs_);
     qos = qos_;
     return ReturnCode_t::RETCODE_OK;
 }
 
 const DomainParticipantQos& DomainParticipantImpl::get_qos() const
 {
+    std::lock_guard<std::mutex> _(mtx_gs_);
     return qos_;
 }
 
 ReturnCode_t DomainParticipantImpl::delete_publisher(
         const Publisher* pub)
 {
-    if (participant_ != pub->get_participant())
+    if (get_participant() != pub->get_participant())
     {
         return ReturnCode_t::RETCODE_PRECONDITION_NOT_MET;
     }
@@ -444,7 +453,7 @@ ReturnCode_t DomainParticipantImpl::delete_publisher(
 ReturnCode_t DomainParticipantImpl::delete_subscriber(
         const Subscriber* sub)
 {
-    if (participant_ != sub->get_participant())
+    if (get_participant() != sub->get_participant())
     {
         return ReturnCode_t::RETCODE_PRECONDITION_NOT_MET;
     }
@@ -578,7 +587,7 @@ ContentFilteredTopic* DomainParticipantImpl::create_contentfilteredtopic(
         return nullptr;
     }
 
-    if (related_topic->get_participant() != this->participant_)
+    if (related_topic->get_participant() != this->get_participant())
     {
         logError(PARTICIPANT, "Creating ContentFilteredTopic with name " << name <<
                 ": related_topic not from this participant");
@@ -783,9 +792,8 @@ Publisher* DomainParticipantImpl::create_publisher(
     PublisherImpl* pubimpl = create_publisher_impl(qos, listener);
     Publisher* pub = new Publisher(pubimpl, mask);
     pubimpl->user_publisher_ = pub;
-    pubimpl->rtps_participant_ = rtps_participant_;
-
-    bool enabled = rtps_participant_ != nullptr;
+    pubimpl->rtps_participant_ = get_rtps_participant();
+    bool enabled = get_rtps_participant() != nullptr;
 
     // Create InstanceHandle for the new publisher
     InstanceHandle_t pub_handle;
@@ -973,14 +981,14 @@ ReturnCode_t DomainParticipantImpl::delete_contained_entities()
 
 ReturnCode_t DomainParticipantImpl::assert_liveliness()
 {
-    if (rtps_participant_ == nullptr)
+    if (get_rtps_participant() == nullptr)
     {
         return ReturnCode_t::RETCODE_NOT_ENABLED;
     }
 
-    if (rtps_participant_->wlp() != nullptr)
+    if (get_rtps_participant()->wlp() != nullptr)
     {
-        if (rtps_participant_->wlp()->assert_liveliness_manual_by_participant())
+        if (get_rtps_participant()->wlp()->assert_liveliness_manual_by_participant())
         {
             return ReturnCode_t::RETCODE_OK;
         }
@@ -1233,18 +1241,9 @@ ReturnCode_t DomainParticipantImpl::get_current_time(
     return ReturnCode_t::RETCODE_OK;
 }
 
-const DomainParticipant* DomainParticipantImpl::get_participant() const
-{
-    return participant_;
-}
-
-DomainParticipant* DomainParticipantImpl::get_participant()
-{
-    return participant_;
-}
-
 std::vector<std::string> DomainParticipantImpl::get_participant_names() const
 {
+    std::lock_guard<std::mutex> _(mtx_gs_);
     return rtps_participant_ == nullptr ?
            std::vector<std::string> {}
            :
@@ -1268,11 +1267,11 @@ Subscriber* DomainParticipantImpl::create_subscriber(
     SubscriberImpl* subimpl = create_subscriber_impl(qos, listener);
     Subscriber* sub = new Subscriber(subimpl, mask);
     subimpl->user_subscriber_ = sub;
-    subimpl->rtps_participant_ = this->rtps_participant_;
+    subimpl->rtps_participant_ = get_rtps_participant();
 
     // Create InstanceHandle for the new subscriber
     InstanceHandle_t sub_handle;
-    bool enabled = rtps_participant_ != nullptr;
+    bool enabled = get_rtps_participant() != nullptr;
 
     // Create InstanceHandle for the new subscriber
     create_instance_handle(sub_handle);
@@ -1339,7 +1338,7 @@ Topic* DomainParticipantImpl::create_topic(
         return nullptr;
     }
 
-    bool enabled = rtps_participant_ != nullptr;
+    bool enabled = get_rtps_participant() != nullptr;
 
     std::lock_guard<std::mutex> lock(mtx_topics_);
 
@@ -1562,9 +1561,10 @@ void DomainParticipantImpl::MyRTPSParticipantListener::onParticipantDiscovery(
         RTPSParticipant*,
         ParticipantDiscoveryInfo&& info)
 {
-    if (participant_ != nullptr && participant_->listener_ != nullptr)
+    DomainParticipantListener* listener = nullptr;
+    if (participant_ != nullptr && (listener = participant_->get_listener()) != nullptr)
     {
-        participant_->listener_->on_participant_discovery(participant_->participant_, std::move(info));
+        listener->on_participant_discovery(participant_->participant_, std::move(info));
     }
 }
 
@@ -1573,9 +1573,10 @@ void DomainParticipantImpl::MyRTPSParticipantListener::onParticipantAuthenticati
         RTPSParticipant*,
         ParticipantAuthenticationInfo&& info)
 {
-    if (participant_ != nullptr && participant_->listener_ != nullptr)
+    DomainParticipantListener* listener = nullptr;
+    if (participant_ != nullptr && (listener = participant_->get_listener()) != nullptr)
     {
-        participant_->listener_->onParticipantAuthentication(participant_->participant_, std::move(info));
+        listener->onParticipantAuthentication(participant_->participant_, std::move(info));
     }
 }
 
@@ -1585,9 +1586,10 @@ void DomainParticipantImpl::MyRTPSParticipantListener::onReaderDiscovery(
         RTPSParticipant*,
         ReaderDiscoveryInfo&& info)
 {
-    if (participant_ != nullptr && participant_->listener_ != nullptr)
+    DomainParticipantListener* listener = nullptr;
+    if (participant_ != nullptr && (listener = participant_->get_listener()) != nullptr)
     {
-        participant_->listener_->on_subscriber_discovery(participant_->participant_, std::move(info));
+        listener->on_subscriber_discovery(participant_->participant_, std::move(info));
     }
 }
 
@@ -1595,9 +1597,10 @@ void DomainParticipantImpl::MyRTPSParticipantListener::onWriterDiscovery(
         RTPSParticipant*,
         WriterDiscoveryInfo&& info)
 {
-    if (participant_ != nullptr && participant_->listener_ != nullptr)
+    DomainParticipantListener* listener = nullptr;
+    if (participant_ != nullptr && (listener = participant_->get_listener()) != nullptr)
     {
-        participant_->listener_->on_publisher_discovery(participant_->participant_, std::move(info));
+        listener->on_publisher_discovery(participant_->participant_, std::move(info));
     }
 }
 
@@ -1609,9 +1612,10 @@ void DomainParticipantImpl::MyRTPSParticipantListener::on_type_discovery(
         const fastrtps::types::TypeObject* object,
         fastrtps::types::DynamicType_ptr dyn_type)
 {
-    if (participant_ != nullptr && participant_->listener_ != nullptr)
+    DomainParticipantListener* listener = nullptr;
+    if (participant_ != nullptr && (listener = participant_->get_listener()) != nullptr)
     {
-        participant_->listener_->on_type_discovery(
+        listener->on_type_discovery(
             participant_->participant_,
             request_sample_id,
             topic,
@@ -1628,9 +1632,10 @@ void DomainParticipantImpl::MyRTPSParticipantListener::on_type_dependencies_repl
         const fastrtps::rtps::SampleIdentity& request_sample_id,
         const fastrtps::types::TypeIdentifierWithSizeSeq& dependencies)
 {
-    if (participant_ != nullptr && participant_->listener_ != nullptr)
+    DomainParticipantListener* listener = nullptr;
+    if (participant_ != nullptr && (listener = participant_->get_listener()) != nullptr)
     {
-        participant_->listener_->on_type_dependencies_reply(
+        participant_->get_listener()->on_type_dependencies_reply(
             participant_->participant_, request_sample_id, dependencies);
     }
 
@@ -1643,13 +1648,17 @@ void DomainParticipantImpl::MyRTPSParticipantListener::on_type_information_recei
         const fastrtps::string_255& type_name,
         const fastrtps::types::TypeInformation& type_information)
 {
-    if (participant_ != nullptr && participant_->listener_ != nullptr)
+    DomainParticipantListener* listener = nullptr;
+    DomainParticipant* participant = nullptr;
+    if (participant_ != nullptr
+            && (participant = participant_->get_participant()) != nullptr
+            && (listener = participant_->get_listener()) != nullptr)
     {
         if (type_information.complete().typeid_with_size().type_id()._d() > 0
                 || type_information.minimal().typeid_with_size().type_id()._d() > 0)
         {
-            participant_->listener_->on_type_information_received(
-                participant_->participant_, topic_name, type_name, type_information);
+            listener->on_type_information_received(
+                participant, topic_name, type_name, type_information);
         }
     }
 }
@@ -1659,15 +1668,15 @@ bool DomainParticipantImpl::new_remote_endpoint_discovered(
         uint16_t endpointId,
         EndpointKind_t kind)
 {
-    if (rtps_participant_ != nullptr)
+    if (get_rtps_participant() != nullptr)
     {
         if (kind == fastrtps::rtps::WRITER)
         {
-            return rtps_participant_->newRemoteWriterDiscovered(partguid, static_cast<int16_t>(endpointId));
+            return get_rtps_participant()->newRemoteWriterDiscovered(partguid, static_cast<int16_t>(endpointId));
         }
         else
         {
-            return rtps_participant_->newRemoteReaderDiscovered(partguid, static_cast<int16_t>(endpointId));
+            return get_rtps_participant()->newRemoteReaderDiscovered(partguid, static_cast<int16_t>(endpointId));
         }
     }
 
@@ -1676,19 +1685,19 @@ bool DomainParticipantImpl::new_remote_endpoint_discovered(
 
 ResourceEvent& DomainParticipantImpl::get_resource_event() const
 {
-    return rtps_participant_->get_resource_event();
+    return get_rtps_participant()->get_resource_event();
 }
 
 fastrtps::rtps::SampleIdentity DomainParticipantImpl::get_type_dependencies(
         const fastrtps::types::TypeIdentifierSeq& in) const
 {
-    return rtps_participant_->typelookup_manager()->get_type_dependencies(in);
+    return get_rtps_participant()->typelookup_manager()->get_type_dependencies(in);
 }
 
 fastrtps::rtps::SampleIdentity DomainParticipantImpl::get_types(
         const fastrtps::types::TypeIdentifierSeq& in) const
 {
-    return rtps_participant_->typelookup_manager()->get_types(in);
+    return get_rtps_participant()->typelookup_manager()->get_types(in);
 }
 
 ReturnCode_t DomainParticipantImpl::register_remote_type(
@@ -1698,7 +1707,7 @@ ReturnCode_t DomainParticipantImpl::register_remote_type(
 {
     using namespace fastrtps::types;
 
-    if (rtps_participant_ == nullptr)
+    if (get_rtps_participant() == nullptr)
     {
         return ReturnCode_t::RETCODE_NOT_ENABLED;
     }
@@ -1739,7 +1748,7 @@ ReturnCode_t DomainParticipantImpl::register_remote_type(
             return register_dynamic_type(dyn);
         }
     }
-    else if (rtps_participant_->typelookup_manager() != nullptr)
+    else if (get_rtps_participant()->typelookup_manager() != nullptr)
     {
         TypeIdentifierSeq dependencies;
         TypeIdentifierSeq retrieve_objects;
@@ -2014,7 +2023,7 @@ ReturnCode_t DomainParticipantImpl::register_dynamic_type(
         fastrtps::types::DynamicType_ptr dyn_type)
 {
     TypeSupport type(new fastrtps::types::DynamicPubSubType(dyn_type));
-    return participant_->register_type(type);
+    return get_participant()->register_type(type);
 }
 
 void DomainParticipantImpl::remove_parent_request(
@@ -2320,7 +2329,7 @@ void DomainParticipantImpl::create_instance_handle(
 DomainParticipantListener* DomainParticipantImpl::get_listener_for(
         const StatusMask& status)
 {
-    if (participant_->get_status_mask().is_active(status))
+    if (get_participant()->get_status_mask().is_active(status))
     {
         return listener_;
     }
