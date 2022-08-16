@@ -18,8 +18,11 @@
  */
 
 #include "HelloWorldPublisher.h"
+#include "types.hpp"
 #include <fastdds/dds/domain/DomainParticipantFactory.hpp>
+#include <fastdds/rtps/transport/TCPTransportDescriptor.h>
 #include <fastdds/rtps/transport/TCPv4TransportDescriptor.h>
+#include <fastdds/rtps/transport/TCPv6TransportDescriptor.h>
 #include <fastrtps/utils/IPLocator.h>
 
 #include <thread>
@@ -39,6 +42,7 @@ HelloWorldPublisher::HelloWorldPublisher()
 bool HelloWorldPublisher::init(
         const std::string& wan_ip,
         unsigned short port,
+        TransportType transport,
         bool use_tls,
         const std::vector<std::string>& whitelist)
 {
@@ -48,14 +52,26 @@ bool HelloWorldPublisher::init(
 
     //CREATE THE PARTICIPANT
     DomainParticipantQos pqos;
-    pqos.wire_protocol().builtin.discovery_config.leaseDuration = eprosima::fastrtps::c_TimeInfinite;
-    pqos.wire_protocol().builtin.discovery_config.leaseDuration_announcementperiod =
-            eprosima::fastrtps::Duration_t(5, 0);
     pqos.name("Participant_pub");
 
     pqos.transport().use_builtin_transports = false;
 
-    std::shared_ptr<TCPv4TransportDescriptor> descriptor = std::make_shared<TCPv4TransportDescriptor>();
+    std::shared_ptr<TCPTransportDescriptor> descriptor;
+
+    if (transport == TCPv4)
+    {
+        descriptor = std::make_shared<TCPv4TransportDescriptor>();
+
+        if (!wan_ip.empty())
+        {
+            std::dynamic_pointer_cast<TCPv4TransportDescriptor>(descriptor)->set_WAN_address(wan_ip);
+            std::cout << wan_ip << ":" << port << std::endl;
+        }
+    }
+    else
+    {
+        descriptor = std::make_shared<TCPv6TransportDescriptor>();
+    }
 
     for (std::string ip : whitelist)
     {
@@ -79,11 +95,6 @@ bool HelloWorldPublisher::init(
     descriptor->sendBufferSize = 0;
     descriptor->receiveBufferSize = 0;
 
-    if (!wan_ip.empty())
-    {
-        descriptor->set_WAN_address(wan_ip);
-        std::cout << wan_ip << ":" << port << std::endl;
-    }
     descriptor->add_listener_port(port);
     pqos.transport().user_transports.push_back(descriptor);
 
@@ -94,10 +105,10 @@ bool HelloWorldPublisher::init(
         return false;
     }
 
-    //REGISTER THE TYPE
+    // REGISTER THE TYPE
     type_.register_type(participant_);
 
-    //CREATE THE PUBLISHER
+    // CREATE THE PUBLISHER
     publisher_ = participant_->create_publisher(PUBLISHER_QOS_DEFAULT);
 
     if (publisher_ == nullptr)
@@ -105,7 +116,7 @@ bool HelloWorldPublisher::init(
         return false;
     }
 
-    //CREATE THE TOPIC
+    // CREATE THE TOPIC
     topic_ = participant_->create_topic("HelloWorldTopicTCP", "HelloWorld", TOPIC_QOS_DEFAULT);
 
     if (topic_ == nullptr)

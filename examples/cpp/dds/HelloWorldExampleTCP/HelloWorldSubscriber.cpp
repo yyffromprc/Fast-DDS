@@ -18,9 +18,12 @@
  */
 
 #include "HelloWorldSubscriber.h"
+#include "types.hpp"
 #include <fastdds/dds/domain/DomainParticipantFactory.hpp>
 #include <fastdds/dds/subscriber/qos/DataReaderQos.hpp>
+#include <fastdds/rtps/transport/TCPTransportDescriptor.h>
 #include <fastdds/rtps/transport/TCPv4TransportDescriptor.h>
+#include <fastdds/rtps/transport/TCPv6TransportDescriptor.h>
 #include <fastrtps/utils/IPLocator.h>
 
 using namespace eprosima::fastdds::dds;
@@ -40,42 +43,35 @@ HelloWorldSubscriber::HelloWorldSubscriber()
 bool HelloWorldSubscriber::init(
         const std::string& wan_ip,
         unsigned short port,
+        TransportType transport,
         bool use_tls,
         const std::vector<std::string>& whitelist)
 {
 
-    //CREATE THE PARTICIPANT
+    // CREATE THE PARTICIPANT
     DomainParticipantQos pqos;
-    int32_t kind = LOCATOR_KIND_TCPv4;
+    pqos.name("Participant_sub");
 
-    Locator initial_peer_locator;
-    initial_peer_locator.kind = kind;
+    // Disable builtin transports
+    pqos.transport().use_builtin_transports = false;
 
-    std::shared_ptr<TCPv4TransportDescriptor> descriptor = std::make_shared<TCPv4TransportDescriptor>();
+    // Configure descriptor
+    std::shared_ptr<TCPTransportDescriptor> descriptor;
+
+    if (transport == TCPv4)
+    {
+        descriptor = std::make_shared<TCPv4TransportDescriptor>();
+    }
+    else
+    {
+        descriptor = std::make_shared<TCPv6TransportDescriptor>();
+    }
 
     for (std::string ip : whitelist)
     {
         descriptor->interfaceWhiteList.push_back(ip);
         std::cout << "Whitelisted " << ip << std::endl;
     }
-
-    if (!wan_ip.empty())
-    {
-        IPLocator::setIPv4(initial_peer_locator, wan_ip);
-        std::cout << wan_ip << ":" << port << std::endl;
-    }
-    else
-    {
-        IPLocator::setIPv4(initial_peer_locator, "127.0.0.1");
-    }
-    initial_peer_locator.port = port;
-    pqos.wire_protocol().builtin.initialPeersList.push_back(initial_peer_locator); // Publisher's meta channel
-
-    pqos.wire_protocol().builtin.discovery_config.leaseDuration = eprosima::fastrtps::c_TimeInfinite;
-    pqos.wire_protocol().builtin.discovery_config.leaseDuration_announcementperiod = Duration_t(5, 0);
-    pqos.name("Participant_sub");
-
-    pqos.transport().use_builtin_transports = false;
 
     if (use_tls)
     {
@@ -89,6 +85,39 @@ bool HelloWorldSubscriber::init(
 
     pqos.transport().user_transports.push_back(descriptor);
 
+    Locator initial_peer_locator;
+    if (transport == TCPv4)
+    {
+        initial_peer_locator.kind = LOCATOR_KIND_TCPv4;
+
+        if (!wan_ip.empty())
+        {
+            IPLocator::setIPv4(initial_peer_locator, wan_ip);
+            std::cout << wan_ip << ":" << port << std::endl;
+        }
+        else
+        {
+            IPLocator::setIPv4(initial_peer_locator, "127.0.0.1");
+        }
+        initial_peer_locator.port = port;
+    }
+    else
+    {
+        initial_peer_locator.kind = LOCATOR_KIND_TCPv6;
+
+        if (!wan_ip.empty())
+        {
+            IPLocator::setIPv6(initial_peer_locator, wan_ip);
+            std::cout << wan_ip << ":" << port << std::endl;
+        }
+        else
+        {
+            IPLocator::setIPv6(initial_peer_locator, "::1");
+        }
+        initial_peer_locator.port = port;
+    }
+    pqos.wire_protocol().builtin.initialPeersList.push_back(initial_peer_locator);
+
     participant_ = DomainParticipantFactory::get_instance()->create_participant(0, pqos);
 
     if (participant_ == nullptr)
@@ -96,7 +125,7 @@ bool HelloWorldSubscriber::init(
         return false;
     }
 
-    //REGISTER THE TYPE
+    // REGISTER THE TYPE
     type_.register_type(participant_);
 
     //CREATE THE SUBSCRIBER
@@ -107,7 +136,7 @@ bool HelloWorldSubscriber::init(
         return false;
     }
 
-    //CREATE THE TOPIC
+    // CREATE THE TOPIC
     topic_ = participant_->create_topic("HelloWorldTopicTCP", "HelloWorld", TOPIC_QOS_DEFAULT);
 
     if (topic_ == nullptr)
@@ -115,7 +144,7 @@ bool HelloWorldSubscriber::init(
         return false;
     }
 
-    //CREATE THE DATAREADER
+    // CREATE THE DATAREADER
     DataReaderQos rqos;
     rqos.history().kind = eprosima::fastdds::dds::KEEP_LAST_HISTORY_QOS;
     rqos.history().depth = 30;
@@ -186,18 +215,21 @@ void HelloWorldSubscriber::SubListener::on_data_available(
     }
 }
 
-void HelloWorldSubscriber::run()
-{
-    std::cout << "[RTCP] Subscriber running. Please press enter to stop the Subscriber" << std::endl;
-    std::cin.ignore();
-}
-
 void HelloWorldSubscriber::run(
-        uint32_t number)
+        uint32_t samples /* = 0 */)
 {
-    std::cout << "[RTCP] Subscriber running until " << number << "samples have been received" << std::endl;
-    while (number > this->listener_.samples_)
+    if (samples > 0)
     {
-        std::this_thread::sleep_for(std::chrono::milliseconds(500));
+        std::cout << "[RTCP] Subscriber running until " << samples << "samples have been received" << std::endl;
+        while (samples > this->listener_.samples_)
+        {
+            std::this_thread::sleep_for(std::chrono::milliseconds(500));
+        }
     }
+    else
+    {
+        std::cout << "[RTCP] Subscriber running. Please press enter to stop the Subscriber" << std::endl;
+        std::cin.ignore();
+    }
+
 }

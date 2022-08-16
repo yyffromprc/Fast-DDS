@@ -19,6 +19,7 @@
 
 #include "HelloWorldPublisher.h"
 #include "HelloWorldSubscriber.h"
+#include "types.hpp"
 
 #include <fastrtps/Domain.h>
 #include <fastrtps/log/Log.h>
@@ -103,9 +104,31 @@ struct Arg : public option::Arg
         return option::ARG_ILLEGAL;
     }
 
+    static option::ArgStatus Transport(
+            const option::Option& option,
+            bool msg)
+    {
+        if (option.arg != 0)
+        {
+            std::string transport = std::string(option.arg);
+            if (transport != "TCPv4" && transport != "TCPv6")
+            {
+                if (msg)
+                {
+                    print_error("Option '", option, "' only accepts <TCPv4|TCPv6> values\n");
+                }
+                return option::ARG_ILLEGAL;
+            }
+            return option::ARG_OK;
+        }
+        if (msg)
+        {
+            print_error("Option '", option, "' requires a string argument\n");
+        }
+        return option::ARG_ILLEGAL;
+    }
+
 };
-
-
 
 enum  optionIndex
 {
@@ -115,33 +138,10 @@ enum  optionIndex
     INTERVAL,
     IP,
     PORT,
+    TRANSPORT,
     TLS,
     WHITELIST
 };
-
-/*
-
-        std::cout << "There was an error with the input arguments." << std::endl << std::endl;
-        std::cout << "This example needs at least the argument to set if it is going to work" << std::endl;
-        std::cout << "as a 'publisher' or as a 'subscriber'." << std::endl << std::endl;
-
-        std::cout << "The publisher is going to work as a TCP server and if the test" << std::endl;
-        std::cout << "is through a NAT it must have its public IP in the wan_ip argument." << std::endl << std::endl;
-        std::cout << "The optional arguments are: publisher [times] [interval] [wan_ip] [port] " << std::endl;
-        std::cout << "\t- times: Number of messages to send (default: unlimited = 0). " << std::endl;
-        std::cout << "\t\t If times is set greater than 0, no messages will be sent until a subscriber matches. " << std::endl;
-        std::cout << "\t- interval: Milliseconds between messages (default: 100). " << std::endl;
-        std::cout << "\t- wap_ip: Public IP Address of the publisher. " << std::endl;
-        std::cout << "\t- port: Physical Port to listening incoming connections, this port must be allowed in" << std::endl;
-        std::cout << "\t\tthe router of the publisher if the test is going to use WAN IP. " << std::endl << std::endl;
-
-        std::cout << "The subscriber is going to work as a TCP client. If the test is through a NAT" << std::endl;
-        std::cout << "server_ip must have the WAN IP of the publisher and if the test is on LAN" << std::endl;
-        std::cout << "it must have the LAN IP of the publisher" << std::endl << std::endl;
-        std::cout << "The optional arguments are: subscriber [server_ip] [port] " << std::endl;
-        std::cout << "\t- server_ip: IP Address of the publisher. " << std::endl;
-        std::cout << "\t- port: Physical Port where the publisher is listening for connections." << std::endl << std::endl;
- */
 
 const option::Descriptor usage[] = {
     { UNKNOWN_OPT, 0, "", "",                Arg::None,
@@ -159,12 +159,18 @@ const option::Descriptor usage[] = {
       "  -a <address>, \t--address=<address> \tPublic IP Address of the publisher (Default: None)." },
     { PORT, 0, "p", "port",                 Arg::Numeric,
       "  -p <num>, \t--port=<num>  \tPhysical Port to listening incoming connections (Default: 5100)." },
+    { TRANSPORT, 0, "", "transport",        Arg::Transport,
+      "  \t--transport=<TCPv4|TCPv6> \tUse TCPv4 or TCPv6 transport."
+      "If not set, Fast DDS will setup the TCPv4 transport." },
 
     { UNKNOWN_OPT, 0, "", "",                Arg::None,      "\nSubscriber options:"},
     { IP, 0, "a", "address",                   Arg::String,
       "  -a <address>, \t--address=<address> \tIP Address of the publisher (Default: 127.0.0.1)." },
     { PORT, 0, "p", "port",                 Arg::Numeric,
       "  -p <num>, \t--port=<num>  \tPhysical Port where the publisher is listening for connections (Default: 5100)." },
+    { TRANSPORT, 0, "", "transport",        Arg::Transport,
+      "  \t--transport=<TCPv4|TCPv6> \tUse TCPv4 or TCPv6 transport."
+      "If not set, Fast DDS will setup the TCPv4 transport." },
 
     { 0, 0, 0, 0, 0, 0 }
 };
@@ -200,6 +206,7 @@ int main(
     long sleep = 100;
     std::string wan_ip;
     int port = 5100;
+    TransportType transport = TCPv4;
     bool use_tls = false;
     std::vector<std::string> whitelist;
 
@@ -240,6 +247,8 @@ int main(
             {
                 case HELP:
                     // not possible, because handled further above and exits the program
+                    option::printUsage(fwrite, stdout, usage, columns);
+                    return 0;
                     break;
 
                 case SAMPLES:
@@ -266,6 +275,17 @@ int main(
 
                 case PORT:
                     port = strtol(opt.arg, nullptr, 10);
+                    break;
+
+                case optionIndex::TRANSPORT:
+                    if (strcmp(opt.arg, "TCPv4") == 0)
+                    {
+                        transport = TCPv4;
+                    }
+                    else if (strcmp(opt.arg, "TCPv6") == 0)
+                    {
+                        transport = TCPv6;
+                    }
                     break;
 
                 case TLS:
@@ -295,7 +315,7 @@ int main(
         case 1:
         {
             HelloWorldPublisher mypub;
-            if (mypub.init(wan_ip, static_cast<uint16_t>(port), use_tls, whitelist))
+            if (mypub.init(wan_ip, static_cast<uint16_t>(port), transport, use_tls, whitelist))
             {
                 mypub.run(count, sleep);
             }
@@ -304,7 +324,7 @@ int main(
         case 2:
         {
             HelloWorldSubscriber mysub;
-            if (mysub.init(wan_ip, static_cast<uint16_t>(port), use_tls, whitelist))
+            if (mysub.init(wan_ip, static_cast<uint16_t>(port), transport, use_tls, whitelist))
             {
                 mysub.run();
             }

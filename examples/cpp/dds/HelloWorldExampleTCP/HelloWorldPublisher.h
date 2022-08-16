@@ -21,6 +21,7 @@
 #define HELLOWORLDPUBLISHER_H_
 
 #include "HelloWorldPubSubTypes.h"
+#include "types.hpp"
 
 #include <fastdds/dds/domain/DomainParticipant.hpp>
 #include <fastdds/dds/publisher/Publisher.hpp>
@@ -87,6 +88,7 @@ public:
     bool init(
             const std::string& wan_ip,
             unsigned short port,
+            TransportType transport,
             bool use_tls,
             const std::vector<std::string>& whitelist);
 

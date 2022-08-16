@@ -21,6 +21,7 @@
 #define HELLOWORLDSUBSCRIBER_H_
 
 #include "HelloWorldPubSubTypes.h"
+#include "types.hpp"
 
 #include <fastdds/dds/domain/DomainParticipant.hpp>
 #include <fastdds/dds/subscriber/Subscriber.hpp>
@@ -84,15 +85,13 @@ public:
     bool init(
             const std::string& wan_ip,
             unsigned short port,
+            TransportType transport,
             bool use_tls,
             const std::vector<std::string>& whitelist);
 
-    //!RUN the subscriber
-    void run();
-
     //!Run the subscriber until number samples have been received.
     void run(
-            uint32_t number);
+            uint32_t samples = 0);
 };
 
 #endif /* HELLOWORLDSUBSCRIBER_H_ */
