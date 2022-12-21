@@ -383,7 +383,6 @@ uint64_t RTPSReader::get_unread_count(
                 change->isRead = true;
                 assert(0 < total_unread_);
                 --total_unread_;
-                logError(DEBUG, "RTPS Reader " << m_guid << " get unread count (" << total_unread_ << ")" << " [" << mp_history->getHistorySize() << "]");
             }
         }
         assert(0 == total_unread_);

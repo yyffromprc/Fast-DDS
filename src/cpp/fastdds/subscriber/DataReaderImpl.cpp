@@ -704,7 +704,6 @@ ReturnCode_t DataReaderImpl::read_or_take_next_sample(
 
     if (history_.getHistorySize() == 0)
     {
-        logError(DEBUG, "History Size 0 unread count (" << get_unread_count(false) << ") : [" << history_.getHistorySize() << "]");
         return ReturnCode_t::RETCODE_NO_DATA;
     }
 
@@ -713,7 +712,6 @@ ReturnCode_t DataReaderImpl::read_or_take_next_sample(
     auto it = history_.lookup_available_instance(HANDLE_NIL, false);
     if (!it.first)
     {
-        logError(DEBUG, "No available instance");
         return ReturnCode_t::RETCODE_NO_DATA;
     }
 
@@ -735,7 +733,6 @@ ReturnCode_t DataReaderImpl::read_or_take_next_sample(
     }
     if (ReturnCode_t::RETCODE_NO_DATA == code)
     {
-        logError(DEBUG, "return value");
         *info = sample_infos[0];
     }
 

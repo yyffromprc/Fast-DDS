@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+#################################
+# BASIC
+#################################
 find_package(GTest CONFIG REQUIRED)
 
 add_executable(basic_dds_tests
@@ -46,4 +49,68 @@ foreach(test_name ${TEST_LIST})
         COMMAND
             basic_dds_tests
             --gtest_filter=basic_dds_tests.${test_name}:**/basic_dds_tests.${test_name}/**)
+endforeach()
+
+#################################
+# EFFORT
+#################################
+find_package(GTest CONFIG REQUIRED)
+
+add_executable(effort_dds_tests
+    EffortDDSTests.cpp
+    types/FixedSized.cxx
+    types/FixedSizedPubSubTypes.cxx
+    types/StringTest.cxx
+    types/StringTestPubSubTypes.cxx
+)
+
+target_link_libraries(
+    effort_dds_tests
+    GTest::gtest
+    fastcdr
+    fastrtps
+    foonathan_memory
+)
+
+set(TEST_LIST
+    test_2w_2r_reliable
+)
+
+foreach(test_name ${TEST_LIST})
+    add_test(NAME effort_dds_tests.${test_name}
+        COMMAND
+            effort_dds_tests
+            --gtest_filter=effort_dds_tests.${test_name}:**/effort_dds_tests.${test_name}/**)
+endforeach()
+
+#################################
+# COMPLEX
+#################################
+find_package(GTest CONFIG REQUIRED)
+
+add_executable(complex_dds_tests
+    ComplexEffortDDSTests.cpp
+    types/FixedSized.cxx
+    types/FixedSizedPubSubTypes.cxx
+    types/StringTest.cxx
+    types/StringTestPubSubTypes.cxx
+)
+
+target_link_libraries(
+    complex_dds_tests
+    GTest::gtest
+    fastcdr
+    fastrtps
+    foonathan_memory
+)
+
+set(TEST_LIST
+    test_2w_2r_reliable
+)
+
+foreach(test_name ${TEST_LIST})
+    add_test(NAME complex_dds_tests.${test_name}
+        COMMAND
+            complex_dds_tests
+            --gtest_filter=complex_dds_tests.${test_name}:**/complex_dds_tests.${test_name}/**)
 endforeach()

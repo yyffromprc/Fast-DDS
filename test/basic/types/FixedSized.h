@@ -79,7 +79,7 @@ public:
     /*!
      * @brief Default destructor.
      */
-    eProsima_user_DllExport ~FixedSized();
+    eProsima_user_DllExport virtual ~FixedSized();
 
     /*!
      * @brief Copy constructor.
@@ -93,7 +93,7 @@ public:
      * @param x Reference to the object FixedSized that will be copied.
      */
     eProsima_user_DllExport FixedSized(
-            FixedSized&& x) noexcept;
+            FixedSized&& x);
 
     /*!
      * @brief Copy assignment.
@@ -107,7 +107,7 @@ public:
      * @param x Reference to the object FixedSized that will be copied.
      */
     eProsima_user_DllExport FixedSized& operator =(
-            FixedSized&& x) noexcept;
+            FixedSized&& x);
 
     /*!
      * @brief Comparison operator.
