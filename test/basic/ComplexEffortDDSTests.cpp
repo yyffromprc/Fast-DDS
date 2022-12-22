@@ -44,8 +44,8 @@ using namespace eprosima::fastdds::dds;
 constexpr const int TEST_DOMAIN = 14;
 constexpr const char* TEST_TOPIC_NAME = "some_random_topic_name";
 
-constexpr const int TIME_ELAPSE_BETWEEN_MESSAGES_MS = 2;
-constexpr const int TIME_ELAPSE_BEFORE_CLOSE_WRITER_MS = 500;
+constexpr const int TIME_ELAPSE_BETWEEN_MESSAGES_MS = 20;
+constexpr const int TIME_ELAPSE_BEFORE_CLOSE_WRITER_MS = 20;
 
 using ReturnCode_t = eprosima::fastrtps::types::ReturnCode_t;
 
@@ -222,79 +222,10 @@ struct ParticipantSub : public DataReaderListener
     void* data{nullptr};
     SampleInfo info;
 
-    std::atomic<bool> data_available;
+    std::atomic<bool> data_available{false};
     std::condition_variable cv;
     std::mutex cv_mutex;
 };
-
-template <typename PubSubType>
-void execute_test_simple(
-    int messages,
-    int writers, int readers,
-    bool intraprocess, bool reliable_transient, bool datasharing, bool keep_all)
-{
-    // Disable intraprocess
-    if (!intraprocess)
-    {
-        eprosima::fastrtps::LibrarySettingsAttributes att;
-        att.intraprocess_delivery = eprosima::fastrtps::IntraprocessDeliveryType::INTRAPROCESS_OFF;
-        eprosima::fastrtps::xmlparser::XMLProfileManager::library_settings(att);
-    }
-
-    // Reader routine
-    auto reader_routine =
-        [reliable_transient, datasharing, keep_all]
-        (int index, int messages_to_receive)
-        {
-            std::cout << "Reader " << index << " starting." << std::endl;
-            ParticipantSub<PubSubType> participant(reliable_transient, datasharing, keep_all);
-            for (int i=0; i<messages_to_receive; i++)
-            {
-                participant.wait_for_data();
-                std::cout << "Reader " << index << " reading " << i << std::endl;
-                participant.read();
-            }
-            std::cout << "Reader " << index << " finishing." << std::endl;
-            static_cast<void>(index);
-        };
-
-    // Writer routine
-    auto writer_routine =
-        [reliable_transient, datasharing, keep_all]
-        (int index, int messages_to_send)
-        {
-            std::cout << "Writer " << index << " starting." << std::endl;
-            ParticipantPub<PubSubType> participant(reliable_transient, datasharing, keep_all);
-            for (int i=0; i<messages_to_send; i++)
-            {
-                std::cout << "Writer " << index << " writting " << i << std::endl;
-                participant.write();
-                std::this_thread::sleep_for(std::chrono::milliseconds(TIME_ELAPSE_BETWEEN_MESSAGES_MS));
-            }
-            std::this_thread::sleep_for(std::chrono::milliseconds(TIME_ELAPSE_BEFORE_CLOSE_WRITER_MS));
-            std::cout << "Writer " << index << " finishing." << std::endl;
-            static_cast<void>(index);
-        };
-
-    std::vector<std::thread> threads;
-
-    // Reader threads
-    for(int i=0; i<readers; i++)
-    {
-        threads.emplace_back(reader_routine, i, messages * writers);
-    }
-
-    // Writer threads
-    for(int i=0; i<writers; i++)
-    {
-        threads.emplace_back(writer_routine, i, messages);
-    }
-
-    for (auto& t : threads)
-    {
-        t.join();
-    }
-}
 
 template <typename PubSubType>
 void execute_test_complex(
@@ -322,6 +253,7 @@ void execute_test_complex(
                 participant.wait_for_data();
                 std::cout << "Reader " << index << " reading " << i << std::endl;
                 participant.read();
+                std::this_thread::sleep_for(std::chrono::milliseconds(TIME_ELAPSE_BETWEEN_MESSAGES_MS/2));
             }
             std::cout << "Reader " << index << " finishing." << std::endl;
             static_cast<void>(index);
@@ -336,9 +268,14 @@ void execute_test_complex(
             ParticipantPub<PubSubType> participant(reliable_transient, datasharing, keep_all);
             for (int i=0; i<messages_to_send; i++)
             {
+                std::this_thread::sleep_for(std::chrono::milliseconds(TIME_ELAPSE_BETWEEN_MESSAGES_MS));
                 std::cout << "Writer " << index << " writting " << i << std::endl;
                 participant.write();
-                std::this_thread::sleep_for(std::chrono::milliseconds(TIME_ELAPSE_BETWEEN_MESSAGES_MS));
+
+                if (i % 10)
+                {
+                    std::this_thread::sleep_for(std::chrono::milliseconds(TIME_ELAPSE_BETWEEN_MESSAGES_MS*5));
+                }
             }
                 std::this_thread::sleep_for(std::chrono::milliseconds(TIME_ELAPSE_BEFORE_CLOSE_WRITER_MS));
             std::cout << "Writer " << index << " finishing." << std::endl;
@@ -372,8 +309,8 @@ void execute_test_complex(
 TEST(complex_dds_tests, test_2w_2r_reliable)
 {
     std::cout << "test_2w_2r_reliable" << std::endl;
-    execute_test_simple<FixedSizedPubSubType>(
-        10,    // messages
+    execute_test_complex<FixedSizedPubSubType>(
+        20,    // messages
         2,     // writers
         2,     // readers
         true,  // intraprocess

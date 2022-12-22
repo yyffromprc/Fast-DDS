@@ -153,7 +153,7 @@ struct ParticipantSub : public DataReaderListener
         {
             std::unique_lock<std::mutex> lock(cv_mutex);
             data_available.store(true);
-            // std::cout << "---------- OPEN ----------" << std::endl;
+            std::cout << "---------- OPEN ----------" << std::endl;
         }
         cv.notify_all();
     }
@@ -161,14 +161,14 @@ struct ParticipantSub : public DataReaderListener
     void wait_for_data()
     {
         std::unique_lock<std::mutex> lock(cv_mutex);
-        // std::cout << "---------- WAIT ----------" << std::endl;
+        std::cout << "---------- WAIT ----------" << std::endl;
         cv.wait(lock, [this](){ return data_available.load(); });
-        // std::cout << "---------- WAKE ----------" << std::endl;
+        std::cout << "---------- WAKE ----------" << std::endl;
     }
 
     void read()
     {
-        // std::cout << "---------- READ ----------" << std::endl;
+        std::cout << "---------- READ ----------" << std::endl;
         auto result = reader->take_next_sample(data, &info);
         ASSERT_EQ(result, ReturnCode_t::RETCODE_OK);
 
@@ -177,9 +177,9 @@ struct ParticipantSub : public DataReaderListener
         data_available.store(n);
         if (n)
         {
-            // std::cout << "---------- CLOS ----------" << std::endl;
+            std::cout << "---------- CLOS ----------" << std::endl;
         }
-        // std::cout << "---------- FINI ----------" << std::endl;
+        std::cout << "---------- FINI ----------" << std::endl;
     }
 
     TypeSupport type_support{};
@@ -215,15 +215,15 @@ void execute_test_simple(
         []
         (int index, int messages_to_receive)
         {
-            // std::cout << "Reader " << index << " starting." << std::endl;
+            std::cout << "Reader " << index << " starting." << std::endl;
             ParticipantSub<PubSubType> participant;
             for (int i=0; i<messages_to_receive; i++)
             {
                 participant.wait_for_data();
-                // std::cout << "Reader " << index << " reading " << i << std::endl;
+                std::cout << "Reader " << index << " reading " << i << std::endl;
                 participant.read();
             }
-            // std::cout << "Reader " << index << " finishing." << std::endl;
+            std::cout << "Reader " << index << " finishing." << std::endl;
             static_cast<void>(index);
         };
 
@@ -232,16 +232,16 @@ void execute_test_simple(
         []
         (int index, int messages_to_send)
         {
-            // std::cout << "Writer " << index << " starting." << std::endl;
+            std::cout << "Writer " << index << " starting." << std::endl;
             ParticipantPub<PubSubType> participant;
             for (int i=0; i<messages_to_send; i++)
             {
-                // std::cout << "Writer " << index << " writting " << i << std::endl;
+                std::cout << "Writer " << index << " writting " << i << std::endl;
                 participant.write();
                 std::this_thread::sleep_for(std::chrono::milliseconds(TIME_ELAPSE_BETWEEN_MESSAGES_MS));
             }
             std::this_thread::sleep_for(std::chrono::milliseconds(TIME_ELAPSE_BEFORE_CLOSE_WRITER_MS));
-            // std::cout << "Writer " << index << " finishing." << std::endl;
+            std::cout << "Writer " << index << " finishing." << std::endl;
             static_cast<void>(index);
         };
 
@@ -267,7 +267,7 @@ void execute_test_simple(
 
 TEST(effort_dds_tests, test_2w_2r_reliable)
 {
-    // std::cout << "test_2w_2r_reliable" << std::endl;
+    std::cout << "test_2w_2r_reliable" << std::endl;
     execute_test_simple<FixedSizedPubSubType>(
         10,    // messages
         2,     // writers
