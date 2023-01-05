@@ -110,6 +110,7 @@ jobs:
 
       - name: Run tests Fast DDS
         run: |
+          ulimit -n 5000 && \
           source install/setup.bash && \
           colcon test \
             --packages-select discovery-server \
