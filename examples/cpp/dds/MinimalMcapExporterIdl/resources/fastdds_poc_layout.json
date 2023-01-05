@@ -1,0 +1,52 @@
+{
+  "configById": {
+    "RawMessages!1cplgm6": {
+      "diffEnabled": false,
+      "diffMethod": "custom",
+      "diffTopicPath": "",
+      "showFullMessageForDiff": false,
+      "topicPath": "/helloworld"
+    },
+    "Plot!2ii3mfr": {
+      "title": "Plot",
+      "paths": [
+        {
+          "value": "/helloworld.index",
+          "enabled": true,
+          "timestampMethod": "receiveTime"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": true,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240
+    },
+    "SourceInfo!2cn5pti": {},
+    "Table!4j59i20": {
+      "topicPath": "/helloworld"
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": {
+    "first": {
+      "first": "RawMessages!1cplgm6",
+      "second": "Plot!2ii3mfr",
+      "direction": "column"
+    },
+    "second": {
+      "first": "SourceInfo!2cn5pti",
+      "second": "Table!4j59i20",
+      "direction": "column"
+    },
+    "direction": "row",
+    "splitPercentage": 50.96863468634686
+  }
+}
