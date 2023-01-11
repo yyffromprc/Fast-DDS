@@ -21,7 +21,7 @@
 #include <sstream>
 
 #include "HelloWorldPublisher.h"
-#include "HelloWorldSubscriber.h"
+// #include "HelloWorldSubscriber.h"
 
 #include <fastrtps/log/Log.h>
 
@@ -68,11 +68,11 @@ int main(
         }
         case 2:
         {
-            HelloWorldSubscriber mysub;
-            if (mysub.init())
-            {
-                mysub.run();
-            }
+            // HelloWorldSubscriber mysub;
+            // if (mysub.init())
+            // {
+            //     mysub.run();
+            // }
             break;
         }
     }

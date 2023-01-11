@@ -1,0 +1,19 @@
+struct HelloWorld
+{
+	unsigned long index;
+	string message;
+};
+
+struct Arrays
+{
+    char a[10];
+    sequence<long> b;
+    sequence<HelloWorld> h
+};
+
+struct SupremeHelloWorld
+{
+    HelloWorld hello;
+    Arrays array;
+    string msg;
+};

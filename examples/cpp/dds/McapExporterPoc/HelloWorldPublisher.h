@@ -20,7 +20,7 @@
 #ifndef HELLOWORLDPUBLISHER_H_
 #define HELLOWORLDPUBLISHER_H_
 
-#include "HelloWorldPubSubTypes.h"
+#include "SupremeHelloWorldPubSubTypes.h"
 
 #include <fastdds/dds/publisher/DataWriterListener.hpp>
 #include <fastdds/dds/topic/TypeSupport.hpp>
@@ -51,7 +51,8 @@ public:
 
 private:
 
-    HelloWorld hello_;
+    SupremeHelloWorld shello_;
+    HelloWorld &hello_ = shello_.hello();
     eprosima::fastdds::dds::DomainParticipant* participant_;
     eprosima::fastdds::dds::Publisher* publisher_;
     eprosima::fastdds::dds::Topic* topic_;

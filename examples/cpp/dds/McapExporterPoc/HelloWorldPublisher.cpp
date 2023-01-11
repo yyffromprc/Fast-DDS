@@ -20,7 +20,7 @@
 #define MCAP_IMPLEMENTATION  // Define this in exactly one .cpp file
 
 #include "HelloWorldPublisher.h"
-#include "HelloWorldPubSubTypes.h"
+#include "SupremeHelloWorldPubSubTypes.h"
 #include <fastrtps/attributes/ParticipantAttributes.h>
 #include <fastrtps/attributes/PublisherAttributes.h>
 #include <fastdds/dds/domain/DomainParticipantFactory.hpp>
@@ -37,8 +37,18 @@ using namespace eprosima::fastdds::dds;
 
 const char* HelloWorldPublisher::SCHEMA_NAME = "/helloworld";
 const char* HelloWorldPublisher::SCHEMA_TEXT = R"(
+HelloWorld hello
+Arrays array
+string msg
+================================================================================
+MSG: fastdds/HelloWorld
 uint32 index
 string message
+================================================================================
+MSG: fastdds/Arrays
+char[10] a
+int32[] b
+HelloWorld[] h
 )";
 
 HelloWorldPublisher::HelloWorldPublisher()
@@ -46,14 +56,19 @@ HelloWorldPublisher::HelloWorldPublisher()
     , publisher_(nullptr)
     , topic_(nullptr)
     , writer_(nullptr)
-    , type_(new HelloWorldPubSubType())
+    , type_(new SupremeHelloWorldPubSubType())
 {
 }
 
 bool HelloWorldPublisher::init()
 {
     hello_.index(0);
-    hello_.message("HelloWorld");
+    hello_.message("[Inner] HelloWorld");
+    shello_.msg("[Outer] HelloWorld");
+    // std::array<char, 10> arr = {'a', 'b', 'a', 'b', 'a', 'b', 'a', 'b'};
+    // shello_.array().a(arr);
+    std::vector<int32_t> vec = {0};
+    shello_.array().b(vec);
     DomainParticipantQos pqos = PARTICIPANT_QOS_DEFAULT;
     pqos.name("Participant_pub");
     auto factory = DomainParticipantFactory::get_instance();
@@ -76,7 +91,7 @@ bool HelloWorldPublisher::init()
     }
 
     // Create the topic
-    topic_ = participant_->create_topic("/helloworld", "HelloWorld", TOPIC_QOS_DEFAULT);
+    topic_ = participant_->create_topic("/helloworld", "SupremeHelloWorld", TOPIC_QOS_DEFAULT);
 
     if (topic_ == nullptr)
     {
@@ -159,13 +174,15 @@ void HelloWorldPublisher::run(
 bool HelloWorldPublisher::publish()
 {
     hello_.index(hello_.index() + 1);
-    writer_->write(&hello_);
+    shello_.array().b().push_back(hello_.index());
+    shello_.array().h().push_back(hello_);
+    writer_->write(&shello_);
 
     // Write message in mcap file
     mcap::Message msg;
     eprosima::fastrtps::rtps::SerializedPayload_t* serialized_payload =
-            new eprosima::fastrtps::rtps::SerializedPayload_t(500);
-    type_.serialize(&hello_, serialized_payload);
+            new eprosima::fastrtps::rtps::SerializedPayload_t(5000);
+    type_.serialize(&shello_, serialized_payload);
     msg.channelId = helloworld_channel.id;
     msg.sequence = hello_.index();
     msg.logTime = now();
