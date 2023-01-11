@@ -8,7 +8,7 @@ struct Arrays
 {
     char a[10];
     sequence<long> b;
-    sequence<HelloWorld> h
+    sequence<HelloWorld> h;
 };
 
 struct SupremeHelloWorld

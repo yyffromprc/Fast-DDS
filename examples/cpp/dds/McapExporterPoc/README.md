@@ -19,7 +19,7 @@ touch output.mcap
 * Terminal
 
     ```bash
-    ./McapExporterPoc publisher
+    ./McapExporterPoc
     ```
 
 * Foxglove Studio

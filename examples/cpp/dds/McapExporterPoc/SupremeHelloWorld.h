@@ -340,6 +340,31 @@ public:
      * @return Reference to member b
      */
     eProsima_user_DllExport std::vector<int32_t>& b();
+    /*!
+     * @brief This function copies the value in member h
+     * @param _h New value to be copied in member h
+     */
+    eProsima_user_DllExport void h(
+            const std::vector<HelloWorld>& _h);
+
+    /*!
+     * @brief This function moves the value in member h
+     * @param _h New value to be moved in member h
+     */
+    eProsima_user_DllExport void h(
+            std::vector<HelloWorld>&& _h);
+
+    /*!
+     * @brief This function returns a constant reference to member h
+     * @return Constant reference to member h
+     */
+    eProsima_user_DllExport const std::vector<HelloWorld>& h() const;
+
+    /*!
+     * @brief This function returns a reference to member h
+     * @return Reference to member h
+     */
+    eProsima_user_DllExport std::vector<HelloWorld>& h();
 
     /*!
      * @brief This function returns the maximum serialized size of an object
@@ -402,6 +427,7 @@ private:
 
     std::array<char, 10> m_a;
     std::vector<int32_t> m_b;
+    std::vector<HelloWorld> m_h;
 };
 /*!
  * @brief This class represents the structure SupremeHelloWorld defined by the user in the IDL file.

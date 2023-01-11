@@ -13,34 +13,35 @@
 // limitations under the License.
 
 /**
- * @file HelloWorldPublisher.h
+ * @file McapWriter.h
  *
  */
 
-#ifndef HELLOWORLDPUBLISHER_H_
-#define HELLOWORLDPUBLISHER_H_
+#ifndef MCAPWRITER_H_
+#define MCAPWRITER_H_
 
 #include "SupremeHelloWorldPubSubTypes.h"
 
-#include <fastdds/dds/publisher/DataWriterListener.hpp>
+#include <vector>
+
 #include <fastdds/dds/topic/TypeSupport.hpp>
-#include <fastdds/dds/domain/DomainParticipant.hpp>
 
 #include <mcap/writer.hpp>
 
-class HelloWorldPublisher
+class McapWriter
 {
 public:
 
-    HelloWorldPublisher();
+    McapWriter();
 
-    virtual ~HelloWorldPublisher();
+    virtual ~McapWriter();
 
     //!Initialize
     bool init();
 
     //!Publish a sample
-    bool publish();
+    bool publish(
+            mcap::ChannelId channel_id = 0);
 
     //!Run publisher
     void run(
@@ -52,25 +53,22 @@ public:
 private:
 
     SupremeHelloWorld shello_;
-    HelloWorld &hello_ = shello_.hello();
-    eprosima::fastdds::dds::DomainParticipant* participant_;
-    eprosima::fastdds::dds::Publisher* publisher_;
-    eprosima::fastdds::dds::Topic* topic_;
-    eprosima::fastdds::dds::DataWriter* writer_;
     eprosima::fastdds::dds::TypeSupport type_;
 
     bool stop_;
     void run_thread(
-            uint32_t sleep);
+            uint32_t sleep,
+            mcap::ChannelId channel_id = 0);
 
 
     mcap::McapWriter mcap_writer_;
-    mcap::Schema helloworld_schema;
-    mcap::Channel helloworld_channel;
+    mcap::Schema schema_;
+    std::vector<mcap::Channel> channels_;
+    uint8_t n_channels_;
     static const char* SCHEMA_NAME;
     static const char* SCHEMA_TEXT;
 };
 
 
 
-#endif /* HELLOWORLDPUBLISHER_H_ */
+#endif /* MCAPWRITER_H_ */

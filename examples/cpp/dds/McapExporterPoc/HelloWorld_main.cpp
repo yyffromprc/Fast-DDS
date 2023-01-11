@@ -20,8 +20,7 @@
 #include <limits>
 #include <sstream>
 
-#include "HelloWorldPublisher.h"
-// #include "HelloWorldSubscriber.h"
+#include "McapWriter.h"
 
 #include <fastrtps/log/Log.h>
 
@@ -32,50 +31,18 @@ int main(
         char** argv)
 {
     std::cout << "Starting..."<< std::endl;
-    int type = 1;
     long sleep = 100;
-    if(argc > 1)
+    if (argc >= 2)
     {
-        if(strcmp(argv[1], "publisher")==0)
-        {
-            type = 1;
-            if (argc >= 3)
-            {
-                sleep = atoi(argv[2]);
-            }
-        }
-        else if(strcmp(argv[1], "subscriber")==0)
-            type = 2;
-    }
-    else
-    {
-        std::cout << "publisher or subscriber argument required" << std::endl;
-        std::cout << "Example: ./DDSHelloWorldExample publisher" << std::endl;
-        Log::Reset();
-        return 0;
+        sleep = atoi(argv[2]);
     }
 
-    switch (type)
+    McapWriter mcap_writer;
+    if (mcap_writer.init())
     {
-        case 1:
-        {
-            HelloWorldPublisher mypub;
-            if (mypub.init())
-            {
-                mypub.run(sleep);
-            }
-            break;
-        }
-        case 2:
-        {
-            // HelloWorldSubscriber mysub;
-            // if (mysub.init())
-            // {
-            //     mysub.run();
-            // }
-            break;
-        }
+        mcap_writer.run(sleep);
     }
+
     Log::Reset();
     return 0;
 }

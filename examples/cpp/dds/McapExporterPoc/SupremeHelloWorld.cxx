@@ -237,9 +237,11 @@ void HelloWorld::serializeKey(
 
 Arrays::Arrays()
 {
-    // m_a com.eprosima.idl.parser.typecode.ArrayTypeCode@4516af24
+    // m_a com.eprosima.idl.parser.typecode.ArrayTypeCode@3c0a50da
     memset(&m_a, 0, (10) * 1);
-    // m_b com.eprosima.idl.parser.typecode.SequenceTypeCode@4ae82894
+    // m_b com.eprosima.idl.parser.typecode.SequenceTypeCode@646be2c3
+
+    // m_h com.eprosima.idl.parser.typecode.SequenceTypeCode@797badd3
 
 
 }
@@ -248,6 +250,7 @@ Arrays::~Arrays()
 {
 
 
+
 }
 
 Arrays::Arrays(
@@ -255,6 +258,7 @@ Arrays::Arrays(
 {
     m_a = x.m_a;
     m_b = x.m_b;
+    m_h = x.m_h;
 }
 
 Arrays::Arrays(
@@ -262,6 +266,7 @@ Arrays::Arrays(
 {
     m_a = std::move(x.m_a);
     m_b = std::move(x.m_b);
+    m_h = std::move(x.m_h);
 }
 
 Arrays& Arrays::operator =(
@@ -270,6 +275,7 @@ Arrays& Arrays::operator =(
 
     m_a = x.m_a;
     m_b = x.m_b;
+    m_h = x.m_h;
 
     return *this;
 }
@@ -280,6 +286,7 @@ Arrays& Arrays::operator =(
 
     m_a = std::move(x.m_a);
     m_b = std::move(x.m_b);
+    m_h = std::move(x.m_h);
 
     return *this;
 }
@@ -288,7 +295,7 @@ bool Arrays::operator ==(
         const Arrays& x) const
 {
 
-    return (m_a == x.m_a && m_b == x.m_b);
+    return (m_a == x.m_a && m_b == x.m_b && m_h == x.m_h);
 }
 
 bool Arrays::operator !=(
@@ -311,6 +318,13 @@ size_t Arrays::getMaxCdrSerializedSize(
     current_alignment += (100 * 4) + eprosima::fastcdr::Cdr::alignment(current_alignment, 4);
 
 
+
+    current_alignment += 4 + eprosima::fastcdr::Cdr::alignment(current_alignment, 4);
+
+
+    for(size_t a = 0; a < 100; ++a)
+    {
+        current_alignment += HelloWorld::getMaxCdrSerializedSize(current_alignment);}
 
 
     return current_alignment - initial_alignment;
@@ -338,6 +352,13 @@ size_t Arrays::getCdrSerializedSize(
 
 
 
+    current_alignment += 4 + eprosima::fastcdr::Cdr::alignment(current_alignment, 4);
+
+
+    for(size_t a = 0; a < data.h().size(); ++a)
+    {
+        current_alignment += HelloWorld::getCdrSerializedSize(data.h().at(a), current_alignment);}
+
 
     return current_alignment - initial_alignment;
 }
@@ -349,6 +370,7 @@ void Arrays::serialize(
     scdr << m_a;
 
     scdr << m_b;
+    scdr << m_h;
 
 }
 
@@ -359,6 +381,7 @@ void Arrays::deserialize(
     dcdr >> m_a;
 
     dcdr >> m_b;
+    dcdr >> m_h;
 }
 
 /*!
@@ -435,11 +458,49 @@ std::vector<int32_t>& Arrays::b()
 {
     return m_b;
 }
+/*!
+ * @brief This function copies the value in member h
+ * @param _h New value to be copied in member h
+ */
+void Arrays::h(
+        const std::vector<HelloWorld>& _h)
+{
+    m_h = _h;
+}
+
+/*!
+ * @brief This function moves the value in member h
+ * @param _h New value to be moved in member h
+ */
+void Arrays::h(
+        std::vector<HelloWorld>&& _h)
+{
+    m_h = std::move(_h);
+}
+
+/*!
+ * @brief This function returns a constant reference to member h
+ * @return Constant reference to member h
+ */
+const std::vector<HelloWorld>& Arrays::h() const
+{
+    return m_h;
+}
+
+/*!
+ * @brief This function returns a reference to member h
+ * @return Reference to member h
+ */
+std::vector<HelloWorld>& Arrays::h()
+{
+    return m_h;
+}
 
 size_t Arrays::getKeyMaxCdrSerializedSize(
         size_t current_alignment)
 {
     size_t current_align = current_alignment;
+
 
 
 
@@ -457,16 +518,16 @@ void Arrays::serializeKey(
         eprosima::fastcdr::Cdr& scdr) const
 {
     (void) scdr;
-      
+       
 }
 
 SupremeHelloWorld::SupremeHelloWorld()
 {
-    // m_hello com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@70b0b186
+    // m_hello com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@3d36e4cd
 
-    // m_array com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@ba8d91c
+    // m_array com.eprosima.fastdds.idl.parser.typecode.StructTypeCode@6a472554
 
-    // m_msg com.eprosima.idl.parser.typecode.StringTypeCode@7364985f
+    // m_msg com.eprosima.idl.parser.typecode.StringTypeCode@7ff2a664
     m_msg ="";
 
 }
