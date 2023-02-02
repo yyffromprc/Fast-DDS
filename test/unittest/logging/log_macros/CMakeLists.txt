@@ -28,7 +28,6 @@ set(LOG_COMMON_SOURCE
 set(LOGMACROS_ALL_TEST_SOURCE LogMacrosAllActiveTests.cpp)
 
 set(LOGMACROS_SOURCE
-    ${LOG_COMMON_SOURCE}
     ${LOGMACROS_ALL_TEST_SOURCE})
 
 add_executable(LogMacrosAllActiveTests ${LOGMACROS_SOURCE})
@@ -41,6 +40,7 @@ target_include_directories(LogMacrosAllActiveTests PRIVATE
     ${PROJECT_SOURCE_DIR}/src/cpp)
 target_link_libraries(LogMacrosAllActiveTests GTest::gtest ${MOCKS}
     $<$<BOOL:${WIN32}>:iphlpapi$<SEMICOLON>Shlwapi>
+    fastrtps
     )
 add_gtest(LogMacrosAllActiveTests SOURCES ${LOGMACROS_ALL_TEST_SOURCE})
 
