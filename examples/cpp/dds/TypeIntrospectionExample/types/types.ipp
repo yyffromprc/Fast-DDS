@@ -36,6 +36,9 @@ std::string DataType<Data, Gen>::name() const
         case DataTypeKind::HELLO_WORLD:
             return HELLO_WORLD_DATA_TYPE_NAME;
 
+        case DataTypeKind::TESTING_DATA:
+            return TESTING_DATA_DATA_TYPE_NAME;
+
         case DataTypeKind::ARRAY:
             return ARRAY_DATA_TYPE_NAME;
 

@@ -126,6 +126,10 @@ int main(
                     {
                         data_type = DataTypeKind::HELLO_WORLD;
                     }
+                    else if (strcmp(opt.arg, TESTING_DATA_DATA_TYPE_ARG) == 0)
+                    {
+                        data_type = DataTypeKind::TESTING_DATA;
+                    }
                     else if (strcmp(opt.arg, ARRAY_DATA_TYPE_ARG) == 0)
                     {
                         data_type = DataTypeKind::ARRAY;

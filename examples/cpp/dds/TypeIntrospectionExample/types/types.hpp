@@ -31,6 +31,7 @@
 enum class DataTypeKind
 {
     HELLO_WORLD,
+    TESTING_DATA,
     ARRAY,
     SEQUENCE,
     STRUCT,
@@ -50,6 +51,7 @@ enum class GeneratorKind
 };
 
 constexpr const char * HELLO_WORLD_DATA_TYPE_NAME = "HelloWorld_TypeIntrospectionExample";
+constexpr const char * TESTING_DATA_DATA_TYPE_NAME = "ZeroCopyMessage";
 constexpr const char * ARRAY_DATA_TYPE_NAME = "Array_TypeIntrospectionExample";
 constexpr const char * SEQUENCE_DATA_TYPE_NAME = "Sequence_TypeIntrospectionExample";
 constexpr const char * STRUCT_DATA_TYPE_NAME = "Struct_TypeIntrospectionExample";

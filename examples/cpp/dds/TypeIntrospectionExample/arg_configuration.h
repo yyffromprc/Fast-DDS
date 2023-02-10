@@ -28,6 +28,7 @@
 namespace option = eprosima::option;
 
 constexpr const char* HELLO_WORLD_DATA_TYPE_ARG = "hw";
+constexpr const char* TESTING_DATA_DATA_TYPE_ARG = "testing_data";
 constexpr const char* ARRAY_DATA_TYPE_ARG = "array";
 constexpr const char* SEQUENCE_DATA_TYPE_ARG = "seq";
 constexpr const char* STRUCT_DATA_TYPE_ARG = "struct";
@@ -124,6 +125,7 @@ struct Arg : public option::Arg
         {
             std::string data_type = std::string(option.arg);
             if (data_type != HELLO_WORLD_DATA_TYPE_ARG &&
+                data_type != TESTING_DATA_DATA_TYPE_ARG &&
                 data_type != ARRAY_DATA_TYPE_ARG &&
                 data_type != SEQUENCE_DATA_TYPE_ARG &&
                 data_type != STRUCT_DATA_TYPE_ARG &&
@@ -136,7 +138,7 @@ struct Arg : public option::Arg
             {
                 if (msg)
                 {
-                    print_error("Option '", option, "' only accepts <hw|array|seq|struct|plain|simple|key|complex_array|complex_seq|super_complex> values\n");
+                    print_error("Option '", option, "' only accepts <hw|testing_data|array|seq|struct|plain|simple|key|complex_array|complex_seq|super_complex> values\n");
                 }
                 return option::ARG_ILLEGAL;
             }

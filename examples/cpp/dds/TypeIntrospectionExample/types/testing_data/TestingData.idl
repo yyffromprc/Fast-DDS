@@ -1,0 +1,17 @@
+struct A {
+  float a;
+  float b;
+  float c;
+  float d;
+  float e;
+  float f;
+  float g;
+  boolean h;
+};
+
+struct ZeroCopyMessage {
+  unsigned long index;
+  unsigned long long time;
+  char message[64];
+  A values[2];
+};

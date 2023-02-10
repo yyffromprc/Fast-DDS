@@ -48,6 +48,13 @@ std::unique_ptr<IDataType> data_type_factory(
             return std::unique_ptr<IDataType>(new DataType<DataTypeKind::HELLO_WORLD, GeneratorKind::XML>());
         }
     }
+    else if (data_kind == DataTypeKind::TESTING_DATA)
+    {
+        if (gen_kind == GeneratorKind::GEN)
+        {
+            return std::unique_ptr<IDataType>(new DataType<DataTypeKind::TESTING_DATA, GeneratorKind::GEN>());
+        }
+    }
     else if (data_kind == DataTypeKind::ARRAY)
     {
         if (gen_kind == GeneratorKind::GEN)
