@@ -33,6 +33,7 @@ if(NOT fastrtps_FOUND)
     find_package(fastrtps REQUIRED)
 endif()
 
+<<<<<<< HEAD:examples/C++/DDS/DeadlineQoSExample/CMakeLists.txt
 if(NOT Asio_FOUND)
     find_package(Asio QUIET)
 
@@ -48,6 +49,8 @@ if(NOT Asio_FOUND)
     endif()
 endif()
 
+=======
+>>>>>>> 3fa1a2b39 (Fix asio dependency (#3411)):examples/cpp/dds/DeadlineQoSExample/CMakeLists.txt
 #Check C++11
 include(CheckCXXCompilerFlag)
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_COMPILER_IS_CLANG OR
@@ -62,10 +65,16 @@ message(STATUS "Configuring DDSDeadlineQoS example...")
 file(GLOB DDS_DEADLINEQOS_EXAMPLE_SOURCES "*.cxx")
 add_executable(DDSDeadlineQoSExample ${DDS_DEADLINEQOS_EXAMPLE_SOURCES})
 target_compile_definitions(DDSDeadlineQoSExample PRIVATE
+<<<<<<< HEAD:examples/C++/DDS/DeadlineQoSExample/CMakeLists.txt
     BOOST_ASIO_STANDALONE
     ASIO_STANDALONE
     )
 target_include_directories(DDSDeadlineQoSExample PRIVATE ${ASIO_INCLUDE_DIR})
+=======
+    $<$<AND:$<NOT:$<BOOL:${WIN32}>>,$<STREQUAL:"${CMAKE_BUILD_TYPE}","Debug">>:__DEBUG>
+    $<$<BOOL:${INTERNAL_DEBUG}>:__INTERNALDEBUG> # Internal debug activated.
+    )
+>>>>>>> 3fa1a2b39 (Fix asio dependency (#3411)):examples/cpp/dds/DeadlineQoSExample/CMakeLists.txt
 target_link_libraries(DDSDeadlineQoSExample fastrtps fastcdr foonathan_memory)
 if(UNIX)
   target_link_libraries(DDSDeadlineQoSExample pthread)
