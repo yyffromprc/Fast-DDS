@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dds xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
+    <profiles>
+        <participant profile_name="participant_profile_ros2" is_default_profile="true">
+            <rtps>
+                <name>profile_for_ros2_context</name>
+                <builtin>
+                    <typelookup_config>
+                        <use_server>true</use_server>
+                        <use_client>false</use_client>
+                    </typelookup_config>
+                </builtin>
+            </rtps>
+        </participant>
+    </profiles>
+</dds>
