@@ -45,4 +45,5 @@ add_subdirectory(ZeroCopyExample)
 
 if(SECURITY)
     add_subdirectory(SecureHelloWorldExample)
+    add_subdirectory(MetaImageDataExample)
 endif()
