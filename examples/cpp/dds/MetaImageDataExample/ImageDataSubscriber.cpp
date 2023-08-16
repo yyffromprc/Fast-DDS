@@ -75,20 +75,22 @@ bool ImageDataSubscriber::init()
             "file://certs/mainsubcert.pem");
     pqos.properties().properties().emplace_back("dds.sec.auth.builtin.PKI-DH.private_key",
             "file://certs/mainsubkey.pem");
+
+    /* Proper security configuration */
     pqos.properties().properties().emplace_back("dds.sec.access.plugin",
             "builtin.Access-Permissions");
-    pqos.properties().properties().emplace_back(
-        "dds.sec.access.builtin.Access-Permissions.permissions_ca",
-        "file://certs/maincacert.pem");
-    pqos.properties().properties().emplace_back(
-        "dds.sec.access.builtin.Access-Permissions.governance",
-        "file://certs/governance.smime");
-    pqos.properties().properties().emplace_back(
-        "dds.sec.access.builtin.Access-Permissions.permissions",
-        "file://certs/permissions.smime");
+    pqos.properties().properties().emplace_back("dds.sec.access.builtin.Access-Permissions.permissions_ca",
+            "file://certs/maincacert.pem");
+    pqos.properties().properties().emplace_back("dds.sec.access.builtin.Access-Permissions.governance",
+            "file://certs/governance.smime");
+    pqos.properties().properties().emplace_back("dds.sec.access.builtin.Access-Permissions.permissions",
+            "file://certs/permissions.smime");
+
     pqos.properties().properties().emplace_back("dds.sec.crypto.plugin",
             "builtin.AES-GCM-GMAC");
-    pqos.properties().properties().emplace_back("rtps.participant.rtps_protection_kind", "ENCRYPT");
+
+    /* Use of deprecated property */
+    // pqos.properties().properties().emplace_back("rtps.participant.rtps_protection_kind", "ENCRYPT");
 
     participant_ = DomainParticipantFactory::get_instance()->create_participant(0, pqos);
 

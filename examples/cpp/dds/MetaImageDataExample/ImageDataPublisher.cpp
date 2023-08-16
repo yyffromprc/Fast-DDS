@@ -72,6 +72,8 @@ bool ImageDataPublisher::init()
             "file://certs/mainpubcert.pem");
     pqos.properties().properties().emplace_back("dds.sec.auth.builtin.PKI-DH.private_key",
             "file://certs/mainpubkey.pem");
+
+    /* Proper security configuration */
     pqos.properties().properties().emplace_back("dds.sec.access.plugin",
             "builtin.Access-Permissions");
     pqos.properties().properties().emplace_back("dds.sec.access.builtin.Access-Permissions.permissions_ca",
@@ -80,10 +82,12 @@ bool ImageDataPublisher::init()
             "file://certs/governance.smime");
     pqos.properties().properties().emplace_back("dds.sec.access.builtin.Access-Permissions.permissions",
             "file://certs/permissions.smime");
+
     pqos.properties().properties().emplace_back("dds.sec.crypto.plugin",
             "builtin.AES-GCM-GMAC");
 
-    pqos.properties().properties().emplace_back("rtps.participant.rtps_protection_kind", "ENCRYPT");
+    /* Use of deprecated property */
+    // pqos.properties().properties().emplace_back("rtps.participant.rtps_protection_kind", "ENCRYPT");
 
     auto udp_transport = std::make_shared<eprosima::fastdds::rtps::UDPv4TransportDescriptor>();
     pqos.transport().user_transports.push_back(udp_transport);
@@ -120,7 +124,7 @@ bool ImageDataPublisher::init()
     wqos.reliability().kind = RELIABLE_RELIABILITY_QOS;
     wqos.durability().kind = VOLATILE_DURABILITY_QOS;
     wqos.history().kind = KEEP_LAST_HISTORY_QOS;
-    wqos.history().depth = 5;
+    wqos.history().depth = 200;
     writer_ = publisher_->create_datawriter(topic_, wqos, this);
 
     if (writer_ == nullptr)
@@ -203,7 +207,7 @@ void ImageDataPublisher::publish()
     std::unique_lock<std::mutex> lck(matched_mtx_);
     running_cv_.wait(lck, [this]
             {
-                return running_ && matched_ > 0;
+                return !running_ || matched_ > 0;
             });
 
     std::cout << "Starting publication at 10 Hz" << std::endl;
