@@ -25,13 +25,14 @@
 #include <cstdint>
 #include <mutex>
 
+#include <fastdds/dds/common/InstanceHandle.hpp>
+#include <fastdds/dds/core/status/PublicationMatchedStatus.hpp>
 #include <fastdds/dds/domain/DomainParticipant.hpp>
-#include <fastdds/dds/topic/Topic.hpp>
-#include <fastdds/dds/topic/TypeSupport.hpp>
-#include <fastdds/dds/publisher/Publisher.hpp>
 #include <fastdds/dds/publisher/DataWriter.hpp>
 #include <fastdds/dds/publisher/DataWriterListener.hpp>
-#include <fastdds/dds/core/status/PublicationMatchedStatus.hpp>
+#include <fastdds/dds/publisher/Publisher.hpp>
+#include <fastdds/dds/topic/Topic.hpp>
+#include <fastdds/dds/topic/TypeSupport.hpp>
 
 #include "ImageData.h"
 
@@ -57,6 +58,11 @@ private:
     void on_publication_matched(
             eprosima::fastdds::dds::DataWriter* writer,
             const eprosima::fastdds::dds::PublicationMatchedStatus& info) override;
+
+    //!https://fast-dds.docs.eprosima.com/en/latest/fastdds/dds_layer/publisher/dataWriterListener/dataWriterListener.html#on-unacknowledged-sample-removed-callback
+    void on_unacknowledged_sample_removed(
+            eprosima::fastdds::dds::DataWriter* writer,
+            const eprosima::fastdds::dds::InstanceHandle_t& instance) override;
 
     void publish();
 
@@ -85,6 +91,8 @@ private:
     std::mutex matched_mtx_;
 
     uint16_t frequency_;
+
+    uint32_t removed_unacked_samples_;
 };
 
 #endif /* IMAGEDATAPUBLISHER_H_ */

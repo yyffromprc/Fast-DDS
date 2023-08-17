@@ -28,6 +28,7 @@
 #include <mutex>
 #include <thread>
 
+#include <fastdds/dds/common/InstanceHandle.hpp>
 #include <fastdds/dds/core/policy/QosPolicies.hpp>
 #include <fastdds/dds/core/status/PublicationMatchedStatus.hpp>
 #include <fastdds/dds/domain/DomainParticipant.hpp>
@@ -57,6 +58,7 @@ ImageDataPublisher::ImageDataPublisher()
     , type_(new ImageDataMsgPubSubType())
     , first_connected_(false)
     , frequency_(10)
+    , removed_unacked_samples_(0)
 {
     init_msg();
 }
@@ -125,7 +127,7 @@ bool ImageDataPublisher::init()
     wqos.reliability().kind = RELIABLE_RELIABILITY_QOS;
     wqos.durability().kind = VOLATILE_DURABILITY_QOS;
     wqos.history().kind = KEEP_LAST_HISTORY_QOS;
-    wqos.history().depth = 50;
+    wqos.history().depth = 100;
     writer_ = publisher_->create_datawriter(topic_, wqos, this);
 
     if (writer_ == nullptr)
@@ -154,7 +156,7 @@ ImageDataPublisher::~ImageDataPublisher()
 }
 
 void ImageDataPublisher::on_publication_matched(
-        eprosima::fastdds::dds::DataWriter*,
+        eprosima::fastdds::dds::DataWriter* /*writer*/,
         const eprosima::fastdds::dds::PublicationMatchedStatus& info)
 {
     if (info.current_count_change == 1)
@@ -174,6 +176,13 @@ void ImageDataPublisher::on_publication_matched(
                   << " is not a valid value for PublicationMatchedStatus current count change" << std::endl;
     }
     running_cv_.notify_all();
+}
+
+void ImageDataPublisher::on_unacknowledged_sample_removed(
+        eprosima::fastdds::dds::DataWriter* /*writer*/,
+        const eprosima::fastdds::dds::InstanceHandle_t& /*instance*/)
+{
+    removed_unacked_samples_++;
 }
 
 void ImageDataPublisher::run(
@@ -200,7 +209,8 @@ void ImageDataPublisher::run(
 
     working_thread.join();
 
-    std::cout << "Sent samples: " << msg_.frameNumber() << std::endl;
+    std::cout << "Sent samples:            " << msg_.frameNumber() << std::endl;
+    std::cout << "Unacked removed samples: " << removed_unacked_samples_ << std::endl;
 
 }
 
