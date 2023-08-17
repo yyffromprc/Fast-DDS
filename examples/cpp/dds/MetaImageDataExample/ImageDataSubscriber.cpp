@@ -117,7 +117,7 @@ bool ImageDataSubscriber::init()
     rqos.reliability().kind = RELIABLE_RELIABILITY_QOS;
     rqos.durability().kind = VOLATILE_DURABILITY_QOS;
     rqos.history().kind = KEEP_LAST_HISTORY_QOS;
-    rqos.history().depth = 5;
+    rqos.history().depth = 50;
 
     reader_ = subscriber_->create_datareader(topic_, rqos, this);
 
