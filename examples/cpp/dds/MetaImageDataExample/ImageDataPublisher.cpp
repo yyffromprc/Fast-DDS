@@ -56,6 +56,7 @@ ImageDataPublisher::ImageDataPublisher()
     , writer_(nullptr)
     , type_(new ImageDataMsgPubSubType())
     , first_connected_(false)
+    , frequency_(10)
 {
     init_msg();
 }
@@ -124,7 +125,7 @@ bool ImageDataPublisher::init()
     wqos.reliability().kind = RELIABLE_RELIABILITY_QOS;
     wqos.durability().kind = VOLATILE_DURABILITY_QOS;
     wqos.history().kind = KEEP_LAST_HISTORY_QOS;
-    wqos.history().depth = 200;
+    wqos.history().depth = 5;
     writer_ = publisher_->create_datawriter(topic_, wqos, this);
 
     if (writer_ == nullptr)
@@ -175,8 +176,10 @@ void ImageDataPublisher::on_publication_matched(
     running_cv_.notify_all();
 }
 
-void ImageDataPublisher::run()
+void ImageDataPublisher::run(
+        uint16_t frequency)
 {
+    frequency_ = frequency;
     running_.store(true);
     signal(SIGINT, [](int /*signum*/)
             {
@@ -210,19 +213,20 @@ void ImageDataPublisher::publish()
                 return !running_ || matched_ > 0;
             });
 
-    std::cout << "Starting publication at 10 Hz" << std::endl;
+    std::cout << "Starting publication at " << frequency_ << " Hz" << std::endl;
 
     while (running_ && matched_ > 0)
     {
         msg_.frameNumber(msg_.frameNumber() + 1);
         if (writer_->write(&msg_))
         {
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));
+            std::this_thread::sleep_for(std::chrono::milliseconds(1000 / frequency_));
         }
         else
         {
             msg_.frameNumber(msg_.frameNumber() - 1);
-            std::cout << "Something went wrong while sending frame " << msg_.frameNumber() << ". Closing down..." << std::endl;
+            std::cout << "Something went wrong while sending frame " << msg_.frameNumber() << ". Closing down..." <<
+                std::endl;
             running_.store(false);
             running_cv_.notify_all();
         }

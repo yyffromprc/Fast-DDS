@@ -17,7 +17,8 @@
  *
  */
 
-#include <string.h>
+#include <cstdlib>
+#include <cstring>
 
 #include <iostream>
 
@@ -37,16 +38,24 @@ int main(
 {
     std::cout << "Starting " << std::endl;
     int type = 1;
+    uint16_t pub_frequency = 10;
     if (argc > 1)
     {
-        if (strcmp(argv[1], "publisher") == 0)
+        uint8_t argc_idx = 1;
+        if (strcmp(argv[argc_idx], "publisher") == 0)
         {
             type = 1;
+            argc_idx++;
+            if (argc > 2)
+            {
+                pub_frequency = static_cast<uint16_t>(atoi(argv[argc_idx]));
+            }
         }
-        else if (strcmp(argv[1], "subscriber") == 0)
+        else if (strcmp(argv[argc_idx], "subscriber") == 0)
         {
             type = 2;
         }
+
     }
     else
     {
@@ -62,7 +71,7 @@ int main(
             ImageDataPublisher mypub;
             if (mypub.init())
             {
-                mypub.run();
+                mypub.run(pub_frequency);
             }
             break;
         }

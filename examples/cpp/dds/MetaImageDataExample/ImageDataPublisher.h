@@ -47,7 +47,8 @@ public:
     bool init();
 
     //!Run publisher
-    void run();
+    void run(
+            uint16_t frequency);
 
 private:
 
@@ -82,6 +83,8 @@ private:
     static std::condition_variable running_cv_;
 
     std::mutex matched_mtx_;
+
+    uint16_t frequency_;
 };
 
 #endif /* IMAGEDATAPUBLISHER_H_ */
