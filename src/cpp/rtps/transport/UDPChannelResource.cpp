@@ -18,6 +18,8 @@
 #include <fastdds/rtps/messages/MessageReceiver.h>
 #include <rtps/transport/UDPTransportInterface.h>
 
+#include <chrono>
+
 namespace eprosima {
 namespace fastdds {
 namespace rtps {
@@ -59,7 +61,18 @@ void UDPChannelResource::perform_listen_operation(
     {
         // Blocking receive.
         auto& msg = message_buffer();
-        if (!Receive(msg.buffer, msg.max_size, msg.length, remote_locator))
+
+        auto t_start = std::chrono::high_resolution_clock::now();
+        bool receive_ret = Receive(msg.buffer, msg.max_size, msg.length, remote_locator);
+        auto t_end = std::chrono::high_resolution_clock::now();
+
+        std::cout << "UDPChannelResource::Receive,"
+                  << std::chrono::duration_cast<std::chrono::microseconds>(t_end - t_start).count() << ","
+                  << std::this_thread::get_id() << ","
+                  << input_locator << ","
+                  << std::endl;
+
+        if (!receive_ret)
         {
             continue;
         }
@@ -67,7 +80,15 @@ void UDPChannelResource::perform_listen_operation(
         // Processes the data through the CDR Message interface.
         if (message_receiver() != nullptr)
         {
+            t_start = std::chrono::high_resolution_clock::now();
             message_receiver()->OnDataReceived(msg.buffer, msg.length, input_locator, remote_locator);
+            t_end = std::chrono::high_resolution_clock::now();
+
+            std::cout << "UDPChannelResource::message_receiver()->OnDataReceived,"
+                      << std::chrono::duration_cast<std::chrono::microseconds>(t_end - t_start).count() << ","
+                      << std::this_thread::get_id() << ","
+                      << input_locator << ","
+                      << std::endl;
         }
         else if (alive())
         {
@@ -88,7 +109,15 @@ bool UDPChannelResource::Receive(
     {
         asio::ip::udp::endpoint senderEndpoint;
 
+        auto t_start = std::chrono::high_resolution_clock::now();
         size_t bytes = socket()->receive_from(asio::buffer(receive_buffer, receive_buffer_capacity), senderEndpoint);
+        auto t_end = std::chrono::high_resolution_clock::now();
+
+        std::cout << "UDPChannelResource::socket()->receive_from,"
+                  << std::chrono::duration_cast<std::chrono::microseconds>(t_end - t_start).count() << ","
+                  << std::this_thread::get_id() << ","
+                  << std::endl;
+
         receive_buffer_size = static_cast<uint32_t>(bytes);
         if (receive_buffer_size > 0)
         {
