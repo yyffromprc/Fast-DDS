@@ -127,7 +127,7 @@ bool ImageDataPublisher::init()
     wqos.reliability().kind = RELIABLE_RELIABILITY_QOS;
     wqos.durability().kind = VOLATILE_DURABILITY_QOS;
     wqos.history().kind = KEEP_LAST_HISTORY_QOS;
-    wqos.history().depth = 100;
+    wqos.history().depth = 5;
     writer_ = publisher_->create_datawriter(topic_, wqos, this);
 
     if (writer_ == nullptr)
