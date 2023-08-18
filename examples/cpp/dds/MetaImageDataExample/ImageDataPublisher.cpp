@@ -96,7 +96,7 @@ bool ImageDataPublisher::init()
     pqos.transport().user_transports.push_back(udp_transport);
     pqos.transport().use_builtin_transports = false;
 
-    participant_ = DomainParticipantFactory::get_instance()->create_participant(0, pqos);
+    participant_ = DomainParticipantFactory::get_instance()->create_participant(11, pqos);
 
     if (participant_ == nullptr)
     {

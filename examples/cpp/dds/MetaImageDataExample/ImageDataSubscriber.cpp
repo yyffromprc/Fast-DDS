@@ -92,7 +92,7 @@ bool ImageDataSubscriber::init()
     /* Use of deprecated property */
     // pqos.properties().properties().emplace_back("rtps.participant.rtps_protection_kind", "ENCRYPT");
 
-    participant_ = DomainParticipantFactory::get_instance()->create_participant(0, pqos);
+    participant_ = DomainParticipantFactory::get_instance()->create_participant(11, pqos);
 
     if (participant_ == nullptr)
     {
