@@ -116,6 +116,7 @@ bool UDPChannelResource::Receive(
         std::cout << "UDPChannelResource::socket()->receive_from,"
                   << std::chrono::duration_cast<std::chrono::microseconds>(t_end - t_start).count() << ","
                   << std::this_thread::get_id() << ","
+                  << ","
                   << std::endl;
 
         receive_buffer_size = static_cast<uint32_t>(bytes);
