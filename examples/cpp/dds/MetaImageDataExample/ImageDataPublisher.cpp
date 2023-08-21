@@ -67,6 +67,7 @@ bool ImageDataPublisher::init()
 {
     //CREATE THE PARTICIPANT
     DomainParticipantQos pqos;
+
     pqos.properties().properties().emplace_back("dds.sec.auth.plugin",
             "builtin.PKI-DH");
     pqos.properties().properties().emplace_back("dds.sec.auth.builtin.PKI-DH.identity_ca",

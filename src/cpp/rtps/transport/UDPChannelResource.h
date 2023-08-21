@@ -197,7 +197,8 @@ protected:
             fastrtps::rtps::octet* receive_buffer,
             uint32_t receive_buffer_capacity,
             uint32_t& receive_buffer_size,
-            Locator& remote_locator);
+            Locator& remote_locator,
+            Locator& input_locator);
 
 private:
 

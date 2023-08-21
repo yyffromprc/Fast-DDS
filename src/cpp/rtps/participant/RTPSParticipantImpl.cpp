@@ -354,9 +354,13 @@ RTPSParticipantImpl::RTPSParticipantImpl(
     }
 
     createReceiverResources(m_att.builtin.metatrafficMulticastLocatorList, true, false);
+    logError(DEBUG_LOCATORS, "metatrafficMulticastLocatorList: " << m_att.builtin.metatrafficMulticastLocatorList);
     createReceiverResources(m_att.builtin.metatrafficUnicastLocatorList, true, false);
+    logError(DEBUG_LOCATORS, "metatrafficUnicastLocatorList: " << m_att.builtin.metatrafficUnicastLocatorList);
     createReceiverResources(m_att.defaultUnicastLocatorList, true, false);
+    logError(DEBUG_LOCATORS, "defaultUnicastLocatorList: " << m_att.defaultUnicastLocatorList);
     createReceiverResources(m_att.defaultMulticastLocatorList, true, false);
+    logError(DEBUG_LOCATORS, "defaultMulticastLocatorList: " << m_att.defaultMulticastLocatorList);
 
     namespace ExternalLocatorsProcessor = fastdds::rtps::ExternalLocatorsProcessor;
     ExternalLocatorsProcessor::set_listening_locators(m_att.builtin.metatraffic_external_unicast_locators,
