@@ -43,7 +43,7 @@ using SenderResource = fastrtps::rtps::SenderResource;
 using Log = fastdds::dds::Log;
 
 UDPTransportDescriptor::UDPTransportDescriptor()
-    : SocketTransportDescriptor(s_maximumMessageSize, s_maximumInitialPeersRange)
+    : SocketTransportDescriptor(65000U, s_maximumInitialPeersRange)
     , m_output_udp_socket(0)
 {
 }
@@ -737,6 +737,11 @@ bool UDPTransportInterface::is_localhost_allowed() const
     Locator local_locator;
     fill_local_ip(local_locator);
     return is_locator_allowed(local_locator);
+}
+
+bool UDPTransportInterface::is_transport_stream() const
+{
+    return false;
 }
 
 } // namespace rtps

@@ -435,12 +435,22 @@ bool TCPTransportInterface::init(
     if (configuration()->maxMessageSize > configuration()->sendBufferSize)
     {
         EPROSIMA_LOG_ERROR(RTCP_MSG_OUT, "maxMessageSize cannot be greater than send_buffer_size");
+<<<<<<< HEAD
+=======
+        std::cout << "TCP maxMessagesize: " << configuration()->maxMessageSize << std::endl;
+        std::cout << "TCP sendBuffersize: " << configuration()->sendBufferSize << std::endl;
+>>>>>>> 3d39f0dee (Autofill port, CLI Disc)
         return false;
     }
 
     if (configuration()->maxMessageSize > configuration()->receiveBufferSize)
     {
         EPROSIMA_LOG_ERROR(RTCP_MSG_OUT, "maxMessageSize cannot be greater than receive_buffer_size");
+<<<<<<< HEAD
+=======
+        std::cout << "TCP maxMessagesize: " << configuration()->maxMessageSize << std::endl;
+        std::cout << "TCP receiveBuffersize: " << configuration()->receiveBufferSize << std::endl;
+>>>>>>> 3d39f0dee (Autofill port, CLI Disc)
         return false;
     }
 
@@ -1764,6 +1774,11 @@ bool TCPTransportInterface::is_localhost_allowed() const
     Locator local_locator;
     fill_local_ip(local_locator);
     return is_locator_allowed(local_locator);
+}
+
+bool TCPTransportInterface::is_transport_stream() const
+{
+    return true;
 }
 
 } // namespace rtps
