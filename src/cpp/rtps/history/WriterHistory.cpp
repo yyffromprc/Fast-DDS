@@ -363,8 +363,8 @@ void WriterHistory::set_fragments(
     }
 
     // If it is big data and transport needs it, fragment it.
+    // TODO:
     // ASK IF TRANSPORTS REQUIRE FRAGMENTATION. IN CASE TRANSPORT == TCP (STREAM) --> NO FRAG
-    // bool transport_stream = mp_writer->getRTPSParticipant()->network_factory().are_transports_stream();
     // ONLY VALID FOR TCP AT THE MOMENT, NEED TO HANDLE FINAL_HIGH_MARK_FOR_FRAG FOR UDP
     if (change->serializedPayload.length > final_high_mark_for_frag)
     {

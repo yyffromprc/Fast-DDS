@@ -43,7 +43,7 @@ using SenderResource = fastrtps::rtps::SenderResource;
 using Log = fastdds::dds::Log;
 
 UDPTransportDescriptor::UDPTransportDescriptor()
-    : SocketTransportDescriptor(65000U, s_maximumInitialPeersRange)
+    : SocketTransportDescriptor(65000U, s_maximumInitialPeersRange) // TODO: NEEDS TO BE MODIFIED IN THE TCP_MODE
     , m_output_udp_socket(0)
 {
 }

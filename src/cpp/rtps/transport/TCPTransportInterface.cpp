@@ -428,29 +428,19 @@ bool TCPTransportInterface::init(
 
     if (configuration()->maxMessageSize > s_maximumMessageSize)
     {
-        EPROSIMA_LOG_ERROR(RTCP_MSG_OUT, "maxMessageSize cannot be greater than 65000");
+        EPROSIMA_LOG_ERROR(RTCP_MSG_OUT, "maxMessageSize cannot be greater than 65000"); // TODO: NEEDS TO BE MODIFIED IN THE TCP_MODE
         return false;
     }
 
     if (configuration()->maxMessageSize > configuration()->sendBufferSize)
     {
         EPROSIMA_LOG_ERROR(RTCP_MSG_OUT, "maxMessageSize cannot be greater than send_buffer_size");
-<<<<<<< HEAD
-=======
-        std::cout << "TCP maxMessagesize: " << configuration()->maxMessageSize << std::endl;
-        std::cout << "TCP sendBuffersize: " << configuration()->sendBufferSize << std::endl;
->>>>>>> 3d39f0dee (Autofill port, CLI Disc)
         return false;
     }
 
     if (configuration()->maxMessageSize > configuration()->receiveBufferSize)
     {
         EPROSIMA_LOG_ERROR(RTCP_MSG_OUT, "maxMessageSize cannot be greater than receive_buffer_size");
-<<<<<<< HEAD
-=======
-        std::cout << "TCP maxMessagesize: " << configuration()->maxMessageSize << std::endl;
-        std::cout << "TCP receiveBuffersize: " << configuration()->receiveBufferSize << std::endl;
->>>>>>> 3d39f0dee (Autofill port, CLI Disc)
         return false;
     }
 

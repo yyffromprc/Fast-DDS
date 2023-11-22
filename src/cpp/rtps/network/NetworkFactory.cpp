@@ -139,7 +139,7 @@ bool NetworkFactory::RegisterTransport(
 
         if (wasRegistered)
         {
-            if (descriptor->max_message_size() < maxMessageSizeBetweenTransports_)
+            if (descriptor->max_message_size() < maxMessageSizeBetweenTransports_) // TODO: NEEDS TO BE MODIFIED IN THE TCP_MODE
             {
                 maxMessageSizeBetweenTransports_ = descriptor->max_message_size();
             }
@@ -469,18 +469,6 @@ void NetworkFactory::update_network_interfaces()
     {
         transport->update_network_interfaces();
     }
-}
-
-bool NetworkFactory::are_transports_stream()
-{
-    for (auto& transport : mRegisteredTransports)
-    {
-        if (!transport->is_transport_stream())
-        {
-            return false;
-        }
-    }
-    return true;
 }
 
 } // namespace rtps
