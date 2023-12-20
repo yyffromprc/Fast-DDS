@@ -68,6 +68,7 @@ void TCPReqRepHelloWorldReplier::init(
         const char* certs_folder,
         bool use_busy_listener)
 {
+    static_cast<void>(use_busy_listener);
     ParticipantAttributes pattr;
     pattr.domainId = domainId;
     pattr.rtps.participantID = participantId;
