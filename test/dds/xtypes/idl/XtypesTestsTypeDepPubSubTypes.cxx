@@ -219,9 +219,9 @@ bool TypeDepPubSubType::getKey(
     return true;
 }
 
-void TypeDepPubSubType::register_type_object_representation() const
+void TypeDepPubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeDep_type_objects();
+    register_TypeDep_type_identifier(type_identifiers_);
 }
 
 

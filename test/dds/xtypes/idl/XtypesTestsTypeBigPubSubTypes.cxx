@@ -219,9 +219,9 @@ bool Type4PubSubType::getKey(
     return true;
 }
 
-void Type4PubSubType::register_type_object_representation() const
+void Type4PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type4_type_identifier(type_identifiers_);
 }
 
 Type5PubSubType::Type5PubSubType()
@@ -412,9 +412,9 @@ bool Type5PubSubType::getKey(
     return true;
 }
 
-void Type5PubSubType::register_type_object_representation() const
+void Type5PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type5_type_identifier(type_identifiers_);
 }
 
 Type6PubSubType::Type6PubSubType()
@@ -605,9 +605,9 @@ bool Type6PubSubType::getKey(
     return true;
 }
 
-void Type6PubSubType::register_type_object_representation() const
+void Type6PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type6_type_identifier(type_identifiers_);
 }
 
 Type7PubSubType::Type7PubSubType()
@@ -798,9 +798,9 @@ bool Type7PubSubType::getKey(
     return true;
 }
 
-void Type7PubSubType::register_type_object_representation() const
+void Type7PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type7_type_identifier(type_identifiers_);
 }
 
 Type8PubSubType::Type8PubSubType()
@@ -991,9 +991,9 @@ bool Type8PubSubType::getKey(
     return true;
 }
 
-void Type8PubSubType::register_type_object_representation() const
+void Type8PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type8_type_identifier(type_identifiers_);
 }
 
 Type9PubSubType::Type9PubSubType()
@@ -1184,9 +1184,9 @@ bool Type9PubSubType::getKey(
     return true;
 }
 
-void Type9PubSubType::register_type_object_representation() const
+void Type9PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type9_type_identifier(type_identifiers_);
 }
 
 Type10PubSubType::Type10PubSubType()
@@ -1377,9 +1377,9 @@ bool Type10PubSubType::getKey(
     return true;
 }
 
-void Type10PubSubType::register_type_object_representation() const
+void Type10PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type10_type_identifier(type_identifiers_);
 }
 
 Type11PubSubType::Type11PubSubType()
@@ -1570,9 +1570,9 @@ bool Type11PubSubType::getKey(
     return true;
 }
 
-void Type11PubSubType::register_type_object_representation() const
+void Type11PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type11_type_identifier(type_identifiers_);
 }
 
 Type12PubSubType::Type12PubSubType()
@@ -1763,9 +1763,9 @@ bool Type12PubSubType::getKey(
     return true;
 }
 
-void Type12PubSubType::register_type_object_representation() const
+void Type12PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type12_type_identifier(type_identifiers_);
 }
 
 Type13PubSubType::Type13PubSubType()
@@ -1956,9 +1956,9 @@ bool Type13PubSubType::getKey(
     return true;
 }
 
-void Type13PubSubType::register_type_object_representation() const
+void Type13PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type13_type_identifier(type_identifiers_);
 }
 
 Type14PubSubType::Type14PubSubType()
@@ -2149,9 +2149,9 @@ bool Type14PubSubType::getKey(
     return true;
 }
 
-void Type14PubSubType::register_type_object_representation() const
+void Type14PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type14_type_identifier(type_identifiers_);
 }
 
 Type15PubSubType::Type15PubSubType()
@@ -2342,9 +2342,9 @@ bool Type15PubSubType::getKey(
     return true;
 }
 
-void Type15PubSubType::register_type_object_representation() const
+void Type15PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type15_type_identifier(type_identifiers_);
 }
 
 Type16PubSubType::Type16PubSubType()
@@ -2535,9 +2535,9 @@ bool Type16PubSubType::getKey(
     return true;
 }
 
-void Type16PubSubType::register_type_object_representation() const
+void Type16PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type16_type_identifier(type_identifiers_);
 }
 
 Type17PubSubType::Type17PubSubType()
@@ -2728,9 +2728,9 @@ bool Type17PubSubType::getKey(
     return true;
 }
 
-void Type17PubSubType::register_type_object_representation() const
+void Type17PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type17_type_identifier(type_identifiers_);
 }
 
 Type18PubSubType::Type18PubSubType()
@@ -2921,9 +2921,9 @@ bool Type18PubSubType::getKey(
     return true;
 }
 
-void Type18PubSubType::register_type_object_representation() const
+void Type18PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type18_type_identifier(type_identifiers_);
 }
 
 Type19PubSubType::Type19PubSubType()
@@ -3114,9 +3114,9 @@ bool Type19PubSubType::getKey(
     return true;
 }
 
-void Type19PubSubType::register_type_object_representation() const
+void Type19PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type19_type_identifier(type_identifiers_);
 }
 
 Type20PubSubType::Type20PubSubType()
@@ -3307,9 +3307,9 @@ bool Type20PubSubType::getKey(
     return true;
 }
 
-void Type20PubSubType::register_type_object_representation() const
+void Type20PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type20_type_identifier(type_identifiers_);
 }
 
 Type21PubSubType::Type21PubSubType()
@@ -3500,9 +3500,9 @@ bool Type21PubSubType::getKey(
     return true;
 }
 
-void Type21PubSubType::register_type_object_representation() const
+void Type21PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type21_type_identifier(type_identifiers_);
 }
 
 Type22PubSubType::Type22PubSubType()
@@ -3693,9 +3693,9 @@ bool Type22PubSubType::getKey(
     return true;
 }
 
-void Type22PubSubType::register_type_object_representation() const
+void Type22PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type22_type_identifier(type_identifiers_);
 }
 
 Type23PubSubType::Type23PubSubType()
@@ -3886,9 +3886,9 @@ bool Type23PubSubType::getKey(
     return true;
 }
 
-void Type23PubSubType::register_type_object_representation() const
+void Type23PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type23_type_identifier(type_identifiers_);
 }
 
 Type24PubSubType::Type24PubSubType()
@@ -4079,9 +4079,9 @@ bool Type24PubSubType::getKey(
     return true;
 }
 
-void Type24PubSubType::register_type_object_representation() const
+void Type24PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type24_type_identifier(type_identifiers_);
 }
 
 Type25PubSubType::Type25PubSubType()
@@ -4272,9 +4272,9 @@ bool Type25PubSubType::getKey(
     return true;
 }
 
-void Type25PubSubType::register_type_object_representation() const
+void Type25PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type25_type_identifier(type_identifiers_);
 }
 
 Type26PubSubType::Type26PubSubType()
@@ -4465,9 +4465,9 @@ bool Type26PubSubType::getKey(
     return true;
 }
 
-void Type26PubSubType::register_type_object_representation() const
+void Type26PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type26_type_identifier(type_identifiers_);
 }
 
 Type27PubSubType::Type27PubSubType()
@@ -4658,9 +4658,9 @@ bool Type27PubSubType::getKey(
     return true;
 }
 
-void Type27PubSubType::register_type_object_representation() const
+void Type27PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type27_type_identifier(type_identifiers_);
 }
 
 Type28PubSubType::Type28PubSubType()
@@ -4851,9 +4851,9 @@ bool Type28PubSubType::getKey(
     return true;
 }
 
-void Type28PubSubType::register_type_object_representation() const
+void Type28PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type28_type_identifier(type_identifiers_);
 }
 
 Type29PubSubType::Type29PubSubType()
@@ -5044,9 +5044,9 @@ bool Type29PubSubType::getKey(
     return true;
 }
 
-void Type29PubSubType::register_type_object_representation() const
+void Type29PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type29_type_identifier(type_identifiers_);
 }
 
 Type30PubSubType::Type30PubSubType()
@@ -5237,9 +5237,9 @@ bool Type30PubSubType::getKey(
     return true;
 }
 
-void Type30PubSubType::register_type_object_representation() const
+void Type30PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type30_type_identifier(type_identifiers_);
 }
 
 Type31PubSubType::Type31PubSubType()
@@ -5430,9 +5430,9 @@ bool Type31PubSubType::getKey(
     return true;
 }
 
-void Type31PubSubType::register_type_object_representation() const
+void Type31PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type31_type_identifier(type_identifiers_);
 }
 
 Type32PubSubType::Type32PubSubType()
@@ -5623,9 +5623,9 @@ bool Type32PubSubType::getKey(
     return true;
 }
 
-void Type32PubSubType::register_type_object_representation() const
+void Type32PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type32_type_identifier(type_identifiers_);
 }
 
 Type33PubSubType::Type33PubSubType()
@@ -5816,9 +5816,9 @@ bool Type33PubSubType::getKey(
     return true;
 }
 
-void Type33PubSubType::register_type_object_representation() const
+void Type33PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type33_type_identifier(type_identifiers_);
 }
 
 Type34PubSubType::Type34PubSubType()
@@ -6009,9 +6009,9 @@ bool Type34PubSubType::getKey(
     return true;
 }
 
-void Type34PubSubType::register_type_object_representation() const
+void Type34PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type34_type_identifier(type_identifiers_);
 }
 
 Type35PubSubType::Type35PubSubType()
@@ -6202,9 +6202,9 @@ bool Type35PubSubType::getKey(
     return true;
 }
 
-void Type35PubSubType::register_type_object_representation() const
+void Type35PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type35_type_identifier(type_identifiers_);
 }
 
 Type36PubSubType::Type36PubSubType()
@@ -6395,9 +6395,9 @@ bool Type36PubSubType::getKey(
     return true;
 }
 
-void Type36PubSubType::register_type_object_representation() const
+void Type36PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type36_type_identifier(type_identifiers_);
 }
 
 Type37PubSubType::Type37PubSubType()
@@ -6588,9 +6588,9 @@ bool Type37PubSubType::getKey(
     return true;
 }
 
-void Type37PubSubType::register_type_object_representation() const
+void Type37PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type37_type_identifier(type_identifiers_);
 }
 
 Type38PubSubType::Type38PubSubType()
@@ -6781,9 +6781,9 @@ bool Type38PubSubType::getKey(
     return true;
 }
 
-void Type38PubSubType::register_type_object_representation() const
+void Type38PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type38_type_identifier(type_identifiers_);
 }
 
 Type39PubSubType::Type39PubSubType()
@@ -6974,9 +6974,9 @@ bool Type39PubSubType::getKey(
     return true;
 }
 
-void Type39PubSubType::register_type_object_representation() const
+void Type39PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type39_type_identifier(type_identifiers_);
 }
 
 Type40PubSubType::Type40PubSubType()
@@ -7167,9 +7167,9 @@ bool Type40PubSubType::getKey(
     return true;
 }
 
-void Type40PubSubType::register_type_object_representation() const
+void Type40PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type40_type_identifier(type_identifiers_);
 }
 
 Type41PubSubType::Type41PubSubType()
@@ -7360,9 +7360,9 @@ bool Type41PubSubType::getKey(
     return true;
 }
 
-void Type41PubSubType::register_type_object_representation() const
+void Type41PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type41_type_identifier(type_identifiers_);
 }
 
 Type42PubSubType::Type42PubSubType()
@@ -7553,9 +7553,9 @@ bool Type42PubSubType::getKey(
     return true;
 }
 
-void Type42PubSubType::register_type_object_representation() const
+void Type42PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type42_type_identifier(type_identifiers_);
 }
 
 Type43PubSubType::Type43PubSubType()
@@ -7746,9 +7746,9 @@ bool Type43PubSubType::getKey(
     return true;
 }
 
-void Type43PubSubType::register_type_object_representation() const
+void Type43PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type43_type_identifier(type_identifiers_);
 }
 
 Type44PubSubType::Type44PubSubType()
@@ -7939,9 +7939,9 @@ bool Type44PubSubType::getKey(
     return true;
 }
 
-void Type44PubSubType::register_type_object_representation() const
+void Type44PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type44_type_identifier(type_identifiers_);
 }
 
 Type45PubSubType::Type45PubSubType()
@@ -8132,9 +8132,9 @@ bool Type45PubSubType::getKey(
     return true;
 }
 
-void Type45PubSubType::register_type_object_representation() const
+void Type45PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type45_type_identifier(type_identifiers_);
 }
 
 Type46PubSubType::Type46PubSubType()
@@ -8325,9 +8325,9 @@ bool Type46PubSubType::getKey(
     return true;
 }
 
-void Type46PubSubType::register_type_object_representation() const
+void Type46PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type46_type_identifier(type_identifiers_);
 }
 
 Type47PubSubType::Type47PubSubType()
@@ -8518,9 +8518,9 @@ bool Type47PubSubType::getKey(
     return true;
 }
 
-void Type47PubSubType::register_type_object_representation() const
+void Type47PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type47_type_identifier(type_identifiers_);
 }
 
 Type48PubSubType::Type48PubSubType()
@@ -8711,9 +8711,9 @@ bool Type48PubSubType::getKey(
     return true;
 }
 
-void Type48PubSubType::register_type_object_representation() const
+void Type48PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type48_type_identifier(type_identifiers_);
 }
 
 Type49PubSubType::Type49PubSubType()
@@ -8904,9 +8904,9 @@ bool Type49PubSubType::getKey(
     return true;
 }
 
-void Type49PubSubType::register_type_object_representation() const
+void Type49PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type49_type_identifier(type_identifiers_);
 }
 
 Type50PubSubType::Type50PubSubType()
@@ -9097,9 +9097,9 @@ bool Type50PubSubType::getKey(
     return true;
 }
 
-void Type50PubSubType::register_type_object_representation() const
+void Type50PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type50_type_identifier(type_identifiers_);
 }
 
 Type51PubSubType::Type51PubSubType()
@@ -9290,9 +9290,9 @@ bool Type51PubSubType::getKey(
     return true;
 }
 
-void Type51PubSubType::register_type_object_representation() const
+void Type51PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type51_type_identifier(type_identifiers_);
 }
 
 Type52PubSubType::Type52PubSubType()
@@ -9483,9 +9483,9 @@ bool Type52PubSubType::getKey(
     return true;
 }
 
-void Type52PubSubType::register_type_object_representation() const
+void Type52PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type52_type_identifier(type_identifiers_);
 }
 
 Type53PubSubType::Type53PubSubType()
@@ -9676,9 +9676,9 @@ bool Type53PubSubType::getKey(
     return true;
 }
 
-void Type53PubSubType::register_type_object_representation() const
+void Type53PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type53_type_identifier(type_identifiers_);
 }
 
 Type54PubSubType::Type54PubSubType()
@@ -9869,9 +9869,9 @@ bool Type54PubSubType::getKey(
     return true;
 }
 
-void Type54PubSubType::register_type_object_representation() const
+void Type54PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type54_type_identifier(type_identifiers_);
 }
 
 Type55PubSubType::Type55PubSubType()
@@ -10062,9 +10062,9 @@ bool Type55PubSubType::getKey(
     return true;
 }
 
-void Type55PubSubType::register_type_object_representation() const
+void Type55PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type55_type_identifier(type_identifiers_);
 }
 
 Type56PubSubType::Type56PubSubType()
@@ -10255,9 +10255,9 @@ bool Type56PubSubType::getKey(
     return true;
 }
 
-void Type56PubSubType::register_type_object_representation() const
+void Type56PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type56_type_identifier(type_identifiers_);
 }
 
 Type57PubSubType::Type57PubSubType()
@@ -10448,9 +10448,9 @@ bool Type57PubSubType::getKey(
     return true;
 }
 
-void Type57PubSubType::register_type_object_representation() const
+void Type57PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type57_type_identifier(type_identifiers_);
 }
 
 Type58PubSubType::Type58PubSubType()
@@ -10641,9 +10641,9 @@ bool Type58PubSubType::getKey(
     return true;
 }
 
-void Type58PubSubType::register_type_object_representation() const
+void Type58PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type58_type_identifier(type_identifiers_);
 }
 
 Type59PubSubType::Type59PubSubType()
@@ -10834,9 +10834,9 @@ bool Type59PubSubType::getKey(
     return true;
 }
 
-void Type59PubSubType::register_type_object_representation() const
+void Type59PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type59_type_identifier(type_identifiers_);
 }
 
 Type60PubSubType::Type60PubSubType()
@@ -11027,9 +11027,9 @@ bool Type60PubSubType::getKey(
     return true;
 }
 
-void Type60PubSubType::register_type_object_representation() const
+void Type60PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type60_type_identifier(type_identifiers_);
 }
 
 Type61PubSubType::Type61PubSubType()
@@ -11220,9 +11220,9 @@ bool Type61PubSubType::getKey(
     return true;
 }
 
-void Type61PubSubType::register_type_object_representation() const
+void Type61PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type61_type_identifier(type_identifiers_);
 }
 
 Type62PubSubType::Type62PubSubType()
@@ -11413,9 +11413,9 @@ bool Type62PubSubType::getKey(
     return true;
 }
 
-void Type62PubSubType::register_type_object_representation() const
+void Type62PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type62_type_identifier(type_identifiers_);
 }
 
 Type63PubSubType::Type63PubSubType()
@@ -11606,9 +11606,9 @@ bool Type63PubSubType::getKey(
     return true;
 }
 
-void Type63PubSubType::register_type_object_representation() const
+void Type63PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type63_type_identifier(type_identifiers_);
 }
 
 Type64PubSubType::Type64PubSubType()
@@ -11799,9 +11799,9 @@ bool Type64PubSubType::getKey(
     return true;
 }
 
-void Type64PubSubType::register_type_object_representation() const
+void Type64PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type64_type_identifier(type_identifiers_);
 }
 
 Type65PubSubType::Type65PubSubType()
@@ -11992,9 +11992,9 @@ bool Type65PubSubType::getKey(
     return true;
 }
 
-void Type65PubSubType::register_type_object_representation() const
+void Type65PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type65_type_identifier(type_identifiers_);
 }
 
 Type66PubSubType::Type66PubSubType()
@@ -12185,9 +12185,9 @@ bool Type66PubSubType::getKey(
     return true;
 }
 
-void Type66PubSubType::register_type_object_representation() const
+void Type66PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type66_type_identifier(type_identifiers_);
 }
 
 Type67PubSubType::Type67PubSubType()
@@ -12378,9 +12378,9 @@ bool Type67PubSubType::getKey(
     return true;
 }
 
-void Type67PubSubType::register_type_object_representation() const
+void Type67PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type67_type_identifier(type_identifiers_);
 }
 
 Type68PubSubType::Type68PubSubType()
@@ -12571,9 +12571,9 @@ bool Type68PubSubType::getKey(
     return true;
 }
 
-void Type68PubSubType::register_type_object_representation() const
+void Type68PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type68_type_identifier(type_identifiers_);
 }
 
 Type69PubSubType::Type69PubSubType()
@@ -12764,9 +12764,9 @@ bool Type69PubSubType::getKey(
     return true;
 }
 
-void Type69PubSubType::register_type_object_representation() const
+void Type69PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type69_type_identifier(type_identifiers_);
 }
 
 Type70PubSubType::Type70PubSubType()
@@ -12957,9 +12957,9 @@ bool Type70PubSubType::getKey(
     return true;
 }
 
-void Type70PubSubType::register_type_object_representation() const
+void Type70PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type70_type_identifier(type_identifiers_);
 }
 
 Type71PubSubType::Type71PubSubType()
@@ -13150,9 +13150,9 @@ bool Type71PubSubType::getKey(
     return true;
 }
 
-void Type71PubSubType::register_type_object_representation() const
+void Type71PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type71_type_identifier(type_identifiers_);
 }
 
 Type72PubSubType::Type72PubSubType()
@@ -13343,9 +13343,9 @@ bool Type72PubSubType::getKey(
     return true;
 }
 
-void Type72PubSubType::register_type_object_representation() const
+void Type72PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type72_type_identifier(type_identifiers_);
 }
 
 Type73PubSubType::Type73PubSubType()
@@ -13536,9 +13536,9 @@ bool Type73PubSubType::getKey(
     return true;
 }
 
-void Type73PubSubType::register_type_object_representation() const
+void Type73PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type73_type_identifier(type_identifiers_);
 }
 
 Type74PubSubType::Type74PubSubType()
@@ -13729,9 +13729,9 @@ bool Type74PubSubType::getKey(
     return true;
 }
 
-void Type74PubSubType::register_type_object_representation() const
+void Type74PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type74_type_identifier(type_identifiers_);
 }
 
 Type75PubSubType::Type75PubSubType()
@@ -13922,9 +13922,9 @@ bool Type75PubSubType::getKey(
     return true;
 }
 
-void Type75PubSubType::register_type_object_representation() const
+void Type75PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type75_type_identifier(type_identifiers_);
 }
 
 Type76PubSubType::Type76PubSubType()
@@ -14115,9 +14115,9 @@ bool Type76PubSubType::getKey(
     return true;
 }
 
-void Type76PubSubType::register_type_object_representation() const
+void Type76PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type76_type_identifier(type_identifiers_);
 }
 
 Type77PubSubType::Type77PubSubType()
@@ -14308,9 +14308,9 @@ bool Type77PubSubType::getKey(
     return true;
 }
 
-void Type77PubSubType::register_type_object_representation() const
+void Type77PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type77_type_identifier(type_identifiers_);
 }
 
 Type78PubSubType::Type78PubSubType()
@@ -14501,9 +14501,9 @@ bool Type78PubSubType::getKey(
     return true;
 }
 
-void Type78PubSubType::register_type_object_representation() const
+void Type78PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type78_type_identifier(type_identifiers_);
 }
 
 Type79PubSubType::Type79PubSubType()
@@ -14694,9 +14694,9 @@ bool Type79PubSubType::getKey(
     return true;
 }
 
-void Type79PubSubType::register_type_object_representation() const
+void Type79PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type79_type_identifier(type_identifiers_);
 }
 
 Type80PubSubType::Type80PubSubType()
@@ -14887,9 +14887,9 @@ bool Type80PubSubType::getKey(
     return true;
 }
 
-void Type80PubSubType::register_type_object_representation() const
+void Type80PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type80_type_identifier(type_identifiers_);
 }
 
 Type81PubSubType::Type81PubSubType()
@@ -15080,9 +15080,9 @@ bool Type81PubSubType::getKey(
     return true;
 }
 
-void Type81PubSubType::register_type_object_representation() const
+void Type81PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type81_type_identifier(type_identifiers_);
 }
 
 Type82PubSubType::Type82PubSubType()
@@ -15273,9 +15273,9 @@ bool Type82PubSubType::getKey(
     return true;
 }
 
-void Type82PubSubType::register_type_object_representation() const
+void Type82PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type82_type_identifier(type_identifiers_);
 }
 
 Type83PubSubType::Type83PubSubType()
@@ -15466,9 +15466,9 @@ bool Type83PubSubType::getKey(
     return true;
 }
 
-void Type83PubSubType::register_type_object_representation() const
+void Type83PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type83_type_identifier(type_identifiers_);
 }
 
 Type84PubSubType::Type84PubSubType()
@@ -15659,9 +15659,9 @@ bool Type84PubSubType::getKey(
     return true;
 }
 
-void Type84PubSubType::register_type_object_representation() const
+void Type84PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type84_type_identifier(type_identifiers_);
 }
 
 Type85PubSubType::Type85PubSubType()
@@ -15852,9 +15852,9 @@ bool Type85PubSubType::getKey(
     return true;
 }
 
-void Type85PubSubType::register_type_object_representation() const
+void Type85PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type85_type_identifier(type_identifiers_);
 }
 
 Type86PubSubType::Type86PubSubType()
@@ -16045,9 +16045,9 @@ bool Type86PubSubType::getKey(
     return true;
 }
 
-void Type86PubSubType::register_type_object_representation() const
+void Type86PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type86_type_identifier(type_identifiers_);
 }
 
 Type87PubSubType::Type87PubSubType()
@@ -16238,9 +16238,9 @@ bool Type87PubSubType::getKey(
     return true;
 }
 
-void Type87PubSubType::register_type_object_representation() const
+void Type87PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type87_type_identifier(type_identifiers_);
 }
 
 Type88PubSubType::Type88PubSubType()
@@ -16431,9 +16431,9 @@ bool Type88PubSubType::getKey(
     return true;
 }
 
-void Type88PubSubType::register_type_object_representation() const
+void Type88PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type88_type_identifier(type_identifiers_);
 }
 
 Type89PubSubType::Type89PubSubType()
@@ -16624,9 +16624,9 @@ bool Type89PubSubType::getKey(
     return true;
 }
 
-void Type89PubSubType::register_type_object_representation() const
+void Type89PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type89_type_identifier(type_identifiers_);
 }
 
 Type90PubSubType::Type90PubSubType()
@@ -16817,9 +16817,9 @@ bool Type90PubSubType::getKey(
     return true;
 }
 
-void Type90PubSubType::register_type_object_representation() const
+void Type90PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type90_type_identifier(type_identifiers_);
 }
 
 Type91PubSubType::Type91PubSubType()
@@ -17010,9 +17010,9 @@ bool Type91PubSubType::getKey(
     return true;
 }
 
-void Type91PubSubType::register_type_object_representation() const
+void Type91PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type91_type_identifier(type_identifiers_);
 }
 
 Type92PubSubType::Type92PubSubType()
@@ -17203,9 +17203,9 @@ bool Type92PubSubType::getKey(
     return true;
 }
 
-void Type92PubSubType::register_type_object_representation() const
+void Type92PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type92_type_identifier(type_identifiers_);
 }
 
 Type93PubSubType::Type93PubSubType()
@@ -17396,9 +17396,9 @@ bool Type93PubSubType::getKey(
     return true;
 }
 
-void Type93PubSubType::register_type_object_representation() const
+void Type93PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type93_type_identifier(type_identifiers_);
 }
 
 Type94PubSubType::Type94PubSubType()
@@ -17589,9 +17589,9 @@ bool Type94PubSubType::getKey(
     return true;
 }
 
-void Type94PubSubType::register_type_object_representation() const
+void Type94PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type94_type_identifier(type_identifiers_);
 }
 
 Type95PubSubType::Type95PubSubType()
@@ -17782,9 +17782,9 @@ bool Type95PubSubType::getKey(
     return true;
 }
 
-void Type95PubSubType::register_type_object_representation() const
+void Type95PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type95_type_identifier(type_identifiers_);
 }
 
 Type96PubSubType::Type96PubSubType()
@@ -17975,9 +17975,9 @@ bool Type96PubSubType::getKey(
     return true;
 }
 
-void Type96PubSubType::register_type_object_representation() const
+void Type96PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type96_type_identifier(type_identifiers_);
 }
 
 Type97PubSubType::Type97PubSubType()
@@ -18168,9 +18168,9 @@ bool Type97PubSubType::getKey(
     return true;
 }
 
-void Type97PubSubType::register_type_object_representation() const
+void Type97PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type97_type_identifier(type_identifiers_);
 }
 
 Type98PubSubType::Type98PubSubType()
@@ -18361,9 +18361,9 @@ bool Type98PubSubType::getKey(
     return true;
 }
 
-void Type98PubSubType::register_type_object_representation() const
+void Type98PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type98_type_identifier(type_identifiers_);
 }
 
 Type99PubSubType::Type99PubSubType()
@@ -18554,9 +18554,9 @@ bool Type99PubSubType::getKey(
     return true;
 }
 
-void Type99PubSubType::register_type_object_representation() const
+void Type99PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type99_type_identifier(type_identifiers_);
 }
 
 Type100PubSubType::Type100PubSubType()
@@ -18747,9 +18747,9 @@ bool Type100PubSubType::getKey(
     return true;
 }
 
-void Type100PubSubType::register_type_object_representation() const
+void Type100PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_Type100_type_identifier(type_identifiers_);
 }
 
 TypeBigPubSubType::TypeBigPubSubType()
@@ -18940,9 +18940,9 @@ bool TypeBigPubSubType::getKey(
     return true;
 }
 
-void TypeBigPubSubType::register_type_object_representation() const
+void TypeBigPubSubType::register_type_object_representation()
 {
-    register_XtypesTestsTypeBig_type_objects();
+    register_TypeBig_type_identifier(type_identifiers_);
 }
 
 

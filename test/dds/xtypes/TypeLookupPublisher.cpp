@@ -34,6 +34,7 @@
 #include <fastdds/dds/publisher/Publisher.hpp>
 #include <fastdds/dds/publisher/qos/DataWriterQos.hpp>
 #include <fastdds/dds/publisher/qos/PublisherQos.hpp>
+#include <fastdds/LibrarySettings.hpp>
 
 
 using namespace eprosima::fastdds::dds;

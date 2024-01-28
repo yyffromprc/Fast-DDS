@@ -219,9 +219,9 @@ bool Type3PubSubType::getKey(
     return true;
 }
 
-void Type3PubSubType::register_type_object_representation() const
+void Type3PubSubType::register_type_object_representation()
 {
-    register_XtypesTestsType3_type_objects();
+    register_Type3_type_identifier(type_identifiers_);
 }
 
 
