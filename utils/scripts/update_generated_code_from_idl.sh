@@ -7,6 +7,7 @@ files_not_needing_typeobject=(
     './include/fastdds/dds/xtypes/type_representation/detail/dds-xtypes_typeobject.idl'
     './src/cpp/fastdds/builtin/type_lookup_service/detail/TypeLookupTypes.idl'
     './src/cpp/fastdds/builtin/type_lookup_service/detail/rpc_types.idl'
+    './test/dds/xtypes/idl/XtypesTestsTypeNoTypeObject.idl'
     './thirdparty/dds-types-test/IDL/declarations.idl'
     './thirdparty/dds-types-test/IDL/external.idl'
     )
