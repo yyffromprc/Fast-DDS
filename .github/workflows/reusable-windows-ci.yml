@@ -383,7 +383,7 @@ jobs:
           EchoArgs $buildargs --metas ci.meta --executor sequential ${{ inputs.colcon-args }} $cmakeargs.split(" ")
 
           "::group::cmake summary"
-          colcon build $buildargs --metas ci.meta --executor sequential ${{ inputs.colcon-args }} $cmakeargs.split(" ")
+          colcon build $buildargs --metas ci.meta ${{ inputs.colcon-args }} $cmakeargs.split(" ")
           "::endgroup::"
 
           $output_buffer = ""
