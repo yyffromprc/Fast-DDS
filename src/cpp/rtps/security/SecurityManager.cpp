@@ -4274,9 +4274,6 @@ void SecurityManager::resend_handshake_message_token(
 
                 if (remote_participant_info->auth_status_ == AUTHENTICATION_WAITING_REPLY)
                 {
-                    // Avoid DoS attack by exponentially increasing event interval
-                    auto time_ms = remote_participant_info->event_->getIntervalMilliSec();
-                    remote_participant_info->event_->update_interval_millisec(time_ms * 2);
                     remote_participant_info->event_->restart_timer();
                 }
             }

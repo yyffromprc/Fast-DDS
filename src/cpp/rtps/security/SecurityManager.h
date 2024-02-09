@@ -408,8 +408,8 @@ private:
 
         typedef std::unique_ptr<AuthenticationInfo> AuthUniquePtr;
 
-        static constexpr uint32_t INITIAL_RESEND_HANDSHAKE_MILLISECS = 125;
-        static constexpr uint32_t MAX_HANDSHAKE_REQUESTS = 5;
+        static constexpr uint32_t INITIAL_RESEND_HANDSHAKE_MILLISECS = 250;
+        static constexpr uint32_t MAX_HANDSHAKE_REQUESTS = 40;
 
         DiscoveredParticipantInfo(
                 AuthenticationStatus auth_status,
