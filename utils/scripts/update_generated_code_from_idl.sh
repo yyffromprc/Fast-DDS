@@ -10,6 +10,7 @@ files_not_needing_typeobject=(
     './test/dds/xtypes/idl/XtypesTestsTypeNoTypeObject.idl'
     './thirdparty/dds-types-test/IDL/declarations.idl'
     './thirdparty/dds-types-test/IDL/external.idl'
+    './test/dds/xtypes/idl/XtypesTestsTypeNoTypeObject.idl'
     )
 
 files_needing_case_sensitive=(
