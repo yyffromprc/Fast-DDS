@@ -47,6 +47,7 @@
 #include <rtps/reader/StatefulReader.hpp>
 #include <rtps/writer/StatefulWriter.hpp>
 #include <utils/shared_mutex.hpp>
+#include <rtps/common/GuidUtils.hpp>
 #include <utils/SystemInfo.hpp>
 #include <utils/TimeConversion.hpp>
 
@@ -1399,6 +1400,20 @@ bool get_server_client_default_guidPrefix(
     }
 
     return false;
+}
+
+void set_server_client_random_guidPrefix(
+        GuidPrefix_t& guid)
+{
+    // Random GUIDs keeps 4 first bytes from the default server GUID
+    eprosima::fastdds::rtps::GuidUtils::instance().guid_prefix_create(0, guid);
+
+    auto now = std::chrono::high_resolution_clock::now();
+    srand(now.time_since_epoch().count());
+    for (auto i = 4; i < 12; i++)
+    {
+        guid.value[i] = eprosima::fastrtps::rtps::octet(rand() % 254);
+    }
 }
 
 bool PDPClient::remove_remote_participant(
