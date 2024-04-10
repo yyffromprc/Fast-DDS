@@ -886,13 +886,11 @@ public:
 
     PubSubParticipant& fill_server_qos(
             eprosima::fastdds::dds::WireProtocolConfigQos& qos,
-            eprosima::fastrtps::rtps::GuidPrefix_t& guid,
             eprosima::fastrtps::rtps::Locator_t& locator_server,
             uint16_t port,
             uint32_t kind)
     {
         qos.builtin.discovery_config.discoveryProtocol = eprosima::fastrtps::rtps::DiscoveryProtocol_t::SERVER;
-        qos.prefix = guid;
         // Generate server's listening locator
         eprosima::fastrtps::rtps::IPLocator::setIPv4(locator_server, 127, 0, 0, 1);
         eprosima::fastrtps::rtps::IPLocator::setPhysicalPort(locator_server, port);
