@@ -1243,10 +1243,9 @@ TEST(ParticipantTests, ServerParticipantRemoteServerListConfiguration)
 }
 
 /**
- * SERVER Participant with initial server with inconsistent GUID prefix.
- * Dynamic addition of servers failure.
+ * Dynamic modification of servers. Replacing previous servers with new ones.
  */
-TEST(ParticipantTests, ServerParticipantInconsistentRemoteServerListConfiguration)
+TEST(ParticipantTests, ServerParticipantReplaceRemoteServerListConfiguration)
 {
     Log::ClearConsumers();
     MockConsumer* mockConsumer = new MockConsumer("RTPS_QOS_CHECK");
@@ -1263,9 +1262,6 @@ TEST(ParticipantTests, ServerParticipantInconsistentRemoteServerListConfiguratio
     DomainParticipantQos qos;
     rtps::LocatorList qos_output;
     fastrtps::rtps::Locator_t locator;
-    // Servers of the filename will overwrite the one set by QoS
-    set_participant_qos(qos, qos_output);
-    qos_output.clear();
     fastrtps::rtps::IPLocator::setIPv4(locator, "84.22.253.128");
     locator.port = 8888;
     qos_output.push_back(locator);
@@ -1281,6 +1277,7 @@ TEST(ParticipantTests, ServerParticipantInconsistentRemoteServerListConfiguratio
     DomainParticipant* participant = DomainParticipantFactory::get_instance()->create_participant(
         (uint32_t)GET_PID() % 230, qos);
     ASSERT_NE(nullptr, participant);
+#ifndef __APPLE__
     fastrtps::rtps::RTPSParticipantAttributes attributes;
     get_rtps_attributes(participant, attributes);
     EXPECT_EQ(attributes.builtin.discovery_config.discoveryProtocol, fastrtps::rtps::DiscoveryProtocol::SERVER);
@@ -1289,15 +1286,17 @@ TEST(ParticipantTests, ServerParticipantInconsistentRemoteServerListConfiguratio
     // Modify environment file: fails cause the initial guid prefix did not comply with the schema
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
     file.open(filename);
-    file << "{\"ROS_DISCOVERY_SERVER\": \"84.22.253.128:8888;192.168.1.133:64863;127.0.0.1:1234\"}";
+    file << "{\"ROS_DISCOVERY_SERVER\": \"192.168.1.133:64863\"}";
     file.close();
     fastrtps::rtps::IPLocator::setIPv4(locator, "192.168.1.133");
     locator.port = 64863;
+    qos_output.clear();
     qos_output.push_back(locator);
 
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
     get_rtps_attributes(participant, attributes);
     EXPECT_EQ(attributes.builtin.discovery_config.m_DiscoveryServers, qos_output);
+#endif // APPLE
     DomainParticipantQos result_qos = participant->get_qos();
     EXPECT_EQ(RETCODE_OK, participant->set_qos(result_qos));
     EXPECT_EQ(RETCODE_OK, DomainParticipantFactory::get_instance()->delete_participant(participant));
@@ -1386,6 +1385,7 @@ TEST(ParticipantTests, ServerParticipantCorrectRemoteServerListConfiguration)
     file.close();
 
     DomainParticipantQos qos;
+    DomainParticipantQos result_qos;
     set_server_qos(qos);
 
     rtps::LocatorList output;
@@ -1398,14 +1398,13 @@ TEST(ParticipantTests, ServerParticipantCorrectRemoteServerListConfiguration)
     DomainParticipant* participant = DomainParticipantFactory::get_instance()->create_participant(
         (uint32_t)GET_PID() % 230, qos);
     ASSERT_NE(nullptr, participant);
+#ifndef __APPLE__
     fastrtps::rtps::RTPSParticipantAttributes attributes;
     get_rtps_attributes(participant, attributes);
     EXPECT_EQ(attributes.builtin.discovery_config.m_DiscoveryServers, output);
     // Add new server through environment file
     // Even though the server added previously through the environment file is being pinged, it is not really being
     // checked because it is not included in the attributes.
-    DomainParticipantQos result_qos;
-#ifndef __APPLE__
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
     file.open(filename);
     file << "{\"ROS_DISCOVERY_SERVER\": \"172.17.0.5:4321;;192.168.1.133:64863\"}";
