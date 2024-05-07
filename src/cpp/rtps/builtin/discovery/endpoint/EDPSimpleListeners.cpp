@@ -289,7 +289,7 @@ void EDPBaseSUBListener::add_reader_from_change(
         // If TypeInformation does not exist, try fallback mechanism
         else
         {
-            EPROSIMA_LOG_INFO(RTPS_EDP, "EDPBasePUBListener: No TypeInformation. Trying fallback mechanism");
+            EPROSIMA_LOG_INFO(RTPS_EDP, "EDPBaseSUBListener: No TypeInformation. Trying fallback mechanism");
             after_typelookup_callback(temp_reader_data.get());
         }
         // Release the temporary proxy
