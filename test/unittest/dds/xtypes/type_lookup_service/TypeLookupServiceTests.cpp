@@ -18,39 +18,27 @@
 #include <fastdds/dds/log/Log.hpp>
 #include <fastdds/rtps/participant/RTPSParticipant.h>
 #include <fastdds/rtps/reader/RTPSReader.h>
-#include <fastdds/rtps/reader/StatefulReader.h>
-#include <fastdds/rtps/reader/StatefulReader.h>
 #include <fastdds/rtps/RTPSDomain.h>
 #include <fastdds/rtps/writer/RTPSWriter.h>
-#include <fastdds/rtps/writer/StatefulWriter.h>
 
 #include <fastdds/builtin/type_lookup_service/TypeLookupManager.hpp>
 #include <fastdds/builtin/type_lookup_service/TypeLookupReplyListener.hpp>
 #include <fastdds/builtin/type_lookup_service/TypeLookupRequestListener.hpp>
 #include <fastdds/xtypes/type_representation/TypeObjectRegistry.hpp>
-#include <rtps/network/NetworkFactory.h>
+
 #include <rtps/participant/RTPSParticipantImpl.h>
+#include <rtps/reader/StatefulReader.hpp>
+#include <rtps/writer/StatefulWriter.hpp>
 #include <rtps/RTPSDomainImpl.hpp>
 
 using ::testing::Mock;
+using ::testing::NiceMock;
 using ::testing::_;
-using eprosima::fastrtps::rtps::RTPSDomain;
 using namespace eprosima::fastdds::dds::builtin;
 using namespace eprosima::fastdds::dds::xtypes;
 using namespace eprosima::fastrtps::rtps;
 
 namespace eprosima {
-
-namespace fastrtps {
-namespace rtps {
-class RTPSDomain;
-
-RTPSReader* RTPSDomain::reader_ = nullptr;
-RTPSWriter* RTPSDomain::writer_ = nullptr;
-RTPSParticipant* RTPSDomain::participant_ = nullptr;
-} //namespace rtps
-} //namespace fastrtps
-
 namespace fastdds {
 namespace dds {
 
@@ -268,11 +256,11 @@ public:
     {
     }
 
-    void onNewCacheChangeAdded(
+    void on_new_cache_change_added(
             fastrtps::rtps::RTPSReader* reader_,
             const fastrtps::rtps::CacheChange_t* const change)
     {
-        TypeLookupReplyListener::onNewCacheChangeAdded(reader_, change);
+        TypeLookupReplyListener::on_new_cache_change_added(reader_, change);
     }
 
     void process_reply()
@@ -308,12 +296,12 @@ public:
     {
     }
 
-    void onNewCacheChangeAdded(
+    void on_new_cache_change_added(
             fastrtps::rtps::RTPSReader* reader_,
             const fastrtps::rtps::CacheChange_t* const change)
     {
         // Call the private method indirectly through the public interface
-        TypeLookupRequestListener::onNewCacheChangeAdded(reader_, change);
+        TypeLookupRequestListener::on_new_cache_change_added(reader_, change);
     }
 
     void process_requests()
@@ -341,14 +329,12 @@ public:
 
 class TypeLookupServiceTests : public ::testing::Test
 {
-
 protected:
 
     void SetUp() override
     {
-        RTPSParticipantImpl participant;
         tlm_ = new TypeLookupManager();
-        tlm_->participant_ = &participant;
+        tlm_->participant_ = &participant_;
 
         reply_listener_ = new MockTypeLookupReplyListener(tlm_);
         request_listener_ = new MockTypeLookupRequestListener(tlm_);
@@ -359,6 +345,7 @@ protected:
 
     void TearDown() override
     {
+        delete stateful_reader_.history_;
         delete reply_listener_;
         delete request_listener_;
         delete tlm_;
@@ -370,7 +357,9 @@ protected:
     NetworkFactory network_factory_;
     ReaderProxyData reader_proxy_{0, 0};
     WriterProxyData writer_proxy_{0, 0};
-    StatefulReader stateful_reader_;
+    NiceMock<RTPSParticipantImpl> participant_;
+    NiceMock<StatefulReader> stateful_reader_;
+    TypeObjectRegistry& registry {RTPSDomainImpl::get_instance()->type_object_registry_observer()};
 };
 
 MockLogConsumer* setup_expect_log_msg(
@@ -390,13 +379,14 @@ MockLogConsumer* setup_expect_log_msg(
 TEST_F(TypeLookupServiceTests, ReaderProxyData_PID_TYPE_IDV1)
 {
     MockLogConsumer* log_consumer =
-            setup_expect_log_msg("RTPS_PROXY_DATA", "PID_TYPE_IDV1 not supported");
+            setup_expect_log_msg("RTPS_PROXY_DATA",
+                    "Reception of TypeIdentifiers is not supported. They will be ignored.");
 
     CDRMessage_t msg(0);
     msg.init(typeid_msg_buffer, static_cast<uint32_t>(sizeof(typeid_msg_buffer)));
     msg.length = msg.max_size;
 
-    ASSERT_TRUE(reader_proxy_.readFromCDRMessage(&msg, network_factory_, false, true));
+    ASSERT_TRUE(reader_proxy_.readFromCDRMessage(&msg, network_factory_, false, true, c_VendorId_eProsima));
 
     Log::Flush();
     EXPECT_EQ(log_consumer->wait_for_entries(1, 1), 1);
@@ -405,13 +395,14 @@ TEST_F(TypeLookupServiceTests, ReaderProxyData_PID_TYPE_IDV1)
 TEST_F(TypeLookupServiceTests, WriterProxyData_PID_TYPE_IDV1)
 {
     MockLogConsumer* log_consumer =
-            setup_expect_log_msg("RTPS_PROXY_DATA", "PID_TYPE_IDV1 not supported");
+            setup_expect_log_msg("RTPS_PROXY_DATA",
+                    "Reception of TypeIdentifiers is not supported. They will be ignored.");
 
     CDRMessage_t msg(0);
     msg.init(typeid_msg_buffer, static_cast<uint32_t>(sizeof(typeid_msg_buffer)));
     msg.length = msg.max_size;
 
-    ASSERT_TRUE(writer_proxy_.readFromCDRMessage(&msg, network_factory_, false, true));
+    ASSERT_TRUE(writer_proxy_.readFromCDRMessage(&msg, network_factory_, false, true, c_VendorId_eProsima));
 
     Log::Flush();
     EXPECT_EQ(log_consumer->wait_for_entries(1, 1), 1);
@@ -420,13 +411,13 @@ TEST_F(TypeLookupServiceTests, WriterProxyData_PID_TYPE_IDV1)
 TEST_F(TypeLookupServiceTests, ReaderProxyData_PID_TYPE_OBJECTV1)
 {
     MockLogConsumer* log_consumer =
-            setup_expect_log_msg("RTPS_PROXY_DATA", "PID_TYPE_OBJECTV1 not supported");
+            setup_expect_log_msg("RTPS_PROXY_DATA", "Reception of TypeObjects is not supported. They will be ignored.");
 
     CDRMessage_t msg(0);
     msg.init(typeobject_msg_buffer, static_cast<uint32_t>(sizeof(typeobject_msg_buffer)));
     msg.length = msg.max_size;
 
-    ASSERT_TRUE(reader_proxy_.readFromCDRMessage(&msg, network_factory_, false, true));
+    ASSERT_TRUE(reader_proxy_.readFromCDRMessage(&msg, network_factory_, false, true, c_VendorId_eProsima));
 
     Log::Flush();
     EXPECT_EQ(log_consumer->wait_for_entries(1, 1), 1);
@@ -435,13 +426,13 @@ TEST_F(TypeLookupServiceTests, ReaderProxyData_PID_TYPE_OBJECTV1)
 TEST_F(TypeLookupServiceTests, WriterProxyData_PID_TYPE_OBJECTV1)
 {
     MockLogConsumer* log_consumer =
-            setup_expect_log_msg("RTPS_PROXY_DATA", "PID_TYPE_OBJECTV1 not supported");
+            setup_expect_log_msg("RTPS_PROXY_DATA", "Reception of TypeObjects is not supported. They will be ignored.");
 
     CDRMessage_t msg(0);
     msg.init(typeobject_msg_buffer, static_cast<uint32_t>(sizeof(typeobject_msg_buffer)));
     msg.length = msg.max_size;
 
-    ASSERT_TRUE(writer_proxy_.readFromCDRMessage(&msg, network_factory_, false, true));
+    ASSERT_TRUE(writer_proxy_.readFromCDRMessage(&msg, network_factory_, false, true, c_VendorId_eProsima));
 
     Log::Flush();
     EXPECT_EQ(log_consumer->wait_for_entries(1, 1), 1);
@@ -452,11 +443,13 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_wrong_EntityId)
     MockLogConsumer* log_consumer =
             setup_expect_log_msg("TL_REPLY_READER", "Received data from a bad endpoint.");
 
-    CacheChange_t* change = new CacheChange_t();
+    CacheChange_t* change {new CacheChange_t()};
     change->writerGUID.entityId = 0x111111C3;
-    stateful_reader_.getHistory()->add_change(change);
 
-    reply_listener_->onNewCacheChangeAdded(&stateful_reader_, change);
+    EXPECT_CALL(*stateful_reader_.history_, remove_change_mock(change)).Times(1).
+            WillOnce(::testing::Return(true));
+
+    reply_listener_->on_new_cache_change_added(&stateful_reader_, change);
 
     EXPECT_EQ(reply_listener_->get_replies_queue()->size(), 0);
 
@@ -468,14 +461,15 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_malformed_Reply)
 {
     CacheChange_t* change = new CacheChange_t();
     change->writerGUID.entityId = c_EntityId_TypeLookup_reply_writer;
-    stateful_reader_.getHistory()->add_change(change);
 
     EXPECT_CALL(*tlm_, receive(
                 testing::Matcher<fastrtps::rtps::CacheChange_t&>(_),
                 testing::Matcher<TypeLookup_Reply&>(_)))
             .WillOnce(testing::Return(false));
+    EXPECT_CALL(*stateful_reader_.history_, remove_change_mock(change)).Times(1).
+            WillOnce(::testing::Return(true));
 
-    reply_listener_->onNewCacheChangeAdded(&stateful_reader_, change);
+    reply_listener_->on_new_cache_change_added(&stateful_reader_, change);
 
     EXPECT_EQ(reply_listener_->get_replies_queue()->size(), 0);
 }
@@ -490,7 +484,7 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_REMOTE_EX_UNSUPPORTED)
 
     CacheChange_t* change = new CacheChange_t();
     change->writerGUID.entityId = c_EntityId_TypeLookup_reply_writer;
-    stateful_reader_.getHistory()->add_change(change);
+    stateful_reader_.get_history()->add_change(change);
 
     TypeLookup_Reply expectedReply;
     expectedReply.header().remoteEx(rpc::RemoteExceptionCode_t::REMOTE_EX_UNSUPPORTED);
@@ -499,7 +493,7 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_REMOTE_EX_UNSUPPORTED)
                 testing::Matcher<TypeLookup_Reply&>(_)))
             .WillOnce(testing::DoAll(testing::SetArgReferee<1>(expectedReply), testing::Return(true)));
 
-    reply_listener_->onNewCacheChangeAdded(&stateful_reader_, change);
+    reply_listener_->on_new_cache_change_added(&stateful_reader_, change);
 
     EXPECT_EQ(reply_listener_->get_replies_queue()->size(), 0);
 
@@ -517,7 +511,7 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_REMOTE_EX_INVALID_ARGUMEN
 
     CacheChange_t* change = new CacheChange_t();
     change->writerGUID.entityId = c_EntityId_TypeLookup_reply_writer;
-    stateful_reader_.getHistory()->add_change(change);
+    stateful_reader_.get_history()->add_change(change);
 
     TypeLookup_Reply expectedReply;
     expectedReply.header().remoteEx(rpc::RemoteExceptionCode_t::REMOTE_EX_INVALID_ARGUMENT);
@@ -526,7 +520,7 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_REMOTE_EX_INVALID_ARGUMEN
                 testing::Matcher<TypeLookup_Reply&>(_)))
             .WillOnce(testing::DoAll(testing::SetArgReferee<1>(expectedReply), testing::Return(true)));
 
-    reply_listener_->onNewCacheChangeAdded(&stateful_reader_, change);
+    reply_listener_->on_new_cache_change_added(&stateful_reader_, change);
 
     EXPECT_EQ(reply_listener_->get_replies_queue()->size(), 0);
 
@@ -544,7 +538,7 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_REMOTE_EX_OUT_OF_RESOURCE
 
     CacheChange_t* change = new CacheChange_t();
     change->writerGUID.entityId = c_EntityId_TypeLookup_reply_writer;
-    stateful_reader_.getHistory()->add_change(change);
+    stateful_reader_.get_history()->add_change(change);
 
     TypeLookup_Reply expectedReply;
     expectedReply.header().remoteEx(rpc::RemoteExceptionCode_t::REMOTE_EX_OUT_OF_RESOURCES);
@@ -553,7 +547,7 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_REMOTE_EX_OUT_OF_RESOURCE
                 testing::Matcher<TypeLookup_Reply&>(_)))
             .WillOnce(testing::DoAll(testing::SetArgReferee<1>(expectedReply), testing::Return(true)));
 
-    reply_listener_->onNewCacheChangeAdded(&stateful_reader_, change);
+    reply_listener_->on_new_cache_change_added(&stateful_reader_, change);
     EXPECT_EQ(reply_listener_->get_replies_queue()->size(), 0);
 
     Log::Flush();
@@ -570,7 +564,7 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_REMOTE_EX_UNKNOWN_OPERATI
 
     CacheChange_t* change = new CacheChange_t();
     change->writerGUID.entityId = c_EntityId_TypeLookup_reply_writer;
-    stateful_reader_.getHistory()->add_change(change);
+    stateful_reader_.get_history()->add_change(change);
 
     TypeLookup_Reply expectedReply;
     expectedReply.header().remoteEx(rpc::RemoteExceptionCode_t::REMOTE_EX_UNKNOWN_OPERATION);
@@ -579,7 +573,7 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_REMOTE_EX_UNKNOWN_OPERATI
                 testing::Matcher<TypeLookup_Reply&>(_)))
             .WillOnce(testing::DoAll(testing::SetArgReferee<1>(expectedReply), testing::Return(true)));
 
-    reply_listener_->onNewCacheChangeAdded(&stateful_reader_, change);
+    reply_listener_->on_new_cache_change_added(&stateful_reader_, change);
     EXPECT_EQ(reply_listener_->get_replies_queue()->size(), 0);
 
     Log::Flush();
@@ -596,7 +590,7 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_REMOTE_EX_UNKNOWN_EXCEPTI
 
     CacheChange_t* change = new CacheChange_t();
     change->writerGUID.entityId = c_EntityId_TypeLookup_reply_writer;
-    stateful_reader_.getHistory()->add_change(change);
+    stateful_reader_.get_history()->add_change(change);
 
     TypeLookup_Reply expectedReply;
     expectedReply.header().remoteEx(rpc::RemoteExceptionCode_t::REMOTE_EX_UNKNOWN_EXCEPTION);
@@ -605,7 +599,7 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_REMOTE_EX_UNKNOWN_EXCEPTI
                 testing::Matcher<TypeLookup_Reply&>(_)))
             .WillOnce(testing::DoAll(testing::SetArgReferee<1>(expectedReply), testing::Return(true)));
 
-    reply_listener_->onNewCacheChangeAdded(&stateful_reader_, change);
+    reply_listener_->on_new_cache_change_added(&stateful_reader_, change);
     EXPECT_EQ(reply_listener_->get_replies_queue()->size(), 0);
 
     Log::Flush();
@@ -615,13 +609,14 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_REMOTE_EX_UNKNOWN_EXCEPTI
 TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_wrong_replyid)
 {
     MockLogConsumer* log_consumer =
-            setup_expect_log_msg("TYPELOOKUP_SERVICE_REPLY_LISTENER", "Received uknown reply type.");
+            setup_expect_log_msg("TYPELOOKUP_SERVICE_REPLY_LISTENER",
+                    "Received unknown reply operation type in type lookup service.");
 
     TypeIdentfierWithSize tidws;
     tlm_->async_get_type_requests_.emplace(valid_sampleidentity(), tidws);
 
     TypeLookup_Reply reply;
-    reply.return_value()._d() = 44444444U;
+    reply.return_value()._default();
     ReplyWithServerGUID reply_with_guid;
     reply_with_guid.reply = reply;
 
@@ -635,16 +630,19 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_wrong_replyid)
 TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_getTypes_empty)
 {
     MockLogConsumer* log_consumer =
-            setup_expect_log_msg("TYPELOOKUP_SERVICE_REPLY_LISTENER", "Error registering type.");
+            setup_expect_log_msg("TYPELOOKUP_SERVICE_REPLY_LISTENER", "Reply no contains any type.");
 
     TypeIdentfierWithSize tidws;
     tlm_->async_get_type_requests_.emplace(valid_sampleidentity(), tidws);
 
     TypeLookup_Reply reply;
     reply.header().relatedRequestId(valid_sampleidentity());
-    reply.return_value()._d() = TypeLookup_getTypes_HashId;
+    reply.return_value().getType({});
+    reply.return_value().getType().result({});
     ReplyWithServerGUID reply_with_guid;
     reply_with_guid.reply = reply;
+
+    EXPECT_CALL(*tlm_, remove_async_get_type_request(_)).WillOnce(testing::Return(true));
 
     reply_listener_->get_replies_queue()->push(reply_with_guid);
     reply_listener_->notify();
@@ -656,20 +654,29 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_getTypes_empty)
 TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_getTypes_registry_empty_type_error)
 {
     MockLogConsumer* log_consumer =
-            setup_expect_log_msg("TYPELOOKUP_SERVICE_REPLY_LISTENER", "Error registering type.");
+            setup_expect_log_msg("TYPELOOKUP_SERVICE_REPLY_LISTENER", "Error registering remote type.");
 
     TypeIdentfierWithSize tidws;
     tlm_->async_get_type_requests_.emplace(valid_sampleidentity(), tidws);
 
     TypeLookup_Reply reply;
     reply.header().relatedRequestId(valid_sampleidentity());
-    reply.return_value()._d() = TypeLookup_getTypes_HashId;
+    reply.return_value().getType({});
     TypeIdentifierTypeObjectPair pair;
+    pair.type_identifier({});
+    pair.type_object({});
     TypeLookup_getTypes_Out out;
     out.types().push_back(pair);
     reply.return_value().getType().result(out);
     ReplyWithServerGUID reply_with_guid;
     reply_with_guid.reply = reply;
+    TypeIdentifierPair type_ids;
+    type_ids.type_identifier1(pair.type_identifier());
+
+    EXPECT_CALL(registry,
+            register_type_object(_, ::testing::Eq(type_ids))).Times(1).WillOnce(
+        ::testing::Return(RETCODE_PRECONDITION_NOT_MET));
+    EXPECT_CALL(*tlm_, remove_async_get_type_request(_)).WillOnce(testing::Return(true));
 
     reply_listener_->get_replies_queue()->push(reply_with_guid);
     reply_listener_->notify();
@@ -682,20 +689,21 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_getTypes_registry_empty_t
 TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_getTypes_registry_inconsistent_type_error)
 {
     MockLogConsumer* log_consumer =
-            setup_expect_log_msg("TYPELOOKUP_SERVICE_REPLY_LISTENER", "Error registering type.");
+            setup_expect_log_msg("TYPELOOKUP_SERVICE_REPLY_LISTENER", "Error registering remote type.");
 
     TypeIdentfierWithSize tidws;
     tlm_->async_get_type_requests_.emplace(valid_sampleidentity(), tidws);
 
     TypeLookup_Reply reply;
     reply.header().relatedRequestId(valid_sampleidentity());
-    reply.return_value()._d() = TypeLookup_getTypes_HashId;
+    reply.return_value().getType({});
 
     TypeIdentifierTypeObjectPair pair;
     TypeIdentifier id;
-    id._d() = TK_STRUCTURE;
+    id._d(TK_STRUCTURE);
     TypeObject obj;
-    obj.complete()._d() = TK_SEQUENCE;
+    obj.complete({});
+    obj.complete().sequence_type({});
     pair.type_identifier(id);
     pair.type_object(obj);
 
@@ -704,6 +712,14 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_getTypes_registry_inconsi
     reply.return_value().getType().result(out);
     ReplyWithServerGUID reply_with_guid;
     reply_with_guid.reply = reply;
+
+    TypeIdentifierPair type_ids;
+    type_ids.type_identifier1(pair.type_identifier());
+
+    EXPECT_CALL(registry,
+            register_type_object(::testing::Eq(obj), ::testing::Eq(type_ids))).Times(1).WillOnce(
+        ::testing::Return(RETCODE_PRECONDITION_NOT_MET));
+    EXPECT_CALL(*tlm_, remove_async_get_type_request(_)).WillOnce(testing::Return(true));
 
     reply_listener_->get_replies_queue()->push(reply_with_guid);
     reply_listener_->notify();
@@ -718,21 +734,24 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_getDependencies_continuat
             setup_expect_log_msg("TYPELOOKUP_SERVICE_REPLY_LISTENER",
                     "Failed to send get_type_dependencies request");
 
-    // EXPECT_CALL(*tlm_, get_type_dependencies(testing::_, testing::_, testing::_))
-    //         .WillOnce(testing::Return(INVALID_SAMPLE_IDENTITY));
-
     TypeIdentfierWithSize tidws;
     tlm_->async_get_type_requests_.emplace(valid_sampleidentity(), tidws);
 
     TypeLookup_Reply reply;
     reply.header().relatedRequestId(valid_sampleidentity());
-    reply.return_value()._d() = TypeLookup_getDependencies_HashId;
+    reply.return_value().getTypeDependencies({});
     TypeIdentifierTypeObjectPair pair;
     TypeLookup_getTypeDependencies_Out out;
     out.continuation_point(create_continuation_point(10));
     reply.return_value().getTypeDependencies().result(out);
     ReplyWithServerGUID reply_with_guid;
     reply_with_guid.reply = reply;
+
+    EXPECT_CALL(*tlm_,
+            get_type_dependencies(testing::_, testing::_, testing::_)).WillOnce(testing::Return(
+                INVALID_SAMPLE_IDENTITY));
+    EXPECT_CALL(*tlm_, get_types(_, _)).WillOnce(testing::Return(INVALID_SAMPLE_IDENTITY));
+    EXPECT_CALL(*tlm_, remove_async_get_type_request(_)).WillOnce(testing::Return(true));
 
     reply_listener_->get_replies_queue()->push(reply_with_guid);
     reply_listener_->notify();
@@ -754,12 +773,15 @@ TEST_F(TypeLookupServiceTests, TypeLookupReplyListener_getDependencies_get_types
 
     TypeLookup_Reply reply;
     reply.header().relatedRequestId(valid_sampleidentity());
-    reply.return_value()._d() = TypeLookup_getDependencies_HashId;
+    reply.return_value().getTypeDependencies({});
     TypeIdentifierTypeObjectPair pair;
     TypeLookup_getTypeDependencies_Out out;
     reply.return_value().getTypeDependencies().result(out);
     ReplyWithServerGUID reply_with_guid;
     reply_with_guid.reply = reply;
+
+    EXPECT_CALL(*tlm_, get_types(_, _)).WillOnce(testing::Return(INVALID_SAMPLE_IDENTITY));
+    EXPECT_CALL(*tlm_, remove_async_get_type_request(_)).WillOnce(testing::Return(true));
 
     reply_listener_->get_replies_queue()->push(reply_with_guid);
     reply_listener_->notify();
@@ -773,11 +795,13 @@ TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_wrong_EntityId)
     MockLogConsumer* log_consumer =
             setup_expect_log_msg("TL_REQUEST_READER", "Received data from a bad endpoint.");
 
-    CacheChange_t* change = new CacheChange_t();
+    CacheChange_t* change {new CacheChange_t()};
     change->writerGUID.entityId = 0x111111C3;
-    stateful_reader_.getHistory()->add_change(change);
 
-    request_listener_->onNewCacheChangeAdded(&stateful_reader_, change);
+    EXPECT_CALL(*stateful_reader_.history_, remove_change_mock(change)).Times(1).
+            WillOnce(::testing::Return(true));
+
+    request_listener_->on_new_cache_change_added(&stateful_reader_, change);
 
     EXPECT_EQ(reply_listener_->get_replies_queue()->size(), 0);
 
@@ -787,16 +811,16 @@ TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_wrong_EntityId)
 
 TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_malformed_Request)
 {
-    CacheChange_t* change = new CacheChange_t();
+    CacheChange_t* change {new CacheChange_t()};
     change->writerGUID.entityId = c_EntityId_TypeLookup_request_writer;
-    stateful_reader_.getHistory()->add_change(change);
 
-    EXPECT_CALL(*tlm_, receive(
-                testing::Matcher<fastrtps::rtps::CacheChange_t&>(_),
-                testing::Matcher<TypeLookup_Request&>(_)))
+    EXPECT_CALL(*stateful_reader_.history_, remove_change_mock(change)).Times(1).
+            WillOnce(::testing::Return(true));
+
+    EXPECT_CALL(*tlm_, receive(::testing::Ref(*change), testing::Matcher<TypeLookup_Request&>(_)))
             .WillOnce(testing::Return(false));
 
-    request_listener_->onNewCacheChangeAdded(&stateful_reader_, change);
+    request_listener_->on_new_cache_change_added(&stateful_reader_, change);
 
     EXPECT_EQ(request_listener_->get_requests_queue()->size(), 0);
 }
@@ -804,13 +828,16 @@ TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_malformed_Request)
 TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_wrong_requestid)
 {
     MockLogConsumer* log_consumer =
-            setup_expect_log_msg("TYPELOOKUP_SERVICE_REQUEST_LISTENER", "Received unknown request type.");
+            setup_expect_log_msg("TYPELOOKUP_SERVICE_REQUEST_LISTENER",
+                    "Received unknown request in type lookup service.");
 
     TypeIdentfierWithSize tidws;
     tlm_->async_get_type_requests_.emplace(valid_sampleidentity(), tidws);
 
     TypeLookup_Request request;
-    request.data()._d() = 44444444U;
+    request.data()._default();
+
+    EXPECT_CALL(*tlm_, send(testing::Matcher<TypeLookup_Reply&>(_))).WillOnce(testing::Return(true));
 
     request_listener_->get_requests_queue()->push(request);
     request_listener_->notify();
@@ -822,13 +849,14 @@ TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_wrong_requestid)
 TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_getTypes_empty)
 {
     MockLogConsumer* log_consumer =
-            setup_expect_log_msg("TYPELOOKUP_SERVICE_REQUEST_LISTENER", "Error getting type.");
+            setup_expect_log_msg("TYPELOOKUP_SERVICE_REQUEST_LISTENER",
+                    "Request no contains any type identifier.");
 
     TypeIdentfierWithSize tidws;
     tlm_->async_get_type_requests_.emplace(valid_sampleidentity(), tidws);
 
     TypeLookup_Request request;
-    request.data()._d() = TypeLookup_getTypes_HashId;
+    request.data().getTypes({});
 
     request_listener_->get_requests_queue()->push(request);
     request_listener_->notify();
@@ -840,13 +868,13 @@ TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_getTypes_empty)
 TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_getTypes_registry_empty_type_error)
 {
     MockLogConsumer* log_consumer =
-            setup_expect_log_msg("TYPELOOKUP_SERVICE_REQUEST_LISTENER", "Error getting type.");
+            setup_expect_log_msg("TYPELOOKUP_SERVICE_REQUEST_LISTENER",
+                    "Requested TypeIdentifier is not a direct hash.");
 
     TypeIdentfierWithSize tidws;
     tlm_->async_get_type_requests_.emplace(valid_sampleidentity(), tidws);
 
     TypeLookup_Request request;
-    request.data()._d() = TypeLookup_getTypes_HashId;
     TypeLookup_getTypes_In in;
     TypeIdentifierSeq id_seq;
     TypeIdentifier id;
@@ -854,6 +882,12 @@ TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_getTypes_registry_empty
     in.type_ids(id_seq);
     in.type_ids().push_back(id);
     request.data().getTypes(in);
+
+    EXPECT_CALL(registry,
+            get_type_object(::testing::Eq(id), _)).Times(1).WillOnce(
+        ::testing::Return(RETCODE_PRECONDITION_NOT_MET));
+
+    EXPECT_CALL(*tlm_, send(testing::Matcher<TypeLookup_Reply&>(_))).WillOnce(testing::Return(true));
 
     request_listener_->get_requests_queue()->push(request);
     request_listener_->notify();
@@ -865,22 +899,28 @@ TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_getTypes_registry_empty
 TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_getTypes_registry_unknown_type_error)
 {
     MockLogConsumer* log_consumer =
-            setup_expect_log_msg("TYPELOOKUP_SERVICE_REQUEST_LISTENER", "Error getting type.");
+            setup_expect_log_msg("TYPELOOKUP_SERVICE_REQUEST_LISTENER",
+                    "Requested TypeIdentifier is not found in the registry.");
 
     TypeIdentfierWithSize tidws;
     tlm_->async_get_type_requests_.emplace(valid_sampleidentity(), tidws);
 
     TypeLookup_Request request;
-    request.data()._d() = TypeLookup_getTypes_HashId;
     TypeLookup_getTypes_In in;
     TypeIdentifierSeq id_seq;
     TypeIdentifier id;
-    id._d() = TK_STRUCTURE;
+    id._d(TK_STRUCTURE);
 
     id_seq.push_back(id);
     in.type_ids(id_seq);
     in.type_ids().push_back(id);
     request.data().getTypes(in);
+
+    EXPECT_CALL(registry,
+            get_type_object(::testing::Eq(id), _)).Times(1).WillOnce(
+        ::testing::Return(RETCODE_NO_DATA));
+
+    EXPECT_CALL(*tlm_, send(testing::Matcher<TypeLookup_Reply&>(_))).WillOnce(testing::Return(true));
 
     request_listener_->get_requests_queue()->push(request);
     request_listener_->notify();
@@ -892,13 +932,13 @@ TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_getTypes_registry_unkno
 TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_getDependencies_empty)
 {
     MockLogConsumer* log_consumer =
-            setup_expect_log_msg("TYPELOOKUP_SERVICE_REQUEST_LISTENER", "Error getting type dependencies.");
+            setup_expect_log_msg("TYPELOOKUP_SERVICE_REQUEST_LISTENER", "Type dependencies request is empty.");
 
     TypeIdentfierWithSize tidws;
     tlm_->async_get_type_requests_.emplace(valid_sampleidentity(), tidws);
 
     TypeLookup_Request request;
-    request.data()._d() = TypeLookup_getDependencies_HashId;
+    request.data().getTypeDependencies({});
 
     request_listener_->get_requests_queue()->push(request);
     request_listener_->notify();
@@ -910,22 +950,28 @@ TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_getDependencies_empty)
 TEST_F(TypeLookupServiceTests, TypeLookupRequestListener_getDependencies_registry_uknown_type_error)
 {
     MockLogConsumer* log_consumer =
-            setup_expect_log_msg("TYPELOOKUP_SERVICE_REQUEST_LISTENER", "Error getting type dependencies.");
+            setup_expect_log_msg("TYPELOOKUP_SERVICE_REQUEST_LISTENER",
+                    "Requested TypeIdentifier is not found in the registry.");
 
     TypeIdentfierWithSize tidws;
     tlm_->async_get_type_requests_.emplace(valid_sampleidentity(), tidws);
 
     TypeLookup_Request request;
-    request.data()._d() = TypeLookup_getDependencies_HashId;
 
     TypeLookup_getTypeDependencies_In in;
     TypeIdentifierSeq id_seq;
     TypeIdentifier id;
-    id._d() = TK_STRUCTURE;
+    id._d(TK_STRUCTURE);
     id_seq.push_back(id);
     in.type_ids(id_seq);
     in.type_ids().push_back(id);
     request.data().getTypeDependencies(in);
+
+    EXPECT_CALL(registry,
+            get_type_dependencies(::testing::Eq(in.type_ids()), _)).Times(1).WillOnce(
+        ::testing::Return(RETCODE_NO_DATA));
+
+    EXPECT_CALL(*tlm_, send(testing::Matcher<TypeLookup_Reply&>(_))).WillOnce(testing::Return(true));
 
     request_listener_->get_requests_queue()->push(request);
     request_listener_->notify();

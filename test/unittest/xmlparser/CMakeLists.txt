@@ -133,8 +133,8 @@ target_compile_definitions(XMLProfileParserTests PRIVATE
     $<$<BOOL:${MSVC}>:NOMINMAX> # avoid conflic with std::min & std::max in visual studio
     )
 target_include_directories(XMLProfileParserTests PRIVATE
-    ${PROJECT_SOURCE_DIR}/test/mock/dds/TypeObjectRegistry
-    ${PROJECT_SOURCE_DIR}/test/mock/dds/TypeObjectUtils
+    ${PROJECT_SOURCE_DIR}/test/mock/xtypes/TypeObjectRegistry
+    ${PROJECT_SOURCE_DIR}/test/mock/xtypes/TypeObjectUtils
     ${PROJECT_SOURCE_DIR}/test/mock/rtps/Log
     ${PROJECT_SOURCE_DIR}/test/mock/rtps/RTPSDomainImpl # Dependency of fastdds::xtypes::type_representation
     ${PROJECT_SOURCE_DIR}/test/mock/rtps/SharedMemTransportDescriptor
@@ -152,12 +152,13 @@ target_include_directories(XMLProfileParserTests PRIVATE
     $<$<BOOL:${ANDROID}>:${ANDROID_IFADDRS_INCLUDE_DIR}>
     )
 
-target_link_libraries(XMLProfileParserTests GTest::gmock
+target_link_libraries(XMLProfileParserTests
     $<$<BOOL:${WIN32}>:iphlpapi$<SEMICOLON>Shlwapi>
     $<$<BOOL:${WIN32}>:ws2_32>
     ${TINYXML2_LIBRARY}
     fastcdr
     fastdds::xtypes::dynamic-types::impl
+    GTest::gmock
     )
 if(QNX)
     target_link_libraries(XMLProfileParserTests socket)
@@ -221,8 +222,8 @@ target_compile_definitions(XMLParserTests PRIVATE
     $<$<BOOL:${MSVC}>:NOMINMAX> # avoid conflic with std::min & std::max in visual studio
     )
 target_include_directories(XMLParserTests PRIVATE
-    ${PROJECT_SOURCE_DIR}/test/mock/dds/TypeObjectRegistry
-    ${PROJECT_SOURCE_DIR}/test/mock/dds/TypeObjectUtils
+    ${PROJECT_SOURCE_DIR}/test/mock/xtypes/TypeObjectRegistry
+    ${PROJECT_SOURCE_DIR}/test/mock/xtypes/TypeObjectUtils
     ${PROJECT_SOURCE_DIR}/test/mock/rtps/RTPSDomainImpl # Dependency of fastdds::xtypes::type_representation
     ${PROJECT_SOURCE_DIR}/test/mock/rtps/SharedMemTransportDescriptor
     ${PROJECT_SOURCE_DIR}/test/mock/rtps/TCPTransportDescriptor
@@ -239,13 +240,14 @@ target_include_directories(XMLParserTests PRIVATE
     $<$<BOOL:${ANDROID}>:${ANDROID_IFADDRS_INCLUDE_DIR}>
     )
 
-target_link_libraries(XMLParserTests GTest::gtest
+target_link_libraries(XMLParserTests
     $<$<BOOL:${WIN32}>:iphlpapi$<SEMICOLON>Shlwapi>
     $<$<BOOL:${WIN32}>:ws2_32>
     ${TINYXML2_LIBRARY}
     fastcdr
     fastdds::log
     fastdds::xtypes::dynamic-types::impl
+    GTest::gmock
     )
 if(QNX)
     target_link_libraries(XMLParserTests socket)
@@ -337,8 +339,8 @@ target_compile_definitions(XMLEndpointParserTests PRIVATE
     ASIO_STANDALONE
     )
 target_include_directories(XMLEndpointParserTests PRIVATE
-    ${PROJECT_SOURCE_DIR}/test/mock/dds/TypeObjectRegistry
-    ${PROJECT_SOURCE_DIR}/test/mock/dds/TypeObjectUtils
+    ${PROJECT_SOURCE_DIR}/test/mock/xtypes/TypeObjectRegistry
+    ${PROJECT_SOURCE_DIR}/test/mock/xtypes/TypeObjectUtils
     ${PROJECT_SOURCE_DIR}/test/mock/rtps/ReaderProxyData
     ${PROJECT_SOURCE_DIR}/test/mock/rtps/RTPSDomainImpl
     ${PROJECT_SOURCE_DIR}/test/mock/rtps/SharedMemTransportDescriptor
@@ -357,13 +359,14 @@ target_include_directories(XMLEndpointParserTests PRIVATE
     $<$<BOOL:${ANDROID}>:${ANDROID_IFADDRS_INCLUDE_DIR}>
     )
 
-target_link_libraries(XMLEndpointParserTests GTest::gtest
+target_link_libraries(XMLEndpointParserTests
     $<$<BOOL:${WIN32}>:iphlpapi$<SEMICOLON>Shlwapi>
     $<$<BOOL:${WIN32}>:ws2_32>
     ${TINYXML2_LIBRARY}
     fastcdr
     fastdds::log
     fastdds::xtypes::dynamic-types::impl
+    GTest::gmock
     )
 if(QNX)
     target_link_libraries(XMLEndpointParserTests socket)
@@ -427,8 +430,8 @@ target_compile_definitions(XMLLoadFileTests PRIVATE
     HAVE_LOG_NO_INFO=0 FASTDDS_ENFORCE_LOG_INFO # Need LOG_INFO in this test
     )
 target_include_directories(XMLLoadFileTests PRIVATE
-    ${PROJECT_SOURCE_DIR}/test/mock/dds/TypeObjectRegistry
-    ${PROJECT_SOURCE_DIR}/test/mock/dds/TypeObjectUtils
+    ${PROJECT_SOURCE_DIR}/test/mock/xtypes/TypeObjectRegistry
+    ${PROJECT_SOURCE_DIR}/test/mock/xtypes/TypeObjectUtils
     ${PROJECT_SOURCE_DIR}/test/mock/rtps/RTPSDomainImpl # Dependency of fastdds::xtypes::type_representation
     ${PROJECT_SOURCE_DIR}/test/mock/rtps/SharedMemTransportDescriptor
     ${PROJECT_SOURCE_DIR}/test/mock/rtps/TCPTransportDescriptor
@@ -445,13 +448,14 @@ target_include_directories(XMLLoadFileTests PRIVATE
     $<$<BOOL:${ANDROID}>:${ANDROID_IFADDRS_INCLUDE_DIR}>
     )
 
-target_link_libraries(XMLLoadFileTests GTest::gtest
+target_link_libraries(XMLLoadFileTests
     $<$<BOOL:${WIN32}>:iphlpapi$<SEMICOLON>Shlwapi>
     $<$<BOOL:${WIN32}>:ws2_32>
     ${TINYXML2_LIBRARY}
     fastcdr
     fastdds::log
     fastdds::xtypes::dynamic-types::impl
+    GTest::gmock
     )
 if(QNX)
     target_link_libraries(XMLLoadFileTests socket)

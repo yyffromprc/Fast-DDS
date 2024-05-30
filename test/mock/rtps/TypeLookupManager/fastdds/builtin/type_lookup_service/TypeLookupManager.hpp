@@ -103,7 +103,7 @@ namespace fastdds {
 namespace dds {
 namespace builtin {
 
-extern const fastrtps::rtps::SampleIdentity INVALID_SAMPLE_IDENTITY;
+const SampleIdentity INVALID_SAMPLE_IDENTITY;
 
 using AsyncGetTypeWriterCallback = std::function<
     void (eprosima::ProxyPool<eprosima::fastrtps::rtps::WriterProxyData>::smart_ptr&)>;
