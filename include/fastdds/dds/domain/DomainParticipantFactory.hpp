@@ -398,8 +398,6 @@ protected:
 
     DomainParticipantQos default_participant_qos_;
 
-    DomainParticipantExtendedQos default_participant_extended_qos_;
-
     std::shared_ptr<fastrtps::rtps::detail::TopicPayloadPoolRegistry> topic_pool_;
 
     std::shared_ptr<fastrtps::rtps::RTPSDomainImpl> rtps_domain_;

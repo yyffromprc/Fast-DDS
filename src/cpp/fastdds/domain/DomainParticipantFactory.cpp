@@ -55,7 +55,6 @@ DomainParticipantFactory::DomainParticipantFactory()
     : default_xml_profiles_loaded(false)
     , default_domain_id_(0)
     , default_participant_qos_(PARTICIPANT_QOS_DEFAULT)
-    , default_participant_extended_qos_(PARTICIPANT_EXTENDED_QOS_DEFAULT)
     , topic_pool_(fastrtps::rtps::TopicPayloadPoolRegistry::instance())
     , rtps_domain_(fastrtps::rtps::RTPSDomainImpl::get_instance())
     , log_resources_(detail::get_log_resources())
@@ -211,15 +210,7 @@ DomainParticipant* DomainParticipantFactory::create_participant(
         DomainParticipantListener* listener,
         const StatusMask& mask)
 {
-    if (&extended_qos == &PARTICIPANT_EXTENDED_QOS_DEFAULT)
-    {
-        load_profiles(); // load profile so the default domain id is updated
-        return create_participant(default_domain_id_, PARTICIPANT_QOS_DEFAULT, listener, mask);
-    }
-    else
-    {
-        return create_participant(extended_qos.domainId(), extended_qos, listener, mask);
-    }
+    return create_participant(extended_qos.domainId(), extended_qos, listener, mask);
 }
 
 DomainParticipant* DomainParticipantFactory::create_participant_with_default_profile()
@@ -356,7 +347,7 @@ ReturnCode_t DomainParticipantFactory::get_participant_extended_qos_from_profile
         const std::string& profile_name,
         DomainParticipantExtendedQos& extended_qos) const
 {
-    extended_qos = default_participant_extended_qos_;
+    extended_qos = default_participant_qos_;
     ParticipantAttributes attr;
     if (XMLP_ret::XML_OK == XMLProfileManager::fillParticipantAttributes(profile_name, attr, false))
     {
