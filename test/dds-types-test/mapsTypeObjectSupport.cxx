@@ -50,7 +50,7 @@ void register_MapShortShort_type_identifier(
         "MapShortShort", type_ids_MapShortShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortShort)
     {
-        StructTypeFlag struct_flags_MapShortShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortShort = "MapShortShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortShort;
@@ -168,7 +168,7 @@ void register_MapShortUShort_type_identifier(
         "MapShortUShort", type_ids_MapShortUShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortUShort)
     {
-        StructTypeFlag struct_flags_MapShortUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortUShort = "MapShortUShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortUShort;
@@ -286,7 +286,7 @@ void register_MapShortLong_type_identifier(
         "MapShortLong", type_ids_MapShortLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortLong)
     {
-        StructTypeFlag struct_flags_MapShortLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortLong = "MapShortLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortLong;
@@ -404,7 +404,7 @@ void register_MapShortULong_type_identifier(
         "MapShortULong", type_ids_MapShortULong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortULong)
     {
-        StructTypeFlag struct_flags_MapShortULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortULong = "MapShortULong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortULong;
@@ -522,7 +522,7 @@ void register_MapShortLongLong_type_identifier(
         "MapShortLongLong", type_ids_MapShortLongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortLongLong)
     {
-        StructTypeFlag struct_flags_MapShortLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortLongLong = "MapShortLongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortLongLong;
@@ -640,7 +640,7 @@ void register_MapShortULongLong_type_identifier(
         "MapShortULongLong", type_ids_MapShortULongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortULongLong)
     {
-        StructTypeFlag struct_flags_MapShortULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortULongLong = "MapShortULongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortULongLong;
@@ -758,7 +758,7 @@ void register_MapShortFloat_type_identifier(
         "MapShortFloat", type_ids_MapShortFloat);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortFloat)
     {
-        StructTypeFlag struct_flags_MapShortFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortFloat = "MapShortFloat";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortFloat;
@@ -876,7 +876,7 @@ void register_MapShortDouble_type_identifier(
         "MapShortDouble", type_ids_MapShortDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortDouble)
     {
-        StructTypeFlag struct_flags_MapShortDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortDouble = "MapShortDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortDouble;
@@ -994,7 +994,7 @@ void register_MapShortLongDouble_type_identifier(
         "MapShortLongDouble", type_ids_MapShortLongDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortLongDouble)
     {
-        StructTypeFlag struct_flags_MapShortLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortLongDouble = "MapShortLongDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortLongDouble;
@@ -1112,7 +1112,7 @@ void register_MapShortBoolean_type_identifier(
         "MapShortBoolean", type_ids_MapShortBoolean);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortBoolean)
     {
-        StructTypeFlag struct_flags_MapShortBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortBoolean = "MapShortBoolean";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortBoolean;
@@ -1230,7 +1230,7 @@ void register_MapShortOctet_type_identifier(
         "MapShortOctet", type_ids_MapShortOctet);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortOctet)
     {
-        StructTypeFlag struct_flags_MapShortOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortOctet = "MapShortOctet";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortOctet;
@@ -1348,7 +1348,7 @@ void register_MapShortChar_type_identifier(
         "MapShortChar", type_ids_MapShortChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortChar)
     {
-        StructTypeFlag struct_flags_MapShortChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortChar = "MapShortChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortChar;
@@ -1466,7 +1466,7 @@ void register_MapShortWChar_type_identifier(
         "MapShortWChar", type_ids_MapShortWChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortWChar)
     {
-        StructTypeFlag struct_flags_MapShortWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortWChar = "MapShortWChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortWChar;
@@ -1584,7 +1584,7 @@ void register_MapShortString_type_identifier(
         "MapShortString", type_ids_MapShortString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortString)
     {
-        StructTypeFlag struct_flags_MapShortString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortString = "MapShortString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortString;
@@ -1710,7 +1710,7 @@ void register_MapShortWString_type_identifier(
         "MapShortWString", type_ids_MapShortWString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortWString)
     {
-        StructTypeFlag struct_flags_MapShortWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortWString = "MapShortWString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortWString;
@@ -1836,7 +1836,7 @@ void register_MapShortInnerAliasBoundedStringHelper_type_identifier(
         "MapShortInnerAliasBoundedStringHelper", type_ids_MapShortInnerAliasBoundedStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortInnerAliasBoundedStringHelper)
     {
-        StructTypeFlag struct_flags_MapShortInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortInnerAliasBoundedStringHelper = "MapShortInnerAliasBoundedStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortInnerAliasBoundedStringHelper;
@@ -1952,7 +1952,7 @@ void register_MapShortInnerAliasBoundedWStringHelper_type_identifier(
         "MapShortInnerAliasBoundedWStringHelper", type_ids_MapShortInnerAliasBoundedWStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortInnerAliasBoundedWStringHelper)
     {
-        StructTypeFlag struct_flags_MapShortInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortInnerAliasBoundedWStringHelper = "MapShortInnerAliasBoundedWStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortInnerAliasBoundedWStringHelper;
@@ -2068,7 +2068,7 @@ void register_MapShortInnerEnumHelper_type_identifier(
         "MapShortInnerEnumHelper", type_ids_MapShortInnerEnumHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortInnerEnumHelper)
     {
-        StructTypeFlag struct_flags_MapShortInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortInnerEnumHelper = "MapShortInnerEnumHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortInnerEnumHelper;
@@ -2184,7 +2184,7 @@ void register_MapShortInnerBitMaskHelper_type_identifier(
         "MapShortInnerBitMaskHelper", type_ids_MapShortInnerBitMaskHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortInnerBitMaskHelper)
     {
-        StructTypeFlag struct_flags_MapShortInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortInnerBitMaskHelper = "MapShortInnerBitMaskHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortInnerBitMaskHelper;
@@ -2300,7 +2300,7 @@ void register_MapShortInnerAliasHelper_type_identifier(
         "MapShortInnerAliasHelper", type_ids_MapShortInnerAliasHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortInnerAliasHelper)
     {
-        StructTypeFlag struct_flags_MapShortInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortInnerAliasHelper = "MapShortInnerAliasHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortInnerAliasHelper;
@@ -2416,7 +2416,7 @@ void register_MapShortInnerAliasArrayHelper_type_identifier(
         "MapShortInnerAliasArrayHelper", type_ids_MapShortInnerAliasArrayHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortInnerAliasArrayHelper)
     {
-        StructTypeFlag struct_flags_MapShortInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortInnerAliasArrayHelper = "MapShortInnerAliasArrayHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortInnerAliasArrayHelper;
@@ -2532,7 +2532,7 @@ void register_MapShortInnerAliasSequenceHelper_type_identifier(
         "MapShortInnerAliasSequenceHelper", type_ids_MapShortInnerAliasSequenceHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortInnerAliasSequenceHelper)
     {
-        StructTypeFlag struct_flags_MapShortInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortInnerAliasSequenceHelper = "MapShortInnerAliasSequenceHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortInnerAliasSequenceHelper;
@@ -2648,7 +2648,7 @@ void register_MapShortInnerAliasMapHelper_type_identifier(
         "MapShortInnerAliasMapHelper", type_ids_MapShortInnerAliasMapHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortInnerAliasMapHelper)
     {
-        StructTypeFlag struct_flags_MapShortInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortInnerAliasMapHelper = "MapShortInnerAliasMapHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortInnerAliasMapHelper;
@@ -2764,7 +2764,7 @@ void register_MapShortInnerUnionHelper_type_identifier(
         "MapShortInnerUnionHelper", type_ids_MapShortInnerUnionHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortInnerUnionHelper)
     {
-        StructTypeFlag struct_flags_MapShortInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortInnerUnionHelper = "MapShortInnerUnionHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortInnerUnionHelper;
@@ -2880,7 +2880,7 @@ void register_MapShortInnerStructureHelper_type_identifier(
         "MapShortInnerStructureHelper", type_ids_MapShortInnerStructureHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortInnerStructureHelper)
     {
-        StructTypeFlag struct_flags_MapShortInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortInnerStructureHelper = "MapShortInnerStructureHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortInnerStructureHelper;
@@ -2996,7 +2996,7 @@ void register_MapShortInnerBitsetHelper_type_identifier(
         "MapShortInnerBitsetHelper", type_ids_MapShortInnerBitsetHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapShortInnerBitsetHelper)
     {
-        StructTypeFlag struct_flags_MapShortInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapShortInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapShortInnerBitsetHelper = "MapShortInnerBitsetHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapShortInnerBitsetHelper;
@@ -3112,7 +3112,7 @@ void register_MapUShortShort_type_identifier(
         "MapUShortShort", type_ids_MapUShortShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortShort)
     {
-        StructTypeFlag struct_flags_MapUShortShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortShort = "MapUShortShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortShort;
@@ -3230,7 +3230,7 @@ void register_MapUShortUShort_type_identifier(
         "MapUShortUShort", type_ids_MapUShortUShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortUShort)
     {
-        StructTypeFlag struct_flags_MapUShortUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortUShort = "MapUShortUShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortUShort;
@@ -3348,7 +3348,7 @@ void register_MapUShortLong_type_identifier(
         "MapUShortLong", type_ids_MapUShortLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortLong)
     {
-        StructTypeFlag struct_flags_MapUShortLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortLong = "MapUShortLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortLong;
@@ -3466,7 +3466,7 @@ void register_MapUShortULong_type_identifier(
         "MapUShortULong", type_ids_MapUShortULong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortULong)
     {
-        StructTypeFlag struct_flags_MapUShortULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortULong = "MapUShortULong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortULong;
@@ -3584,7 +3584,7 @@ void register_MapUShortLongLong_type_identifier(
         "MapUShortLongLong", type_ids_MapUShortLongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortLongLong)
     {
-        StructTypeFlag struct_flags_MapUShortLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortLongLong = "MapUShortLongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortLongLong;
@@ -3702,7 +3702,7 @@ void register_MapUShortULongLong_type_identifier(
         "MapUShortULongLong", type_ids_MapUShortULongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortULongLong)
     {
-        StructTypeFlag struct_flags_MapUShortULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortULongLong = "MapUShortULongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortULongLong;
@@ -3820,7 +3820,7 @@ void register_MapUShortFloat_type_identifier(
         "MapUShortFloat", type_ids_MapUShortFloat);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortFloat)
     {
-        StructTypeFlag struct_flags_MapUShortFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortFloat = "MapUShortFloat";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortFloat;
@@ -3938,7 +3938,7 @@ void register_MapUShortDouble_type_identifier(
         "MapUShortDouble", type_ids_MapUShortDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortDouble)
     {
-        StructTypeFlag struct_flags_MapUShortDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortDouble = "MapUShortDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortDouble;
@@ -4056,7 +4056,7 @@ void register_MapUShortLongDouble_type_identifier(
         "MapUShortLongDouble", type_ids_MapUShortLongDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortLongDouble)
     {
-        StructTypeFlag struct_flags_MapUShortLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortLongDouble = "MapUShortLongDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortLongDouble;
@@ -4174,7 +4174,7 @@ void register_MapUShortBoolean_type_identifier(
         "MapUShortBoolean", type_ids_MapUShortBoolean);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortBoolean)
     {
-        StructTypeFlag struct_flags_MapUShortBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortBoolean = "MapUShortBoolean";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortBoolean;
@@ -4292,7 +4292,7 @@ void register_MapUShortOctet_type_identifier(
         "MapUShortOctet", type_ids_MapUShortOctet);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortOctet)
     {
-        StructTypeFlag struct_flags_MapUShortOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortOctet = "MapUShortOctet";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortOctet;
@@ -4410,7 +4410,7 @@ void register_MapUShortChar_type_identifier(
         "MapUShortChar", type_ids_MapUShortChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortChar)
     {
-        StructTypeFlag struct_flags_MapUShortChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortChar = "MapUShortChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortChar;
@@ -4528,7 +4528,7 @@ void register_MapUShortWChar_type_identifier(
         "MapUShortWChar", type_ids_MapUShortWChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortWChar)
     {
-        StructTypeFlag struct_flags_MapUShortWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortWChar = "MapUShortWChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortWChar;
@@ -4646,7 +4646,7 @@ void register_MapUShortString_type_identifier(
         "MapUShortString", type_ids_MapUShortString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortString)
     {
-        StructTypeFlag struct_flags_MapUShortString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortString = "MapUShortString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortString;
@@ -4772,7 +4772,7 @@ void register_MapUShortWString_type_identifier(
         "MapUShortWString", type_ids_MapUShortWString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortWString)
     {
-        StructTypeFlag struct_flags_MapUShortWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortWString = "MapUShortWString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortWString;
@@ -4898,7 +4898,7 @@ void register_MapUShortInnerAliasBoundedStringHelper_type_identifier(
         "MapUShortInnerAliasBoundedStringHelper", type_ids_MapUShortInnerAliasBoundedStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortInnerAliasBoundedStringHelper)
     {
-        StructTypeFlag struct_flags_MapUShortInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortInnerAliasBoundedStringHelper = "MapUShortInnerAliasBoundedStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortInnerAliasBoundedStringHelper;
@@ -5014,7 +5014,7 @@ void register_MapUShortInnerAliasBoundedWStringHelper_type_identifier(
         "MapUShortInnerAliasBoundedWStringHelper", type_ids_MapUShortInnerAliasBoundedWStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortInnerAliasBoundedWStringHelper)
     {
-        StructTypeFlag struct_flags_MapUShortInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortInnerAliasBoundedWStringHelper = "MapUShortInnerAliasBoundedWStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortInnerAliasBoundedWStringHelper;
@@ -5130,7 +5130,7 @@ void register_MapUShortInnerEnumHelper_type_identifier(
         "MapUShortInnerEnumHelper", type_ids_MapUShortInnerEnumHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortInnerEnumHelper)
     {
-        StructTypeFlag struct_flags_MapUShortInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortInnerEnumHelper = "MapUShortInnerEnumHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortInnerEnumHelper;
@@ -5246,7 +5246,7 @@ void register_MapUShortInnerBitMaskHelper_type_identifier(
         "MapUShortInnerBitMaskHelper", type_ids_MapUShortInnerBitMaskHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortInnerBitMaskHelper)
     {
-        StructTypeFlag struct_flags_MapUShortInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortInnerBitMaskHelper = "MapUShortInnerBitMaskHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortInnerBitMaskHelper;
@@ -5362,7 +5362,7 @@ void register_MapUShortInnerAliasHelper_type_identifier(
         "MapUShortInnerAliasHelper", type_ids_MapUShortInnerAliasHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortInnerAliasHelper)
     {
-        StructTypeFlag struct_flags_MapUShortInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortInnerAliasHelper = "MapUShortInnerAliasHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortInnerAliasHelper;
@@ -5478,7 +5478,7 @@ void register_MapUShortInnerAliasArrayHelper_type_identifier(
         "MapUShortInnerAliasArrayHelper", type_ids_MapUShortInnerAliasArrayHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortInnerAliasArrayHelper)
     {
-        StructTypeFlag struct_flags_MapUShortInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortInnerAliasArrayHelper = "MapUShortInnerAliasArrayHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortInnerAliasArrayHelper;
@@ -5594,7 +5594,7 @@ void register_MapUShortInnerAliasSequenceHelper_type_identifier(
         "MapUShortInnerAliasSequenceHelper", type_ids_MapUShortInnerAliasSequenceHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortInnerAliasSequenceHelper)
     {
-        StructTypeFlag struct_flags_MapUShortInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortInnerAliasSequenceHelper = "MapUShortInnerAliasSequenceHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortInnerAliasSequenceHelper;
@@ -5710,7 +5710,7 @@ void register_MapUShortInnerAliasMapHelper_type_identifier(
         "MapUShortInnerAliasMapHelper", type_ids_MapUShortInnerAliasMapHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortInnerAliasMapHelper)
     {
-        StructTypeFlag struct_flags_MapUShortInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortInnerAliasMapHelper = "MapUShortInnerAliasMapHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortInnerAliasMapHelper;
@@ -5826,7 +5826,7 @@ void register_MapUShortInnerUnionHelper_type_identifier(
         "MapUShortInnerUnionHelper", type_ids_MapUShortInnerUnionHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortInnerUnionHelper)
     {
-        StructTypeFlag struct_flags_MapUShortInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortInnerUnionHelper = "MapUShortInnerUnionHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortInnerUnionHelper;
@@ -5942,7 +5942,7 @@ void register_MapUShortInnerStructureHelper_type_identifier(
         "MapUShortInnerStructureHelper", type_ids_MapUShortInnerStructureHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortInnerStructureHelper)
     {
-        StructTypeFlag struct_flags_MapUShortInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortInnerStructureHelper = "MapUShortInnerStructureHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortInnerStructureHelper;
@@ -6058,7 +6058,7 @@ void register_MapUShortInnerBitsetHelper_type_identifier(
         "MapUShortInnerBitsetHelper", type_ids_MapUShortInnerBitsetHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapUShortInnerBitsetHelper)
     {
-        StructTypeFlag struct_flags_MapUShortInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapUShortInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapUShortInnerBitsetHelper = "MapUShortInnerBitsetHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapUShortInnerBitsetHelper;
@@ -6174,7 +6174,7 @@ void register_MapLongShort_type_identifier(
         "MapLongShort", type_ids_MapLongShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongShort)
     {
-        StructTypeFlag struct_flags_MapLongShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongShort = "MapLongShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongShort;
@@ -6292,7 +6292,7 @@ void register_MapLongUShort_type_identifier(
         "MapLongUShort", type_ids_MapLongUShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongUShort)
     {
-        StructTypeFlag struct_flags_MapLongUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongUShort = "MapLongUShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongUShort;
@@ -6410,7 +6410,7 @@ void register_MapLongLong_type_identifier(
         "MapLongLong", type_ids_MapLongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLong)
     {
-        StructTypeFlag struct_flags_MapLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLong = "MapLongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLong;
@@ -6528,7 +6528,7 @@ void register_MapLongULong_type_identifier(
         "MapLongULong", type_ids_MapLongULong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongULong)
     {
-        StructTypeFlag struct_flags_MapLongULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongULong = "MapLongULong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongULong;
@@ -6646,7 +6646,7 @@ void register_MapLongKeyLongLongValue_type_identifier(
         "MapLongKeyLongLongValue", type_ids_MapLongKeyLongLongValue);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongKeyLongLongValue)
     {
-        StructTypeFlag struct_flags_MapLongKeyLongLongValue = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongKeyLongLongValue = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongKeyLongLongValue = "MapLongKeyLongLongValue";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongKeyLongLongValue;
@@ -6764,7 +6764,7 @@ void register_MapLongULongLong_type_identifier(
         "MapLongULongLong", type_ids_MapLongULongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongULongLong)
     {
-        StructTypeFlag struct_flags_MapLongULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongULongLong = "MapLongULongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongULongLong;
@@ -6882,7 +6882,7 @@ void register_MapLongFloat_type_identifier(
         "MapLongFloat", type_ids_MapLongFloat);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongFloat)
     {
-        StructTypeFlag struct_flags_MapLongFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongFloat = "MapLongFloat";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongFloat;
@@ -7000,7 +7000,7 @@ void register_MapLongDouble_type_identifier(
         "MapLongDouble", type_ids_MapLongDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongDouble)
     {
-        StructTypeFlag struct_flags_MapLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongDouble = "MapLongDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongDouble;
@@ -7118,7 +7118,7 @@ void register_MapLongKeyLongDoubleValue_type_identifier(
         "MapLongKeyLongDoubleValue", type_ids_MapLongKeyLongDoubleValue);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongKeyLongDoubleValue)
     {
-        StructTypeFlag struct_flags_MapLongKeyLongDoubleValue = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongKeyLongDoubleValue = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongKeyLongDoubleValue = "MapLongKeyLongDoubleValue";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongKeyLongDoubleValue;
@@ -7236,7 +7236,7 @@ void register_MapLongBoolean_type_identifier(
         "MapLongBoolean", type_ids_MapLongBoolean);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongBoolean)
     {
-        StructTypeFlag struct_flags_MapLongBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongBoolean = "MapLongBoolean";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongBoolean;
@@ -7354,7 +7354,7 @@ void register_MapLongOctet_type_identifier(
         "MapLongOctet", type_ids_MapLongOctet);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongOctet)
     {
-        StructTypeFlag struct_flags_MapLongOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongOctet = "MapLongOctet";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongOctet;
@@ -7472,7 +7472,7 @@ void register_MapLongChar_type_identifier(
         "MapLongChar", type_ids_MapLongChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongChar)
     {
-        StructTypeFlag struct_flags_MapLongChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongChar = "MapLongChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongChar;
@@ -7590,7 +7590,7 @@ void register_MapLongWChar_type_identifier(
         "MapLongWChar", type_ids_MapLongWChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongWChar)
     {
-        StructTypeFlag struct_flags_MapLongWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongWChar = "MapLongWChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongWChar;
@@ -7708,7 +7708,7 @@ void register_MapLongString_type_identifier(
         "MapLongString", type_ids_MapLongString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongString)
     {
-        StructTypeFlag struct_flags_MapLongString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongString = "MapLongString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongString;
@@ -7834,7 +7834,7 @@ void register_MapLongWString_type_identifier(
         "MapLongWString", type_ids_MapLongWString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongWString)
     {
-        StructTypeFlag struct_flags_MapLongWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongWString = "MapLongWString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongWString;
@@ -7960,7 +7960,7 @@ void register_MapLongInnerAliasBoundedStringHelper_type_identifier(
         "MapLongInnerAliasBoundedStringHelper", type_ids_MapLongInnerAliasBoundedStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongInnerAliasBoundedStringHelper)
     {
-        StructTypeFlag struct_flags_MapLongInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongInnerAliasBoundedStringHelper = "MapLongInnerAliasBoundedStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongInnerAliasBoundedStringHelper;
@@ -8076,7 +8076,7 @@ void register_MapLongInnerAliasBoundedWStringHelper_type_identifier(
         "MapLongInnerAliasBoundedWStringHelper", type_ids_MapLongInnerAliasBoundedWStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongInnerAliasBoundedWStringHelper)
     {
-        StructTypeFlag struct_flags_MapLongInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongInnerAliasBoundedWStringHelper = "MapLongInnerAliasBoundedWStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongInnerAliasBoundedWStringHelper;
@@ -8192,7 +8192,7 @@ void register_MapLongInnerEnumHelper_type_identifier(
         "MapLongInnerEnumHelper", type_ids_MapLongInnerEnumHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongInnerEnumHelper)
     {
-        StructTypeFlag struct_flags_MapLongInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongInnerEnumHelper = "MapLongInnerEnumHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongInnerEnumHelper;
@@ -8308,7 +8308,7 @@ void register_MapLongInnerBitMaskHelper_type_identifier(
         "MapLongInnerBitMaskHelper", type_ids_MapLongInnerBitMaskHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongInnerBitMaskHelper)
     {
-        StructTypeFlag struct_flags_MapLongInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongInnerBitMaskHelper = "MapLongInnerBitMaskHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongInnerBitMaskHelper;
@@ -8424,7 +8424,7 @@ void register_MapLongInnerAliasHelper_type_identifier(
         "MapLongInnerAliasHelper", type_ids_MapLongInnerAliasHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongInnerAliasHelper)
     {
-        StructTypeFlag struct_flags_MapLongInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongInnerAliasHelper = "MapLongInnerAliasHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongInnerAliasHelper;
@@ -8540,7 +8540,7 @@ void register_MapLongInnerAliasArrayHelper_type_identifier(
         "MapLongInnerAliasArrayHelper", type_ids_MapLongInnerAliasArrayHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongInnerAliasArrayHelper)
     {
-        StructTypeFlag struct_flags_MapLongInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongInnerAliasArrayHelper = "MapLongInnerAliasArrayHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongInnerAliasArrayHelper;
@@ -8656,7 +8656,7 @@ void register_MapLongInnerAliasSequenceHelper_type_identifier(
         "MapLongInnerAliasSequenceHelper", type_ids_MapLongInnerAliasSequenceHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongInnerAliasSequenceHelper)
     {
-        StructTypeFlag struct_flags_MapLongInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongInnerAliasSequenceHelper = "MapLongInnerAliasSequenceHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongInnerAliasSequenceHelper;
@@ -8772,7 +8772,7 @@ void register_MapLongInnerAliasMapHelper_type_identifier(
         "MapLongInnerAliasMapHelper", type_ids_MapLongInnerAliasMapHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongInnerAliasMapHelper)
     {
-        StructTypeFlag struct_flags_MapLongInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongInnerAliasMapHelper = "MapLongInnerAliasMapHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongInnerAliasMapHelper;
@@ -8888,7 +8888,7 @@ void register_MapLongInnerUnionHelper_type_identifier(
         "MapLongInnerUnionHelper", type_ids_MapLongInnerUnionHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongInnerUnionHelper)
     {
-        StructTypeFlag struct_flags_MapLongInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongInnerUnionHelper = "MapLongInnerUnionHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongInnerUnionHelper;
@@ -9004,7 +9004,7 @@ void register_MapLongInnerStructureHelper_type_identifier(
         "MapLongInnerStructureHelper", type_ids_MapLongInnerStructureHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongInnerStructureHelper)
     {
-        StructTypeFlag struct_flags_MapLongInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongInnerStructureHelper = "MapLongInnerStructureHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongInnerStructureHelper;
@@ -9120,7 +9120,7 @@ void register_MapLongInnerBitsetHelper_type_identifier(
         "MapLongInnerBitsetHelper", type_ids_MapLongInnerBitsetHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongInnerBitsetHelper)
     {
-        StructTypeFlag struct_flags_MapLongInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongInnerBitsetHelper = "MapLongInnerBitsetHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongInnerBitsetHelper;
@@ -9236,7 +9236,7 @@ void register_MapULongShort_type_identifier(
         "MapULongShort", type_ids_MapULongShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongShort)
     {
-        StructTypeFlag struct_flags_MapULongShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongShort = "MapULongShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongShort;
@@ -9354,7 +9354,7 @@ void register_MapULongUShort_type_identifier(
         "MapULongUShort", type_ids_MapULongUShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongUShort)
     {
-        StructTypeFlag struct_flags_MapULongUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongUShort = "MapULongUShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongUShort;
@@ -9472,7 +9472,7 @@ void register_MapULongLong_type_identifier(
         "MapULongLong", type_ids_MapULongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLong)
     {
-        StructTypeFlag struct_flags_MapULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLong = "MapULongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLong;
@@ -9590,7 +9590,7 @@ void register_MapULongULong_type_identifier(
         "MapULongULong", type_ids_MapULongULong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongULong)
     {
-        StructTypeFlag struct_flags_MapULongULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongULong = "MapULongULong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongULong;
@@ -9708,7 +9708,7 @@ void register_MapKeyULongValueLongLong_type_identifier(
         "MapKeyULongValueLongLong", type_ids_MapKeyULongValueLongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapKeyULongValueLongLong)
     {
-        StructTypeFlag struct_flags_MapKeyULongValueLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapKeyULongValueLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapKeyULongValueLongLong = "MapKeyULongValueLongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapKeyULongValueLongLong;
@@ -9826,7 +9826,7 @@ void register_MapULongULongLong_type_identifier(
         "MapULongULongLong", type_ids_MapULongULongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongULongLong)
     {
-        StructTypeFlag struct_flags_MapULongULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongULongLong = "MapULongULongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongULongLong;
@@ -9944,7 +9944,7 @@ void register_MapULongFloat_type_identifier(
         "MapULongFloat", type_ids_MapULongFloat);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongFloat)
     {
-        StructTypeFlag struct_flags_MapULongFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongFloat = "MapULongFloat";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongFloat;
@@ -10062,7 +10062,7 @@ void register_MapULongDouble_type_identifier(
         "MapULongDouble", type_ids_MapULongDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongDouble)
     {
-        StructTypeFlag struct_flags_MapULongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongDouble = "MapULongDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongDouble;
@@ -10180,7 +10180,7 @@ void register_MapKeyULongValueLongDouble_type_identifier(
         "MapKeyULongValueLongDouble", type_ids_MapKeyULongValueLongDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapKeyULongValueLongDouble)
     {
-        StructTypeFlag struct_flags_MapKeyULongValueLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapKeyULongValueLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapKeyULongValueLongDouble = "MapKeyULongValueLongDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapKeyULongValueLongDouble;
@@ -10298,7 +10298,7 @@ void register_MapULongBoolean_type_identifier(
         "MapULongBoolean", type_ids_MapULongBoolean);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongBoolean)
     {
-        StructTypeFlag struct_flags_MapULongBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongBoolean = "MapULongBoolean";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongBoolean;
@@ -10416,7 +10416,7 @@ void register_MapULongOctet_type_identifier(
         "MapULongOctet", type_ids_MapULongOctet);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongOctet)
     {
-        StructTypeFlag struct_flags_MapULongOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongOctet = "MapULongOctet";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongOctet;
@@ -10534,7 +10534,7 @@ void register_MapULongChar_type_identifier(
         "MapULongChar", type_ids_MapULongChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongChar)
     {
-        StructTypeFlag struct_flags_MapULongChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongChar = "MapULongChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongChar;
@@ -10652,7 +10652,7 @@ void register_MapULongWChar_type_identifier(
         "MapULongWChar", type_ids_MapULongWChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongWChar)
     {
-        StructTypeFlag struct_flags_MapULongWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongWChar = "MapULongWChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongWChar;
@@ -10770,7 +10770,7 @@ void register_MapULongString_type_identifier(
         "MapULongString", type_ids_MapULongString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongString)
     {
-        StructTypeFlag struct_flags_MapULongString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongString = "MapULongString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongString;
@@ -10896,7 +10896,7 @@ void register_MapULongWString_type_identifier(
         "MapULongWString", type_ids_MapULongWString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongWString)
     {
-        StructTypeFlag struct_flags_MapULongWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongWString = "MapULongWString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongWString;
@@ -11022,7 +11022,7 @@ void register_MapULongInnerAliasBoundedStringHelper_type_identifier(
         "MapULongInnerAliasBoundedStringHelper", type_ids_MapULongInnerAliasBoundedStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongInnerAliasBoundedStringHelper)
     {
-        StructTypeFlag struct_flags_MapULongInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongInnerAliasBoundedStringHelper = "MapULongInnerAliasBoundedStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongInnerAliasBoundedStringHelper;
@@ -11138,7 +11138,7 @@ void register_MapULongInnerAliasBoundedWStringHelper_type_identifier(
         "MapULongInnerAliasBoundedWStringHelper", type_ids_MapULongInnerAliasBoundedWStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongInnerAliasBoundedWStringHelper)
     {
-        StructTypeFlag struct_flags_MapULongInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongInnerAliasBoundedWStringHelper = "MapULongInnerAliasBoundedWStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongInnerAliasBoundedWStringHelper;
@@ -11254,7 +11254,7 @@ void register_MapULongInnerEnumHelper_type_identifier(
         "MapULongInnerEnumHelper", type_ids_MapULongInnerEnumHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongInnerEnumHelper)
     {
-        StructTypeFlag struct_flags_MapULongInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongInnerEnumHelper = "MapULongInnerEnumHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongInnerEnumHelper;
@@ -11370,7 +11370,7 @@ void register_MapULongInnerBitMaskHelper_type_identifier(
         "MapULongInnerBitMaskHelper", type_ids_MapULongInnerBitMaskHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongInnerBitMaskHelper)
     {
-        StructTypeFlag struct_flags_MapULongInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongInnerBitMaskHelper = "MapULongInnerBitMaskHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongInnerBitMaskHelper;
@@ -11486,7 +11486,7 @@ void register_MapULongInnerAliasHelper_type_identifier(
         "MapULongInnerAliasHelper", type_ids_MapULongInnerAliasHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongInnerAliasHelper)
     {
-        StructTypeFlag struct_flags_MapULongInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongInnerAliasHelper = "MapULongInnerAliasHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongInnerAliasHelper;
@@ -11602,7 +11602,7 @@ void register_MapULongInnerAliasArrayHelper_type_identifier(
         "MapULongInnerAliasArrayHelper", type_ids_MapULongInnerAliasArrayHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongInnerAliasArrayHelper)
     {
-        StructTypeFlag struct_flags_MapULongInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongInnerAliasArrayHelper = "MapULongInnerAliasArrayHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongInnerAliasArrayHelper;
@@ -11718,7 +11718,7 @@ void register_MapULongInnerAliasSequenceHelper_type_identifier(
         "MapULongInnerAliasSequenceHelper", type_ids_MapULongInnerAliasSequenceHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongInnerAliasSequenceHelper)
     {
-        StructTypeFlag struct_flags_MapULongInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongInnerAliasSequenceHelper = "MapULongInnerAliasSequenceHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongInnerAliasSequenceHelper;
@@ -11834,7 +11834,7 @@ void register_MapULongInnerAliasMapHelper_type_identifier(
         "MapULongInnerAliasMapHelper", type_ids_MapULongInnerAliasMapHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongInnerAliasMapHelper)
     {
-        StructTypeFlag struct_flags_MapULongInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongInnerAliasMapHelper = "MapULongInnerAliasMapHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongInnerAliasMapHelper;
@@ -11950,7 +11950,7 @@ void register_MapULongInnerUnionHelper_type_identifier(
         "MapULongInnerUnionHelper", type_ids_MapULongInnerUnionHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongInnerUnionHelper)
     {
-        StructTypeFlag struct_flags_MapULongInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongInnerUnionHelper = "MapULongInnerUnionHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongInnerUnionHelper;
@@ -12066,7 +12066,7 @@ void register_MapULongInnerStructureHelper_type_identifier(
         "MapULongInnerStructureHelper", type_ids_MapULongInnerStructureHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongInnerStructureHelper)
     {
-        StructTypeFlag struct_flags_MapULongInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongInnerStructureHelper = "MapULongInnerStructureHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongInnerStructureHelper;
@@ -12182,7 +12182,7 @@ void register_MapULongInnerBitsetHelper_type_identifier(
         "MapULongInnerBitsetHelper", type_ids_MapULongInnerBitsetHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongInnerBitsetHelper)
     {
-        StructTypeFlag struct_flags_MapULongInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongInnerBitsetHelper = "MapULongInnerBitsetHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongInnerBitsetHelper;
@@ -12298,7 +12298,7 @@ void register_MapLongLongShort_type_identifier(
         "MapLongLongShort", type_ids_MapLongLongShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongShort)
     {
-        StructTypeFlag struct_flags_MapLongLongShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongShort = "MapLongLongShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongShort;
@@ -12416,7 +12416,7 @@ void register_MapLongLongUShort_type_identifier(
         "MapLongLongUShort", type_ids_MapLongLongUShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongUShort)
     {
-        StructTypeFlag struct_flags_MapLongLongUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongUShort = "MapLongLongUShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongUShort;
@@ -12534,7 +12534,7 @@ void register_MapLongLongKeyLongValue_type_identifier(
         "MapLongLongKeyLongValue", type_ids_MapLongLongKeyLongValue);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongKeyLongValue)
     {
-        StructTypeFlag struct_flags_MapLongLongKeyLongValue = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongKeyLongValue = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongKeyLongValue = "MapLongLongKeyLongValue";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongKeyLongValue;
@@ -12652,7 +12652,7 @@ void register_MapLongLongULong_type_identifier(
         "MapLongLongULong", type_ids_MapLongLongULong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongULong)
     {
-        StructTypeFlag struct_flags_MapLongLongULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongULong = "MapLongLongULong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongULong;
@@ -12770,7 +12770,7 @@ void register_MapLongLongLongLong_type_identifier(
         "MapLongLongLongLong", type_ids_MapLongLongLongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongLongLong)
     {
-        StructTypeFlag struct_flags_MapLongLongLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongLongLong = "MapLongLongLongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongLongLong;
@@ -12888,7 +12888,7 @@ void register_MapLongLongULongLong_type_identifier(
         "MapLongLongULongLong", type_ids_MapLongLongULongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongULongLong)
     {
-        StructTypeFlag struct_flags_MapLongLongULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongULongLong = "MapLongLongULongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongULongLong;
@@ -13006,7 +13006,7 @@ void register_MapLongLongFloat_type_identifier(
         "MapLongLongFloat", type_ids_MapLongLongFloat);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongFloat)
     {
-        StructTypeFlag struct_flags_MapLongLongFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongFloat = "MapLongLongFloat";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongFloat;
@@ -13124,7 +13124,7 @@ void register_MapLongLongKeyDoubleValue_type_identifier(
         "MapLongLongKeyDoubleValue", type_ids_MapLongLongKeyDoubleValue);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongKeyDoubleValue)
     {
-        StructTypeFlag struct_flags_MapLongLongKeyDoubleValue = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongKeyDoubleValue = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongKeyDoubleValue = "MapLongLongKeyDoubleValue";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongKeyDoubleValue;
@@ -13242,7 +13242,7 @@ void register_MapLongLongLongDouble_type_identifier(
         "MapLongLongLongDouble", type_ids_MapLongLongLongDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongLongDouble)
     {
-        StructTypeFlag struct_flags_MapLongLongLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongLongDouble = "MapLongLongLongDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongLongDouble;
@@ -13360,7 +13360,7 @@ void register_MapLongLongBoolean_type_identifier(
         "MapLongLongBoolean", type_ids_MapLongLongBoolean);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongBoolean)
     {
-        StructTypeFlag struct_flags_MapLongLongBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongBoolean = "MapLongLongBoolean";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongBoolean;
@@ -13478,7 +13478,7 @@ void register_MapLongLongOctet_type_identifier(
         "MapLongLongOctet", type_ids_MapLongLongOctet);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongOctet)
     {
-        StructTypeFlag struct_flags_MapLongLongOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongOctet = "MapLongLongOctet";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongOctet;
@@ -13596,7 +13596,7 @@ void register_MapLongLongChar_type_identifier(
         "MapLongLongChar", type_ids_MapLongLongChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongChar)
     {
-        StructTypeFlag struct_flags_MapLongLongChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongChar = "MapLongLongChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongChar;
@@ -13714,7 +13714,7 @@ void register_MapLongLongWChar_type_identifier(
         "MapLongLongWChar", type_ids_MapLongLongWChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongWChar)
     {
-        StructTypeFlag struct_flags_MapLongLongWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongWChar = "MapLongLongWChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongWChar;
@@ -13832,7 +13832,7 @@ void register_MapLongLongString_type_identifier(
         "MapLongLongString", type_ids_MapLongLongString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongString)
     {
-        StructTypeFlag struct_flags_MapLongLongString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongString = "MapLongLongString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongString;
@@ -13958,7 +13958,7 @@ void register_MapLongLongWString_type_identifier(
         "MapLongLongWString", type_ids_MapLongLongWString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongWString)
     {
-        StructTypeFlag struct_flags_MapLongLongWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongWString = "MapLongLongWString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongWString;
@@ -14084,7 +14084,7 @@ void register_MapLongLongInnerAliasBoundedStringHelper_type_identifier(
         "MapLongLongInnerAliasBoundedStringHelper", type_ids_MapLongLongInnerAliasBoundedStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongInnerAliasBoundedStringHelper)
     {
-        StructTypeFlag struct_flags_MapLongLongInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongInnerAliasBoundedStringHelper = "MapLongLongInnerAliasBoundedStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongInnerAliasBoundedStringHelper;
@@ -14200,7 +14200,7 @@ void register_MapLongLongInnerAliasBoundedWStringHelper_type_identifier(
         "MapLongLongInnerAliasBoundedWStringHelper", type_ids_MapLongLongInnerAliasBoundedWStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongInnerAliasBoundedWStringHelper)
     {
-        StructTypeFlag struct_flags_MapLongLongInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongInnerAliasBoundedWStringHelper = "MapLongLongInnerAliasBoundedWStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongInnerAliasBoundedWStringHelper;
@@ -14316,7 +14316,7 @@ void register_MapLongLongInnerEnumHelper_type_identifier(
         "MapLongLongInnerEnumHelper", type_ids_MapLongLongInnerEnumHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongInnerEnumHelper)
     {
-        StructTypeFlag struct_flags_MapLongLongInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongInnerEnumHelper = "MapLongLongInnerEnumHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongInnerEnumHelper;
@@ -14432,7 +14432,7 @@ void register_MapLongLongInnerBitMaskHelper_type_identifier(
         "MapLongLongInnerBitMaskHelper", type_ids_MapLongLongInnerBitMaskHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongInnerBitMaskHelper)
     {
-        StructTypeFlag struct_flags_MapLongLongInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongInnerBitMaskHelper = "MapLongLongInnerBitMaskHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongInnerBitMaskHelper;
@@ -14548,7 +14548,7 @@ void register_MapLongLongInnerAliasHelper_type_identifier(
         "MapLongLongInnerAliasHelper", type_ids_MapLongLongInnerAliasHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongInnerAliasHelper)
     {
-        StructTypeFlag struct_flags_MapLongLongInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongInnerAliasHelper = "MapLongLongInnerAliasHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongInnerAliasHelper;
@@ -14664,7 +14664,7 @@ void register_MapLongLongInnerAliasArrayHelper_type_identifier(
         "MapLongLongInnerAliasArrayHelper", type_ids_MapLongLongInnerAliasArrayHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongInnerAliasArrayHelper)
     {
-        StructTypeFlag struct_flags_MapLongLongInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongInnerAliasArrayHelper = "MapLongLongInnerAliasArrayHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongInnerAliasArrayHelper;
@@ -14780,7 +14780,7 @@ void register_MapLongLongInnerAliasSequenceHelper_type_identifier(
         "MapLongLongInnerAliasSequenceHelper", type_ids_MapLongLongInnerAliasSequenceHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongInnerAliasSequenceHelper)
     {
-        StructTypeFlag struct_flags_MapLongLongInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongInnerAliasSequenceHelper = "MapLongLongInnerAliasSequenceHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongInnerAliasSequenceHelper;
@@ -14896,7 +14896,7 @@ void register_MapLongLongInnerAliasMapHelper_type_identifier(
         "MapLongLongInnerAliasMapHelper", type_ids_MapLongLongInnerAliasMapHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongInnerAliasMapHelper)
     {
-        StructTypeFlag struct_flags_MapLongLongInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongInnerAliasMapHelper = "MapLongLongInnerAliasMapHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongInnerAliasMapHelper;
@@ -15012,7 +15012,7 @@ void register_MapLongLongInnerUnionHelper_type_identifier(
         "MapLongLongInnerUnionHelper", type_ids_MapLongLongInnerUnionHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongInnerUnionHelper)
     {
-        StructTypeFlag struct_flags_MapLongLongInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongInnerUnionHelper = "MapLongLongInnerUnionHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongInnerUnionHelper;
@@ -15128,7 +15128,7 @@ void register_MapLongLongInnerStructureHelper_type_identifier(
         "MapLongLongInnerStructureHelper", type_ids_MapLongLongInnerStructureHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongInnerStructureHelper)
     {
-        StructTypeFlag struct_flags_MapLongLongInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongInnerStructureHelper = "MapLongLongInnerStructureHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongInnerStructureHelper;
@@ -15244,7 +15244,7 @@ void register_MapLongLongInnerBitsetHelper_type_identifier(
         "MapLongLongInnerBitsetHelper", type_ids_MapLongLongInnerBitsetHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapLongLongInnerBitsetHelper)
     {
-        StructTypeFlag struct_flags_MapLongLongInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapLongLongInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapLongLongInnerBitsetHelper = "MapLongLongInnerBitsetHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapLongLongInnerBitsetHelper;
@@ -15360,7 +15360,7 @@ void register_MapULongLongShort_type_identifier(
         "MapULongLongShort", type_ids_MapULongLongShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongShort)
     {
-        StructTypeFlag struct_flags_MapULongLongShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongShort = "MapULongLongShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongShort;
@@ -15478,7 +15478,7 @@ void register_MapULongLongUShort_type_identifier(
         "MapULongLongUShort", type_ids_MapULongLongUShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongUShort)
     {
-        StructTypeFlag struct_flags_MapULongLongUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongUShort = "MapULongLongUShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongUShort;
@@ -15596,7 +15596,7 @@ void register_MapULongLongLong_type_identifier(
         "MapULongLongLong", type_ids_MapULongLongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongLong)
     {
-        StructTypeFlag struct_flags_MapULongLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongLong = "MapULongLongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongLong;
@@ -15714,7 +15714,7 @@ void register_MapULongLongULong_type_identifier(
         "MapULongLongULong", type_ids_MapULongLongULong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongULong)
     {
-        StructTypeFlag struct_flags_MapULongLongULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongULong = "MapULongLongULong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongULong;
@@ -15832,7 +15832,7 @@ void register_MapULongLongLongLong_type_identifier(
         "MapULongLongLongLong", type_ids_MapULongLongLongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongLongLong)
     {
-        StructTypeFlag struct_flags_MapULongLongLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongLongLong = "MapULongLongLongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongLongLong;
@@ -15950,7 +15950,7 @@ void register_MapULongLongULongLong_type_identifier(
         "MapULongLongULongLong", type_ids_MapULongLongULongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongULongLong)
     {
-        StructTypeFlag struct_flags_MapULongLongULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongULongLong = "MapULongLongULongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongULongLong;
@@ -16068,7 +16068,7 @@ void register_MapULongLongFloat_type_identifier(
         "MapULongLongFloat", type_ids_MapULongLongFloat);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongFloat)
     {
-        StructTypeFlag struct_flags_MapULongLongFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongFloat = "MapULongLongFloat";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongFloat;
@@ -16186,7 +16186,7 @@ void register_MapKeyULongLongValueDouble_type_identifier(
         "MapKeyULongLongValueDouble", type_ids_MapKeyULongLongValueDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapKeyULongLongValueDouble)
     {
-        StructTypeFlag struct_flags_MapKeyULongLongValueDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapKeyULongLongValueDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapKeyULongLongValueDouble = "MapKeyULongLongValueDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapKeyULongLongValueDouble;
@@ -16304,7 +16304,7 @@ void register_MapULongLongLongDouble_type_identifier(
         "MapULongLongLongDouble", type_ids_MapULongLongLongDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongLongDouble)
     {
-        StructTypeFlag struct_flags_MapULongLongLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongLongDouble = "MapULongLongLongDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongLongDouble;
@@ -16422,7 +16422,7 @@ void register_MapULongLongBoolean_type_identifier(
         "MapULongLongBoolean", type_ids_MapULongLongBoolean);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongBoolean)
     {
-        StructTypeFlag struct_flags_MapULongLongBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongBoolean = "MapULongLongBoolean";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongBoolean;
@@ -16540,7 +16540,7 @@ void register_MapULongLongOctet_type_identifier(
         "MapULongLongOctet", type_ids_MapULongLongOctet);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongOctet)
     {
-        StructTypeFlag struct_flags_MapULongLongOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongOctet = "MapULongLongOctet";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongOctet;
@@ -16658,7 +16658,7 @@ void register_MapULongLongChar_type_identifier(
         "MapULongLongChar", type_ids_MapULongLongChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongChar)
     {
-        StructTypeFlag struct_flags_MapULongLongChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongChar = "MapULongLongChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongChar;
@@ -16776,7 +16776,7 @@ void register_MapULongLongWChar_type_identifier(
         "MapULongLongWChar", type_ids_MapULongLongWChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongWChar)
     {
-        StructTypeFlag struct_flags_MapULongLongWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongWChar = "MapULongLongWChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongWChar;
@@ -16894,7 +16894,7 @@ void register_MapULongLongString_type_identifier(
         "MapULongLongString", type_ids_MapULongLongString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongString)
     {
-        StructTypeFlag struct_flags_MapULongLongString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongString = "MapULongLongString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongString;
@@ -17020,7 +17020,7 @@ void register_MapULongLongWString_type_identifier(
         "MapULongLongWString", type_ids_MapULongLongWString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongWString)
     {
-        StructTypeFlag struct_flags_MapULongLongWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongWString = "MapULongLongWString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongWString;
@@ -17146,7 +17146,7 @@ void register_MapULongLongInnerAliasBoundedStringHelper_type_identifier(
         "MapULongLongInnerAliasBoundedStringHelper", type_ids_MapULongLongInnerAliasBoundedStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongInnerAliasBoundedStringHelper)
     {
-        StructTypeFlag struct_flags_MapULongLongInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongInnerAliasBoundedStringHelper = "MapULongLongInnerAliasBoundedStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongInnerAliasBoundedStringHelper;
@@ -17262,7 +17262,7 @@ void register_MapULongLongInnerAliasBoundedWStringHelper_type_identifier(
         "MapULongLongInnerAliasBoundedWStringHelper", type_ids_MapULongLongInnerAliasBoundedWStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongInnerAliasBoundedWStringHelper)
     {
-        StructTypeFlag struct_flags_MapULongLongInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongInnerAliasBoundedWStringHelper = "MapULongLongInnerAliasBoundedWStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongInnerAliasBoundedWStringHelper;
@@ -17378,7 +17378,7 @@ void register_MapULongLongInnerEnumHelper_type_identifier(
         "MapULongLongInnerEnumHelper", type_ids_MapULongLongInnerEnumHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongInnerEnumHelper)
     {
-        StructTypeFlag struct_flags_MapULongLongInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongInnerEnumHelper = "MapULongLongInnerEnumHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongInnerEnumHelper;
@@ -17494,7 +17494,7 @@ void register_MapULongLongInnerBitMaskHelper_type_identifier(
         "MapULongLongInnerBitMaskHelper", type_ids_MapULongLongInnerBitMaskHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongInnerBitMaskHelper)
     {
-        StructTypeFlag struct_flags_MapULongLongInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongInnerBitMaskHelper = "MapULongLongInnerBitMaskHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongInnerBitMaskHelper;
@@ -17610,7 +17610,7 @@ void register_MapULongLongInnerAliasHelper_type_identifier(
         "MapULongLongInnerAliasHelper", type_ids_MapULongLongInnerAliasHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongInnerAliasHelper)
     {
-        StructTypeFlag struct_flags_MapULongLongInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongInnerAliasHelper = "MapULongLongInnerAliasHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongInnerAliasHelper;
@@ -17726,7 +17726,7 @@ void register_MapULongLongInnerAliasArrayHelper_type_identifier(
         "MapULongLongInnerAliasArrayHelper", type_ids_MapULongLongInnerAliasArrayHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongInnerAliasArrayHelper)
     {
-        StructTypeFlag struct_flags_MapULongLongInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongInnerAliasArrayHelper = "MapULongLongInnerAliasArrayHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongInnerAliasArrayHelper;
@@ -17842,7 +17842,7 @@ void register_MapULongLongInnerAliasSequenceHelper_type_identifier(
         "MapULongLongInnerAliasSequenceHelper", type_ids_MapULongLongInnerAliasSequenceHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongInnerAliasSequenceHelper)
     {
-        StructTypeFlag struct_flags_MapULongLongInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongInnerAliasSequenceHelper = "MapULongLongInnerAliasSequenceHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongInnerAliasSequenceHelper;
@@ -17958,7 +17958,7 @@ void register_MapULongLongInnerAliasMapHelper_type_identifier(
         "MapULongLongInnerAliasMapHelper", type_ids_MapULongLongInnerAliasMapHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongInnerAliasMapHelper)
     {
-        StructTypeFlag struct_flags_MapULongLongInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongInnerAliasMapHelper = "MapULongLongInnerAliasMapHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongInnerAliasMapHelper;
@@ -18074,7 +18074,7 @@ void register_MapULongLongInnerUnionHelper_type_identifier(
         "MapULongLongInnerUnionHelper", type_ids_MapULongLongInnerUnionHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongInnerUnionHelper)
     {
-        StructTypeFlag struct_flags_MapULongLongInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongInnerUnionHelper = "MapULongLongInnerUnionHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongInnerUnionHelper;
@@ -18190,7 +18190,7 @@ void register_MapULongLongInnerStructureHelper_type_identifier(
         "MapULongLongInnerStructureHelper", type_ids_MapULongLongInnerStructureHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongInnerStructureHelper)
     {
-        StructTypeFlag struct_flags_MapULongLongInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongInnerStructureHelper = "MapULongLongInnerStructureHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongInnerStructureHelper;
@@ -18306,7 +18306,7 @@ void register_MapULongLongInnerBitsetHelper_type_identifier(
         "MapULongLongInnerBitsetHelper", type_ids_MapULongLongInnerBitsetHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapULongLongInnerBitsetHelper)
     {
-        StructTypeFlag struct_flags_MapULongLongInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapULongLongInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapULongLongInnerBitsetHelper = "MapULongLongInnerBitsetHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapULongLongInnerBitsetHelper;
@@ -18422,7 +18422,7 @@ void register_MapStringShort_type_identifier(
         "MapStringShort", type_ids_MapStringShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringShort)
     {
-        StructTypeFlag struct_flags_MapStringShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringShort = "MapStringShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringShort;
@@ -18548,7 +18548,7 @@ void register_MapStringUShort_type_identifier(
         "MapStringUShort", type_ids_MapStringUShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringUShort)
     {
-        StructTypeFlag struct_flags_MapStringUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringUShort = "MapStringUShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringUShort;
@@ -18674,7 +18674,7 @@ void register_MapStringLong_type_identifier(
         "MapStringLong", type_ids_MapStringLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringLong)
     {
-        StructTypeFlag struct_flags_MapStringLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringLong = "MapStringLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringLong;
@@ -18800,7 +18800,7 @@ void register_MapStringULong_type_identifier(
         "MapStringULong", type_ids_MapStringULong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringULong)
     {
-        StructTypeFlag struct_flags_MapStringULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringULong = "MapStringULong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringULong;
@@ -18926,7 +18926,7 @@ void register_MapStringLongLong_type_identifier(
         "MapStringLongLong", type_ids_MapStringLongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringLongLong)
     {
-        StructTypeFlag struct_flags_MapStringLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringLongLong = "MapStringLongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringLongLong;
@@ -19052,7 +19052,7 @@ void register_MapStringULongLong_type_identifier(
         "MapStringULongLong", type_ids_MapStringULongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringULongLong)
     {
-        StructTypeFlag struct_flags_MapStringULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringULongLong = "MapStringULongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringULongLong;
@@ -19178,7 +19178,7 @@ void register_MapStringFloat_type_identifier(
         "MapStringFloat", type_ids_MapStringFloat);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringFloat)
     {
-        StructTypeFlag struct_flags_MapStringFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringFloat = "MapStringFloat";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringFloat;
@@ -19304,7 +19304,7 @@ void register_MapStringDouble_type_identifier(
         "MapStringDouble", type_ids_MapStringDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringDouble)
     {
-        StructTypeFlag struct_flags_MapStringDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringDouble = "MapStringDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringDouble;
@@ -19430,7 +19430,7 @@ void register_MapStringLongDouble_type_identifier(
         "MapStringLongDouble", type_ids_MapStringLongDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringLongDouble)
     {
-        StructTypeFlag struct_flags_MapStringLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringLongDouble = "MapStringLongDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringLongDouble;
@@ -19556,7 +19556,7 @@ void register_MapStringBoolean_type_identifier(
         "MapStringBoolean", type_ids_MapStringBoolean);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringBoolean)
     {
-        StructTypeFlag struct_flags_MapStringBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringBoolean = "MapStringBoolean";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringBoolean;
@@ -19682,7 +19682,7 @@ void register_MapStringOctet_type_identifier(
         "MapStringOctet", type_ids_MapStringOctet);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringOctet)
     {
-        StructTypeFlag struct_flags_MapStringOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringOctet = "MapStringOctet";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringOctet;
@@ -19808,7 +19808,7 @@ void register_MapStringChar_type_identifier(
         "MapStringChar", type_ids_MapStringChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringChar)
     {
-        StructTypeFlag struct_flags_MapStringChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringChar = "MapStringChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringChar;
@@ -19934,7 +19934,7 @@ void register_MapStringWChar_type_identifier(
         "MapStringWChar", type_ids_MapStringWChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringWChar)
     {
-        StructTypeFlag struct_flags_MapStringWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringWChar = "MapStringWChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringWChar;
@@ -20060,7 +20060,7 @@ void register_MapStringString_type_identifier(
         "MapStringString", type_ids_MapStringString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringString)
     {
-        StructTypeFlag struct_flags_MapStringString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringString = "MapStringString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringString;
@@ -20194,7 +20194,7 @@ void register_MapStringWString_type_identifier(
         "MapStringWString", type_ids_MapStringWString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringWString)
     {
-        StructTypeFlag struct_flags_MapStringWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringWString = "MapStringWString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringWString;
@@ -20328,7 +20328,7 @@ void register_MapStringInnerAliasBoundedStringHelper_type_identifier(
         "MapStringInnerAliasBoundedStringHelper", type_ids_MapStringInnerAliasBoundedStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringInnerAliasBoundedStringHelper)
     {
-        StructTypeFlag struct_flags_MapStringInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringInnerAliasBoundedStringHelper = "MapStringInnerAliasBoundedStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringInnerAliasBoundedStringHelper;
@@ -20452,7 +20452,7 @@ void register_MapStringInnerAliasBoundedWStringHelper_type_identifier(
         "MapStringInnerAliasBoundedWStringHelper", type_ids_MapStringInnerAliasBoundedWStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringInnerAliasBoundedWStringHelper)
     {
-        StructTypeFlag struct_flags_MapStringInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringInnerAliasBoundedWStringHelper = "MapStringInnerAliasBoundedWStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringInnerAliasBoundedWStringHelper;
@@ -20576,7 +20576,7 @@ void register_MapStringInnerEnumHelper_type_identifier(
         "MapStringInnerEnumHelper", type_ids_MapStringInnerEnumHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringInnerEnumHelper)
     {
-        StructTypeFlag struct_flags_MapStringInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringInnerEnumHelper = "MapStringInnerEnumHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringInnerEnumHelper;
@@ -20700,7 +20700,7 @@ void register_MapStringInnerBitMaskHelper_type_identifier(
         "MapStringInnerBitMaskHelper", type_ids_MapStringInnerBitMaskHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringInnerBitMaskHelper)
     {
-        StructTypeFlag struct_flags_MapStringInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringInnerBitMaskHelper = "MapStringInnerBitMaskHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringInnerBitMaskHelper;
@@ -20824,7 +20824,7 @@ void register_MapStringInnerAliasHelper_type_identifier(
         "MapStringInnerAliasHelper", type_ids_MapStringInnerAliasHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringInnerAliasHelper)
     {
-        StructTypeFlag struct_flags_MapStringInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringInnerAliasHelper = "MapStringInnerAliasHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringInnerAliasHelper;
@@ -20948,7 +20948,7 @@ void register_MapStringInnerAliasArrayHelper_type_identifier(
         "MapStringInnerAliasArrayHelper", type_ids_MapStringInnerAliasArrayHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringInnerAliasArrayHelper)
     {
-        StructTypeFlag struct_flags_MapStringInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringInnerAliasArrayHelper = "MapStringInnerAliasArrayHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringInnerAliasArrayHelper;
@@ -21072,7 +21072,7 @@ void register_MapStringInnerAliasSequenceHelper_type_identifier(
         "MapStringInnerAliasSequenceHelper", type_ids_MapStringInnerAliasSequenceHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringInnerAliasSequenceHelper)
     {
-        StructTypeFlag struct_flags_MapStringInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringInnerAliasSequenceHelper = "MapStringInnerAliasSequenceHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringInnerAliasSequenceHelper;
@@ -21196,7 +21196,7 @@ void register_MapStringInnerAliasMapHelper_type_identifier(
         "MapStringInnerAliasMapHelper", type_ids_MapStringInnerAliasMapHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringInnerAliasMapHelper)
     {
-        StructTypeFlag struct_flags_MapStringInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringInnerAliasMapHelper = "MapStringInnerAliasMapHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringInnerAliasMapHelper;
@@ -21320,7 +21320,7 @@ void register_MapStringInnerUnionHelper_type_identifier(
         "MapStringInnerUnionHelper", type_ids_MapStringInnerUnionHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringInnerUnionHelper)
     {
-        StructTypeFlag struct_flags_MapStringInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringInnerUnionHelper = "MapStringInnerUnionHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringInnerUnionHelper;
@@ -21444,7 +21444,7 @@ void register_MapStringInnerStructureHelper_type_identifier(
         "MapStringInnerStructureHelper", type_ids_MapStringInnerStructureHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringInnerStructureHelper)
     {
-        StructTypeFlag struct_flags_MapStringInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringInnerStructureHelper = "MapStringInnerStructureHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringInnerStructureHelper;
@@ -21568,7 +21568,7 @@ void register_MapStringInnerBitsetHelper_type_identifier(
         "MapStringInnerBitsetHelper", type_ids_MapStringInnerBitsetHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapStringInnerBitsetHelper)
     {
-        StructTypeFlag struct_flags_MapStringInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapStringInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapStringInnerBitsetHelper = "MapStringInnerBitsetHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapStringInnerBitsetHelper;
@@ -21692,7 +21692,7 @@ void register_MapWStringShort_type_identifier(
         "MapWStringShort", type_ids_MapWStringShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringShort)
     {
-        StructTypeFlag struct_flags_MapWStringShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringShort = "MapWStringShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringShort;
@@ -21818,7 +21818,7 @@ void register_MapWStringUShort_type_identifier(
         "MapWStringUShort", type_ids_MapWStringUShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringUShort)
     {
-        StructTypeFlag struct_flags_MapWStringUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringUShort = "MapWStringUShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringUShort;
@@ -21944,7 +21944,7 @@ void register_MapWStringLong_type_identifier(
         "MapWStringLong", type_ids_MapWStringLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringLong)
     {
-        StructTypeFlag struct_flags_MapWStringLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringLong = "MapWStringLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringLong;
@@ -22070,7 +22070,7 @@ void register_MapWStringULong_type_identifier(
         "MapWStringULong", type_ids_MapWStringULong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringULong)
     {
-        StructTypeFlag struct_flags_MapWStringULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringULong = "MapWStringULong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringULong;
@@ -22196,7 +22196,7 @@ void register_MapWStringLongLong_type_identifier(
         "MapWStringLongLong", type_ids_MapWStringLongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringLongLong)
     {
-        StructTypeFlag struct_flags_MapWStringLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringLongLong = "MapWStringLongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringLongLong;
@@ -22322,7 +22322,7 @@ void register_MapWStringULongLong_type_identifier(
         "MapWStringULongLong", type_ids_MapWStringULongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringULongLong)
     {
-        StructTypeFlag struct_flags_MapWStringULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringULongLong = "MapWStringULongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringULongLong;
@@ -22448,7 +22448,7 @@ void register_MapWStringFloat_type_identifier(
         "MapWStringFloat", type_ids_MapWStringFloat);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringFloat)
     {
-        StructTypeFlag struct_flags_MapWStringFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringFloat = "MapWStringFloat";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringFloat;
@@ -22574,7 +22574,7 @@ void register_MapWStringDouble_type_identifier(
         "MapWStringDouble", type_ids_MapWStringDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringDouble)
     {
-        StructTypeFlag struct_flags_MapWStringDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringDouble = "MapWStringDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringDouble;
@@ -22700,7 +22700,7 @@ void register_MapWStringLongDouble_type_identifier(
         "MapWStringLongDouble", type_ids_MapWStringLongDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringLongDouble)
     {
-        StructTypeFlag struct_flags_MapWStringLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringLongDouble = "MapWStringLongDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringLongDouble;
@@ -22826,7 +22826,7 @@ void register_MapWStringBoolean_type_identifier(
         "MapWStringBoolean", type_ids_MapWStringBoolean);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringBoolean)
     {
-        StructTypeFlag struct_flags_MapWStringBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringBoolean = "MapWStringBoolean";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringBoolean;
@@ -22952,7 +22952,7 @@ void register_MapWStringOctet_type_identifier(
         "MapWStringOctet", type_ids_MapWStringOctet);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringOctet)
     {
-        StructTypeFlag struct_flags_MapWStringOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringOctet = "MapWStringOctet";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringOctet;
@@ -23078,7 +23078,7 @@ void register_MapWStringChar_type_identifier(
         "MapWStringChar", type_ids_MapWStringChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringChar)
     {
-        StructTypeFlag struct_flags_MapWStringChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringChar = "MapWStringChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringChar;
@@ -23204,7 +23204,7 @@ void register_MapWStringWChar_type_identifier(
         "MapWStringWChar", type_ids_MapWStringWChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringWChar)
     {
-        StructTypeFlag struct_flags_MapWStringWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringWChar = "MapWStringWChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringWChar;
@@ -23330,7 +23330,7 @@ void register_MapWStringString_type_identifier(
         "MapWStringString", type_ids_MapWStringString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringString)
     {
-        StructTypeFlag struct_flags_MapWStringString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringString = "MapWStringString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringString;
@@ -23464,7 +23464,7 @@ void register_MapWStringWString_type_identifier(
         "MapWStringWString", type_ids_MapWStringWString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringWString)
     {
-        StructTypeFlag struct_flags_MapWStringWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringWString = "MapWStringWString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringWString;
@@ -23598,7 +23598,7 @@ void register_MapWStringInnerAliasBoundedStringHelper_type_identifier(
         "MapWStringInnerAliasBoundedStringHelper", type_ids_MapWStringInnerAliasBoundedStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringInnerAliasBoundedStringHelper)
     {
-        StructTypeFlag struct_flags_MapWStringInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringInnerAliasBoundedStringHelper = "MapWStringInnerAliasBoundedStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringInnerAliasBoundedStringHelper;
@@ -23722,7 +23722,7 @@ void register_MapWStringInnerAliasBoundedWStringHelper_type_identifier(
         "MapWStringInnerAliasBoundedWStringHelper", type_ids_MapWStringInnerAliasBoundedWStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringInnerAliasBoundedWStringHelper)
     {
-        StructTypeFlag struct_flags_MapWStringInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringInnerAliasBoundedWStringHelper = "MapWStringInnerAliasBoundedWStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringInnerAliasBoundedWStringHelper;
@@ -23846,7 +23846,7 @@ void register_MapWStringInnerEnumHelper_type_identifier(
         "MapWStringInnerEnumHelper", type_ids_MapWStringInnerEnumHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringInnerEnumHelper)
     {
-        StructTypeFlag struct_flags_MapWStringInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringInnerEnumHelper = "MapWStringInnerEnumHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringInnerEnumHelper;
@@ -23970,7 +23970,7 @@ void register_MapWStringInnerBitMaskHelper_type_identifier(
         "MapWStringInnerBitMaskHelper", type_ids_MapWStringInnerBitMaskHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringInnerBitMaskHelper)
     {
-        StructTypeFlag struct_flags_MapWStringInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringInnerBitMaskHelper = "MapWStringInnerBitMaskHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringInnerBitMaskHelper;
@@ -24094,7 +24094,7 @@ void register_MapWStringInnerAliasHelper_type_identifier(
         "MapWStringInnerAliasHelper", type_ids_MapWStringInnerAliasHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringInnerAliasHelper)
     {
-        StructTypeFlag struct_flags_MapWStringInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringInnerAliasHelper = "MapWStringInnerAliasHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringInnerAliasHelper;
@@ -24218,7 +24218,7 @@ void register_MapWStringInnerAliasArrayHelper_type_identifier(
         "MapWStringInnerAliasArrayHelper", type_ids_MapWStringInnerAliasArrayHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringInnerAliasArrayHelper)
     {
-        StructTypeFlag struct_flags_MapWStringInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringInnerAliasArrayHelper = "MapWStringInnerAliasArrayHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringInnerAliasArrayHelper;
@@ -24342,7 +24342,7 @@ void register_MapWStringInnerAliasSequenceHelper_type_identifier(
         "MapWStringInnerAliasSequenceHelper", type_ids_MapWStringInnerAliasSequenceHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringInnerAliasSequenceHelper)
     {
-        StructTypeFlag struct_flags_MapWStringInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringInnerAliasSequenceHelper = "MapWStringInnerAliasSequenceHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringInnerAliasSequenceHelper;
@@ -24466,7 +24466,7 @@ void register_MapWStringInnerAliasMapHelper_type_identifier(
         "MapWStringInnerAliasMapHelper", type_ids_MapWStringInnerAliasMapHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringInnerAliasMapHelper)
     {
-        StructTypeFlag struct_flags_MapWStringInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringInnerAliasMapHelper = "MapWStringInnerAliasMapHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringInnerAliasMapHelper;
@@ -24590,7 +24590,7 @@ void register_MapWStringInnerUnionHelper_type_identifier(
         "MapWStringInnerUnionHelper", type_ids_MapWStringInnerUnionHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringInnerUnionHelper)
     {
-        StructTypeFlag struct_flags_MapWStringInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringInnerUnionHelper = "MapWStringInnerUnionHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringInnerUnionHelper;
@@ -24714,7 +24714,7 @@ void register_MapWStringInnerStructureHelper_type_identifier(
         "MapWStringInnerStructureHelper", type_ids_MapWStringInnerStructureHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringInnerStructureHelper)
     {
-        StructTypeFlag struct_flags_MapWStringInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringInnerStructureHelper = "MapWStringInnerStructureHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringInnerStructureHelper;
@@ -24838,7 +24838,7 @@ void register_MapWStringInnerBitsetHelper_type_identifier(
         "MapWStringInnerBitsetHelper", type_ids_MapWStringInnerBitsetHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapWStringInnerBitsetHelper)
     {
-        StructTypeFlag struct_flags_MapWStringInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapWStringInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapWStringInnerBitsetHelper = "MapWStringInnerBitsetHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapWStringInnerBitsetHelper;
@@ -24962,7 +24962,7 @@ void register_MapInnerAliasBoundedStringHelperShort_type_identifier(
         "MapInnerAliasBoundedStringHelperShort", type_ids_MapInnerAliasBoundedStringHelperShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperShort)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperShort = "MapInnerAliasBoundedStringHelperShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperShort;
@@ -25078,7 +25078,7 @@ void register_MapInnerAliasBoundedStringHelperUShort_type_identifier(
         "MapInnerAliasBoundedStringHelperUShort", type_ids_MapInnerAliasBoundedStringHelperUShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperUShort)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperUShort = "MapInnerAliasBoundedStringHelperUShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperUShort;
@@ -25194,7 +25194,7 @@ void register_MapInnerAliasBoundedStringHelperLong_type_identifier(
         "MapInnerAliasBoundedStringHelperLong", type_ids_MapInnerAliasBoundedStringHelperLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperLong)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperLong = "MapInnerAliasBoundedStringHelperLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperLong;
@@ -25310,7 +25310,7 @@ void register_MapInnerAliasBoundedStringHelperULong_type_identifier(
         "MapInnerAliasBoundedStringHelperULong", type_ids_MapInnerAliasBoundedStringHelperULong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperULong)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperULong = "MapInnerAliasBoundedStringHelperULong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperULong;
@@ -25426,7 +25426,7 @@ void register_MapInnerAliasBoundedStringHelperLongLong_type_identifier(
         "MapInnerAliasBoundedStringHelperLongLong", type_ids_MapInnerAliasBoundedStringHelperLongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperLongLong)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperLongLong = "MapInnerAliasBoundedStringHelperLongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperLongLong;
@@ -25542,7 +25542,7 @@ void register_MapInnerAliasBoundedStringHelperULongLong_type_identifier(
         "MapInnerAliasBoundedStringHelperULongLong", type_ids_MapInnerAliasBoundedStringHelperULongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperULongLong)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperULongLong = "MapInnerAliasBoundedStringHelperULongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperULongLong;
@@ -25658,7 +25658,7 @@ void register_MapInnerAliasBoundedStringHelperFloat_type_identifier(
         "MapInnerAliasBoundedStringHelperFloat", type_ids_MapInnerAliasBoundedStringHelperFloat);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperFloat)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperFloat = "MapInnerAliasBoundedStringHelperFloat";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperFloat;
@@ -25774,7 +25774,7 @@ void register_MapInnerAliasBoundedStringHelperDouble_type_identifier(
         "MapInnerAliasBoundedStringHelperDouble", type_ids_MapInnerAliasBoundedStringHelperDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperDouble)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperDouble = "MapInnerAliasBoundedStringHelperDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperDouble;
@@ -25890,7 +25890,7 @@ void register_MapInnerAliasBoundedStringHelperLongDouble_type_identifier(
         "MapInnerAliasBoundedStringHelperLongDouble", type_ids_MapInnerAliasBoundedStringHelperLongDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperLongDouble)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperLongDouble = "MapInnerAliasBoundedStringHelperLongDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperLongDouble;
@@ -26006,7 +26006,7 @@ void register_MapInnerAliasBoundedStringHelperBoolean_type_identifier(
         "MapInnerAliasBoundedStringHelperBoolean", type_ids_MapInnerAliasBoundedStringHelperBoolean);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperBoolean)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperBoolean = "MapInnerAliasBoundedStringHelperBoolean";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperBoolean;
@@ -26122,7 +26122,7 @@ void register_MapInnerAliasBoundedStringHelperOctet_type_identifier(
         "MapInnerAliasBoundedStringHelperOctet", type_ids_MapInnerAliasBoundedStringHelperOctet);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperOctet)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperOctet = "MapInnerAliasBoundedStringHelperOctet";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperOctet;
@@ -26238,7 +26238,7 @@ void register_MapInnerAliasBoundedStringHelperChar_type_identifier(
         "MapInnerAliasBoundedStringHelperChar", type_ids_MapInnerAliasBoundedStringHelperChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperChar)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperChar = "MapInnerAliasBoundedStringHelperChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperChar;
@@ -26354,7 +26354,7 @@ void register_MapInnerAliasBoundedStringHelperWChar_type_identifier(
         "MapInnerAliasBoundedStringHelperWChar", type_ids_MapInnerAliasBoundedStringHelperWChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperWChar)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperWChar = "MapInnerAliasBoundedStringHelperWChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperWChar;
@@ -26470,7 +26470,7 @@ void register_MapInnerAliasBoundedStringHelperString_type_identifier(
         "MapInnerAliasBoundedStringHelperString", type_ids_MapInnerAliasBoundedStringHelperString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperString)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperString = "MapInnerAliasBoundedStringHelperString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperString;
@@ -26594,7 +26594,7 @@ void register_MapInnerAliasBoundedStringHelperWString_type_identifier(
         "MapInnerAliasBoundedStringHelperWString", type_ids_MapInnerAliasBoundedStringHelperWString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperWString)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperWString = "MapInnerAliasBoundedStringHelperWString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperWString;
@@ -26718,7 +26718,7 @@ void register_MapInnerAliasBoundedStringHelperInnerAliasBoundedStringHelper_type
         "MapInnerAliasBoundedStringHelperInnerAliasBoundedStringHelper", type_ids_MapInnerAliasBoundedStringHelperInnerAliasBoundedStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperInnerAliasBoundedStringHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperInnerAliasBoundedStringHelper = "MapInnerAliasBoundedStringHelperInnerAliasBoundedStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperInnerAliasBoundedStringHelper;
@@ -26832,7 +26832,7 @@ void register_MapInnerAliasBoundedStringHelperInnerAliasBoundedWStringHelper_typ
         "MapInnerAliasBoundedStringHelperInnerAliasBoundedWStringHelper", type_ids_MapInnerAliasBoundedStringHelperInnerAliasBoundedWStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperInnerAliasBoundedWStringHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperInnerAliasBoundedWStringHelper = "MapInnerAliasBoundedStringHelperInnerAliasBoundedWStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperInnerAliasBoundedWStringHelper;
@@ -26946,7 +26946,7 @@ void register_MapInnerAliasBoundedStringHelperInnerEnumHelper_type_identifier(
         "MapInnerAliasBoundedStringHelperInnerEnumHelper", type_ids_MapInnerAliasBoundedStringHelperInnerEnumHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperInnerEnumHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperInnerEnumHelper = "MapInnerAliasBoundedStringHelperInnerEnumHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperInnerEnumHelper;
@@ -27060,7 +27060,7 @@ void register_MapInnerAliasBoundedStringHelperInnerBitMaskHelper_type_identifier
         "MapInnerAliasBoundedStringHelperInnerBitMaskHelper", type_ids_MapInnerAliasBoundedStringHelperInnerBitMaskHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperInnerBitMaskHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperInnerBitMaskHelper = "MapInnerAliasBoundedStringHelperInnerBitMaskHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperInnerBitMaskHelper;
@@ -27174,7 +27174,7 @@ void register_MapInnerAliasBoundedStringHelperInnerAliasHelper_type_identifier(
         "MapInnerAliasBoundedStringHelperInnerAliasHelper", type_ids_MapInnerAliasBoundedStringHelperInnerAliasHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperInnerAliasHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperInnerAliasHelper = "MapInnerAliasBoundedStringHelperInnerAliasHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperInnerAliasHelper;
@@ -27288,7 +27288,7 @@ void register_MapInnerAliasBoundedStringHelperInnerAliasArrayHelper_type_identif
         "MapInnerAliasBoundedStringHelperInnerAliasArrayHelper", type_ids_MapInnerAliasBoundedStringHelperInnerAliasArrayHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperInnerAliasArrayHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperInnerAliasArrayHelper = "MapInnerAliasBoundedStringHelperInnerAliasArrayHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperInnerAliasArrayHelper;
@@ -27402,7 +27402,7 @@ void register_MapInnerAliasBoundedStringHelperInnerAliasSequenceHelper_type_iden
         "MapInnerAliasBoundedStringHelperInnerAliasSequenceHelper", type_ids_MapInnerAliasBoundedStringHelperInnerAliasSequenceHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperInnerAliasSequenceHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperInnerAliasSequenceHelper = "MapInnerAliasBoundedStringHelperInnerAliasSequenceHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperInnerAliasSequenceHelper;
@@ -27516,7 +27516,7 @@ void register_MapInnerAliasBoundedStringHelperInnerAliasMapHelper_type_identifie
         "MapInnerAliasBoundedStringHelperInnerAliasMapHelper", type_ids_MapInnerAliasBoundedStringHelperInnerAliasMapHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperInnerAliasMapHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperInnerAliasMapHelper = "MapInnerAliasBoundedStringHelperInnerAliasMapHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperInnerAliasMapHelper;
@@ -27630,7 +27630,7 @@ void register_MapInnerAliasBoundedStringHelperInnerUnionHelper_type_identifier(
         "MapInnerAliasBoundedStringHelperInnerUnionHelper", type_ids_MapInnerAliasBoundedStringHelperInnerUnionHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperInnerUnionHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperInnerUnionHelper = "MapInnerAliasBoundedStringHelperInnerUnionHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperInnerUnionHelper;
@@ -27744,7 +27744,7 @@ void register_MapInnerAliasBoundedStringHelperInnerStructureHelper_type_identifi
         "MapInnerAliasBoundedStringHelperInnerStructureHelper", type_ids_MapInnerAliasBoundedStringHelperInnerStructureHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperInnerStructureHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperInnerStructureHelper = "MapInnerAliasBoundedStringHelperInnerStructureHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperInnerStructureHelper;
@@ -27858,7 +27858,7 @@ void register_MapInnerAliasBoundedStringHelperInnerBitsetHelper_type_identifier(
         "MapInnerAliasBoundedStringHelperInnerBitsetHelper", type_ids_MapInnerAliasBoundedStringHelperInnerBitsetHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedStringHelperInnerBitsetHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedStringHelperInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedStringHelperInnerBitsetHelper = "MapInnerAliasBoundedStringHelperInnerBitsetHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedStringHelperInnerBitsetHelper;
@@ -27972,7 +27972,7 @@ void register_MapInnerAliasBoundedWStringHelperShort_type_identifier(
         "MapInnerAliasBoundedWStringHelperShort", type_ids_MapInnerAliasBoundedWStringHelperShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperShort)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperShort = "MapInnerAliasBoundedWStringHelperShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperShort;
@@ -28088,7 +28088,7 @@ void register_MapInnerAliasBoundedWStringHelperUShort_type_identifier(
         "MapInnerAliasBoundedWStringHelperUShort", type_ids_MapInnerAliasBoundedWStringHelperUShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperUShort)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperUShort = "MapInnerAliasBoundedWStringHelperUShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperUShort;
@@ -28204,7 +28204,7 @@ void register_MapInnerAliasBoundedWStringHelperLong_type_identifier(
         "MapInnerAliasBoundedWStringHelperLong", type_ids_MapInnerAliasBoundedWStringHelperLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperLong)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperLong = "MapInnerAliasBoundedWStringHelperLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperLong;
@@ -28320,7 +28320,7 @@ void register_MapInnerAliasBoundedWStringHelperULong_type_identifier(
         "MapInnerAliasBoundedWStringHelperULong", type_ids_MapInnerAliasBoundedWStringHelperULong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperULong)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperULong = "MapInnerAliasBoundedWStringHelperULong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperULong;
@@ -28436,7 +28436,7 @@ void register_MapInnerAliasBoundedWStringHelperLongLong_type_identifier(
         "MapInnerAliasBoundedWStringHelperLongLong", type_ids_MapInnerAliasBoundedWStringHelperLongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperLongLong)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperLongLong = "MapInnerAliasBoundedWStringHelperLongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperLongLong;
@@ -28552,7 +28552,7 @@ void register_MapInnerAliasBoundedWStringHelperULongLong_type_identifier(
         "MapInnerAliasBoundedWStringHelperULongLong", type_ids_MapInnerAliasBoundedWStringHelperULongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperULongLong)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperULongLong = "MapInnerAliasBoundedWStringHelperULongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperULongLong;
@@ -28668,7 +28668,7 @@ void register_MapInnerAliasBoundedWStringHelperFloat_type_identifier(
         "MapInnerAliasBoundedWStringHelperFloat", type_ids_MapInnerAliasBoundedWStringHelperFloat);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperFloat)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperFloat = "MapInnerAliasBoundedWStringHelperFloat";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperFloat;
@@ -28784,7 +28784,7 @@ void register_MapInnerAliasBoundedWStringHelperDouble_type_identifier(
         "MapInnerAliasBoundedWStringHelperDouble", type_ids_MapInnerAliasBoundedWStringHelperDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperDouble)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperDouble = "MapInnerAliasBoundedWStringHelperDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperDouble;
@@ -28900,7 +28900,7 @@ void register_MapInnerAliasBoundedWStringHelperLongDouble_type_identifier(
         "MapInnerAliasBoundedWStringHelperLongDouble", type_ids_MapInnerAliasBoundedWStringHelperLongDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperLongDouble)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperLongDouble = "MapInnerAliasBoundedWStringHelperLongDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperLongDouble;
@@ -29016,7 +29016,7 @@ void register_MapInnerAliasBoundedWStringHelperBoolean_type_identifier(
         "MapInnerAliasBoundedWStringHelperBoolean", type_ids_MapInnerAliasBoundedWStringHelperBoolean);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperBoolean)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperBoolean = "MapInnerAliasBoundedWStringHelperBoolean";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperBoolean;
@@ -29132,7 +29132,7 @@ void register_MapInnerAliasBoundedWStringHelperOctet_type_identifier(
         "MapInnerAliasBoundedWStringHelperOctet", type_ids_MapInnerAliasBoundedWStringHelperOctet);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperOctet)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperOctet = "MapInnerAliasBoundedWStringHelperOctet";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperOctet;
@@ -29248,7 +29248,7 @@ void register_MapInnerAliasBoundedWStringHelperChar_type_identifier(
         "MapInnerAliasBoundedWStringHelperChar", type_ids_MapInnerAliasBoundedWStringHelperChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperChar)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperChar = "MapInnerAliasBoundedWStringHelperChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperChar;
@@ -29364,7 +29364,7 @@ void register_MapInnerAliasBoundedWStringHelperWChar_type_identifier(
         "MapInnerAliasBoundedWStringHelperWChar", type_ids_MapInnerAliasBoundedWStringHelperWChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperWChar)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperWChar = "MapInnerAliasBoundedWStringHelperWChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperWChar;
@@ -29480,7 +29480,7 @@ void register_MapInnerAliasBoundedWStringHelperString_type_identifier(
         "MapInnerAliasBoundedWStringHelperString", type_ids_MapInnerAliasBoundedWStringHelperString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperString)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperString = "MapInnerAliasBoundedWStringHelperString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperString;
@@ -29604,7 +29604,7 @@ void register_MapInnerAliasBoundedWStringHelperWString_type_identifier(
         "MapInnerAliasBoundedWStringHelperWString", type_ids_MapInnerAliasBoundedWStringHelperWString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperWString)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperWString = "MapInnerAliasBoundedWStringHelperWString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperWString;
@@ -29728,7 +29728,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerAliasBoundedStringHelper_typ
         "MapInnerAliasBoundedWStringHelperInnerAliasBoundedStringHelper", type_ids_MapInnerAliasBoundedWStringHelperInnerAliasBoundedStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperInnerAliasBoundedStringHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerAliasBoundedStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperInnerAliasBoundedStringHelper = "MapInnerAliasBoundedWStringHelperInnerAliasBoundedStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperInnerAliasBoundedStringHelper;
@@ -29842,7 +29842,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerAliasBoundedWStringHelper_ty
         "MapInnerAliasBoundedWStringHelperInnerAliasBoundedWStringHelper", type_ids_MapInnerAliasBoundedWStringHelperInnerAliasBoundedWStringHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperInnerAliasBoundedWStringHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerAliasBoundedWStringHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperInnerAliasBoundedWStringHelper = "MapInnerAliasBoundedWStringHelperInnerAliasBoundedWStringHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperInnerAliasBoundedWStringHelper;
@@ -29956,7 +29956,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerEnumHelper_type_identifier(
         "MapInnerAliasBoundedWStringHelperInnerEnumHelper", type_ids_MapInnerAliasBoundedWStringHelperInnerEnumHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperInnerEnumHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperInnerEnumHelper = "MapInnerAliasBoundedWStringHelperInnerEnumHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperInnerEnumHelper;
@@ -30070,7 +30070,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerBitMaskHelper_type_identifie
         "MapInnerAliasBoundedWStringHelperInnerBitMaskHelper", type_ids_MapInnerAliasBoundedWStringHelperInnerBitMaskHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperInnerBitMaskHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperInnerBitMaskHelper = "MapInnerAliasBoundedWStringHelperInnerBitMaskHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperInnerBitMaskHelper;
@@ -30184,7 +30184,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerAliasHelper_type_identifier(
         "MapInnerAliasBoundedWStringHelperInnerAliasHelper", type_ids_MapInnerAliasBoundedWStringHelperInnerAliasHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperInnerAliasHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperInnerAliasHelper = "MapInnerAliasBoundedWStringHelperInnerAliasHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperInnerAliasHelper;
@@ -30298,7 +30298,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerAliasArrayHelper_type_identi
         "MapInnerAliasBoundedWStringHelperInnerAliasArrayHelper", type_ids_MapInnerAliasBoundedWStringHelperInnerAliasArrayHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperInnerAliasArrayHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerAliasArrayHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperInnerAliasArrayHelper = "MapInnerAliasBoundedWStringHelperInnerAliasArrayHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperInnerAliasArrayHelper;
@@ -30412,7 +30412,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerAliasSequenceHelper_type_ide
         "MapInnerAliasBoundedWStringHelperInnerAliasSequenceHelper", type_ids_MapInnerAliasBoundedWStringHelperInnerAliasSequenceHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperInnerAliasSequenceHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerAliasSequenceHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperInnerAliasSequenceHelper = "MapInnerAliasBoundedWStringHelperInnerAliasSequenceHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperInnerAliasSequenceHelper;
@@ -30526,7 +30526,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerAliasMapHelper_type_identifi
         "MapInnerAliasBoundedWStringHelperInnerAliasMapHelper", type_ids_MapInnerAliasBoundedWStringHelperInnerAliasMapHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperInnerAliasMapHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerAliasMapHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperInnerAliasMapHelper = "MapInnerAliasBoundedWStringHelperInnerAliasMapHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperInnerAliasMapHelper;
@@ -30640,7 +30640,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerUnionHelper_type_identifier(
         "MapInnerAliasBoundedWStringHelperInnerUnionHelper", type_ids_MapInnerAliasBoundedWStringHelperInnerUnionHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperInnerUnionHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperInnerUnionHelper = "MapInnerAliasBoundedWStringHelperInnerUnionHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperInnerUnionHelper;
@@ -30754,7 +30754,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerStructureHelper_type_identif
         "MapInnerAliasBoundedWStringHelperInnerStructureHelper", type_ids_MapInnerAliasBoundedWStringHelperInnerStructureHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperInnerStructureHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperInnerStructureHelper = "MapInnerAliasBoundedWStringHelperInnerStructureHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperInnerStructureHelper;
@@ -30868,7 +30868,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerBitsetHelper_type_identifier
         "MapInnerAliasBoundedWStringHelperInnerBitsetHelper", type_ids_MapInnerAliasBoundedWStringHelperInnerBitsetHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_MapInnerAliasBoundedWStringHelperInnerBitsetHelper)
     {
-        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_MapInnerAliasBoundedWStringHelperInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_MapInnerAliasBoundedWStringHelperInnerBitsetHelper = "MapInnerAliasBoundedWStringHelperInnerBitsetHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_MapInnerAliasBoundedWStringHelperInnerBitsetHelper;
@@ -30982,7 +30982,7 @@ void register_BoundedSmallMap_type_identifier(
         "BoundedSmallMap", type_ids_BoundedSmallMap);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_BoundedSmallMap)
     {
-        StructTypeFlag struct_flags_BoundedSmallMap = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_BoundedSmallMap = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_BoundedSmallMap = "BoundedSmallMap";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_BoundedSmallMap;
@@ -31294,7 +31294,7 @@ void register_BoundedLargeMap_type_identifier(
         "BoundedLargeMap", type_ids_BoundedLargeMap);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_BoundedLargeMap)
     {
-        StructTypeFlag struct_flags_BoundedLargeMap = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_BoundedLargeMap = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_BoundedLargeMap = "BoundedLargeMap";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_BoundedLargeMap;

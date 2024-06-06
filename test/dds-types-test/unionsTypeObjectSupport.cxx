@@ -49,7 +49,7 @@ void register_Union_Short_type_identifier(
         "Union_Short", type_ids_Union_Short);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Short)
     {
-        UnionTypeFlag union_flags_Union_Short = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Short = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Short = "Union_Short";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Short;
@@ -140,7 +140,7 @@ void register_Union_UShort_type_identifier(
         "Union_UShort", type_ids_Union_UShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_UShort)
     {
-        UnionTypeFlag union_flags_Union_UShort = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_UShort = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_UShort = "Union_UShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_UShort;
@@ -231,7 +231,7 @@ void register_Union_Long_type_identifier(
         "Union_Long", type_ids_Union_Long);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Long)
     {
-        UnionTypeFlag union_flags_Union_Long = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Long = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Long = "Union_Long";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Long;
@@ -322,7 +322,7 @@ void register_Union_ULong_type_identifier(
         "Union_ULong", type_ids_Union_ULong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_ULong)
     {
-        UnionTypeFlag union_flags_Union_ULong = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_ULong = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_ULong = "Union_ULong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_ULong;
@@ -413,7 +413,7 @@ void register_Union_LongLong_type_identifier(
         "Union_LongLong", type_ids_Union_LongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_LongLong)
     {
-        UnionTypeFlag union_flags_Union_LongLong = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_LongLong = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_LongLong = "Union_LongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_LongLong;
@@ -504,7 +504,7 @@ void register_Union_ULongLOng_type_identifier(
         "Union_ULongLOng", type_ids_Union_ULongLOng);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_ULongLOng)
     {
-        UnionTypeFlag union_flags_Union_ULongLOng = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_ULongLOng = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_ULongLOng = "Union_ULongLOng";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_ULongLOng;
@@ -595,7 +595,7 @@ void register_Union_Float_type_identifier(
         "Union_Float", type_ids_Union_Float);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Float)
     {
-        UnionTypeFlag union_flags_Union_Float = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Float = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Float = "Union_Float";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Float;
@@ -686,7 +686,7 @@ void register_Union_Double_type_identifier(
         "Union_Double", type_ids_Union_Double);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Double)
     {
-        UnionTypeFlag union_flags_Union_Double = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Double = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Double = "Union_Double";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Double;
@@ -777,7 +777,7 @@ void register_Union_LongDouble_type_identifier(
         "Union_LongDouble", type_ids_Union_LongDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_LongDouble)
     {
-        UnionTypeFlag union_flags_Union_LongDouble = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_LongDouble = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_LongDouble = "Union_LongDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_LongDouble;
@@ -868,7 +868,7 @@ void register_Union_Boolean_type_identifier(
         "Union_Boolean", type_ids_Union_Boolean);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Boolean)
     {
-        UnionTypeFlag union_flags_Union_Boolean = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Boolean = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Boolean = "Union_Boolean";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Boolean;
@@ -959,7 +959,7 @@ void register_Union_Octet_type_identifier(
         "Union_Octet", type_ids_Union_Octet);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Octet)
     {
-        UnionTypeFlag union_flags_Union_Octet = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Octet = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Octet = "Union_Octet";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Octet;
@@ -1050,7 +1050,7 @@ void register_Union_Char_type_identifier(
         "Union_Char", type_ids_Union_Char);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Char)
     {
-        UnionTypeFlag union_flags_Union_Char = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Char = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Char = "Union_Char";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Char;
@@ -1141,7 +1141,7 @@ void register_Union_WChar_type_identifier(
         "Union_WChar", type_ids_Union_WChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_WChar)
     {
-        UnionTypeFlag union_flags_Union_WChar = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_WChar = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_WChar = "Union_WChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_WChar;
@@ -1232,7 +1232,7 @@ void register_Union_String_type_identifier(
         "Union_String", type_ids_Union_String);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_String)
     {
-        UnionTypeFlag union_flags_Union_String = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_String = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_String = "Union_String";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_String;
@@ -1331,7 +1331,7 @@ void register_Union_WString_type_identifier(
         "Union_WString", type_ids_Union_WString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_WString)
     {
-        UnionTypeFlag union_flags_Union_WString = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_WString = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_WString = "Union_WString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_WString;
@@ -1430,7 +1430,7 @@ void register_Union_BoundedString_type_identifier(
         "Union_BoundedString", type_ids_Union_BoundedString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_BoundedString)
     {
-        UnionTypeFlag union_flags_Union_BoundedString = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_BoundedString = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_BoundedString = "Union_BoundedString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_BoundedString;
@@ -1519,7 +1519,7 @@ void register_Union_BoundedWString_type_identifier(
         "Union_BoundedWString", type_ids_Union_BoundedWString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_BoundedWString)
     {
-        UnionTypeFlag union_flags_Union_BoundedWString = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_BoundedWString = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_BoundedWString = "Union_BoundedWString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_BoundedWString;
@@ -1608,7 +1608,7 @@ void register_Union_InnerEnumHelper_type_identifier(
         "Union_InnerEnumHelper", type_ids_Union_InnerEnumHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_InnerEnumHelper)
     {
-        UnionTypeFlag union_flags_Union_InnerEnumHelper = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_InnerEnumHelper = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_InnerEnumHelper = "Union_InnerEnumHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_InnerEnumHelper;
@@ -1697,7 +1697,7 @@ void register_Union_InnerBitMaskHelper_type_identifier(
         "Union_InnerBitMaskHelper", type_ids_Union_InnerBitMaskHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_InnerBitMaskHelper)
     {
-        UnionTypeFlag union_flags_Union_InnerBitMaskHelper = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_InnerBitMaskHelper = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_InnerBitMaskHelper = "Union_InnerBitMaskHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_InnerBitMaskHelper;
@@ -1786,7 +1786,7 @@ void register_Union_InnerAliasHelper_type_identifier(
         "Union_InnerAliasHelper", type_ids_Union_InnerAliasHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_InnerAliasHelper)
     {
-        UnionTypeFlag union_flags_Union_InnerAliasHelper = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_InnerAliasHelper = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_InnerAliasHelper = "Union_InnerAliasHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_InnerAliasHelper;
@@ -1875,7 +1875,7 @@ void register_Union_Array_type_identifier(
         "Union_Array", type_ids_Union_Array);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Array)
     {
-        UnionTypeFlag union_flags_Union_Array = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Array = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Array = "Union_Array";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Array;
@@ -1964,7 +1964,7 @@ void register_Union_Sequence_type_identifier(
         "Union_Sequence", type_ids_Union_Sequence);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Sequence)
     {
-        UnionTypeFlag union_flags_Union_Sequence = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Sequence = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Sequence = "Union_Sequence";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Sequence;
@@ -2087,7 +2087,7 @@ void register_Union_Map_type_identifier(
         "Union_Map", type_ids_Union_Map);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Map)
     {
-        UnionTypeFlag union_flags_Union_Map = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Map = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Map = "Union_Map";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Map;
@@ -2237,7 +2237,7 @@ void register_Union_InnerUnionHelper_type_identifier(
         "Union_InnerUnionHelper", type_ids_Union_InnerUnionHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_InnerUnionHelper)
     {
-        UnionTypeFlag union_flags_Union_InnerUnionHelper = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_InnerUnionHelper = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_InnerUnionHelper = "Union_InnerUnionHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_InnerUnionHelper;
@@ -2326,7 +2326,7 @@ void register_Union_InnerStructureHelper_type_identifier(
         "Union_InnerStructureHelper", type_ids_Union_InnerStructureHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_InnerStructureHelper)
     {
-        UnionTypeFlag union_flags_Union_InnerStructureHelper = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_InnerStructureHelper = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_InnerStructureHelper = "Union_InnerStructureHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_InnerStructureHelper;
@@ -2415,7 +2415,7 @@ void register_Union_InnerBitsetHelper_type_identifier(
         "Union_InnerBitsetHelper", type_ids_Union_InnerBitsetHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_InnerBitsetHelper)
     {
-        UnionTypeFlag union_flags_Union_InnerBitsetHelper = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_InnerBitsetHelper = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_InnerBitsetHelper = "Union_InnerBitsetHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_InnerBitsetHelper;
@@ -2504,7 +2504,7 @@ void register_Union_Discriminator_short_type_identifier(
         "Union_Discriminator_short", type_ids_Union_Discriminator_short);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Discriminator_short)
     {
-        UnionTypeFlag union_flags_Union_Discriminator_short = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Discriminator_short = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Discriminator_short = "Union_Discriminator_short";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Discriminator_short;
@@ -2627,7 +2627,7 @@ void register_Union_Discriminator_unsigned_short_type_identifier(
         "Union_Discriminator_unsigned_short", type_ids_Union_Discriminator_unsigned_short);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Discriminator_unsigned_short)
     {
-        UnionTypeFlag union_flags_Union_Discriminator_unsigned_short = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Discriminator_unsigned_short = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Discriminator_unsigned_short = "Union_Discriminator_unsigned_short";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Discriminator_unsigned_short;
@@ -2750,7 +2750,7 @@ void register_Union_Discriminator_long_type_identifier(
         "Union_Discriminator_long", type_ids_Union_Discriminator_long);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Discriminator_long)
     {
-        UnionTypeFlag union_flags_Union_Discriminator_long = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Discriminator_long = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Discriminator_long = "Union_Discriminator_long";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Discriminator_long;
@@ -2873,7 +2873,7 @@ void register_Union_Discriminator_unsigned_long_type_identifier(
         "Union_Discriminator_unsigned_long", type_ids_Union_Discriminator_unsigned_long);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Discriminator_unsigned_long)
     {
-        UnionTypeFlag union_flags_Union_Discriminator_unsigned_long = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Discriminator_unsigned_long = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Discriminator_unsigned_long = "Union_Discriminator_unsigned_long";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Discriminator_unsigned_long;
@@ -2996,7 +2996,7 @@ void register_Union_Discriminator_long_long_type_identifier(
         "Union_Discriminator_long_long", type_ids_Union_Discriminator_long_long);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Discriminator_long_long)
     {
-        UnionTypeFlag union_flags_Union_Discriminator_long_long = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Discriminator_long_long = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Discriminator_long_long = "Union_Discriminator_long_long";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Discriminator_long_long;
@@ -3119,7 +3119,7 @@ void register_Union_Discriminator_unsigned_long_long_type_identifier(
         "Union_Discriminator_unsigned_long_long", type_ids_Union_Discriminator_unsigned_long_long);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Discriminator_unsigned_long_long)
     {
-        UnionTypeFlag union_flags_Union_Discriminator_unsigned_long_long = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Discriminator_unsigned_long_long = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Discriminator_unsigned_long_long = "Union_Discriminator_unsigned_long_long";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Discriminator_unsigned_long_long;
@@ -3242,7 +3242,7 @@ void register_Union_Discriminator_boolean_type_identifier(
         "Union_Discriminator_boolean", type_ids_Union_Discriminator_boolean);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Discriminator_boolean)
     {
-        UnionTypeFlag union_flags_Union_Discriminator_boolean = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Discriminator_boolean = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Discriminator_boolean = "Union_Discriminator_boolean";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Discriminator_boolean;
@@ -3365,7 +3365,7 @@ void register_Union_Discriminator_octet_type_identifier(
         "Union_Discriminator_octet", type_ids_Union_Discriminator_octet);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Discriminator_octet)
     {
-        UnionTypeFlag union_flags_Union_Discriminator_octet = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Discriminator_octet = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Discriminator_octet = "Union_Discriminator_octet";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Discriminator_octet;
@@ -3488,7 +3488,7 @@ void register_Union_Discriminator_char_type_identifier(
         "Union_Discriminator_char", type_ids_Union_Discriminator_char);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Discriminator_char)
     {
-        UnionTypeFlag union_flags_Union_Discriminator_char = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Discriminator_char = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Discriminator_char = "Union_Discriminator_char";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Discriminator_char;
@@ -3611,7 +3611,7 @@ void register_Union_Discriminator_wchar_type_identifier(
         "Union_Discriminator_wchar", type_ids_Union_Discriminator_wchar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Discriminator_wchar)
     {
-        UnionTypeFlag union_flags_Union_Discriminator_wchar = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Discriminator_wchar = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Discriminator_wchar = "Union_Discriminator_wchar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Discriminator_wchar;
@@ -3734,7 +3734,7 @@ void register_Union_Discriminator_enum_type_identifier(
         "Union_Discriminator_enum", type_ids_Union_Discriminator_enum);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Discriminator_enum)
     {
-        UnionTypeFlag union_flags_Union_Discriminator_enum = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Discriminator_enum = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Discriminator_enum = "Union_Discriminator_enum";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Discriminator_enum;
@@ -3886,7 +3886,7 @@ void register_Union_Discriminator_enum_labels_type_identifier(
         "Union_Discriminator_enum_labels", type_ids_Union_Discriminator_enum_labels);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Discriminator_enum_labels)
     {
-        UnionTypeFlag union_flags_Union_Discriminator_enum_labels = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Discriminator_enum_labels = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Discriminator_enum_labels = "Union_Discriminator_enum_labels";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Discriminator_enum_labels;
@@ -4008,7 +4008,7 @@ void register_Union_Discriminator_alias_type_identifier(
         "Union_Discriminator_alias", type_ids_Union_Discriminator_alias);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Discriminator_alias)
     {
-        UnionTypeFlag union_flags_Union_Discriminator_alias = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Discriminator_alias = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Discriminator_alias = "Union_Discriminator_alias";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Discriminator_alias;
@@ -4129,7 +4129,7 @@ void register_Union_Several_Fields_type_identifier(
         "Union_Several_Fields", type_ids_Union_Several_Fields);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Several_Fields)
     {
-        UnionTypeFlag union_flags_Union_Several_Fields = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Several_Fields = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Several_Fields = "Union_Several_Fields";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Several_Fields;
@@ -4338,7 +4338,7 @@ void register_Union_Several_Fields_With_Default_type_identifier(
         "Union_Several_Fields_With_Default", type_ids_Union_Several_Fields_With_Default);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Union_Several_Fields_With_Default)
     {
-        UnionTypeFlag union_flags_Union_Several_Fields_With_Default = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Union_Several_Fields_With_Default = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Union_Several_Fields_With_Default = "Union_Several_Fields_With_Default";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Union_Several_Fields_With_Default;
@@ -4611,7 +4611,7 @@ void register_UnionShort_type_identifier(
         "UnionShort", type_ids_UnionShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionShort)
     {
-        StructTypeFlag struct_flags_UnionShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionShort = "UnionShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionShort;
@@ -4668,7 +4668,7 @@ void register_UnionUShort_type_identifier(
         "UnionUShort", type_ids_UnionUShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionUShort)
     {
-        StructTypeFlag struct_flags_UnionUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionUShort = "UnionUShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionUShort;
@@ -4725,7 +4725,7 @@ void register_UnionLong_type_identifier(
         "UnionLong", type_ids_UnionLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionLong)
     {
-        StructTypeFlag struct_flags_UnionLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionLong = "UnionLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionLong;
@@ -4782,7 +4782,7 @@ void register_UnionULong_type_identifier(
         "UnionULong", type_ids_UnionULong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionULong)
     {
-        StructTypeFlag struct_flags_UnionULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionULong = "UnionULong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionULong;
@@ -4839,7 +4839,7 @@ void register_UnionLongLong_type_identifier(
         "UnionLongLong", type_ids_UnionLongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionLongLong)
     {
-        StructTypeFlag struct_flags_UnionLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionLongLong = "UnionLongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionLongLong;
@@ -4896,7 +4896,7 @@ void register_UnionULongLong_type_identifier(
         "UnionULongLong", type_ids_UnionULongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionULongLong)
     {
-        StructTypeFlag struct_flags_UnionULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionULongLong = "UnionULongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionULongLong;
@@ -4953,7 +4953,7 @@ void register_UnionFloat_type_identifier(
         "UnionFloat", type_ids_UnionFloat);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionFloat)
     {
-        StructTypeFlag struct_flags_UnionFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionFloat = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionFloat = "UnionFloat";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionFloat;
@@ -5010,7 +5010,7 @@ void register_UnionDouble_type_identifier(
         "UnionDouble", type_ids_UnionDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionDouble)
     {
-        StructTypeFlag struct_flags_UnionDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionDouble = "UnionDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionDouble;
@@ -5067,7 +5067,7 @@ void register_UnionLongDouble_type_identifier(
         "UnionLongDouble", type_ids_UnionLongDouble);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionLongDouble)
     {
-        StructTypeFlag struct_flags_UnionLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionLongDouble = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionLongDouble = "UnionLongDouble";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionLongDouble;
@@ -5124,7 +5124,7 @@ void register_UnionBoolean_type_identifier(
         "UnionBoolean", type_ids_UnionBoolean);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionBoolean)
     {
-        StructTypeFlag struct_flags_UnionBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionBoolean = "UnionBoolean";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionBoolean;
@@ -5181,7 +5181,7 @@ void register_UnionOctet_type_identifier(
         "UnionOctet", type_ids_UnionOctet);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionOctet)
     {
-        StructTypeFlag struct_flags_UnionOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionOctet = "UnionOctet";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionOctet;
@@ -5238,7 +5238,7 @@ void register_UnionChar_type_identifier(
         "UnionChar", type_ids_UnionChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionChar)
     {
-        StructTypeFlag struct_flags_UnionChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionChar = "UnionChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionChar;
@@ -5295,7 +5295,7 @@ void register_UnionWChar_type_identifier(
         "UnionWChar", type_ids_UnionWChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionWChar)
     {
-        StructTypeFlag struct_flags_UnionWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionWChar = "UnionWChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionWChar;
@@ -5352,7 +5352,7 @@ void register_UnionString_type_identifier(
         "UnionString", type_ids_UnionString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionString)
     {
-        StructTypeFlag struct_flags_UnionString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionString = "UnionString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionString;
@@ -5409,7 +5409,7 @@ void register_UnionWString_type_identifier(
         "UnionWString", type_ids_UnionWString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionWString)
     {
-        StructTypeFlag struct_flags_UnionWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionWString = "UnionWString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionWString;
@@ -5466,7 +5466,7 @@ void register_UnionBoundedString_type_identifier(
         "UnionBoundedString", type_ids_UnionBoundedString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionBoundedString)
     {
-        StructTypeFlag struct_flags_UnionBoundedString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionBoundedString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionBoundedString = "UnionBoundedString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionBoundedString;
@@ -5523,7 +5523,7 @@ void register_UnionBoundedWString_type_identifier(
         "UnionBoundedWString", type_ids_UnionBoundedWString);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionBoundedWString)
     {
-        StructTypeFlag struct_flags_UnionBoundedWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionBoundedWString = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionBoundedWString = "UnionBoundedWString";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionBoundedWString;
@@ -5580,7 +5580,7 @@ void register_UnionInnerEnumHelper_type_identifier(
         "UnionInnerEnumHelper", type_ids_UnionInnerEnumHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionInnerEnumHelper)
     {
-        StructTypeFlag struct_flags_UnionInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionInnerEnumHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionInnerEnumHelper = "UnionInnerEnumHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionInnerEnumHelper;
@@ -5637,7 +5637,7 @@ void register_UnionInnerBitMaskHelper_type_identifier(
         "UnionInnerBitMaskHelper", type_ids_UnionInnerBitMaskHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionInnerBitMaskHelper)
     {
-        StructTypeFlag struct_flags_UnionInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionInnerBitMaskHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionInnerBitMaskHelper = "UnionInnerBitMaskHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionInnerBitMaskHelper;
@@ -5694,7 +5694,7 @@ void register_UnionInnerAliasHelper_type_identifier(
         "UnionInnerAliasHelper", type_ids_UnionInnerAliasHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionInnerAliasHelper)
     {
-        StructTypeFlag struct_flags_UnionInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionInnerAliasHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionInnerAliasHelper = "UnionInnerAliasHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionInnerAliasHelper;
@@ -5751,7 +5751,7 @@ void register_UnionArray_type_identifier(
         "UnionArray", type_ids_UnionArray);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionArray)
     {
-        StructTypeFlag struct_flags_UnionArray = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionArray = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionArray = "UnionArray";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionArray;
@@ -5808,7 +5808,7 @@ void register_UnionSequence_type_identifier(
         "UnionSequence", type_ids_UnionSequence);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionSequence)
     {
-        StructTypeFlag struct_flags_UnionSequence = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionSequence = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionSequence = "UnionSequence";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionSequence;
@@ -5865,7 +5865,7 @@ void register_UnionMap_type_identifier(
         "UnionMap", type_ids_UnionMap);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionMap)
     {
-        StructTypeFlag struct_flags_UnionMap = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionMap = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionMap = "UnionMap";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionMap;
@@ -5922,7 +5922,7 @@ void register_UnionInnerUnionHelper_type_identifier(
         "UnionInnerUnionHelper", type_ids_UnionInnerUnionHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionInnerUnionHelper)
     {
-        StructTypeFlag struct_flags_UnionInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionInnerUnionHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionInnerUnionHelper = "UnionInnerUnionHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionInnerUnionHelper;
@@ -5979,7 +5979,7 @@ void register_UnionInnerStructureHelper_type_identifier(
         "UnionInnerStructureHelper", type_ids_UnionInnerStructureHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionInnerStructureHelper)
     {
-        StructTypeFlag struct_flags_UnionInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionInnerStructureHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionInnerStructureHelper = "UnionInnerStructureHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionInnerStructureHelper;
@@ -6036,7 +6036,7 @@ void register_UnionInnerBitsetHelper_type_identifier(
         "UnionInnerBitsetHelper", type_ids_UnionInnerBitsetHelper);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionInnerBitsetHelper)
     {
-        StructTypeFlag struct_flags_UnionInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionInnerBitsetHelper = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionInnerBitsetHelper = "UnionInnerBitsetHelper";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionInnerBitsetHelper;
@@ -6093,7 +6093,7 @@ void register_UnionDiscriminatorShort_type_identifier(
         "UnionDiscriminatorShort", type_ids_UnionDiscriminatorShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionDiscriminatorShort)
     {
-        StructTypeFlag struct_flags_UnionDiscriminatorShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionDiscriminatorShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionDiscriminatorShort = "UnionDiscriminatorShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionDiscriminatorShort;
@@ -6150,7 +6150,7 @@ void register_UnionDiscriminatorUShort_type_identifier(
         "UnionDiscriminatorUShort", type_ids_UnionDiscriminatorUShort);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionDiscriminatorUShort)
     {
-        StructTypeFlag struct_flags_UnionDiscriminatorUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionDiscriminatorUShort = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionDiscriminatorUShort = "UnionDiscriminatorUShort";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionDiscriminatorUShort;
@@ -6207,7 +6207,7 @@ void register_UnionDiscriminatorLong_type_identifier(
         "UnionDiscriminatorLong", type_ids_UnionDiscriminatorLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionDiscriminatorLong)
     {
-        StructTypeFlag struct_flags_UnionDiscriminatorLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionDiscriminatorLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionDiscriminatorLong = "UnionDiscriminatorLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionDiscriminatorLong;
@@ -6264,7 +6264,7 @@ void register_UnionDiscriminatorULong_type_identifier(
         "UnionDiscriminatorULong", type_ids_UnionDiscriminatorULong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionDiscriminatorULong)
     {
-        StructTypeFlag struct_flags_UnionDiscriminatorULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionDiscriminatorULong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionDiscriminatorULong = "UnionDiscriminatorULong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionDiscriminatorULong;
@@ -6321,7 +6321,7 @@ void register_UnionDiscriminatorLongLong_type_identifier(
         "UnionDiscriminatorLongLong", type_ids_UnionDiscriminatorLongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionDiscriminatorLongLong)
     {
-        StructTypeFlag struct_flags_UnionDiscriminatorLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionDiscriminatorLongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionDiscriminatorLongLong = "UnionDiscriminatorLongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionDiscriminatorLongLong;
@@ -6378,7 +6378,7 @@ void register_UnionDiscriminatorULongLong_type_identifier(
         "UnionDiscriminatorULongLong", type_ids_UnionDiscriminatorULongLong);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionDiscriminatorULongLong)
     {
-        StructTypeFlag struct_flags_UnionDiscriminatorULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionDiscriminatorULongLong = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionDiscriminatorULongLong = "UnionDiscriminatorULongLong";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionDiscriminatorULongLong;
@@ -6435,7 +6435,7 @@ void register_UnionDiscriminatorBoolean_type_identifier(
         "UnionDiscriminatorBoolean", type_ids_UnionDiscriminatorBoolean);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionDiscriminatorBoolean)
     {
-        StructTypeFlag struct_flags_UnionDiscriminatorBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionDiscriminatorBoolean = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionDiscriminatorBoolean = "UnionDiscriminatorBoolean";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionDiscriminatorBoolean;
@@ -6492,7 +6492,7 @@ void register_UnionDiscriminatorOctet_type_identifier(
         "UnionDiscriminatorOctet", type_ids_UnionDiscriminatorOctet);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionDiscriminatorOctet)
     {
-        StructTypeFlag struct_flags_UnionDiscriminatorOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionDiscriminatorOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionDiscriminatorOctet = "UnionDiscriminatorOctet";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionDiscriminatorOctet;
@@ -6549,7 +6549,7 @@ void register_UnionDiscriminatorChar_type_identifier(
         "UnionDiscriminatorChar", type_ids_UnionDiscriminatorChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionDiscriminatorChar)
     {
-        StructTypeFlag struct_flags_UnionDiscriminatorChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionDiscriminatorChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionDiscriminatorChar = "UnionDiscriminatorChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionDiscriminatorChar;
@@ -6606,7 +6606,7 @@ void register_UnionDiscriminatorWChar_type_identifier(
         "UnionDiscriminatorWChar", type_ids_UnionDiscriminatorWChar);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionDiscriminatorWChar)
     {
-        StructTypeFlag struct_flags_UnionDiscriminatorWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionDiscriminatorWChar = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionDiscriminatorWChar = "UnionDiscriminatorWChar";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionDiscriminatorWChar;
@@ -6663,7 +6663,7 @@ void register_UnionDiscriminatorEnum_type_identifier(
         "UnionDiscriminatorEnum", type_ids_UnionDiscriminatorEnum);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionDiscriminatorEnum)
     {
-        StructTypeFlag struct_flags_UnionDiscriminatorEnum = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionDiscriminatorEnum = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionDiscriminatorEnum = "UnionDiscriminatorEnum";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionDiscriminatorEnum;
@@ -6720,7 +6720,7 @@ void register_UnionDiscriminatorEnumLabel_type_identifier(
         "UnionDiscriminatorEnumLabel", type_ids_UnionDiscriminatorEnumLabel);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionDiscriminatorEnumLabel)
     {
-        StructTypeFlag struct_flags_UnionDiscriminatorEnumLabel = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionDiscriminatorEnumLabel = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionDiscriminatorEnumLabel = "UnionDiscriminatorEnumLabel";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionDiscriminatorEnumLabel;
@@ -6777,7 +6777,7 @@ void register_UnionDiscriminatorAlias_type_identifier(
         "UnionDiscriminatorAlias", type_ids_UnionDiscriminatorAlias);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionDiscriminatorAlias)
     {
-        StructTypeFlag struct_flags_UnionDiscriminatorAlias = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionDiscriminatorAlias = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionDiscriminatorAlias = "UnionDiscriminatorAlias";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionDiscriminatorAlias;
@@ -6834,7 +6834,7 @@ void register_UnionSeveralFields_type_identifier(
         "UnionSeveralFields", type_ids_UnionSeveralFields);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionSeveralFields)
     {
-        StructTypeFlag struct_flags_UnionSeveralFields = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionSeveralFields = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionSeveralFields = "UnionSeveralFields";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionSeveralFields;
@@ -6891,7 +6891,7 @@ void register_UnionSeveralFieldsWithDefault_type_identifier(
         "UnionSeveralFieldsWithDefault", type_ids_UnionSeveralFieldsWithDefault);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnionSeveralFieldsWithDefault)
     {
-        StructTypeFlag struct_flags_UnionSeveralFieldsWithDefault = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnionSeveralFieldsWithDefault = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnionSeveralFieldsWithDefault = "UnionSeveralFieldsWithDefault";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnionSeveralFieldsWithDefault;

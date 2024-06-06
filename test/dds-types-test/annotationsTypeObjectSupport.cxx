@@ -893,7 +893,7 @@ void register_AnnotatedStruct_type_identifier(
         "AnnotatedStruct", type_ids_AnnotatedStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AnnotatedStruct)
     {
-        StructTypeFlag struct_flags_AnnotatedStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AnnotatedStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AnnotatedStruct = "AnnotatedStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AnnotatedStruct;
@@ -1141,7 +1141,7 @@ void register_EmptyAnnotatedStruct_type_identifier(
         "EmptyAnnotatedStruct", type_ids_EmptyAnnotatedStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_EmptyAnnotatedStruct)
     {
-        StructTypeFlag struct_flags_EmptyAnnotatedStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_EmptyAnnotatedStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_EmptyAnnotatedStruct = "EmptyAnnotatedStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_EmptyAnnotatedStruct;
@@ -1281,7 +1281,7 @@ void register_BasicAnnotationsStruct_type_identifier(
         "BasicAnnotationsStruct", type_ids_BasicAnnotationsStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_BasicAnnotationsStruct)
     {
-        StructTypeFlag struct_flags_BasicAnnotationsStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_BasicAnnotationsStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_BasicAnnotationsStruct = "BasicAnnotationsStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_BasicAnnotationsStruct;

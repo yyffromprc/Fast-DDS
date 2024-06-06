@@ -53,7 +53,7 @@ void register_EntityId_s_type_identifier(
         "eprosima::fastdds::statistics::detail::EntityId_s", type_ids_EntityId_s);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_EntityId_s)
     {
-        StructTypeFlag struct_flags_EntityId_s = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_EntityId_s = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_EntityId_s = "eprosima::fastdds::statistics::detail::EntityId_s";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_EntityId_s;
@@ -146,7 +146,7 @@ void register_GuidPrefix_s_type_identifier(
         "eprosima::fastdds::statistics::detail::GuidPrefix_s", type_ids_GuidPrefix_s);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_GuidPrefix_s)
     {
-        StructTypeFlag struct_flags_GuidPrefix_s = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_GuidPrefix_s = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_GuidPrefix_s = "eprosima::fastdds::statistics::detail::GuidPrefix_s";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_GuidPrefix_s;
@@ -239,7 +239,7 @@ void register_GUID_s_type_identifier(
         "eprosima::fastdds::statistics::detail::GUID_s", type_ids_GUID_s);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_GUID_s)
     {
-        StructTypeFlag struct_flags_GUID_s = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_GUID_s = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_GUID_s = "eprosima::fastdds::statistics::detail::GUID_s";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_GUID_s;
@@ -324,7 +324,7 @@ void register_SequenceNumber_s_type_identifier(
         "eprosima::fastdds::statistics::detail::SequenceNumber_s", type_ids_SequenceNumber_s);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_SequenceNumber_s)
     {
-        StructTypeFlag struct_flags_SequenceNumber_s = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_SequenceNumber_s = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_SequenceNumber_s = "eprosima::fastdds::statistics::detail::SequenceNumber_s";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_SequenceNumber_s;
@@ -413,7 +413,7 @@ void register_SampleIdentity_s_type_identifier(
         "eprosima::fastdds::statistics::detail::SampleIdentity_s", type_ids_SampleIdentity_s);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_SampleIdentity_s)
     {
-        StructTypeFlag struct_flags_SampleIdentity_s = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_SampleIdentity_s = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_SampleIdentity_s = "eprosima::fastdds::statistics::detail::SampleIdentity_s";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_SampleIdentity_s;
@@ -498,7 +498,7 @@ void register_Locator_s_type_identifier(
         "eprosima::fastdds::statistics::detail::Locator_s", type_ids_Locator_s);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Locator_s)
     {
-        StructTypeFlag struct_flags_Locator_s = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_Locator_s = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Locator_s = "eprosima::fastdds::statistics::detail::Locator_s";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Locator_s;
@@ -653,7 +653,7 @@ void register_DiscoveryTime_type_identifier(
         "eprosima::fastdds::statistics::DiscoveryTime", type_ids_DiscoveryTime);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_DiscoveryTime)
     {
-        StructTypeFlag struct_flags_DiscoveryTime = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_DiscoveryTime = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_DiscoveryTime = "eprosima::fastdds::statistics::DiscoveryTime";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_DiscoveryTime;
@@ -908,7 +908,7 @@ void register_EntityCount_type_identifier(
         "eprosima::fastdds::statistics::EntityCount", type_ids_EntityCount);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_EntityCount)
     {
-        StructTypeFlag struct_flags_EntityCount = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_EntityCount = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_EntityCount = "eprosima::fastdds::statistics::EntityCount";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_EntityCount;
@@ -1008,7 +1008,7 @@ void register_SampleIdentityCount_type_identifier(
         "eprosima::fastdds::statistics::SampleIdentityCount", type_ids_SampleIdentityCount);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_SampleIdentityCount)
     {
-        StructTypeFlag struct_flags_SampleIdentityCount = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_SampleIdentityCount = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_SampleIdentityCount = "eprosima::fastdds::statistics::SampleIdentityCount";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_SampleIdentityCount;
@@ -1108,7 +1108,7 @@ void register_Entity2LocatorTraffic_type_identifier(
         "eprosima::fastdds::statistics::Entity2LocatorTraffic", type_ids_Entity2LocatorTraffic);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Entity2LocatorTraffic)
     {
-        StructTypeFlag struct_flags_Entity2LocatorTraffic = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_Entity2LocatorTraffic = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Entity2LocatorTraffic = "eprosima::fastdds::statistics::Entity2LocatorTraffic";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Entity2LocatorTraffic;
@@ -1309,7 +1309,7 @@ void register_WriterReaderData_type_identifier(
         "eprosima::fastdds::statistics::WriterReaderData", type_ids_WriterReaderData);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_WriterReaderData)
     {
-        StructTypeFlag struct_flags_WriterReaderData = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_WriterReaderData = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_WriterReaderData = "eprosima::fastdds::statistics::WriterReaderData";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_WriterReaderData;
@@ -1450,7 +1450,7 @@ void register_Locator2LocatorData_type_identifier(
         "eprosima::fastdds::statistics::Locator2LocatorData", type_ids_Locator2LocatorData);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Locator2LocatorData)
     {
-        StructTypeFlag struct_flags_Locator2LocatorData = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_Locator2LocatorData = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Locator2LocatorData = "eprosima::fastdds::statistics::Locator2LocatorData";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Locator2LocatorData;
@@ -1591,7 +1591,7 @@ void register_EntityData_type_identifier(
         "eprosima::fastdds::statistics::EntityData", type_ids_EntityData);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_EntityData)
     {
-        StructTypeFlag struct_flags_EntityData = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_EntityData = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_EntityData = "eprosima::fastdds::statistics::EntityData";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_EntityData;
@@ -1691,7 +1691,7 @@ void register_PhysicalData_type_identifier(
         "eprosima::fastdds::statistics::PhysicalData", type_ids_PhysicalData);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_PhysicalData)
     {
-        StructTypeFlag struct_flags_PhysicalData = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_PhysicalData = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_PhysicalData = "eprosima::fastdds::statistics::PhysicalData";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_PhysicalData;
@@ -1876,7 +1876,7 @@ void register_Data_type_identifier(
         "eprosima::fastdds::statistics::Data", type_ids_Data);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Data)
     {
-        UnionTypeFlag union_flags_Data = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        UnionTypeFlag union_flags_Data = TypeObjectUtils::build_union_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Data = "eprosima::fastdds::statistics::Data";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Data;

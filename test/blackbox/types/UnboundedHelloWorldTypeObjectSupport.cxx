@@ -49,7 +49,7 @@ void register_UnboundedHelloWorld_type_identifier(
         "UnboundedHelloWorld", type_ids_UnboundedHelloWorld);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UnboundedHelloWorld)
     {
-        StructTypeFlag struct_flags_UnboundedHelloWorld = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UnboundedHelloWorld = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UnboundedHelloWorld = "UnboundedHelloWorld";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UnboundedHelloWorld;

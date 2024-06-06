@@ -280,7 +280,7 @@ void register_BitsetStruct_type_identifier(
         "BitsetStruct", type_ids_BitsetStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_BitsetStruct)
     {
-        StructTypeFlag struct_flags_BitsetStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_BitsetStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_BitsetStruct = "BitsetStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_BitsetStruct;

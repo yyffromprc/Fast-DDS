@@ -50,7 +50,7 @@ void register_InnerStructureHelperChild_type_identifier(
         "InnerStructureHelperChild", type_ids_InnerStructureHelperChild);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_InnerStructureHelperChild)
     {
-        StructTypeFlag struct_flags_InnerStructureHelperChild = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_InnerStructureHelperChild = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         return_code_InnerStructureHelperChild =
             eprosima::fastdds::dds::DomainParticipantFactory::get_instance()->type_object_registry().get_type_identifiers(
@@ -160,7 +160,7 @@ void register_InnerStructureHelperChildChild_type_identifier(
         "InnerStructureHelperChildChild", type_ids_InnerStructureHelperChildChild);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_InnerStructureHelperChildChild)
     {
-        StructTypeFlag struct_flags_InnerStructureHelperChildChild = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_InnerStructureHelperChildChild = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         return_code_InnerStructureHelperChildChild =
             eprosima::fastdds::dds::DomainParticipantFactory::get_instance()->type_object_registry().get_type_identifiers(
@@ -270,7 +270,7 @@ void register_InnerStructureHelperEmptyChild_type_identifier(
         "InnerStructureHelperEmptyChild", type_ids_InnerStructureHelperEmptyChild);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_InnerStructureHelperEmptyChild)
     {
-        StructTypeFlag struct_flags_InnerStructureHelperEmptyChild = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_InnerStructureHelperEmptyChild = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         return_code_InnerStructureHelperEmptyChild =
             eprosima::fastdds::dds::DomainParticipantFactory::get_instance()->type_object_registry().get_type_identifiers(
@@ -320,7 +320,7 @@ void register_InnerStructureHelperEmptyChildChild_type_identifier(
         "InnerStructureHelperEmptyChildChild", type_ids_InnerStructureHelperEmptyChildChild);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_InnerStructureHelperEmptyChildChild)
     {
-        StructTypeFlag struct_flags_InnerStructureHelperEmptyChildChild = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_InnerStructureHelperEmptyChildChild = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         return_code_InnerStructureHelperEmptyChildChild =
             eprosima::fastdds::dds::DomainParticipantFactory::get_instance()->type_object_registry().get_type_identifiers(
@@ -400,7 +400,7 @@ void register_InnerEmptyStructureHelperChild_type_identifier(
         "InnerEmptyStructureHelperChild", type_ids_InnerEmptyStructureHelperChild);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_InnerEmptyStructureHelperChild)
     {
-        StructTypeFlag struct_flags_InnerEmptyStructureHelperChild = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_InnerEmptyStructureHelperChild = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         return_code_InnerEmptyStructureHelperChild =
             eprosima::fastdds::dds::DomainParticipantFactory::get_instance()->type_object_registry().get_type_identifiers(
@@ -510,7 +510,7 @@ void register_StructAliasInheritanceStruct_type_identifier(
         "StructAliasInheritanceStruct", type_ids_StructAliasInheritanceStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_StructAliasInheritanceStruct)
     {
-        StructTypeFlag struct_flags_StructAliasInheritanceStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_StructAliasInheritanceStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         return_code_StructAliasInheritanceStruct =
             eprosima::fastdds::dds::DomainParticipantFactory::get_instance()->type_object_registry().get_type_identifiers(
@@ -590,7 +590,7 @@ void register_StructuresInheritanceStruct_type_identifier(
         "StructuresInheritanceStruct", type_ids_StructuresInheritanceStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_StructuresInheritanceStruct)
     {
-        StructTypeFlag struct_flags_StructuresInheritanceStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_StructuresInheritanceStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_StructuresInheritanceStruct = "StructuresInheritanceStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_StructuresInheritanceStruct;
@@ -1070,7 +1070,7 @@ void register_BitsetsChildInheritanceStruct_type_identifier(
         "BitsetsChildInheritanceStruct", type_ids_BitsetsChildInheritanceStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_BitsetsChildInheritanceStruct)
     {
-        StructTypeFlag struct_flags_BitsetsChildInheritanceStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_BitsetsChildInheritanceStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_BitsetsChildInheritanceStruct = "BitsetsChildInheritanceStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_BitsetsChildInheritanceStruct;

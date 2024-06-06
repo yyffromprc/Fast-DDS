@@ -1770,7 +1770,7 @@ void register_DerivedAutoidDefault_type_identifier(
         "DerivedAutoidDefault", type_ids_DerivedAutoidDefault);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_DerivedAutoidDefault)
     {
-        StructTypeFlag struct_flags_DerivedAutoidDefault = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_DerivedAutoidDefault = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::MUTABLE,
                 false, true);
         return_code_DerivedAutoidDefault =
             eprosima::fastdds::dds::DomainParticipantFactory::get_instance()->type_object_registry().get_type_identifiers(
@@ -2020,7 +2020,7 @@ void register_DerivedEmptyAutoidSequential_type_identifier(
         "DerivedEmptyAutoidSequential", type_ids_DerivedEmptyAutoidSequential);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_DerivedEmptyAutoidSequential)
     {
-        StructTypeFlag struct_flags_DerivedEmptyAutoidSequential = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_DerivedEmptyAutoidSequential = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::MUTABLE,
                 false, false);
         return_code_DerivedEmptyAutoidSequential =
             eprosima::fastdds::dds::DomainParticipantFactory::get_instance()->type_object_registry().get_type_identifiers(
@@ -2077,7 +2077,7 @@ void register_DerivedAutoidSequential_type_identifier(
         "DerivedAutoidSequential", type_ids_DerivedAutoidSequential);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_DerivedAutoidSequential)
     {
-        StructTypeFlag struct_flags_DerivedAutoidSequential = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_DerivedAutoidSequential = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::MUTABLE,
                 false, false);
         return_code_DerivedAutoidSequential =
             eprosima::fastdds::dds::DomainParticipantFactory::get_instance()->type_object_registry().get_type_identifiers(
@@ -2327,7 +2327,7 @@ void register_DerivedAutoidHash_type_identifier(
         "DerivedAutoidHash", type_ids_DerivedAutoidHash);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_DerivedAutoidHash)
     {
-        StructTypeFlag struct_flags_DerivedAutoidHash = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_DerivedAutoidHash = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::MUTABLE,
                 false, true);
         return_code_DerivedAutoidHash =
             eprosima::fastdds::dds::DomainParticipantFactory::get_instance()->type_object_registry().get_type_identifiers(

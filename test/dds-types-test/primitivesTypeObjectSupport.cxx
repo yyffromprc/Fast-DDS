@@ -49,7 +49,7 @@ void register_ShortStruct_type_identifier(
         "ShortStruct", type_ids_ShortStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_ShortStruct)
     {
-        StructTypeFlag struct_flags_ShortStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_ShortStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_ShortStruct = "ShortStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_ShortStruct;
@@ -108,7 +108,7 @@ void register_UShortStruct_type_identifier(
         "UShortStruct", type_ids_UShortStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_UShortStruct)
     {
-        StructTypeFlag struct_flags_UShortStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_UShortStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_UShortStruct = "UShortStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_UShortStruct;
@@ -167,7 +167,7 @@ void register_LongStruct_type_identifier(
         "LongStruct", type_ids_LongStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_LongStruct)
     {
-        StructTypeFlag struct_flags_LongStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_LongStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_LongStruct = "LongStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_LongStruct;
@@ -226,7 +226,7 @@ void register_ULongStruct_type_identifier(
         "ULongStruct", type_ids_ULongStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_ULongStruct)
     {
-        StructTypeFlag struct_flags_ULongStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_ULongStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_ULongStruct = "ULongStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_ULongStruct;
@@ -285,7 +285,7 @@ void register_LongLongStruct_type_identifier(
         "LongLongStruct", type_ids_LongLongStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_LongLongStruct)
     {
-        StructTypeFlag struct_flags_LongLongStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_LongLongStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_LongLongStruct = "LongLongStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_LongLongStruct;
@@ -344,7 +344,7 @@ void register_ULongLongStruct_type_identifier(
         "ULongLongStruct", type_ids_ULongLongStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_ULongLongStruct)
     {
-        StructTypeFlag struct_flags_ULongLongStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_ULongLongStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_ULongLongStruct = "ULongLongStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_ULongLongStruct;
@@ -403,7 +403,7 @@ void register_FloatStruct_type_identifier(
         "FloatStruct", type_ids_FloatStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_FloatStruct)
     {
-        StructTypeFlag struct_flags_FloatStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_FloatStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_FloatStruct = "FloatStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_FloatStruct;
@@ -462,7 +462,7 @@ void register_DoubleStruct_type_identifier(
         "DoubleStruct", type_ids_DoubleStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_DoubleStruct)
     {
-        StructTypeFlag struct_flags_DoubleStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_DoubleStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_DoubleStruct = "DoubleStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_DoubleStruct;
@@ -521,7 +521,7 @@ void register_LongDoubleStruct_type_identifier(
         "LongDoubleStruct", type_ids_LongDoubleStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_LongDoubleStruct)
     {
-        StructTypeFlag struct_flags_LongDoubleStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_LongDoubleStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_LongDoubleStruct = "LongDoubleStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_LongDoubleStruct;
@@ -580,7 +580,7 @@ void register_BooleanStruct_type_identifier(
         "BooleanStruct", type_ids_BooleanStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_BooleanStruct)
     {
-        StructTypeFlag struct_flags_BooleanStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_BooleanStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_BooleanStruct = "BooleanStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_BooleanStruct;
@@ -639,7 +639,7 @@ void register_OctetStruct_type_identifier(
         "OctetStruct", type_ids_OctetStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_OctetStruct)
     {
-        StructTypeFlag struct_flags_OctetStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_OctetStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_OctetStruct = "OctetStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_OctetStruct;
@@ -698,7 +698,7 @@ void register_CharStruct_type_identifier(
         "CharStruct", type_ids_CharStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_CharStruct)
     {
-        StructTypeFlag struct_flags_CharStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_CharStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_CharStruct = "CharStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_CharStruct;
@@ -757,7 +757,7 @@ void register_WCharStruct_type_identifier(
         "WCharStruct", type_ids_WCharStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_WCharStruct)
     {
-        StructTypeFlag struct_flags_WCharStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_WCharStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_WCharStruct = "WCharStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_WCharStruct;
@@ -816,7 +816,7 @@ void register_Int8Struct_type_identifier(
         "Int8Struct", type_ids_Int8Struct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Int8Struct)
     {
-        StructTypeFlag struct_flags_Int8Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_Int8Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Int8Struct = "Int8Struct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Int8Struct;
@@ -875,7 +875,7 @@ void register_Uint8Struct_type_identifier(
         "Uint8Struct", type_ids_Uint8Struct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Uint8Struct)
     {
-        StructTypeFlag struct_flags_Uint8Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_Uint8Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Uint8Struct = "Uint8Struct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Uint8Struct;
@@ -934,7 +934,7 @@ void register_Int16Struct_type_identifier(
         "Int16Struct", type_ids_Int16Struct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Int16Struct)
     {
-        StructTypeFlag struct_flags_Int16Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_Int16Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Int16Struct = "Int16Struct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Int16Struct;
@@ -993,7 +993,7 @@ void register_Uint16Struct_type_identifier(
         "Uint16Struct", type_ids_Uint16Struct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Uint16Struct)
     {
-        StructTypeFlag struct_flags_Uint16Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_Uint16Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Uint16Struct = "Uint16Struct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Uint16Struct;
@@ -1052,7 +1052,7 @@ void register_Int32Struct_type_identifier(
         "Int32Struct", type_ids_Int32Struct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Int32Struct)
     {
-        StructTypeFlag struct_flags_Int32Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_Int32Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Int32Struct = "Int32Struct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Int32Struct;
@@ -1111,7 +1111,7 @@ void register_Uint32Struct_type_identifier(
         "Uint32Struct", type_ids_Uint32Struct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Uint32Struct)
     {
-        StructTypeFlag struct_flags_Uint32Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_Uint32Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Uint32Struct = "Uint32Struct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Uint32Struct;
@@ -1170,7 +1170,7 @@ void register_Int64Struct_type_identifier(
         "Int64Struct", type_ids_Int64Struct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Int64Struct)
     {
-        StructTypeFlag struct_flags_Int64Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_Int64Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Int64Struct = "Int64Struct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Int64Struct;
@@ -1229,7 +1229,7 @@ void register_Uint64Struct_type_identifier(
         "Uint64Struct", type_ids_Uint64Struct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Uint64Struct)
     {
-        StructTypeFlag struct_flags_Uint64Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_Uint64Struct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Uint64Struct = "Uint64Struct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Uint64Struct;

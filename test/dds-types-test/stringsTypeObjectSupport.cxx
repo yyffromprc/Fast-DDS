@@ -49,7 +49,7 @@ void register_StringStruct_type_identifier(
         "StringStruct", type_ids_StringStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_StringStruct)
     {
-        StructTypeFlag struct_flags_StringStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_StringStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_StringStruct = "StringStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_StringStruct;
@@ -116,7 +116,7 @@ void register_WStringStruct_type_identifier(
         "WStringStruct", type_ids_WStringStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_WStringStruct)
     {
-        StructTypeFlag struct_flags_WStringStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_WStringStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_WStringStruct = "WStringStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_WStringStruct;
@@ -183,7 +183,7 @@ void register_SmallStringStruct_type_identifier(
         "SmallStringStruct", type_ids_SmallStringStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_SmallStringStruct)
     {
-        StructTypeFlag struct_flags_SmallStringStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_SmallStringStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_SmallStringStruct = "SmallStringStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_SmallStringStruct;
@@ -250,7 +250,7 @@ void register_SmallWStringStruct_type_identifier(
         "SmallWStringStruct", type_ids_SmallWStringStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_SmallWStringStruct)
     {
-        StructTypeFlag struct_flags_SmallWStringStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_SmallWStringStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_SmallWStringStruct = "SmallWStringStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_SmallWStringStruct;
@@ -317,7 +317,7 @@ void register_LargeStringStruct_type_identifier(
         "LargeStringStruct", type_ids_LargeStringStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_LargeStringStruct)
     {
-        StructTypeFlag struct_flags_LargeStringStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_LargeStringStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_LargeStringStruct = "LargeStringStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_LargeStringStruct;
@@ -384,7 +384,7 @@ void register_LargeWStringStruct_type_identifier(
         "LargeWStringStruct", type_ids_LargeWStringStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_LargeWStringStruct)
     {
-        StructTypeFlag struct_flags_LargeWStringStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_LargeWStringStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_LargeWStringStruct = "LargeWStringStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_LargeWStringStruct;

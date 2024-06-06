@@ -50,7 +50,7 @@ void register_RelativePathIncludeStruct_type_identifier(
         "RelativePathIncludeStruct", type_ids_RelativePathIncludeStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_RelativePathIncludeStruct)
     {
-        StructTypeFlag struct_flags_RelativePathIncludeStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_RelativePathIncludeStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_RelativePathIncludeStruct = "RelativePathIncludeStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_RelativePathIncludeStruct;

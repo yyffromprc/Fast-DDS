@@ -1465,7 +1465,7 @@ void register_AliasInt16_type_identifier(
         "AliasInt16", type_ids_AliasInt16);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasInt16)
     {
-        StructTypeFlag struct_flags_AliasInt16 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasInt16 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasInt16 = "AliasInt16";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasInt16;
@@ -1522,7 +1522,7 @@ void register_AliasUint16_type_identifier(
         "AliasUint16", type_ids_AliasUint16);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasUint16)
     {
-        StructTypeFlag struct_flags_AliasUint16 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasUint16 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasUint16 = "AliasUint16";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasUint16;
@@ -1579,7 +1579,7 @@ void register_AliasInt32_type_identifier(
         "AliasInt32", type_ids_AliasInt32);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasInt32)
     {
-        StructTypeFlag struct_flags_AliasInt32 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasInt32 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasInt32 = "AliasInt32";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasInt32;
@@ -1636,7 +1636,7 @@ void register_AliasUInt32_type_identifier(
         "AliasUInt32", type_ids_AliasUInt32);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasUInt32)
     {
-        StructTypeFlag struct_flags_AliasUInt32 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasUInt32 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasUInt32 = "AliasUInt32";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasUInt32;
@@ -1693,7 +1693,7 @@ void register_AliasInt64_type_identifier(
         "AliasInt64", type_ids_AliasInt64);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasInt64)
     {
-        StructTypeFlag struct_flags_AliasInt64 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasInt64 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasInt64 = "AliasInt64";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasInt64;
@@ -1750,7 +1750,7 @@ void register_AliasUInt64_type_identifier(
         "AliasUInt64", type_ids_AliasUInt64);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasUInt64)
     {
-        StructTypeFlag struct_flags_AliasUInt64 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasUInt64 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasUInt64 = "AliasUInt64";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasUInt64;
@@ -1807,7 +1807,7 @@ void register_AliasFloat32_type_identifier(
         "AliasFloat32", type_ids_AliasFloat32);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasFloat32)
     {
-        StructTypeFlag struct_flags_AliasFloat32 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasFloat32 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasFloat32 = "AliasFloat32";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasFloat32;
@@ -1864,7 +1864,7 @@ void register_AliasFloat64_type_identifier(
         "AliasFloat64", type_ids_AliasFloat64);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasFloat64)
     {
-        StructTypeFlag struct_flags_AliasFloat64 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasFloat64 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasFloat64 = "AliasFloat64";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasFloat64;
@@ -1921,7 +1921,7 @@ void register_AliasFloat128_type_identifier(
         "AliasFloat128", type_ids_AliasFloat128);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasFloat128)
     {
-        StructTypeFlag struct_flags_AliasFloat128 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasFloat128 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasFloat128 = "AliasFloat128";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasFloat128;
@@ -1978,7 +1978,7 @@ void register_AliasBool_type_identifier(
         "AliasBool", type_ids_AliasBool);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasBool)
     {
-        StructTypeFlag struct_flags_AliasBool = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasBool = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasBool = "AliasBool";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasBool;
@@ -2035,7 +2035,7 @@ void register_AliasOctet_type_identifier(
         "AliasOctet", type_ids_AliasOctet);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasOctet)
     {
-        StructTypeFlag struct_flags_AliasOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasOctet = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasOctet = "AliasOctet";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasOctet;
@@ -2092,7 +2092,7 @@ void register_AliasChar8_type_identifier(
         "AliasChar8", type_ids_AliasChar8);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasChar8)
     {
-        StructTypeFlag struct_flags_AliasChar8 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasChar8 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasChar8 = "AliasChar8";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasChar8;
@@ -2149,7 +2149,7 @@ void register_AliasChar16_type_identifier(
         "AliasChar16", type_ids_AliasChar16);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasChar16)
     {
-        StructTypeFlag struct_flags_AliasChar16 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasChar16 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasChar16 = "AliasChar16";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasChar16;
@@ -2206,7 +2206,7 @@ void register_AliasString8_type_identifier(
         "AliasString8", type_ids_AliasString8);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasString8)
     {
-        StructTypeFlag struct_flags_AliasString8 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasString8 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasString8 = "AliasString8";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasString8;
@@ -2263,7 +2263,7 @@ void register_AliasString16_type_identifier(
         "AliasString16", type_ids_AliasString16);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasString16)
     {
-        StructTypeFlag struct_flags_AliasString16 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasString16 = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasString16 = "AliasString16";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasString16;
@@ -2320,7 +2320,7 @@ void register_AliasEnum_type_identifier(
         "AliasEnum", type_ids_AliasEnum);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasEnum)
     {
-        StructTypeFlag struct_flags_AliasEnum = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasEnum = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasEnum = "AliasEnum";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasEnum;
@@ -2377,7 +2377,7 @@ void register_AliasBitmask_type_identifier(
         "AliasBitmask", type_ids_AliasBitmask);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasBitmask)
     {
-        StructTypeFlag struct_flags_AliasBitmask = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasBitmask = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasBitmask = "AliasBitmask";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasBitmask;
@@ -2434,7 +2434,7 @@ void register_AliasAlias_type_identifier(
         "AliasAlias", type_ids_AliasAlias);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasAlias)
     {
-        StructTypeFlag struct_flags_AliasAlias = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasAlias = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasAlias = "AliasAlias";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasAlias;
@@ -2491,7 +2491,7 @@ void register_AliasArray_type_identifier(
         "AliasArray", type_ids_AliasArray);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasArray)
     {
-        StructTypeFlag struct_flags_AliasArray = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasArray = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasArray = "AliasArray";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasArray;
@@ -2548,7 +2548,7 @@ void register_AliasMultiArray_type_identifier(
         "AliasMultiArray", type_ids_AliasMultiArray);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasMultiArray)
     {
-        StructTypeFlag struct_flags_AliasMultiArray = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasMultiArray = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasMultiArray = "AliasMultiArray";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasMultiArray;
@@ -2605,7 +2605,7 @@ void register_AliasSequence_type_identifier(
         "AliasSequence", type_ids_AliasSequence);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasSequence)
     {
-        StructTypeFlag struct_flags_AliasSequence = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasSequence = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasSequence = "AliasSequence";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasSequence;
@@ -2662,7 +2662,7 @@ void register_AliasMap_type_identifier(
         "AliasMap", type_ids_AliasMap);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasMap)
     {
-        StructTypeFlag struct_flags_AliasMap = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasMap = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasMap = "AliasMap";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasMap;
@@ -2719,7 +2719,7 @@ void register_AliasUnion_type_identifier(
         "AliasUnion", type_ids_AliasUnion);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasUnion)
     {
-        StructTypeFlag struct_flags_AliasUnion = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasUnion = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasUnion = "AliasUnion";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasUnion;
@@ -2776,7 +2776,7 @@ void register_AliasStruct_type_identifier(
         "AliasStruct", type_ids_AliasStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasStruct)
     {
-        StructTypeFlag struct_flags_AliasStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasStruct = "AliasStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasStruct;
@@ -2833,7 +2833,7 @@ void register_AliasBitset_type_identifier(
         "AliasBitset", type_ids_AliasBitset);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_AliasBitset)
     {
-        StructTypeFlag struct_flags_AliasBitset = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_AliasBitset = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_AliasBitset = "AliasBitset";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_AliasBitset;

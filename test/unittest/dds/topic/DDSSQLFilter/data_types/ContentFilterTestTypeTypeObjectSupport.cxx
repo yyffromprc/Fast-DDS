@@ -203,7 +203,7 @@ void register_StructType_type_identifier(
         "StructType", type_ids_StructType);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_StructType)
     {
-        StructTypeFlag struct_flags_StructType = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_StructType = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 true, false);
         QualifiedTypeName type_name_StructType = "StructType";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_StructType;
@@ -693,7 +693,7 @@ void register_ContentFilterTestType_type_identifier(
         "ContentFilterTestType", type_ids_ContentFilterTestType);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_ContentFilterTestType)
     {
-        StructTypeFlag struct_flags_ContentFilterTestType = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_ContentFilterTestType = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_ContentFilterTestType = "ContentFilterTestType";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_ContentFilterTestType;

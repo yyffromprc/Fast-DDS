@@ -151,7 +151,7 @@ void register_ModuleConstsLiteralsStruct_type_identifier(
         "const_module1::ModuleConstsLiteralsStruct", type_ids_ModuleConstsLiteralsStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_ModuleConstsLiteralsStruct)
     {
-        StructTypeFlag struct_flags_ModuleConstsLiteralsStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_ModuleConstsLiteralsStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_ModuleConstsLiteralsStruct = "const_module1::ModuleConstsLiteralsStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_ModuleConstsLiteralsStruct;
@@ -367,7 +367,7 @@ void register_Module2ConstsLiteralsStruct_type_identifier(
         "const_module2::Module2ConstsLiteralsStruct", type_ids_Module2ConstsLiteralsStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_Module2ConstsLiteralsStruct)
     {
-        StructTypeFlag struct_flags_Module2ConstsLiteralsStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_Module2ConstsLiteralsStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_Module2ConstsLiteralsStruct = "const_module2::Module2ConstsLiteralsStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_Module2ConstsLiteralsStruct;
@@ -654,7 +654,7 @@ void register_ConstsLiteralsStruct_type_identifier(
         "ConstsLiteralsStruct", type_ids_ConstsLiteralsStruct);
     if (eprosima::fastdds::dds::RETCODE_OK != return_code_ConstsLiteralsStruct)
     {
-        StructTypeFlag struct_flags_ConstsLiteralsStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::NOT_APPLIED,
+        StructTypeFlag struct_flags_ConstsLiteralsStruct = TypeObjectUtils::build_struct_type_flag(eprosima::fastdds::dds::xtypes::ExtensibilityKind::APPENDABLE,
                 false, false);
         QualifiedTypeName type_name_ConstsLiteralsStruct = "ConstsLiteralsStruct";
         eprosima::fastcdr::optional<AppliedBuiltinTypeAnnotations> type_ann_builtin_ConstsLiteralsStruct;
