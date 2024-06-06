@@ -131,7 +131,7 @@ void register_MapShortShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_short = 0x00000000;
             bool common_var_map_short_short_ec {false};
@@ -249,7 +249,7 @@ void register_MapShortUShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_ushort = 0x00000000;
             bool common_var_map_short_ushort_ec {false};
@@ -367,7 +367,7 @@ void register_MapShortLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_long = 0x00000000;
             bool common_var_map_short_long_ec {false};
@@ -485,7 +485,7 @@ void register_MapShortULong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_ulong = 0x00000000;
             bool common_var_map_short_ulong_ec {false};
@@ -603,7 +603,7 @@ void register_MapShortLongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_longlong = 0x00000000;
             bool common_var_map_short_longlong_ec {false};
@@ -721,7 +721,7 @@ void register_MapShortULongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_ulonglong = 0x00000000;
             bool common_var_map_short_ulonglong_ec {false};
@@ -839,7 +839,7 @@ void register_MapShortFloat_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_float = 0x00000000;
             bool common_var_map_short_float_ec {false};
@@ -957,7 +957,7 @@ void register_MapShortDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_double = 0x00000000;
             bool common_var_map_short_double_ec {false};
@@ -1075,7 +1075,7 @@ void register_MapShortLongDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_longdouble = 0x00000000;
             bool common_var_map_short_longdouble_ec {false};
@@ -1193,7 +1193,7 @@ void register_MapShortBoolean_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_boolean = 0x00000000;
             bool common_var_map_short_boolean_ec {false};
@@ -1311,7 +1311,7 @@ void register_MapShortOctet_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_octet = 0x00000000;
             bool common_var_map_short_octet_ec {false};
@@ -1429,7 +1429,7 @@ void register_MapShortChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_char = 0x00000000;
             bool common_var_map_short_char_ec {false};
@@ -1547,7 +1547,7 @@ void register_MapShortWChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_wchar = 0x00000000;
             bool common_var_map_short_wchar_ec {false};
@@ -1673,7 +1673,7 @@ void register_MapShortString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_string = 0x00000000;
             bool common_var_map_short_string_ec {false};
@@ -1799,7 +1799,7 @@ void register_MapShortWString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_wstring = 0x00000000;
             bool common_var_map_short_wstring_ec {false};
@@ -1915,7 +1915,7 @@ void register_MapShortInnerAliasBoundedStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_inneraliasboundedstringhelper = 0x00000000;
             bool common_var_map_short_inneraliasboundedstringhelper_ec {false};
@@ -2031,7 +2031,7 @@ void register_MapShortInnerAliasBoundedWStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_inneraliasboundedwstringhelper = 0x00000000;
             bool common_var_map_short_inneraliasboundedwstringhelper_ec {false};
@@ -2147,7 +2147,7 @@ void register_MapShortInnerEnumHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_innerenumhelper = 0x00000000;
             bool common_var_map_short_innerenumhelper_ec {false};
@@ -2263,7 +2263,7 @@ void register_MapShortInnerBitMaskHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_innerbitmaskhelper = 0x00000000;
             bool common_var_map_short_innerbitmaskhelper_ec {false};
@@ -2379,7 +2379,7 @@ void register_MapShortInnerAliasHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_inneraliashelper = 0x00000000;
             bool common_var_map_short_inneraliashelper_ec {false};
@@ -2495,7 +2495,7 @@ void register_MapShortInnerAliasArrayHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_inneraliasarrayhelper = 0x00000000;
             bool common_var_map_short_inneraliasarrayhelper_ec {false};
@@ -2611,7 +2611,7 @@ void register_MapShortInnerAliasSequenceHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_inneraliassequencehelper = 0x00000000;
             bool common_var_map_short_inneraliassequencehelper_ec {false};
@@ -2727,7 +2727,7 @@ void register_MapShortInnerAliasMapHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_inneraliasmaphelper = 0x00000000;
             bool common_var_map_short_inneraliasmaphelper_ec {false};
@@ -2843,7 +2843,7 @@ void register_MapShortInnerUnionHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_innerunionhelper = 0x00000000;
             bool common_var_map_short_innerunionhelper_ec {false};
@@ -2959,7 +2959,7 @@ void register_MapShortInnerStructureHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_innerstructurehelper = 0x00000000;
             bool common_var_map_short_innerstructurehelper_ec {false};
@@ -3075,7 +3075,7 @@ void register_MapShortInnerBitsetHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_short_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_short_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_short_innerbitsethelper = 0x00000000;
             bool common_var_map_short_innerbitsethelper_ec {false};
@@ -3193,7 +3193,7 @@ void register_MapUShortShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_short = 0x00000000;
             bool common_var_map_ushort_short_ec {false};
@@ -3311,7 +3311,7 @@ void register_MapUShortUShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_ushort = 0x00000000;
             bool common_var_map_ushort_ushort_ec {false};
@@ -3429,7 +3429,7 @@ void register_MapUShortLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_long = 0x00000000;
             bool common_var_map_ushort_long_ec {false};
@@ -3547,7 +3547,7 @@ void register_MapUShortULong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_ulong = 0x00000000;
             bool common_var_map_ushort_ulong_ec {false};
@@ -3665,7 +3665,7 @@ void register_MapUShortLongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_longlong = 0x00000000;
             bool common_var_map_ushort_longlong_ec {false};
@@ -3783,7 +3783,7 @@ void register_MapUShortULongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_ulonglong = 0x00000000;
             bool common_var_map_ushort_ulonglong_ec {false};
@@ -3901,7 +3901,7 @@ void register_MapUShortFloat_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_float = 0x00000000;
             bool common_var_map_ushort_float_ec {false};
@@ -4019,7 +4019,7 @@ void register_MapUShortDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_double = 0x00000000;
             bool common_var_map_ushort_double_ec {false};
@@ -4137,7 +4137,7 @@ void register_MapUShortLongDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_longdouble = 0x00000000;
             bool common_var_map_ushort_longdouble_ec {false};
@@ -4255,7 +4255,7 @@ void register_MapUShortBoolean_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_boolean = 0x00000000;
             bool common_var_map_ushort_boolean_ec {false};
@@ -4373,7 +4373,7 @@ void register_MapUShortOctet_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_octet = 0x00000000;
             bool common_var_map_ushort_octet_ec {false};
@@ -4491,7 +4491,7 @@ void register_MapUShortChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_char = 0x00000000;
             bool common_var_map_ushort_char_ec {false};
@@ -4609,7 +4609,7 @@ void register_MapUShortWChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_wchar = 0x00000000;
             bool common_var_map_ushort_wchar_ec {false};
@@ -4735,7 +4735,7 @@ void register_MapUShortString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_string = 0x00000000;
             bool common_var_map_ushort_string_ec {false};
@@ -4861,7 +4861,7 @@ void register_MapUShortWString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_wstring = 0x00000000;
             bool common_var_map_ushort_wstring_ec {false};
@@ -4977,7 +4977,7 @@ void register_MapUShortInnerAliasBoundedStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_inneraliasboundedstringhelper = 0x00000000;
             bool common_var_map_ushort_inneraliasboundedstringhelper_ec {false};
@@ -5093,7 +5093,7 @@ void register_MapUShortInnerAliasBoundedWStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_inneraliasboundedwstringhelper = 0x00000000;
             bool common_var_map_ushort_inneraliasboundedwstringhelper_ec {false};
@@ -5209,7 +5209,7 @@ void register_MapUShortInnerEnumHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_innerenumhelper = 0x00000000;
             bool common_var_map_ushort_innerenumhelper_ec {false};
@@ -5325,7 +5325,7 @@ void register_MapUShortInnerBitMaskHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_innerbitmaskhelper = 0x00000000;
             bool common_var_map_ushort_innerbitmaskhelper_ec {false};
@@ -5441,7 +5441,7 @@ void register_MapUShortInnerAliasHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_inneraliashelper = 0x00000000;
             bool common_var_map_ushort_inneraliashelper_ec {false};
@@ -5557,7 +5557,7 @@ void register_MapUShortInnerAliasArrayHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_inneraliasarrayhelper = 0x00000000;
             bool common_var_map_ushort_inneraliasarrayhelper_ec {false};
@@ -5673,7 +5673,7 @@ void register_MapUShortInnerAliasSequenceHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_inneraliassequencehelper = 0x00000000;
             bool common_var_map_ushort_inneraliassequencehelper_ec {false};
@@ -5789,7 +5789,7 @@ void register_MapUShortInnerAliasMapHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_inneraliasmaphelper = 0x00000000;
             bool common_var_map_ushort_inneraliasmaphelper_ec {false};
@@ -5905,7 +5905,7 @@ void register_MapUShortInnerUnionHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_innerunionhelper = 0x00000000;
             bool common_var_map_ushort_innerunionhelper_ec {false};
@@ -6021,7 +6021,7 @@ void register_MapUShortInnerStructureHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_innerstructurehelper = 0x00000000;
             bool common_var_map_ushort_innerstructurehelper_ec {false};
@@ -6137,7 +6137,7 @@ void register_MapUShortInnerBitsetHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ushort_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ushort_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ushort_innerbitsethelper = 0x00000000;
             bool common_var_map_ushort_innerbitsethelper_ec {false};
@@ -6255,7 +6255,7 @@ void register_MapLongShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_short = 0x00000000;
             bool common_var_map_long_short_ec {false};
@@ -6373,7 +6373,7 @@ void register_MapLongUShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_ushort = 0x00000000;
             bool common_var_map_long_ushort_ec {false};
@@ -6491,7 +6491,7 @@ void register_MapLongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_long = 0x00000000;
             bool common_var_map_long_long_ec {false};
@@ -6609,7 +6609,7 @@ void register_MapLongULong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_ulong = 0x00000000;
             bool common_var_map_long_ulong_ec {false};
@@ -6727,7 +6727,7 @@ void register_MapLongKeyLongLongValue_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_longlong = 0x00000000;
             bool common_var_map_long_longlong_ec {false};
@@ -6845,7 +6845,7 @@ void register_MapLongULongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_ulonglong = 0x00000000;
             bool common_var_map_long_ulonglong_ec {false};
@@ -6963,7 +6963,7 @@ void register_MapLongFloat_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_float = 0x00000000;
             bool common_var_map_long_float_ec {false};
@@ -7081,7 +7081,7 @@ void register_MapLongDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_double = 0x00000000;
             bool common_var_map_long_double_ec {false};
@@ -7199,7 +7199,7 @@ void register_MapLongKeyLongDoubleValue_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_longdouble = 0x00000000;
             bool common_var_map_long_longdouble_ec {false};
@@ -7317,7 +7317,7 @@ void register_MapLongBoolean_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_boolean = 0x00000000;
             bool common_var_map_long_boolean_ec {false};
@@ -7435,7 +7435,7 @@ void register_MapLongOctet_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_octet = 0x00000000;
             bool common_var_map_long_octet_ec {false};
@@ -7553,7 +7553,7 @@ void register_MapLongChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_char = 0x00000000;
             bool common_var_map_long_char_ec {false};
@@ -7671,7 +7671,7 @@ void register_MapLongWChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_wchar = 0x00000000;
             bool common_var_map_long_wchar_ec {false};
@@ -7797,7 +7797,7 @@ void register_MapLongString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_string = 0x00000000;
             bool common_var_map_long_string_ec {false};
@@ -7923,7 +7923,7 @@ void register_MapLongWString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_wstring = 0x00000000;
             bool common_var_map_long_wstring_ec {false};
@@ -8039,7 +8039,7 @@ void register_MapLongInnerAliasBoundedStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_inneraliasboundedstringhelper = 0x00000000;
             bool common_var_map_long_inneraliasboundedstringhelper_ec {false};
@@ -8155,7 +8155,7 @@ void register_MapLongInnerAliasBoundedWStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_inneraliasboundedwstringhelper = 0x00000000;
             bool common_var_map_long_inneraliasboundedwstringhelper_ec {false};
@@ -8271,7 +8271,7 @@ void register_MapLongInnerEnumHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_innerenumhelper = 0x00000000;
             bool common_var_map_long_innerenumhelper_ec {false};
@@ -8387,7 +8387,7 @@ void register_MapLongInnerBitMaskHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_innerbitmaskhelper = 0x00000000;
             bool common_var_map_long_innerbitmaskhelper_ec {false};
@@ -8503,7 +8503,7 @@ void register_MapLongInnerAliasHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_inneraliashelper = 0x00000000;
             bool common_var_map_long_inneraliashelper_ec {false};
@@ -8619,7 +8619,7 @@ void register_MapLongInnerAliasArrayHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_inneraliasarrayhelper = 0x00000000;
             bool common_var_map_long_inneraliasarrayhelper_ec {false};
@@ -8735,7 +8735,7 @@ void register_MapLongInnerAliasSequenceHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_inneraliassequencehelper = 0x00000000;
             bool common_var_map_long_inneraliassequencehelper_ec {false};
@@ -8851,7 +8851,7 @@ void register_MapLongInnerAliasMapHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_inneraliasmaphelper = 0x00000000;
             bool common_var_map_long_inneraliasmaphelper_ec {false};
@@ -8967,7 +8967,7 @@ void register_MapLongInnerUnionHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_innerunionhelper = 0x00000000;
             bool common_var_map_long_innerunionhelper_ec {false};
@@ -9083,7 +9083,7 @@ void register_MapLongInnerStructureHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_innerstructurehelper = 0x00000000;
             bool common_var_map_long_innerstructurehelper_ec {false};
@@ -9199,7 +9199,7 @@ void register_MapLongInnerBitsetHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_long_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_long_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_long_innerbitsethelper = 0x00000000;
             bool common_var_map_long_innerbitsethelper_ec {false};
@@ -9317,7 +9317,7 @@ void register_MapULongShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_short = 0x00000000;
             bool common_var_map_ulong_short_ec {false};
@@ -9435,7 +9435,7 @@ void register_MapULongUShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_ushort = 0x00000000;
             bool common_var_map_ulong_ushort_ec {false};
@@ -9553,7 +9553,7 @@ void register_MapULongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_long = 0x00000000;
             bool common_var_map_ulong_long_ec {false};
@@ -9671,7 +9671,7 @@ void register_MapULongULong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_ulong = 0x00000000;
             bool common_var_map_ulong_ulong_ec {false};
@@ -9789,7 +9789,7 @@ void register_MapKeyULongValueLongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_longlong = 0x00000000;
             bool common_var_map_ulong_longlong_ec {false};
@@ -9907,7 +9907,7 @@ void register_MapULongULongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_ulonglong = 0x00000000;
             bool common_var_map_ulong_ulonglong_ec {false};
@@ -10025,7 +10025,7 @@ void register_MapULongFloat_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_float = 0x00000000;
             bool common_var_map_ulong_float_ec {false};
@@ -10143,7 +10143,7 @@ void register_MapULongDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_double = 0x00000000;
             bool common_var_map_ulong_double_ec {false};
@@ -10261,7 +10261,7 @@ void register_MapKeyULongValueLongDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_longdouble = 0x00000000;
             bool common_var_map_ulong_longdouble_ec {false};
@@ -10379,7 +10379,7 @@ void register_MapULongBoolean_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_boolean = 0x00000000;
             bool common_var_map_ulong_boolean_ec {false};
@@ -10497,7 +10497,7 @@ void register_MapULongOctet_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_octet = 0x00000000;
             bool common_var_map_ulong_octet_ec {false};
@@ -10615,7 +10615,7 @@ void register_MapULongChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_char = 0x00000000;
             bool common_var_map_ulong_char_ec {false};
@@ -10733,7 +10733,7 @@ void register_MapULongWChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_wchar = 0x00000000;
             bool common_var_map_ulong_wchar_ec {false};
@@ -10859,7 +10859,7 @@ void register_MapULongString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_string = 0x00000000;
             bool common_var_map_ulong_string_ec {false};
@@ -10985,7 +10985,7 @@ void register_MapULongWString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_wstring = 0x00000000;
             bool common_var_map_ulong_wstring_ec {false};
@@ -11101,7 +11101,7 @@ void register_MapULongInnerAliasBoundedStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_inneraliasboundedstringhelper = 0x00000000;
             bool common_var_map_ulong_inneraliasboundedstringhelper_ec {false};
@@ -11217,7 +11217,7 @@ void register_MapULongInnerAliasBoundedWStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_inneraliasboundedwstringhelper = 0x00000000;
             bool common_var_map_ulong_inneraliasboundedwstringhelper_ec {false};
@@ -11333,7 +11333,7 @@ void register_MapULongInnerEnumHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_innerenumhelper = 0x00000000;
             bool common_var_map_ulong_innerenumhelper_ec {false};
@@ -11449,7 +11449,7 @@ void register_MapULongInnerBitMaskHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_innerbitmaskhelper = 0x00000000;
             bool common_var_map_ulong_innerbitmaskhelper_ec {false};
@@ -11565,7 +11565,7 @@ void register_MapULongInnerAliasHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_inneraliashelper = 0x00000000;
             bool common_var_map_ulong_inneraliashelper_ec {false};
@@ -11681,7 +11681,7 @@ void register_MapULongInnerAliasArrayHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_inneraliasarrayhelper = 0x00000000;
             bool common_var_map_ulong_inneraliasarrayhelper_ec {false};
@@ -11797,7 +11797,7 @@ void register_MapULongInnerAliasSequenceHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_inneraliassequencehelper = 0x00000000;
             bool common_var_map_ulong_inneraliassequencehelper_ec {false};
@@ -11913,7 +11913,7 @@ void register_MapULongInnerAliasMapHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_inneraliasmaphelper = 0x00000000;
             bool common_var_map_ulong_inneraliasmaphelper_ec {false};
@@ -12029,7 +12029,7 @@ void register_MapULongInnerUnionHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_innerunionhelper = 0x00000000;
             bool common_var_map_ulong_innerunionhelper_ec {false};
@@ -12145,7 +12145,7 @@ void register_MapULongInnerStructureHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_innerstructurehelper = 0x00000000;
             bool common_var_map_ulong_innerstructurehelper_ec {false};
@@ -12261,7 +12261,7 @@ void register_MapULongInnerBitsetHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_ulong_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_ulong_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_ulong_innerbitsethelper = 0x00000000;
             bool common_var_map_ulong_innerbitsethelper_ec {false};
@@ -12379,7 +12379,7 @@ void register_MapLongLongShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_short = 0x00000000;
             bool common_var_map_longlong_short_ec {false};
@@ -12497,7 +12497,7 @@ void register_MapLongLongUShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_ushort = 0x00000000;
             bool common_var_map_longlong_ushort_ec {false};
@@ -12615,7 +12615,7 @@ void register_MapLongLongKeyLongValue_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_long = 0x00000000;
             bool common_var_map_longlong_long_ec {false};
@@ -12733,7 +12733,7 @@ void register_MapLongLongULong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_ulong = 0x00000000;
             bool common_var_map_longlong_ulong_ec {false};
@@ -12851,7 +12851,7 @@ void register_MapLongLongLongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_longlong = 0x00000000;
             bool common_var_map_longlong_longlong_ec {false};
@@ -12969,7 +12969,7 @@ void register_MapLongLongULongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_ulonglong = 0x00000000;
             bool common_var_map_longlong_ulonglong_ec {false};
@@ -13087,7 +13087,7 @@ void register_MapLongLongFloat_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_float = 0x00000000;
             bool common_var_map_longlong_float_ec {false};
@@ -13205,7 +13205,7 @@ void register_MapLongLongKeyDoubleValue_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_double = 0x00000000;
             bool common_var_map_longlong_double_ec {false};
@@ -13323,7 +13323,7 @@ void register_MapLongLongLongDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_longdouble = 0x00000000;
             bool common_var_map_longlong_longdouble_ec {false};
@@ -13441,7 +13441,7 @@ void register_MapLongLongBoolean_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_boolean = 0x00000000;
             bool common_var_map_longlong_boolean_ec {false};
@@ -13559,7 +13559,7 @@ void register_MapLongLongOctet_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_octet = 0x00000000;
             bool common_var_map_longlong_octet_ec {false};
@@ -13677,7 +13677,7 @@ void register_MapLongLongChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_char = 0x00000000;
             bool common_var_map_longlong_char_ec {false};
@@ -13795,7 +13795,7 @@ void register_MapLongLongWChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_wchar = 0x00000000;
             bool common_var_map_longlong_wchar_ec {false};
@@ -13921,7 +13921,7 @@ void register_MapLongLongString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_string = 0x00000000;
             bool common_var_map_longlong_string_ec {false};
@@ -14047,7 +14047,7 @@ void register_MapLongLongWString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_wstring = 0x00000000;
             bool common_var_map_longlong_wstring_ec {false};
@@ -14163,7 +14163,7 @@ void register_MapLongLongInnerAliasBoundedStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_inneraliasboundedstringhelper = 0x00000000;
             bool common_var_map_longlong_inneraliasboundedstringhelper_ec {false};
@@ -14279,7 +14279,7 @@ void register_MapLongLongInnerAliasBoundedWStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_inneraliasboundedwstringhelper = 0x00000000;
             bool common_var_map_longlong_inneraliasboundedwstringhelper_ec {false};
@@ -14395,7 +14395,7 @@ void register_MapLongLongInnerEnumHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_innerenumhelper = 0x00000000;
             bool common_var_map_longlong_innerenumhelper_ec {false};
@@ -14511,7 +14511,7 @@ void register_MapLongLongInnerBitMaskHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_innerbitmaskhelper = 0x00000000;
             bool common_var_map_longlong_innerbitmaskhelper_ec {false};
@@ -14627,7 +14627,7 @@ void register_MapLongLongInnerAliasHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_inneraliashelper = 0x00000000;
             bool common_var_map_longlong_inneraliashelper_ec {false};
@@ -14743,7 +14743,7 @@ void register_MapLongLongInnerAliasArrayHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_inneraliasarrayhelper = 0x00000000;
             bool common_var_map_longlong_inneraliasarrayhelper_ec {false};
@@ -14859,7 +14859,7 @@ void register_MapLongLongInnerAliasSequenceHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_inneraliassequencehelper = 0x00000000;
             bool common_var_map_longlong_inneraliassequencehelper_ec {false};
@@ -14975,7 +14975,7 @@ void register_MapLongLongInnerAliasMapHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_inneraliasmaphelper = 0x00000000;
             bool common_var_map_longlong_inneraliasmaphelper_ec {false};
@@ -15091,7 +15091,7 @@ void register_MapLongLongInnerUnionHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_innerunionhelper = 0x00000000;
             bool common_var_map_longlong_innerunionhelper_ec {false};
@@ -15207,7 +15207,7 @@ void register_MapLongLongInnerStructureHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_innerstructurehelper = 0x00000000;
             bool common_var_map_longlong_innerstructurehelper_ec {false};
@@ -15323,7 +15323,7 @@ void register_MapLongLongInnerBitsetHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_longlong_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_longlong_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_longlong_innerbitsethelper = 0x00000000;
             bool common_var_map_longlong_innerbitsethelper_ec {false};
@@ -15441,7 +15441,7 @@ void register_MapULongLongShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_short = 0x00000000;
             bool common_var_map_u_long_long_short_ec {false};
@@ -15559,7 +15559,7 @@ void register_MapULongLongUShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_u_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_u_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_u_short = 0x00000000;
             bool common_var_map_u_long_long_u_short_ec {false};
@@ -15677,7 +15677,7 @@ void register_MapULongLongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_long = 0x00000000;
             bool common_var_map_u_long_long_long_ec {false};
@@ -15795,7 +15795,7 @@ void register_MapULongLongULong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_u_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_u_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_u_long = 0x00000000;
             bool common_var_map_u_long_long_u_long_ec {false};
@@ -15913,7 +15913,7 @@ void register_MapULongLongLongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_long_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_long_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_long_long = 0x00000000;
             bool common_var_map_u_long_long_long_long_ec {false};
@@ -16031,7 +16031,7 @@ void register_MapULongLongULongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_u_long_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_u_long_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_u_long_long = 0x00000000;
             bool common_var_map_u_long_long_u_long_long_ec {false};
@@ -16149,7 +16149,7 @@ void register_MapULongLongFloat_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_float = 0x00000000;
             bool common_var_map_u_long_long_float_ec {false};
@@ -16267,7 +16267,7 @@ void register_MapKeyULongLongValueDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_double = 0x00000000;
             bool common_var_map_u_long_long_double_ec {false};
@@ -16385,7 +16385,7 @@ void register_MapULongLongLongDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_long_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_long_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_long_double = 0x00000000;
             bool common_var_map_u_long_long_long_double_ec {false};
@@ -16503,7 +16503,7 @@ void register_MapULongLongBoolean_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_boolean = 0x00000000;
             bool common_var_map_u_long_long_boolean_ec {false};
@@ -16621,7 +16621,7 @@ void register_MapULongLongOctet_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_octet = 0x00000000;
             bool common_var_map_u_long_long_octet_ec {false};
@@ -16739,7 +16739,7 @@ void register_MapULongLongChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_char = 0x00000000;
             bool common_var_map_u_long_long_char_ec {false};
@@ -16857,7 +16857,7 @@ void register_MapULongLongWChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_wchar = 0x00000000;
             bool common_var_map_u_long_long_wchar_ec {false};
@@ -16983,7 +16983,7 @@ void register_MapULongLongString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_string = 0x00000000;
             bool common_var_map_u_long_long_string_ec {false};
@@ -17109,7 +17109,7 @@ void register_MapULongLongWString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_wstring = 0x00000000;
             bool common_var_map_u_long_long_wstring_ec {false};
@@ -17225,7 +17225,7 @@ void register_MapULongLongInnerAliasBoundedStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_inner_alias_bounded_string_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_inner_alias_bounded_string_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_inner_alias_bounded_string_helper = 0x00000000;
             bool common_var_map_u_long_long_inner_alias_bounded_string_helper_ec {false};
@@ -17341,7 +17341,7 @@ void register_MapULongLongInnerAliasBoundedWStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_inner_alias_bounded_wstring_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_inner_alias_bounded_wstring_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_inner_alias_bounded_wstring_helper = 0x00000000;
             bool common_var_map_u_long_long_inner_alias_bounded_wstring_helper_ec {false};
@@ -17457,7 +17457,7 @@ void register_MapULongLongInnerEnumHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_inner_enum_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_inner_enum_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_inner_enum_helper = 0x00000000;
             bool common_var_map_u_long_long_inner_enum_helper_ec {false};
@@ -17573,7 +17573,7 @@ void register_MapULongLongInnerBitMaskHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_inner_bit_mask_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_inner_bit_mask_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_inner_bit_mask_helper = 0x00000000;
             bool common_var_map_u_long_long_inner_bit_mask_helper_ec {false};
@@ -17689,7 +17689,7 @@ void register_MapULongLongInnerAliasHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_inner_alias_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_inner_alias_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_inner_alias_helper = 0x00000000;
             bool common_var_map_u_long_long_inner_alias_helper_ec {false};
@@ -17805,7 +17805,7 @@ void register_MapULongLongInnerAliasArrayHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_inner_alias_array_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_inner_alias_array_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_inner_alias_array_helper = 0x00000000;
             bool common_var_map_u_long_long_inner_alias_array_helper_ec {false};
@@ -17921,7 +17921,7 @@ void register_MapULongLongInnerAliasSequenceHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_inner_alias_sequence_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_inner_alias_sequence_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_inner_alias_sequence_helper = 0x00000000;
             bool common_var_map_u_long_long_inner_alias_sequence_helper_ec {false};
@@ -18037,7 +18037,7 @@ void register_MapULongLongInnerAliasMapHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_inner_alias_map_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_inner_alias_map_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_inner_alias_map_helper = 0x00000000;
             bool common_var_map_u_long_long_inner_alias_map_helper_ec {false};
@@ -18153,7 +18153,7 @@ void register_MapULongLongInnerUnionHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_inner_union_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_inner_union_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_inner_union_helper = 0x00000000;
             bool common_var_map_u_long_long_inner_union_helper_ec {false};
@@ -18269,7 +18269,7 @@ void register_MapULongLongInnerStructureHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_inner_structure_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_inner_structure_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_inner_structure_helper = 0x00000000;
             bool common_var_map_u_long_long_inner_structure_helper_ec {false};
@@ -18385,7 +18385,7 @@ void register_MapULongLongInnerBitsetHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_u_long_long_inner_bitset_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_u_long_long_inner_bitset_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_u_long_long_inner_bitset_helper = 0x00000000;
             bool common_var_map_u_long_long_inner_bitset_helper_ec {false};
@@ -18511,7 +18511,7 @@ void register_MapStringShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_short = 0x00000000;
             bool common_var_map_string_short_ec {false};
@@ -18637,7 +18637,7 @@ void register_MapStringUShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_ushort = 0x00000000;
             bool common_var_map_string_ushort_ec {false};
@@ -18763,7 +18763,7 @@ void register_MapStringLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_long = 0x00000000;
             bool common_var_map_string_long_ec {false};
@@ -18889,7 +18889,7 @@ void register_MapStringULong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_ulong = 0x00000000;
             bool common_var_map_string_ulong_ec {false};
@@ -19015,7 +19015,7 @@ void register_MapStringLongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_longlong = 0x00000000;
             bool common_var_map_string_longlong_ec {false};
@@ -19141,7 +19141,7 @@ void register_MapStringULongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_ulonglong = 0x00000000;
             bool common_var_map_string_ulonglong_ec {false};
@@ -19267,7 +19267,7 @@ void register_MapStringFloat_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_float = 0x00000000;
             bool common_var_map_string_float_ec {false};
@@ -19393,7 +19393,7 @@ void register_MapStringDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_double = 0x00000000;
             bool common_var_map_string_double_ec {false};
@@ -19519,7 +19519,7 @@ void register_MapStringLongDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_longdouble = 0x00000000;
             bool common_var_map_string_longdouble_ec {false};
@@ -19645,7 +19645,7 @@ void register_MapStringBoolean_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_boolean = 0x00000000;
             bool common_var_map_string_boolean_ec {false};
@@ -19771,7 +19771,7 @@ void register_MapStringOctet_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_octet = 0x00000000;
             bool common_var_map_string_octet_ec {false};
@@ -19897,7 +19897,7 @@ void register_MapStringChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_char = 0x00000000;
             bool common_var_map_string_char_ec {false};
@@ -20023,7 +20023,7 @@ void register_MapStringWChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_wchar = 0x00000000;
             bool common_var_map_string_wchar_ec {false};
@@ -20157,7 +20157,7 @@ void register_MapStringString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_string = 0x00000000;
             bool common_var_map_string_string_ec {false};
@@ -20291,7 +20291,7 @@ void register_MapStringWString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_wstring = 0x00000000;
             bool common_var_map_string_wstring_ec {false};
@@ -20415,7 +20415,7 @@ void register_MapStringInnerAliasBoundedStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_inneraliasboundedstringhelper = 0x00000000;
             bool common_var_map_string_inneraliasboundedstringhelper_ec {false};
@@ -20539,7 +20539,7 @@ void register_MapStringInnerAliasBoundedWStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_inneraliasboundedwstringhelper = 0x00000000;
             bool common_var_map_string_inneraliasboundedwstringhelper_ec {false};
@@ -20663,7 +20663,7 @@ void register_MapStringInnerEnumHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_innerenumhelper = 0x00000000;
             bool common_var_map_string_innerenumhelper_ec {false};
@@ -20787,7 +20787,7 @@ void register_MapStringInnerBitMaskHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_innerbitmaskhelper = 0x00000000;
             bool common_var_map_string_innerbitmaskhelper_ec {false};
@@ -20911,7 +20911,7 @@ void register_MapStringInnerAliasHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_inneraliashelper = 0x00000000;
             bool common_var_map_string_inneraliashelper_ec {false};
@@ -21035,7 +21035,7 @@ void register_MapStringInnerAliasArrayHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_inneraliasarrayhelper = 0x00000000;
             bool common_var_map_string_inneraliasarrayhelper_ec {false};
@@ -21159,7 +21159,7 @@ void register_MapStringInnerAliasSequenceHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_inneraliassequencehelper = 0x00000000;
             bool common_var_map_string_inneraliassequencehelper_ec {false};
@@ -21283,7 +21283,7 @@ void register_MapStringInnerAliasMapHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_inneraliasmaphelper = 0x00000000;
             bool common_var_map_string_inneraliasmaphelper_ec {false};
@@ -21407,7 +21407,7 @@ void register_MapStringInnerUnionHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_innerunionhelper = 0x00000000;
             bool common_var_map_string_innerunionhelper_ec {false};
@@ -21531,7 +21531,7 @@ void register_MapStringInnerStructureHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_innerstructurehelper = 0x00000000;
             bool common_var_map_string_innerstructurehelper_ec {false};
@@ -21655,7 +21655,7 @@ void register_MapStringInnerBitsetHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_string_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_string_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_string_innerbitsethelper = 0x00000000;
             bool common_var_map_string_innerbitsethelper_ec {false};
@@ -21781,7 +21781,7 @@ void register_MapWStringShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_short = 0x00000000;
             bool common_var_map_wstring_short_ec {false};
@@ -21907,7 +21907,7 @@ void register_MapWStringUShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_ushort = 0x00000000;
             bool common_var_map_wstring_ushort_ec {false};
@@ -22033,7 +22033,7 @@ void register_MapWStringLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_long = 0x00000000;
             bool common_var_map_wstring_long_ec {false};
@@ -22159,7 +22159,7 @@ void register_MapWStringULong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_ulong = 0x00000000;
             bool common_var_map_wstring_ulong_ec {false};
@@ -22285,7 +22285,7 @@ void register_MapWStringLongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_longlong = 0x00000000;
             bool common_var_map_wstring_longlong_ec {false};
@@ -22411,7 +22411,7 @@ void register_MapWStringULongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_ulonglong = 0x00000000;
             bool common_var_map_wstring_ulonglong_ec {false};
@@ -22537,7 +22537,7 @@ void register_MapWStringFloat_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_float = 0x00000000;
             bool common_var_map_wstring_float_ec {false};
@@ -22663,7 +22663,7 @@ void register_MapWStringDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_double = 0x00000000;
             bool common_var_map_wstring_double_ec {false};
@@ -22789,7 +22789,7 @@ void register_MapWStringLongDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_longdouble = 0x00000000;
             bool common_var_map_wstring_longdouble_ec {false};
@@ -22915,7 +22915,7 @@ void register_MapWStringBoolean_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_boolean = 0x00000000;
             bool common_var_map_wstring_boolean_ec {false};
@@ -23041,7 +23041,7 @@ void register_MapWStringOctet_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_octet = 0x00000000;
             bool common_var_map_wstring_octet_ec {false};
@@ -23167,7 +23167,7 @@ void register_MapWStringChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_char = 0x00000000;
             bool common_var_map_wstring_char_ec {false};
@@ -23293,7 +23293,7 @@ void register_MapWStringWChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_wchar = 0x00000000;
             bool common_var_map_wstring_wchar_ec {false};
@@ -23427,7 +23427,7 @@ void register_MapWStringString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_string = 0x00000000;
             bool common_var_map_wstring_string_ec {false};
@@ -23561,7 +23561,7 @@ void register_MapWStringWString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_wstring = 0x00000000;
             bool common_var_map_wstring_wstring_ec {false};
@@ -23685,7 +23685,7 @@ void register_MapWStringInnerAliasBoundedStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_inneraliasboundedstringhelper = 0x00000000;
             bool common_var_map_wstring_inneraliasboundedstringhelper_ec {false};
@@ -23809,7 +23809,7 @@ void register_MapWStringInnerAliasBoundedWStringHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_inneraliasboundedwstringhelper = 0x00000000;
             bool common_var_map_wstring_inneraliasboundedwstringhelper_ec {false};
@@ -23933,7 +23933,7 @@ void register_MapWStringInnerEnumHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_innerenumhelper = 0x00000000;
             bool common_var_map_wstring_innerenumhelper_ec {false};
@@ -24057,7 +24057,7 @@ void register_MapWStringInnerBitMaskHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_innerbitmaskhelper = 0x00000000;
             bool common_var_map_wstring_innerbitmaskhelper_ec {false};
@@ -24181,7 +24181,7 @@ void register_MapWStringInnerAliasHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_inneraliashelper = 0x00000000;
             bool common_var_map_wstring_inneraliashelper_ec {false};
@@ -24305,7 +24305,7 @@ void register_MapWStringInnerAliasArrayHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_inneraliasarrayhelper = 0x00000000;
             bool common_var_map_wstring_inneraliasarrayhelper_ec {false};
@@ -24429,7 +24429,7 @@ void register_MapWStringInnerAliasSequenceHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_inneraliassequencehelper = 0x00000000;
             bool common_var_map_wstring_inneraliassequencehelper_ec {false};
@@ -24553,7 +24553,7 @@ void register_MapWStringInnerAliasMapHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_inneraliasmaphelper = 0x00000000;
             bool common_var_map_wstring_inneraliasmaphelper_ec {false};
@@ -24677,7 +24677,7 @@ void register_MapWStringInnerUnionHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_innerunionhelper = 0x00000000;
             bool common_var_map_wstring_innerunionhelper_ec {false};
@@ -24801,7 +24801,7 @@ void register_MapWStringInnerStructureHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_innerstructurehelper = 0x00000000;
             bool common_var_map_wstring_innerstructurehelper_ec {false};
@@ -24925,7 +24925,7 @@ void register_MapWStringInnerBitsetHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_wstring_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_wstring_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_wstring_innerbitsethelper = 0x00000000;
             bool common_var_map_wstring_innerbitsethelper_ec {false};
@@ -25041,7 +25041,7 @@ void register_MapInnerAliasBoundedStringHelperShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_short = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_short_ec {false};
@@ -25157,7 +25157,7 @@ void register_MapInnerAliasBoundedStringHelperUShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_ushort = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_ushort_ec {false};
@@ -25273,7 +25273,7 @@ void register_MapInnerAliasBoundedStringHelperLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_long = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_long_ec {false};
@@ -25389,7 +25389,7 @@ void register_MapInnerAliasBoundedStringHelperULong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_ulong = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_ulong_ec {false};
@@ -25505,7 +25505,7 @@ void register_MapInnerAliasBoundedStringHelperLongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_longlong = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_longlong_ec {false};
@@ -25621,7 +25621,7 @@ void register_MapInnerAliasBoundedStringHelperULongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_ulonglong = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_ulonglong_ec {false};
@@ -25737,7 +25737,7 @@ void register_MapInnerAliasBoundedStringHelperFloat_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_float = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_float_ec {false};
@@ -25853,7 +25853,7 @@ void register_MapInnerAliasBoundedStringHelperDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_double = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_double_ec {false};
@@ -25969,7 +25969,7 @@ void register_MapInnerAliasBoundedStringHelperLongDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_longdouble = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_longdouble_ec {false};
@@ -26085,7 +26085,7 @@ void register_MapInnerAliasBoundedStringHelperBoolean_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_boolean = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_boolean_ec {false};
@@ -26201,7 +26201,7 @@ void register_MapInnerAliasBoundedStringHelperOctet_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_octet = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_octet_ec {false};
@@ -26317,7 +26317,7 @@ void register_MapInnerAliasBoundedStringHelperChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_char = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_char_ec {false};
@@ -26433,7 +26433,7 @@ void register_MapInnerAliasBoundedStringHelperWChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_wchar = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_wchar_ec {false};
@@ -26557,7 +26557,7 @@ void register_MapInnerAliasBoundedStringHelperString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_string = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_string_ec {false};
@@ -26681,7 +26681,7 @@ void register_MapInnerAliasBoundedStringHelperWString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_wstring = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_wstring_ec {false};
@@ -26795,7 +26795,7 @@ void register_MapInnerAliasBoundedStringHelperInnerAliasBoundedStringHelper_type
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_inneraliasboundedstringhelper = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_inneraliasboundedstringhelper_ec {false};
@@ -26909,7 +26909,7 @@ void register_MapInnerAliasBoundedStringHelperInnerAliasBoundedWStringHelper_typ
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_inneraliasboundedwstringhelper = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_inneraliasboundedwstringhelper_ec {false};
@@ -27023,7 +27023,7 @@ void register_MapInnerAliasBoundedStringHelperInnerEnumHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_innerenumhelper = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_innerenumhelper_ec {false};
@@ -27137,7 +27137,7 @@ void register_MapInnerAliasBoundedStringHelperInnerBitMaskHelper_type_identifier
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_innerbitmaskhelper = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_innerbitmaskhelper_ec {false};
@@ -27251,7 +27251,7 @@ void register_MapInnerAliasBoundedStringHelperInnerAliasHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_inneraliashelper = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_inneraliashelper_ec {false};
@@ -27365,7 +27365,7 @@ void register_MapInnerAliasBoundedStringHelperInnerAliasArrayHelper_type_identif
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_inneraliasarrayhelper = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_inneraliasarrayhelper_ec {false};
@@ -27479,7 +27479,7 @@ void register_MapInnerAliasBoundedStringHelperInnerAliasSequenceHelper_type_iden
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_inneraliassequencehelper = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_inneraliassequencehelper_ec {false};
@@ -27593,7 +27593,7 @@ void register_MapInnerAliasBoundedStringHelperInnerAliasMapHelper_type_identifie
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_inneraliasmaphelper = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_inneraliasmaphelper_ec {false};
@@ -27707,7 +27707,7 @@ void register_MapInnerAliasBoundedStringHelperInnerUnionHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_innerunionhelper = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_innerunionhelper_ec {false};
@@ -27821,7 +27821,7 @@ void register_MapInnerAliasBoundedStringHelperInnerStructureHelper_type_identifi
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_innerstructurehelper = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_innerstructurehelper_ec {false};
@@ -27935,7 +27935,7 @@ void register_MapInnerAliasBoundedStringHelperInnerBitsetHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedstringhelper_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedstringhelper_innerbitsethelper = 0x00000000;
             bool common_var_map_inneraliasboundedstringhelper_innerbitsethelper_ec {false};
@@ -28051,7 +28051,7 @@ void register_MapInnerAliasBoundedWStringHelperShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_short = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_short_ec {false};
@@ -28167,7 +28167,7 @@ void register_MapInnerAliasBoundedWStringHelperUShort_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_ushort = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_ushort_ec {false};
@@ -28283,7 +28283,7 @@ void register_MapInnerAliasBoundedWStringHelperLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_long = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_long_ec {false};
@@ -28399,7 +28399,7 @@ void register_MapInnerAliasBoundedWStringHelperULong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_ulong = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_ulong_ec {false};
@@ -28515,7 +28515,7 @@ void register_MapInnerAliasBoundedWStringHelperLongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_longlong = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_longlong_ec {false};
@@ -28631,7 +28631,7 @@ void register_MapInnerAliasBoundedWStringHelperULongLong_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_ulonglong = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_ulonglong_ec {false};
@@ -28747,7 +28747,7 @@ void register_MapInnerAliasBoundedWStringHelperFloat_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_float = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_float = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_float_ec {false};
@@ -28863,7 +28863,7 @@ void register_MapInnerAliasBoundedWStringHelperDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_double = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_double = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_double_ec {false};
@@ -28979,7 +28979,7 @@ void register_MapInnerAliasBoundedWStringHelperLongDouble_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_longdouble = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_longdouble = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_longdouble_ec {false};
@@ -29095,7 +29095,7 @@ void register_MapInnerAliasBoundedWStringHelperBoolean_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_boolean = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_boolean = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_boolean_ec {false};
@@ -29211,7 +29211,7 @@ void register_MapInnerAliasBoundedWStringHelperOctet_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_octet = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_octet = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_octet_ec {false};
@@ -29327,7 +29327,7 @@ void register_MapInnerAliasBoundedWStringHelperChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_char = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_char_ec {false};
@@ -29443,7 +29443,7 @@ void register_MapInnerAliasBoundedWStringHelperWChar_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_wchar = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_wchar = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_wchar_ec {false};
@@ -29567,7 +29567,7 @@ void register_MapInnerAliasBoundedWStringHelperString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_string = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_string = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_string_ec {false};
@@ -29691,7 +29691,7 @@ void register_MapInnerAliasBoundedWStringHelperWString_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_wstring = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_wstring = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_wstring_ec {false};
@@ -29805,7 +29805,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerAliasBoundedStringHelper_typ
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_inneraliasboundedstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_inneraliasboundedstringhelper = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_inneraliasboundedstringhelper_ec {false};
@@ -29919,7 +29919,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerAliasBoundedWStringHelper_ty
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_inneraliasboundedwstringhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_inneraliasboundedwstringhelper = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_inneraliasboundedwstringhelper_ec {false};
@@ -30033,7 +30033,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerEnumHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_innerenumhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_innerenumhelper = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_innerenumhelper_ec {false};
@@ -30147,7 +30147,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerBitMaskHelper_type_identifie
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_innerbitmaskhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_innerbitmaskhelper = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_innerbitmaskhelper_ec {false};
@@ -30261,7 +30261,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerAliasHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_inneraliashelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_inneraliashelper = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_inneraliashelper_ec {false};
@@ -30375,7 +30375,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerAliasArrayHelper_type_identi
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_inneraliasarrayhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_inneraliasarrayhelper = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_inneraliasarrayhelper_ec {false};
@@ -30489,7 +30489,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerAliasSequenceHelper_type_ide
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_inneraliassequencehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_inneraliassequencehelper = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_inneraliassequencehelper_ec {false};
@@ -30603,7 +30603,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerAliasMapHelper_type_identifi
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_inneraliasmaphelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_inneraliasmaphelper = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_inneraliasmaphelper_ec {false};
@@ -30717,7 +30717,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerUnionHelper_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_innerunionhelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_innerunionhelper = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_innerunionhelper_ec {false};
@@ -30831,7 +30831,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerStructureHelper_type_identif
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_innerstructurehelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_innerstructurehelper = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_innerstructurehelper_ec {false};
@@ -30945,7 +30945,7 @@ void register_MapInnerAliasBoundedWStringHelperInnerBitsetHelper_type_identifier
                     }
                 }
             }
-            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_map_inneraliasboundedwstringhelper_innerbitsethelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_map_inneraliasboundedwstringhelper_innerbitsethelper = 0x00000000;
             bool common_var_map_inneraliasboundedwstringhelper_innerbitsethelper_ec {false};
@@ -31063,7 +31063,7 @@ void register_BoundedSmallMap_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_small_map = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_small_map = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_small_map = 0x00000000;
             bool common_var_small_map_ec {false};
@@ -31160,7 +31160,7 @@ void register_BoundedSmallMap_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_unbounded_string_long_bounded_small_map = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_unbounded_string_long_bounded_small_map = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_unbounded_string_long_bounded_small_map = 0x00000001;
             bool common_var_unbounded_string_long_bounded_small_map_ec {false};
@@ -31257,7 +31257,7 @@ void register_BoundedSmallMap_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_long_unbounded_string_bounded_small_map = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_long_unbounded_string_bounded_small_map = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_long_unbounded_string_bounded_small_map = 0x00000002;
             bool common_var_long_unbounded_string_bounded_small_map_ec {false};
@@ -31375,7 +31375,7 @@ void register_BoundedLargeMap_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_large_map = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_large_map = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_large_map = 0x00000000;
             bool common_var_large_map_ec {false};
@@ -31472,7 +31472,7 @@ void register_BoundedLargeMap_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_unbounded_string_long_bounded_large_map = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_unbounded_string_long_bounded_large_map = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_unbounded_string_long_bounded_large_map = 0x00000001;
             bool common_var_unbounded_string_long_bounded_large_map_ec {false};
@@ -31569,7 +31569,7 @@ void register_BoundedLargeMap_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_var_long_unbounded_string_bounded_large_map = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_long_unbounded_string_bounded_large_map = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_long_unbounded_string_bounded_large_map = 0x00000002;
             bool common_var_long_unbounded_string_bounded_large_map_ec {false};

@@ -93,7 +93,7 @@ void register_InnerStructureHelperChild_type_identifier(
                         "var_child_longlong Structure member TypeIdentifier unknown to TypeObjectRegistry.");
                 return;
             }
-            StructMemberFlag member_flags_var_child_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_child_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_child_longlong = 0x00000002;
             bool common_var_child_longlong_ec {false};
@@ -123,7 +123,7 @@ void register_InnerStructureHelperChild_type_identifier(
                         "var_child_ulonglong Structure member TypeIdentifier unknown to TypeObjectRegistry.");
                 return;
             }
-            StructMemberFlag member_flags_var_child_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_child_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_child_ulonglong = 0x00000003;
             bool common_var_child_ulonglong_ec {false};
@@ -203,7 +203,7 @@ void register_InnerStructureHelperChildChild_type_identifier(
                         "var_child_childlonglong2 Structure member TypeIdentifier unknown to TypeObjectRegistry.");
                 return;
             }
-            StructMemberFlag member_flags_var_child_childlonglong2 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_child_childlonglong2 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_child_childlonglong2 = 0x00000004;
             bool common_var_child_childlonglong2_ec {false};
@@ -233,7 +233,7 @@ void register_InnerStructureHelperChildChild_type_identifier(
                         "var_childchild_ulonglong2 Structure member TypeIdentifier unknown to TypeObjectRegistry.");
                 return;
             }
-            StructMemberFlag member_flags_var_childchild_ulonglong2 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_childchild_ulonglong2 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_childchild_ulonglong2 = 0x00000005;
             bool common_var_childchild_ulonglong2_ec {false};
@@ -363,7 +363,7 @@ void register_InnerStructureHelperEmptyChildChild_type_identifier(
                         "var_char Structure member TypeIdentifier unknown to TypeObjectRegistry.");
                 return;
             }
-            StructMemberFlag member_flags_var_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_char = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_char = 0x00000002;
             bool common_var_char_ec {false};
@@ -443,7 +443,7 @@ void register_InnerEmptyStructureHelperChild_type_identifier(
                         "var_child_longlong Structure member TypeIdentifier unknown to TypeObjectRegistry.");
                 return;
             }
-            StructMemberFlag member_flags_var_child_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_child_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_child_longlong = 0x00000000;
             bool common_var_child_longlong_ec {false};
@@ -473,7 +473,7 @@ void register_InnerEmptyStructureHelperChild_type_identifier(
                         "var_child_ulonglong Structure member TypeIdentifier unknown to TypeObjectRegistry.");
                 return;
             }
-            StructMemberFlag member_flags_var_child_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_child_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_child_ulonglong = 0x00000001;
             bool common_var_child_ulonglong_ec {false};
@@ -553,7 +553,7 @@ void register_StructAliasInheritanceStruct_type_identifier(
                         "new_member Structure member TypeIdentifier unknown to TypeObjectRegistry.");
                 return;
             }
-            StructMemberFlag member_flags_new_member = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_new_member = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_new_member = 0x00000002;
             bool common_new_member_ec {false};
@@ -610,7 +610,7 @@ void register_StructuresInheritanceStruct_type_identifier(
             {
             ::register_InnerStructureHelperChild_type_identifier(type_ids_var_InnerStructureHelperChild);
             }
-            StructMemberFlag member_flags_var_InnerStructureHelperChild = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_InnerStructureHelperChild = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_InnerStructureHelperChild = 0x00000000;
             bool common_var_InnerStructureHelperChild_ec {false};
@@ -638,7 +638,7 @@ void register_StructuresInheritanceStruct_type_identifier(
             {
             ::register_InnerStructureHelperChildChild_type_identifier(type_ids_var_InnerStructureHelperChildChild);
             }
-            StructMemberFlag member_flags_var_InnerStructureHelperChildChild = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_InnerStructureHelperChildChild = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_InnerStructureHelperChildChild = 0x00000001;
             bool common_var_InnerStructureHelperChildChild_ec {false};
@@ -666,7 +666,7 @@ void register_StructuresInheritanceStruct_type_identifier(
             {
             ::register_InnerStructureHelperEmptyChild_type_identifier(type_ids_var_InnerStructureHelperEmptyChild);
             }
-            StructMemberFlag member_flags_var_InnerStructureHelperEmptyChild = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_InnerStructureHelperEmptyChild = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_InnerStructureHelperEmptyChild = 0x00000002;
             bool common_var_InnerStructureHelperEmptyChild_ec {false};
@@ -694,7 +694,7 @@ void register_StructuresInheritanceStruct_type_identifier(
             {
             ::register_InnerStructureHelperEmptyChildChild_type_identifier(type_ids_var_InnerStructureHelperEmptyChildChild);
             }
-            StructMemberFlag member_flags_var_InnerStructureHelperEmptyChildChild = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_InnerStructureHelperEmptyChildChild = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_InnerStructureHelperEmptyChildChild = 0x00000003;
             bool common_var_InnerStructureHelperEmptyChildChild_ec {false};
@@ -722,7 +722,7 @@ void register_StructuresInheritanceStruct_type_identifier(
             {
             ::register_InnerEmptyStructureHelperChild_type_identifier(type_ids_var_InnerEmptyStructureHelperChild);
             }
-            StructMemberFlag member_flags_var_InnerEmptyStructureHelperChild = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_InnerEmptyStructureHelperChild = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_InnerEmptyStructureHelperChild = 0x00000004;
             bool common_var_InnerEmptyStructureHelperChild_ec {false};
@@ -750,7 +750,7 @@ void register_StructuresInheritanceStruct_type_identifier(
             {
             ::register_StructAliasInheritanceStruct_type_identifier(type_ids_var_StructAliasInheritanceStruct);
             }
-            StructMemberFlag member_flags_var_StructAliasInheritanceStruct = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_StructAliasInheritanceStruct = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_StructAliasInheritanceStruct = 0x00000005;
             bool common_var_StructAliasInheritanceStruct_ec {false};
@@ -1090,7 +1090,7 @@ void register_BitsetsChildInheritanceStruct_type_identifier(
             {
             ::register_InnerBitsetHelperChild_type_identifier(type_ids_var_InnerBitsetHelperChild);
             }
-            StructMemberFlag member_flags_var_InnerBitsetHelperChild = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_InnerBitsetHelperChild = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_InnerBitsetHelperChild = 0x00000000;
             bool common_var_InnerBitsetHelperChild_ec {false};
@@ -1118,7 +1118,7 @@ void register_BitsetsChildInheritanceStruct_type_identifier(
             {
             ::register_InnerBitsetHelperChildChild_type_identifier(type_ids_var_InnerBitsetHelperChildChild);
             }
-            StructMemberFlag member_flags_var_InnerBitsetHelperChildChild = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_InnerBitsetHelperChildChild = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_InnerBitsetHelperChildChild = 0x00000001;
             bool common_var_InnerBitsetHelperChildChild_ec {false};
@@ -1146,7 +1146,7 @@ void register_BitsetsChildInheritanceStruct_type_identifier(
             {
             ::register_BitsetAliasInheritanceBitset_type_identifier(type_ids_var_BitsetAliasInheritanceBitset);
             }
-            StructMemberFlag member_flags_var_BitsetAliasInheritanceBitset = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_BitsetAliasInheritanceBitset = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_BitsetAliasInheritanceBitset = 0x00000002;
             bool common_var_BitsetAliasInheritanceBitset_ec {false};

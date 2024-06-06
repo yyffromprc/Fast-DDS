@@ -130,7 +130,7 @@ void register_EnumStructure_type_identifier(
             {
             ::register_InnerEnumHelper_type_identifier(type_ids_var_InnerEnumHelper);
             }
-            StructMemberFlag member_flags_var_InnerEnumHelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_InnerEnumHelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_InnerEnumHelper = 0x00000000;
             bool common_var_InnerEnumHelper_ec {false};
@@ -158,7 +158,7 @@ void register_EnumStructure_type_identifier(
             {
                 Test::register_InnerEnumHelper_type_identifier(type_ids_var_scoped_InnerEnumHelper);
             }
-            StructMemberFlag member_flags_var_scoped_InnerEnumHelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_scoped_InnerEnumHelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_scoped_InnerEnumHelper = 0x00000001;
             bool common_var_scoped_InnerEnumHelper_ec {false};
@@ -215,7 +215,7 @@ void register_BitMaskStructure_type_identifier(
             {
             ::register_InnerBitMaskHelper_type_identifier(type_ids_var_InnerBitMaskHelper);
             }
-            StructMemberFlag member_flags_var_InnerBitMaskHelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_InnerBitMaskHelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_InnerBitMaskHelper = 0x00000000;
             bool common_var_InnerBitMaskHelper_ec {false};
@@ -272,7 +272,7 @@ void register_BoundedBitMaskStructure_type_identifier(
             {
             ::register_InnerBoundedBitMaskHelper_type_identifier(type_ids_var_InnerBoundedBitMaskHelper);
             }
-            StructMemberFlag member_flags_var_InnerBoundedBitMaskHelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var_InnerBoundedBitMaskHelper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var_InnerBoundedBitMaskHelper = 0x00000000;
             bool common_var_InnerBoundedBitMaskHelper_ec {false};

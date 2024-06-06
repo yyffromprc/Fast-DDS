@@ -207,7 +207,7 @@ void register_ModuleConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_module1_array_literal_const_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_module1_array_literal_const_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_module1_array_literal_const_moduled = 0x00000000;
             bool common_module1_array_literal_const_moduled_ec {false};
@@ -271,7 +271,7 @@ void register_ModuleConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_module1_array_literal_const_alias_const_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_module1_array_literal_const_alias_const_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_module1_array_literal_const_alias_const_moduled = 0x00000001;
             bool common_module1_array_literal_const_alias_const_moduled_ec {false};
@@ -299,7 +299,7 @@ void register_ModuleConstsLiteralsStruct_type_identifier(
             {
             ::register_alias_short_type_identifier(type_ids_var1);
             }
-            StructMemberFlag member_flags_var1 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var1 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var1 = 0x00000002;
             bool common_var1_ec {false};
@@ -327,7 +327,7 @@ void register_ModuleConstsLiteralsStruct_type_identifier(
             {
                 const_module1::register_alias_short_moduled_type_identifier(type_ids_var2);
             }
-            StructMemberFlag member_flags_var2 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_var2 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_var2 = 0x00000003;
             bool common_var2_ec {false};
@@ -423,7 +423,7 @@ void register_Module2ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_module2_array_literal_const_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_module2_array_literal_const_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_module2_array_literal_const_moduled = 0x00000000;
             bool common_module2_array_literal_const_moduled_ec {false};
@@ -487,7 +487,7 @@ void register_Module2ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_module2_array_literal_const_alias_const_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_module2_array_literal_const_alias_const_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_module2_array_literal_const_alias_const_moduled = 0x00000001;
             bool common_module2_array_literal_const_alias_const_moduled_ec {false};
@@ -551,7 +551,7 @@ void register_Module2ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_module2_array_literal_const_scoped_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_module2_array_literal_const_scoped_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_module2_array_literal_const_scoped_moduled = 0x00000002;
             bool common_module2_array_literal_const_scoped_moduled_ec {false};
@@ -615,7 +615,7 @@ void register_Module2ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_module2_array_literal_module1_const_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_module2_array_literal_module1_const_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_module2_array_literal_module1_const_moduled = 0x00000003;
             bool common_module2_array_literal_module1_const_moduled_ec {false};
@@ -710,7 +710,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_short = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_short = 0x00000000;
             bool common_array_literal_const_short_ec {false};
@@ -774,7 +774,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_ushort = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_ushort = 0x00000001;
             bool common_array_literal_const_ushort_ec {false};
@@ -838,7 +838,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_long = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_long = 0x00000002;
             bool common_array_literal_const_long_ec {false};
@@ -902,7 +902,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_ulong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_ulong = 0x00000003;
             bool common_array_literal_const_ulong_ec {false};
@@ -966,7 +966,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_longlong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_longlong = 0x00000004;
             bool common_array_literal_const_longlong_ec {false};
@@ -1030,7 +1030,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_ulonglong = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_ulonglong = 0x00000005;
             bool common_array_literal_const_ulonglong_ec {false};
@@ -1094,7 +1094,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_int8 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_int8 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_int8 = 0x00000006;
             bool common_array_literal_const_int8_ec {false};
@@ -1158,7 +1158,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_uint8 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_uint8 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_uint8 = 0x00000007;
             bool common_array_literal_const_uint8_ec {false};
@@ -1222,7 +1222,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_int16 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_int16 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_int16 = 0x00000008;
             bool common_array_literal_const_int16_ec {false};
@@ -1286,7 +1286,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_uint16 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_uint16 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_uint16 = 0x00000009;
             bool common_array_literal_const_uint16_ec {false};
@@ -1350,7 +1350,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_int32 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_int32 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_int32 = 0x0000000a;
             bool common_array_literal_const_int32_ec {false};
@@ -1414,7 +1414,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_uint32 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_uint32 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_uint32 = 0x0000000b;
             bool common_array_literal_const_uint32_ec {false};
@@ -1478,7 +1478,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_int64 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_int64 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_int64 = 0x0000000c;
             bool common_array_literal_const_int64_ec {false};
@@ -1542,7 +1542,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_uint64 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_uint64 = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_uint64 = 0x0000000d;
             bool common_array_literal_const_uint64_ec {false};
@@ -1606,7 +1606,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literals_operations1_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literals_operations1_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literals_operations1_const = 0x0000000e;
             bool common_array_literals_operations1_const_ec {false};
@@ -1670,7 +1670,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literals_operations2_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literals_operations2_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literals_operations2_const = 0x0000000f;
             bool common_array_literals_operations2_const_ec {false};
@@ -1734,7 +1734,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literals_operations3_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literals_operations3_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literals_operations3_const = 0x00000010;
             bool common_array_literals_operations3_const_ec {false};
@@ -1798,7 +1798,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literals_operations4_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literals_operations4_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literals_operations4_const = 0x00000011;
             bool common_array_literals_operations4_const_ec {false};
@@ -1862,7 +1862,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literals_operations5_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literals_operations5_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literals_operations5_const = 0x00000012;
             bool common_array_literals_operations5_const_ec {false};
@@ -1926,7 +1926,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literals_operations6_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literals_operations6_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literals_operations6_const = 0x00000013;
             bool common_array_literals_operations6_const_ec {false};
@@ -1990,7 +1990,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literals_operations7_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literals_operations7_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literals_operations7_const = 0x00000014;
             bool common_array_literals_operations7_const_ec {false};
@@ -2054,7 +2054,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literals_operations8_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literals_operations8_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literals_operations8_const = 0x00000015;
             bool common_array_literals_operations8_const_ec {false};
@@ -2118,7 +2118,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_inner_const_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_inner_const_helper = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_inner_const_helper = 0x00000016;
             bool common_array_literal_const_inner_const_helper_ec {false};
@@ -2182,7 +2182,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_moduled1_literal_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_moduled1_literal_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_moduled1_literal_const = 0x00000017;
             bool common_array_moduled1_literal_const_ec {false};
@@ -2246,7 +2246,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_moduled2_literal_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_moduled2_literal_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_moduled2_literal_const = 0x00000018;
             bool common_array_moduled2_literal_const_ec {false};
@@ -2310,7 +2310,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_literal_const_alias_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_literal_const_alias_const = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_literal_const_alias_const = 0x00000019;
             bool common_array_literal_const_alias_const_ec {false};
@@ -2374,7 +2374,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_moduled1_literal_alias_const_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_moduled1_literal_alias_const_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_moduled1_literal_alias_const_moduled = 0x0000001a;
             bool common_array_moduled1_literal_alias_const_moduled_ec {false};
@@ -2438,7 +2438,7 @@ void register_ConstsLiteralsStruct_type_identifier(
                     }
                 }
             }
-            StructMemberFlag member_flags_array_moduled2_literal_alias_const_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructKind::NOT_APPLIED,
+            StructMemberFlag member_flags_array_moduled2_literal_alias_const_moduled = TypeObjectUtils::build_struct_member_flag(eprosima::fastdds::dds::xtypes::TryConstructFailAction::DISCARD,
                     false, false, false, false);
             MemberId member_id_array_moduled2_literal_alias_const_moduled = 0x0000001b;
             bool common_array_moduled2_literal_alias_const_moduled_ec {false};
