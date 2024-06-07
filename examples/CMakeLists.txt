@@ -15,5 +15,6 @@
 set(fastdds_FOUND TRUE)
 add_subdirectory(cpp/configuration)
 add_subdirectory(cpp/dds)
+add_subdirectory(cpp/discovery_server)
 add_subdirectory(cpp/hello_world)
 add_subdirectory(cpp/rtps)
