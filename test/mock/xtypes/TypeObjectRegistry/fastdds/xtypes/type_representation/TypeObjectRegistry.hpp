@@ -86,6 +86,11 @@ public:
                 const TypeObject& type_object,
                 TypeIdentifierPair & /*type_identifier*/), (override));
 
+    MOCK_METHOD(ReturnCode_t, register_type_object, (
+                const TypeObject& type_object,
+                TypeIdentifierPair& /*type_identifier*/,
+                bool /*build_minimal*/));
+
     MOCK_METHOD(ReturnCode_t, register_typeobject_w_dynamic_type, (
                 const DynamicType::_ref_type& /*dynamic_type*/,
                 TypeIdentifierPair & /*type_ids*/), (override));
