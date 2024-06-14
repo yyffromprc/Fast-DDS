@@ -71,7 +71,7 @@ protected:
      * The second one indicates if the remote participant data is a client.
      */
     std::pair<bool, bool> check_server_discovery_conditions(
-            fastrtps::rtps::ParticipantProxyData& participant_data,
+            const fastrtps::rtps::ParticipantProxyData& participant_data,
             std::string& participant_type_str);
 };
 

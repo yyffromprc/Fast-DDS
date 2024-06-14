@@ -211,13 +211,6 @@ FASTDDS_EXPORTED_API bool get_server_client_default_guidPrefix(
         int id,
         fastrtps::rtps::GuidPrefix_t& guid);
 
-/**
- * Returns a random generated guidPrefix.
- * @param[out] guid reference to the guidPrefix to modify
- */
-FASTDDS_EXPORTED_API void set_server_client_random_guidPrefix(
-        fastrtps::rtps::GuidPrefix_t& guid);
-
 } // namespace rtps
 } // namespace fastdds
 
@@ -234,7 +227,6 @@ using fastdds::rtps::ROS_SUPER_CLIENT;
 using fastdds::rtps::load_environment_server_info;
 using fastdds::rtps::ros_discovery_server_env;
 using fastdds::rtps::get_server_client_default_guidPrefix;
-using fastdds::rtps::set_server_client_random_guidPrefix;
 using fastdds::rtps::ros_super_client_env;
 
 } // fastrtps
