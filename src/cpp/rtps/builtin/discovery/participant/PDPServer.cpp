@@ -174,7 +174,6 @@ void PDPServer::pre_enable_actions()
     if (durability_ == TRANSIENT)
     {
         // This vector is empty till backup queue is implemented
-        // TODO Carlos (OPT-IMPROVE): delete this?
         process_backup_restore_queue(backup_queue);
     }
 }
@@ -271,7 +270,7 @@ bool PDPServer::create_ds_pdp_best_effort_reader(
     ratt.endpoint.external_unicast_locators = mp_builtin->m_att.metatraffic_external_unicast_locators;
     ratt.endpoint.ignore_non_matching_locators = pattr.ignore_non_matching_locators;
     ratt.endpoint.topicKind = WITH_KEY;
-    // Change depending of backup mode
+    // Change depending on backup mode
     ratt.endpoint.durabilityKind = VOLATILE;
     ratt.endpoint.reliabilityKind = BEST_EFFORT;
 
@@ -360,7 +359,7 @@ bool PDPServer::create_ds_pdp_reliable_endpoints(
     ratt.endpoint.external_unicast_locators = mp_builtin->m_att.metatraffic_external_unicast_locators;
     ratt.endpoint.ignore_non_matching_locators = pattr.ignore_non_matching_locators;
     ratt.endpoint.topicKind = WITH_KEY;
-    // Change depending of backup mode
+    // Change depending on backup mode
     ratt.endpoint.durabilityKind = durability_;
     ratt.endpoint.reliabilityKind = RELIABLE;
     ratt.times.heartbeat_response_delay = pdp_heartbeat_response_delay;
@@ -1080,7 +1079,7 @@ bool PDPServer::remove_remote_participant(
             // Notify the database
             if (discovery_db_.update(pC, ddb::DiscoveryParticipantChangeData()))
             {
-                // Assure processing time for the cache
+                // Ensure processing time for the cache
                 awake_routine_thread();
 
                 // The discovery database takes ownership of the CacheChange_t
@@ -1293,7 +1292,7 @@ History::iterator PDPServer::process_change_acknowledgement(
             // AND put the change in changes_release
             discovery_db_.delete_entity_of_change(c);
             // Remove from writer's history.
-            // Remove false because the clean of the change is made by release_change of ddb
+            // Using `false` on `release` since the clean-up of the change is made by release_change of ddb
             return writer_history->remove_change(cit, false);
         }
     }
@@ -1591,7 +1590,7 @@ void PDPServer::ping_remote_servers()
     // Iterate over the list of servers
     {
         eprosima::shared_lock<eprosima::shared_mutex> disc_lock(mp_builtin->getDiscoveryMutex());
-        // Get the info to send to this already known locators
+        // Get the info to send to these already known locators
         locators_ping = mp_builtin->m_DiscoveryServers;
     }
 
