@@ -40,7 +40,7 @@
 #include <fastdds/rtps/common/InstanceHandle.hpp>
 #include <fastdds/rtps/common/SequenceNumber.hpp>
 #include <fastdds/rtps/history/ReaderHistory.hpp>
-#include <fastdds/rtps/resources/ResourceManagement.h>
+#include <fastdds/rtps/resources/ResourceManagement.hpp>
 
 #include <fastdds/subscriber/DataReaderImpl/StateFilter.hpp>
 

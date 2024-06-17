@@ -29,7 +29,7 @@
 #include <fastdds/rtps/common/Time_t.hpp>
 #include <fastdds/rtps/common/Types.hpp>
 #include <fastdds/rtps/history/WriterHistory.hpp>
-#include <fastdds/rtps/resources/ResourceManagement.h>
+#include <fastdds/rtps/resources/ResourceManagement.hpp>
 #include <fastdds/utils/TimedMutex.hpp>
 
 #include <fastdds/publisher/history/DataWriterInstance.hpp>

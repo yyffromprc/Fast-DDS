@@ -20,7 +20,7 @@
 #define RTPS_DATASHARING_READERPOOL_HPP
 
 #include <fastdds/rtps/common/CacheChange.hpp>
-#include <fastdds/rtps/resources/ResourceManagement.h>
+#include <fastdds/rtps/resources/ResourceManagement.hpp>
 #include <fastdds/dds/log/Log.hpp>
 #include <rtps/DataSharing/DataSharingPayloadPool.hpp>
 

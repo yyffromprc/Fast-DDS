@@ -22,7 +22,7 @@
 #include <gmock/gmock.h>
 
 #include <fastdds/rtps/history/WriterHistory.hpp>
-#include <fastdds/rtps/resources/ResourceManagement.h>
+#include <fastdds/rtps/resources/ResourceManagement.hpp>
 #include <fastdds/utils/TimedMutex.hpp>
 
 namespace eprosima {

@@ -20,7 +20,7 @@
 #ifndef FASTDDS_RTPS_ATTRIBUTES__HISTORYATTRIBUTES_HPP
 #define FASTDDS_RTPS_ATTRIBUTES__HISTORYATTRIBUTES_HPP
 
-#include <fastdds/rtps/resources/ResourceManagement.h>
+#include <fastdds/rtps/resources/ResourceManagement.hpp>
 #include <fastdds/fastdds_dll.hpp>
 
 #include <cstdint>

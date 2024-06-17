@@ -21,7 +21,7 @@
 
 #include <fastdds/rtps/common/SerializedPayload.hpp>
 #include <fastdds/rtps/history/IPayloadPool.hpp>
-#include <fastdds/rtps/resources/ResourceManagement.h>
+#include <fastdds/rtps/resources/ResourceManagement.hpp>
 #include <fastdds/dds/log/Log.hpp>
 #include <rtps/history/PoolConfig.h>
 #include <rtps/history/ITopicPayloadPool.h>

@@ -21,7 +21,7 @@
 
 #include <fastdds/rtps/common/CacheChange.hpp>
 #include <fastdds/rtps/history/IChangePool.hpp>
-#include <fastdds/rtps/resources/ResourceManagement.h>
+#include <fastdds/rtps/resources/ResourceManagement.hpp>
 
 #include <rtps/history/PoolConfig.h>
 
