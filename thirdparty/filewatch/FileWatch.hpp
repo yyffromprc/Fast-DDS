@@ -46,7 +46,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
-#include <sys/types.h>
+#include <sys/Types.hpp>
 #include <sys/inotify.h>
 #include <sys/stat.h>
 #include <unistd.h>
@@ -619,7 +619,7 @@ namespace filewatch {
             // Initialize filesize
             last_size_ = result.st_size;
 #endif
-            
+
         }
 
     };

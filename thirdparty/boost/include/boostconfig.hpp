@@ -37,7 +37,7 @@
 #ifdef _MSC_VER
 
 #include <stdlib.h>
-#include <sys/types.h>
+#include <sys/Types.hpp>
 #include <sys/stat.h>
 #include <stdexcept>
 

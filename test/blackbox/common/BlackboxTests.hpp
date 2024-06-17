@@ -27,7 +27,7 @@
 #include <process.h>
 #else
 #define GET_PID getpid
-#include <sys/types.h>
+#include <sys/Types.hpp>
 #include <unistd.h>
 #endif // if defined(_WIN32)
 

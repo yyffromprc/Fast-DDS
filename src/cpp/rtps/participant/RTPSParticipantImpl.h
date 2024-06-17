@@ -28,7 +28,7 @@
 #include <list>
 #include <mutex>
 #include <set>
-#include <sys/types.h>
+#include <sys/Types.hpp>
 #include <vector>
 
 #if defined(_WIN32)

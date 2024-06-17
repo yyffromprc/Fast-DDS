@@ -35,7 +35,7 @@
 #  ifdef BOOST_HAS_UNISTD_H
 #     include <fcntl.h>
 #     include <unistd.h>
-#     include <sys/types.h>
+#     include <sys/Types.hpp>
 #     include <sys/stat.h>
 #     include <errno.h>
 #     include <cstdio>

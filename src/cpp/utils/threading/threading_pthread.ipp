@@ -21,7 +21,7 @@
 #include <sys/resource.h>
 #include <sys/sysinfo.h>
 #include <sys/time.h>
-#include <sys/types.h>
+#include <sys/Types.hpp>
 
 #include <fastdds/dds/log/Log.hpp>
 #include <fastdds/rtps/attributes/ThreadSettings.hpp>

@@ -51,7 +51,7 @@
 #endif // if defined(__APPLE__) && TARGET_OS_IPHONE
 #include <errno.h>
 #if defined(__APPLE__)
-#include <sys/types.h>
+#include <sys/Types.hpp>
 #include <sys/sysctl.h>
 #include <net/if_dl.h>
 #include <netinet/in.h>
@@ -73,7 +73,7 @@
 namespace eprosima {
 namespace fastdds {
 namespace rtps {
-    
+
 IPFinder::IPFinder()
 {
 }

@@ -48,13 +48,13 @@
 #  ifdef BOOST_INTERPROCESS_BSD_DERIVATIVE
       //Some *BSD systems (OpenBSD & NetBSD) need sys/param.h before sys/sysctl.h, whereas
       //others (FreeBSD & Darwin) need sys/types.h
-#     include <sys/types.h>
+#     include <sys/Types.hpp>
 #     include <sys/param.h>
 #     include <sys/sysctl.h>
 #  endif
-#if defined(__VXWORKS__) 
+#if defined(__VXWORKS__)
 #include <vxCpuLib.h>
-#endif 
+#endif
 //According to the article "C/C++ tip: How to measure elapsed real time for benchmarking"
 //Check MacOs first as macOS 10.12 SDK defines both CLOCK_MONOTONIC and
 //CLOCK_MONOTONIC_RAW and no clock_gettime.
@@ -88,7 +88,7 @@ struct OS_thread_t
       : m_handle()
    {}
 
-   
+
    void* handle() const
    {  return m_handle;  }
 
@@ -492,9 +492,9 @@ inline unsigned int get_num_cores()
                set &= set -1;
           }
       return(i);
-    #else  
+    #else
       return (__builtin_popcount(set) );
-    #endif  
+    #endif
    #endif
 }
 

@@ -1,7 +1,7 @@
-//  (C) Copyright John Maddock 2001 - 2003. 
-//  (C) Copyright Jens Maurer 2001 - 2003. 
-//  Use, modification and distribution are subject to the 
-//  Boost Software License, Version 1.0. (See accompanying file 
+//  (C) Copyright John Maddock 2001 - 2003.
+//  (C) Copyright Jens Maurer 2001 - 2003.
+//  Use, modification and distribution are subject to the
+//  Boost Software License, Version 1.0. (See accompanying file
 //  LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 
 //  See http://www.boost.org for most recent version.
@@ -22,7 +22,7 @@
 // We can only test for 2.1 though:
 //
 #if defined(__GLIBC__) && ((__GLIBC__ > 2) || ((__GLIBC__ == 2) && (__GLIBC_MINOR__ >= 1)))
-   // <stdint.h> defines int64_t unconditionally, but <sys/types.h> defines
+   // <stdint.h> defines int64_t unconditionally, but <sys/Types.hpp> defines
    // int64_t only if __GNUC__.  Thus, assume a fully usable <stdint.h>
    // only when using GCC.  Update 2017: this appears not to be the case for
    // recent glibc releases, see bug report: https://svn.boost.org/trac/boost/ticket/13045

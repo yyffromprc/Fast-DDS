@@ -36,7 +36,7 @@
 //              SunOS                                 Tru64                               HP-UX                    AIX
 #if defined(sun) || defined(__sun) || defined(__osf__) || defined(__osf) || defined(_hpux) || defined(hpux) || defined(_AIX)
 #define BOOST_INTERPROCESS_MADVISE_USES_CADDR_T
-#include <sys/types.h>
+#include <sys/Types.hpp>
 #endif
 
 //A lot of UNIXes have destructive semantics for MADV_DONTNEED, so
@@ -54,7 +54,7 @@
 #    include <sys/mman.h>     //mmap
 #    include <unistd.h>
 #    include <sys/stat.h>
-#    include <sys/types.h>
+#    include <sys/Types.hpp>
 #    if defined(BOOST_INTERPROCESS_XSI_SHARED_MEMORY_OBJECTS)
 #      include <sys/shm.h>      //System V shared memory...
 #    endif

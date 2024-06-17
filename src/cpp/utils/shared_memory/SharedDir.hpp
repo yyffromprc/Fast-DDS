@@ -20,7 +20,7 @@
 
 #ifdef __QNXNTO__
 #include <sys/stat.h>
-#include <sys/types.h>
+#include <sys/Types.hpp>
 #include <errno.h>
 #endif  // __QNXNTO__
 

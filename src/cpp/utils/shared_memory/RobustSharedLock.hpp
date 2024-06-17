@@ -21,7 +21,7 @@
 #include <sys/file.h>
 #endif // ifdef  _MSC_VER
 
-#include <sys/types.h>
+#include <sys/Types.hpp>
 #include <sys/stat.h>
 #include <fcntl.h>
 

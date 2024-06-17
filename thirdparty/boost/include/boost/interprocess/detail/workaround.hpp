@@ -148,7 +148,7 @@
       #define BOOST_INTERPROCESS_BSD_DERIVATIVE
       //Some *BSD systems (OpenBSD & NetBSD) need sys/param.h before sys/sysctl.h, whereas
       //others (FreeBSD & Darwin) need sys/types.h
-      #include <sys/types.h>
+      #include <sys/Types.hpp>
       #include <sys/param.h>
       #include <sys/sysctl.h>
       #if defined(CTL_KERN) && defined (KERN_BOOTTIME)
