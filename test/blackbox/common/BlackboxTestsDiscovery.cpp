@@ -29,7 +29,7 @@
 // #include <fastdds/LibrarySettings.hpp>
 #include <fastdds/rtps/attributes/ServerAttributes.hpp>
 #include <fastdds/rtps/common/CDRMessage_t.hpp>
-#include <fastdds/rtps/transport/UDPv4TransportDescriptor.h>
+#include <fastdds/rtps/transport/UDPv4TransportDescriptor.hpp>
 
 #include <rtps/transport/test_UDPv4Transport.h>
 

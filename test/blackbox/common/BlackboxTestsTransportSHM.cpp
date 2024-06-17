@@ -27,7 +27,7 @@
 #include <fastdds/dds/log/Log.hpp>
 
 #include <rtps/transport/shared_mem/test_SharedMemTransportDescriptor.h>
-#include <fastdds/rtps/transport/UDPv4TransportDescriptor.h>
+#include <fastdds/rtps/transport/UDPv4TransportDescriptor.hpp>
 
 using namespace eprosima::fastdds;
 
