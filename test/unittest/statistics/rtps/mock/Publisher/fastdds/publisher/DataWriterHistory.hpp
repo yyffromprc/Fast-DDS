@@ -21,7 +21,7 @@
 
 #include <gmock/gmock.h>
 
-#include <fastdds/rtps/history/WriterHistory.h>
+#include <fastdds/rtps/history/WriterHistory.hpp>
 #include <fastdds/rtps/resources/ResourceManagement.h>
 #include <fastdds/utils/TimedMutex.hpp>
 
