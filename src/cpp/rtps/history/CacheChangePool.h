@@ -20,7 +20,7 @@
 #define RTPS_HISTORY_CACHECHANGEPOOL_H_
 
 #include <fastdds/rtps/common/CacheChange.hpp>
-#include <fastdds/rtps/history/IChangePool.h>
+#include <fastdds/rtps/history/IChangePool.hpp>
 #include <fastdds/rtps/resources/ResourceManagement.h>
 
 #include <rtps/history/PoolConfig.h>
