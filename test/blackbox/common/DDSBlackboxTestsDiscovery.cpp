@@ -32,7 +32,7 @@
 #include <fastdds/rtps/builtin/data/ParticipantProxyData.hpp>
 #include <fastdds/rtps/common/Locator.hpp>
 #include <fastdds/rtps/participant/ParticipantDiscoveryInfo.hpp>
-#include <fastdds/rtps/transport/test_UDPv4TransportDescriptor.h>
+#include <fastdds/rtps/transport/test_UDPv4TransportDescriptor.hpp>
 #include <gtest/gtest.h>
 
 // TODO(jlbueno): remove private header

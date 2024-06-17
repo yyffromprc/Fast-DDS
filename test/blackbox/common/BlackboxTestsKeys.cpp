@@ -17,7 +17,7 @@
 #include "PubSubReader.hpp"
 #include "PubSubWriter.hpp"
 
-#include <fastdds/rtps/transport/test_UDPv4TransportDescriptor.h>
+#include <fastdds/rtps/transport/test_UDPv4TransportDescriptor.hpp>
 #include <rtps/messages/CDRMessage.hpp>
 
 TEST(KeyedTopic, RegistrationNonKeyedFail)
