@@ -20,7 +20,7 @@
 #define RTPS_HISTORY_TOPICPAYLOADPOOL_HPP
 
 #include <fastdds/rtps/common/SerializedPayload.hpp>
-#include <fastdds/rtps/history/IPayloadPool.h>
+#include <fastdds/rtps/history/IPayloadPool.hpp>
 #include <fastdds/rtps/resources/ResourceManagement.h>
 #include <fastdds/dds/log/Log.hpp>
 #include <rtps/history/PoolConfig.h>
