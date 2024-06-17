@@ -28,7 +28,7 @@
 #include <fastdds/dds/domain/qos/DomainParticipantQos.hpp>
 // #include <fastdds/LibrarySettings.hpp>
 #include <fastdds/rtps/attributes/ServerAttributes.hpp>
-#include <fastdds/rtps/common/CDRMessage_t.h>
+#include <fastdds/rtps/common/CDRMessage_t.hpp>
 #include <fastdds/rtps/transport/UDPv4TransportDescriptor.h>
 
 #include <rtps/transport/test_UDPv4Transport.h>
