@@ -20,7 +20,7 @@
 #define RTPS_DATASHARING_WRITERPOOL_HPP
 
 #include <fastdds/rtps/common/CacheChange.hpp>
-#include <fastdds/rtps/writer/RTPSWriter.h>
+#include <fastdds/rtps/writer/RTPSWriter.hpp>
 #include <fastdds/rtps/resources/ResourceManagement.hpp>
 #include <fastdds/dds/log/Log.hpp>
 #include <rtps/DataSharing/DataSharingPayloadPool.hpp>
